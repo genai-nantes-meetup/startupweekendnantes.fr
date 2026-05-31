@@ -2,7 +2,6 @@ import fontsCss from '../styles/fonts.css?raw';
 import breakpointsCss from '../styles/breakpoints.css?raw';
 import framerCss from '../styles/framer.css?raw';
 
-const framerEditorScript = `try{if(localStorage.get("__framer_force_showing_editorbar_since")){const n=document.createElement("link");n.rel = "modulepreload";n.href="https://framer.com/edit/init.js";document.head.appendChild(n)}}catch(e){}`;
 
 const gtmScript = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -21,7 +20,6 @@ export default function Head() {
   return (
     <>
       <meta charSet="utf-8" />
-      <script dangerouslySetInnerHTML={{ __html: framerEditorScript }} />
       <script dangerouslySetInnerHTML={{ __html: gtmScript }} />
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-377KFTGYHV"></script>
       <script dangerouslySetInnerHTML={{ __html: ga4Script }} />
