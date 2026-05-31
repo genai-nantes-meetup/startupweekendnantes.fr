@@ -1,4 +1,6 @@
----
+import './FAQ.css';
+import { useState } from 'react';
+
 const questions = [
   { q: "Puis-je pitcher une idée dont le projet a déjà débuté ?", a: "Oui, tu peux pitcher un projet en cours, tant qu'il n'est pas encore commercialisé. L'essentiel est de venir avec envie d'apprendre et de construire avec une équipe." },
   { q: "Dois-je avoir constitué mon équipe en amont du weekend ?", a: "Non ! La formation des équipes se fait lors de la soirée du vendredi, après les pitchs. Chacun rejoint l'équipe du projet qui l'attire le plus." },
@@ -12,99 +14,34 @@ const questions = [
   { q: "Est-ce que je peux rester dormir ?", a: "Non, l'hébergement n'est pas inclus. Des hôtels partenaires à tarif préférentiel sont disponibles à proximité." },
   { q: "Est-ce que je dois prévoir à manger ?", a: "Les repas du vendredi soir, samedi et dimanche sont inclus dans le billet. Il y a aussi du café et des snacks tout au long du weekend." },
 ];
----
 
-<section id="faq" class="faq-section">
-  <div class="faq-container">
-    <h2>FAQ</h2>
-    <div class="faq-list">
-      {questions.map((item, i) => (
-        <details class="faq-item" name="faq">
-          <summary class="faq-question">
-            <span>{item.q}</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </summary>
-          <div class="faq-answer">
-            <p>{item.a}</p>
-          </div>
-        </details>
-      ))}
-    </div>
-  </div>
-</section>
+export default function FAQ() {
+  const [open, setOpen] = useState<number | null>(null);
 
-<style>
-  .faq-section {
-    background: black;
-    padding: 5rem 2rem;
-  }
-
-  .faq-container {
-    max-width: 1240px;
-    margin: 0 auto;
-  }
-
-  .faq-container h2 {
-    font-family: 'Dela Gothic One', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    color: white;
-    margin: 0 0 2rem;
-  }
-
-  .faq-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .faq-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
-  .faq-item:first-of-type {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
-  .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 1.5rem 0;
-    cursor: pointer;
-    list-style: none;
-    font-family: 'Dela Gothic One', sans-serif;
-    font-size: 1rem;
-    color: white;
-    transition: color 0.2s;
-  }
-
-  .faq-question::-webkit-details-marker { display: none; }
-
-  .faq-question:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  .faq-icon {
-    font-size: 1.5rem;
-    color: white;
-    flex-shrink: 0;
-    transition: transform 0.3s;
-  }
-
-  details[open] .faq-icon {
-    transform: rotate(45deg);
-  }
-
-  .faq-answer {
-    padding: 0 0 1.5rem;
-  }
-
-  .faq-answer p {
-    font-family: 'Oxanium', sans-serif;
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.7;
-    margin: 0;
-    max-width: 800px;
-  }
-</style>
+  return (
+    <section id="faq" className="faq-section">
+      <div className="faq-container">
+        <h2>FAQ</h2>
+        <div className="faq-list">
+          {questions.map((item, i) => (
+            <div key={i} className="faq-item">
+              <button
+                className="faq-question"
+                onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
+              >
+                <span>{item.q}</span>
+                <span className={`faq-icon ${open === i ? 'faq-icon--open' : ''}`} aria-hidden="true">+</span>
+              </button>
+              {open === i && (
+                <div className="faq-answer">
+                  <p>{item.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

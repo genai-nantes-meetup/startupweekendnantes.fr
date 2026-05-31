@@ -1,0 +1,81 @@
+.agenda-section { background: rgb(14, 2, 24); padding: 5rem 2rem; }
+
+.agenda-container { max-width: 1240px; margin: 0 auto; }
+
+.agenda-container > h2 {
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: white;
+  margin: 0 0 3rem;
+}
+
+.agenda-day { margin-bottom: 4rem; }
+
+.day-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1rem; }
+
+.day-meta { display: flex; flex-direction: column; gap: 0.25rem; }
+
+.day-date { font-family: 'Oxanium', sans-serif; font-size: 0.875rem; color: rgba(255,255,255,0.5); }
+
+.day-label { font-family: 'Dela Gothic One', sans-serif; font-size: 1.5rem; }
+
+.day-name { font-family: 'Dela Gothic One', sans-serif; font-size: 1.5rem; color: white; }
+
+.agenda-table { width: 100%; border-collapse: collapse; }
+
+.agenda-table thead tr { color: rgb(25, 5, 50); }
+
+.agenda-table th {
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 0.875rem;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.agenda-table th:first-child { width: 120px; }
+.agenda-table th:last-child { width: 140px; }
+
+.agenda-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.1); }
+.agenda-table tbody tr:last-child { border-bottom: none; }
+
+.time-cell {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  padding: 1.25rem 1rem;
+  vertical-align: top;
+  width: 120px;
+  white-space: nowrap;
+}
+
+.prog-cell { padding: 1.25rem 1rem; vertical-align: top; }
+
+.prog-cell strong {
+  display: block;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.prog-cell span {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+}
+
+.speaker-cell {
+  padding: 1.25rem 1rem;
+  vertical-align: top;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.speaker-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+
+@media (max-width: 767px) {
+  .agenda-table th:last-child, .speaker-cell { display: none; }
+  .time-cell { width: 80px; }
+}

@@ -1,19 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Intro from '../components/Intro.astro';
-import Welcome from '../components/Welcome.astro';
-import PastGlimpse from '../components/PastGlimpse.astro';
-import Team from '../components/Team.astro';
-import Sponsors from '../components/Sponsors.astro';
-import Pricing from '../components/Pricing.astro';
-import Venue from '../components/Venue.astro';
-import Agenda from '../components/Agenda.astro';
-import FAQ from '../components/FAQ.astro';
-import OrgTeam from '../components/OrgTeam.astro';
-import Contact from '../components/Contact.astro';
-import Footer from '../components/Footer.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Intro from '../components/Intro';
+import Welcome from '../components/Welcome';
+import PastGlimpse from '../components/PastGlimpse';
+import Team from '../components/Team';
+import Sponsors from '../components/Sponsors';
+import Pricing from '../components/Pricing';
+import Venue from '../components/Venue';
+import Agenda from '../components/Agenda';
+import FAQ from '../components/FAQ';
+import OrgTeam from '../components/OrgTeam';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 import '../styles/global.css';
 ---
 
@@ -29,7 +29,7 @@ import '../styles/global.css';
     <Pricing />
     <Venue />
     <Agenda />
-    <FAQ />
+    <FAQ client:load />
     <OrgTeam />
     <Contact />
   </main>

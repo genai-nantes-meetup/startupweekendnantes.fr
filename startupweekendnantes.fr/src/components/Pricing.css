@@ -1,0 +1,172 @@
+.pricing-section {
+  background: #ffffff;
+  padding: 5rem 2rem 6rem;
+  position: relative;
+}
+
+.pricing-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.pricing-star {
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  width: 80px;
+  opacity: 0.9;
+}
+
+.pricing-container h2 {
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #000;
+  margin: 0 0 1rem;
+}
+
+.pricing-subtitle {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 3.5rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.pricing-card {
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.pricing-card--featured {
+  margin-top: -1.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.badge {
+  display: block;
+  background: #4caf50;
+  color: white;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 1rem auto 0;
+}
+
+.card-body {
+  padding: 1.75rem 1.75rem 1.25rem;
+  flex: 1;
+}
+
+.card-label {
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 1.25rem;
+  color: #000;
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+.card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.price-prefix {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.card-price {
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+  line-height: 1;
+}
+
+.card-divider {
+  width: 2rem;
+  height: 3px;
+  background: #000;
+  margin: 1rem 0;
+  border-radius: 2px;
+}
+
+.card-desc {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-features li {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 0.85rem;
+  color: #222;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.card-features li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.card-cta {
+  display: block;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  background: rgb(25, 5, 50);
+  color: white;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  margin: 0 1.75rem 1.75rem;
+  border-radius: 4px;
+}
+
+.card-cta:hover { opacity: 0.85; }
+
+@media (max-width: 767px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-card--featured { margin-top: 0; margin-bottom: 0; }
+  .pricing-star { display: none; }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  .pricing-grid { gap: 1rem; }
+}

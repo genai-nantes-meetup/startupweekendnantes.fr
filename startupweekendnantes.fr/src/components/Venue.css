@@ -1,0 +1,42 @@
+.venue-section { background: black; overflow: hidden; }
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px 300px;
+  position: relative;
+}
+
+.venue-photo { overflow: hidden; }
+
+.venue-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.venue-photo:hover img { transform: scale(1.04); }
+
+.venue-label {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  z-index: 2;
+  background: rgb(39, 168, 224);
+  color: rgb(25, 5, 50);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.venue-label h2 {
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .venue-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 200px); }
+  .venue-label { position: static; grid-column: 1 / -1; border-radius: 0; padding: 1.5rem; }
+}
