@@ -3,34 +3,17 @@ export default function Agenda() {
     <div className="framer-1hq4t3i" data-framer-name="Container">
       <div className="framer-11etxkz" data-framer-name="Title">
         <div className="framer-gi35s8">
-          <div className="ssr-variant hidden-1or7vws">
-            <div
-              className="framer-5d88hp"
-              data-framer-component-type="RichTextContainer"
-              style={{ transform: 'none' }}
+          <div
+            className="framer-5d88hp"
+            data-framer-component-type="RichTextContainer"
+            style={{ transform: 'none' }}
+          >
+            <h2
+              className="framer-text framer-styles-preset-s1qxc7 center-mobile"
+              data-styles-preset="GP3w7rUvI"
             >
-              <h2
-                className="framer-text framer-styles-preset-s1qxc7"
-                data-styles-preset="GP3w7rUvI"
-              >
-                Agenda
-              </h2>
-            </div>
-          </div>
-          <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-            <div
-              className="framer-5d88hp"
-              data-framer-component-type="RichTextContainer"
-              style={{ transform: 'none' }}
-            >
-              <h2
-                className="framer-text framer-styles-preset-s1qxc7"
-                data-styles-preset="GP3w7rUvI"
-                style={{ '--framer-text-alignment': 'center' }}
-              >
-                Agenda
-              </h2>
-            </div>
+              Agenda
+            </h2>
           </div>
         </div>
       </div>
@@ -45,7 +28,6 @@ export default function Agenda() {
       >
         <div className="framer-1rq6255" data-framer-name="Title">
           <div className="framer-1kraz36" data-framer-name="Date">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-156ipi2"
                 data-framer-component-type="RichTextContainer"
@@ -59,52 +41,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   21 Novembre 2025
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-156ipi2"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  21 Novembre 2025
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-156ipi2"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  21 Novembre 2025
-                </p>
-              </div>
-            </div>
             <div
               className="framer-13p4kll"
               data-framer-component-type="RichTextContainer"
@@ -209,7 +150,6 @@ export default function Agenda() {
         </div>
         <div className="framer-o5gttn" data-border="true" data-framer-name="Details">
           <div className="framer-1v15kav">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-56tq2c"
                 data-framer-component-type="RichTextContainer"
@@ -223,55 +163,13 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   18h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-56tq2c"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  18h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-56tq2c"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  18h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1fevzoe">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-pq1f6r"
                 data-framer-component-type="RichTextContainer"
@@ -285,58 +183,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Accueil
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-pq1f6r"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Accueil
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-pq1f6r"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Accueil
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-mlj4lx hidden-1or7vws"></div>
         </div>
         <div className="framer-4qzhxm" data-border="true" data-framer-name="Details">
           <div className="framer-bv3687">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1qhqqw2"
                 data-framer-component-type="RichTextContainer"
@@ -350,52 +206,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   19h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1qhqqw2"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1qhqqw2"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-icljuz">
             <div
@@ -416,7 +231,6 @@ export default function Agenda() {
                 Démarrage de Startup Weekend
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-vzdolo"
                 data-framer-component-type="RichTextContainer"
@@ -430,52 +244,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Lancement du weekend.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-vzdolo"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Lancement du weekend.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-vzdolo"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Lancement du weekend.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-w4if0e">
             <div className="framer-pu77hp" data-border="true" data-framer-name="Speaker">
@@ -548,7 +321,6 @@ export default function Agenda() {
         </div>
         <div className="framer-1j4ki3v" data-border="true" data-framer-name="Details">
           <div className="framer-gzhepb">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-8tu1qk"
                 data-framer-component-type="RichTextContainer"
@@ -562,52 +334,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   20h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-8tu1qk"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-8tu1qk"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-24tcck">
             <div
@@ -628,7 +359,6 @@ export default function Agenda() {
                 Pitch fire
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-rf3ek1"
                 data-framer-component-type="RichTextContainer"
@@ -642,58 +372,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Présentation en 1min des idées.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-rf3ek1"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Présentation en 1min des idées.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-rf3ek1"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Présentation en 1min des idées.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1qb846m hidden-1or7vws"></div>
         </div>
         <div className="framer-16mhl4d" data-border="true" data-framer-name="Details">
           <div className="framer-14tof8r">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-806995"
                 data-framer-component-type="RichTextContainer"
@@ -707,52 +395,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   20h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-806995"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-806995"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-m4uv17">
             <div
@@ -773,7 +420,6 @@ export default function Agenda() {
                 Vote et repas
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1rbkgp"
                 data-framer-component-type="RichTextContainer"
@@ -787,58 +433,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Chaque participants vote pour ses projets préférés.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1rbkgp"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Chaque participants vote pour ses projets préférés.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1rbkgp"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Chaque participants vote pour ses projets préférés.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-m3plno hidden-1or7vws"></div>
         </div>
         <div className="framer-19mnvmg" data-border="true" data-framer-name="Details">
           <div className="framer-fejvux">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-ue7sxx"
                 data-framer-component-type="RichTextContainer"
@@ -852,52 +456,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   21h15
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-ue7sxx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  21h15
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-ue7sxx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  21h15
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-14bt910">
             <div
@@ -918,7 +481,6 @@ export default function Agenda() {
                 REX entrepreneure
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1jpfrv"
                 data-framer-component-type="RichTextContainer"
@@ -932,52 +494,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Par Claire Bretton de Underdog
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1jpfrv"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Par Claire Bretton de Underdog
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1jpfrv"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Par Claire Bretton de Underdog
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-525a6o">
             <div className="framer-1uwg9tx" data-border="true" data-framer-name="Speaker">
@@ -1017,7 +538,6 @@ export default function Agenda() {
         </div>
         <div className="framer-ww3gj5" data-border="true" data-framer-name="Details">
           <div className="framer-k3rdz9">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-q329xq"
                 data-framer-component-type="RichTextContainer"
@@ -1031,52 +551,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   21h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-q329xq"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  21h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-q329xq"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  21h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1b1w8n5">
             <div
@@ -1097,7 +576,6 @@ export default function Agenda() {
                 Formation des équipes
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1lq4fed"
                 data-framer-component-type="RichTextContainer"
@@ -1111,58 +589,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Après l'annonce des projets retenus, les participants rejoignent une équipe.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1lq4fed"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Après l'annonce des projets retenus, les participants rejoignent une équipe.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1lq4fed"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Après l'annonce des projets retenus, les participants rejoignent une équipe.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-11qcene hidden-1or7vws"></div>
         </div>
         <div className="framer-nn6cno" data-border="true" data-framer-name="Details">
           <div className="framer-94zjrd">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-mhmyu4"
                 data-framer-component-type="RichTextContainer"
@@ -1176,52 +612,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   22h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-mhmyu4"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  22h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-mhmyu4"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  22h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-xyzrtx">
             <div
@@ -1242,7 +637,6 @@ export default function Agenda() {
                 Début du travail
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-rapm5l"
                 data-framer-component-type="RichTextContainer"
@@ -1256,58 +650,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les équipes découvrent leur espace de travail et démarrent le projet.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-rapm5l"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les équipes découvrent leur espace de travail et démarrent le projet.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-rapm5l"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les équipes découvrent leur espace de travail et démarrent le projet.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1b43lx hidden-1or7vws"></div>
         </div>
         <div className="framer-7wbalq" data-border="true" data-framer-name="Details">
           <div className="framer-racqg2">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-926py6"
                 data-framer-component-type="RichTextContainer"
@@ -1321,52 +673,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   1h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-926py6"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  1h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-926py6"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  1h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1w713zz">
             <div
@@ -1387,7 +698,6 @@ export default function Agenda() {
                 Fermeture des portes
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-ti1jt2"
                 data-framer-component-type="RichTextContainer"
@@ -1401,52 +711,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les participants sont invités à rentrer chez eux pour ne pas se cramer.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-ti1jt2"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les participants sont invités à rentrer chez eux pour ne pas se cramer.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-ti1jt2"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les participants sont invités à rentrer chez eux pour ne pas se cramer.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-3kr5fx hidden-1or7vws"></div>
         </div>
@@ -1462,7 +731,6 @@ export default function Agenda() {
       >
         <div className="framer-r0qz0u" data-framer-name="Title">
           <div className="framer-1urjm45" data-framer-name="Date">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1g9k13t"
                 data-framer-component-type="RichTextContainer"
@@ -1476,52 +744,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   22 Novembre 2025
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1g9k13t"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  22 Novembre 2025
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1g9k13t"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  22 Novembre 2025
-                </p>
-              </div>
-            </div>
             <div
               className="framer-s0qsmc"
               data-framer-component-type="RichTextContainer"
@@ -1626,7 +853,6 @@ export default function Agenda() {
         </div>
         <div className="framer-16djomb" data-border="true" data-framer-name="Details">
           <div className="framer-jrgp69">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-wly5qf"
                 data-framer-component-type="RichTextContainer"
@@ -1640,55 +866,13 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   8h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-wly5qf"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  8h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-wly5qf"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  8h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1xd6tcb">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-bghki5"
                 data-framer-component-type="RichTextContainer"
@@ -1702,58 +886,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Petit déjeuner
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-bghki5"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Petit déjeuner
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-bghki5"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Petit déjeuner
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-772bg4 hidden-1or7vws"></div>
         </div>
         <div className="framer-1shje4g" data-border="true" data-framer-name="Details">
           <div className="framer-68i5wb">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1ryx7sx"
                 data-framer-component-type="RichTextContainer"
@@ -1767,52 +909,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   9h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1ryx7sx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1ryx7sx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-w7d9py">
             <div
@@ -1833,7 +934,6 @@ export default function Agenda() {
                 Lancement de la journée
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1i209nd"
                 data-framer-component-type="RichTextContainer"
@@ -1847,52 +947,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Agenda et grandes étapes de la journée.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1i209nd"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Agenda et grandes étapes de la journée.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1i209nd"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Agenda et grandes étapes de la journée.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-127usu9">
             <div className="framer-ay09p9">
@@ -1967,7 +1026,6 @@ export default function Agenda() {
         </div>
         <div className="framer-1fkiqfg" data-border="true" data-framer-name="Details">
           <div className="framer-1i889l0">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-19vrrt1"
                 data-framer-component-type="RichTextContainer"
@@ -1981,52 +1039,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   9h15
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-19vrrt1"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h15
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-19vrrt1"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h15
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1r16uva">
             <div
@@ -2047,7 +1064,6 @@ export default function Agenda() {
                 Conférences : Marché + IA Générative
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1drurol"
                 data-framer-component-type="RichTextContainer"
@@ -2061,52 +1077,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Par Pauline Corriou et Simon Timssale
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1drurol"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Par Pauline Corriou et Simon Timssale
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1drurol"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Par Pauline Corriou et Simon Timssale
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-ikl98">
             <div className="framer-vidjzp">
@@ -2181,7 +1156,6 @@ export default function Agenda() {
         </div>
         <div className="framer-4e52ui" data-border="true" data-framer-name="Details">
           <div className="framer-xateo">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1pb9pcx"
                 data-framer-component-type="RichTextContainer"
@@ -2195,52 +1169,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   9h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1pb9pcx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1pb9pcx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-o54ts">
             <div
@@ -2261,7 +1194,6 @@ export default function Agenda() {
                 Équipes au travail
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1n6660z"
                 data-framer-component-type="RichTextContainer"
@@ -2275,58 +1207,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les coachs commencent à passer dans les équipes.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1n6660z"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les coachs commencent à passer dans les équipes.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1n6660z"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les coachs commencent à passer dans les équipes.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1sv0nv4 hidden-1or7vws"></div>
         </div>
         <div className="framer-ndx34m" data-border="true" data-framer-name="Details">
           <div className="framer-2ylwl7">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1c0rybr"
                 data-framer-component-type="RichTextContainer"
@@ -2340,55 +1230,13 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   12h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1c0rybr"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  12h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1c0rybr"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  12h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1k0ym4">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-ja3qjp"
                 data-framer-component-type="RichTextContainer"
@@ -2402,58 +1250,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Repas
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-ja3qjp"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Repas
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-ja3qjp"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Repas
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-g75mer hidden-1or7vws"></div>
         </div>
         <div className="framer-1ns7o25" data-border="true" data-framer-name="Details">
           <div className="framer-ye26go">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-uqzhlm"
                 data-framer-component-type="RichTextContainer"
@@ -2467,52 +1273,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   13h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-uqzhlm"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  13h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-uqzhlm"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  13h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-429k72">
             <div
@@ -2533,7 +1298,6 @@ export default function Agenda() {
                 Masterclass Pitch
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-l8lgon"
                 data-framer-component-type="RichTextContainer"
@@ -2547,52 +1311,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Par Florian Hervéou
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-l8lgon"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Par Florian Hervéou
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-l8lgon"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Par Florian Hervéou
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-177rmet">
             <div className="framer-10cwjnr" data-border="true" data-framer-name="Speaker">
@@ -2632,7 +1355,6 @@ export default function Agenda() {
         </div>
         <div className="framer-g5uzud" data-border="true" data-framer-name="Details">
           <div className="framer-1ctrykv">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-y5qtws"
                 data-framer-component-type="RichTextContainer"
@@ -2646,52 +1368,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   14h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-y5qtws"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  14h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-y5qtws"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  14h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-upjsdp">
             <div
@@ -2712,7 +1393,6 @@ export default function Agenda() {
                 Équipes au travail
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-111jlze"
                 data-framer-component-type="RichTextContainer"
@@ -2726,58 +1406,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les coachs continuent de passer dans les équipes
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-111jlze"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les coachs continuent de passer dans les équipes
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-111jlze"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les coachs continuent de passer dans les équipes
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-qrrx38 hidden-1or7vws"></div>
         </div>
         <div className="framer-1ek5s30" data-border="true" data-framer-name="Details">
           <div className="framer-14fmfkr">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1i7zetf"
                 data-framer-component-type="RichTextContainer"
@@ -2791,52 +1429,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   19h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1i7zetf"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1i7zetf"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-pk5if0">
             <div
@@ -2880,7 +1477,6 @@ export default function Agenda() {
         </div>
         <div className="framer-2txpuk" data-border="true" data-framer-name="Details">
           <div className="framer-q1v1ic">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-y08m62"
                 data-framer-component-type="RichTextContainer"
@@ -2894,55 +1490,13 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   19h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-y08m62"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-y08m62"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-emhux2">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-yp1qpx"
                 data-framer-component-type="RichTextContainer"
@@ -2956,58 +1510,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Repas
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-yp1qpx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Repas
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-yp1qpx"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Repas
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-pfvs7n hidden-1or7vws"></div>
         </div>
         <div className="framer-vv2pyp" data-border="true" data-framer-name="Details">
           <div className="framer-klmico">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-19dh0gy"
                 data-framer-component-type="RichTextContainer"
@@ -3021,52 +1533,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   20h30 - ∞
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-19dh0gy"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h30 - ∞
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-19dh0gy"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h30 - ∞
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1jv2vak">
             <div
@@ -3087,7 +1558,6 @@ export default function Agenda() {
                 Boulot
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-10t3hz5"
                 data-framer-component-type="RichTextContainer"
@@ -3101,55 +1571,12 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Jusqu'au bout de la nuit pour les plus téméraires (DJ Set de folie pour vous tenir
                   debout)
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-10t3hz5"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Jusqu'au bout de la nuit pour les plus téméraires (DJ Set de folie pour vous tenir
-                  debout)
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-10t3hz5"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Jusqu'au bout de la nuit pour les plus téméraires (DJ Set de folie pour vous tenir
-                  debout)
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-kw0aaq hidden-1or7vws"></div>
         </div>
@@ -3165,7 +1592,6 @@ export default function Agenda() {
       >
         <div className="framer-1s34zjh" data-framer-name="Title">
           <div className="framer-k2fexf" data-framer-name="Date">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1aa82y3"
                 data-framer-component-type="RichTextContainer"
@@ -3179,52 +1605,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   23 Novembre 2025
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1aa82y3"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  23 Novembre 2025
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1aa82y3"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  23 Novembre 2025
-                </p>
-              </div>
-            </div>
             <div
               className="framer-fpqdw3"
               data-framer-component-type="RichTextContainer"
@@ -3329,7 +1714,6 @@ export default function Agenda() {
         </div>
         <div className="framer-derbmy" data-border="true" data-framer-name="Details">
           <div className="framer-smmud1">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-e0dge8"
                 data-framer-component-type="RichTextContainer"
@@ -3343,55 +1727,13 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   8h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-e0dge8"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  8h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-e0dge8"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  8h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-kpw6ir">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-159d46c"
                 data-framer-component-type="RichTextContainer"
@@ -3405,58 +1747,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Petit déjeuner
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-159d46c"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Petit déjeuner
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-159d46c"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Petit déjeuner
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-6frsot hidden-1or7vws"></div>
         </div>
         <div className="framer-1w1esf9" data-border="true" data-framer-name="Details">
           <div className="framer-u7sesn">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1da01r"
                 data-framer-component-type="RichTextContainer"
@@ -3470,52 +1770,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   9h15
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1da01r"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h15
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1da01r"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h15
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-13pziqu">
             <div
@@ -3536,7 +1795,6 @@ export default function Agenda() {
                 Lancement de la journée
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-moh8m1"
                 data-framer-component-type="RichTextContainer"
@@ -3550,52 +1808,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Agenda et grandes étapes de la journée.
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-moh8m1"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Agenda et grandes étapes de la journée.
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-moh8m1"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Agenda et grandes étapes de la journée.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-35m5b4">
             <div className="framer-k6j7wb">
@@ -3670,7 +1887,6 @@ export default function Agenda() {
         </div>
         <div className="framer-1nv7q70" data-border="true" data-framer-name="Details">
           <div className="framer-y0ojzh">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1dq5wtf"
                 data-framer-component-type="RichTextContainer"
@@ -3684,52 +1900,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   9h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1dq5wtf"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1dq5wtf"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  9h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1g991pn">
             <div
@@ -3750,7 +1925,6 @@ export default function Agenda() {
                 Coaching session
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-g2x09b"
                 data-framer-component-type="RichTextContainer"
@@ -3764,58 +1938,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les coachs passent dans les équipes
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-g2x09b"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les coachs passent dans les équipes
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-g2x09b"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les coachs passent dans les équipes
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-7sn9uy hidden-1or7vws"></div>
         </div>
         <div className="framer-1s9qew7" data-border="true" data-framer-name="Details">
           <div className="framer-tv7ldx">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-bxb986"
                 data-framer-component-type="RichTextContainer"
@@ -3829,52 +1961,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   11h15
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-bxb986"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  11h15
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-bxb986"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  11h15
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-lgeobx">
             <div
@@ -3895,7 +1986,6 @@ export default function Agenda() {
                 MVP Time
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1b5s0qv"
                 data-framer-component-type="RichTextContainer"
@@ -3909,58 +1999,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   C'est l'heure de mettre ton projet en face d'un client potentiel !
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1b5s0qv"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  C'est l'heure de mettre ton projet en face d'un client potentiel !
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1b5s0qv"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  C'est l'heure de mettre ton projet en face d'un client potentiel !
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1jfe5nv hidden-1or7vws"></div>
         </div>
         <div className="framer-1g49gys" data-border="true" data-framer-name="Details">
           <div className="framer-1x25yd1">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-7xqlw6"
                 data-framer-component-type="RichTextContainer"
@@ -3974,55 +2022,13 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   12h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-7xqlw6"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  12h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-7xqlw6"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  12h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-4rsobw">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-bcaec9"
                 data-framer-component-type="RichTextContainer"
@@ -4036,58 +2042,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Repas
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-bcaec9"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Repas
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-bcaec9"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Repas
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-ge4pzs hidden-1or7vws"></div>
         </div>
         <div className="framer-9y1j0d" data-border="true" data-framer-name="Details">
           <div className="framer-8qvhk0">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-daqamg"
                 data-framer-component-type="RichTextContainer"
@@ -4101,52 +2065,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   13h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-daqamg"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  13h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-daqamg"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  13h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1ysj2i5">
             <div
@@ -4167,7 +2090,6 @@ export default function Agenda() {
                 Pitch Training
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-9w46sq"
                 data-framer-component-type="RichTextContainer"
@@ -4181,58 +2103,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   2ème session d'entrainement au pitch
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-9w46sq"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  2ème session d'entrainement au pitch
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-9w46sq"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  2ème session d'entrainement au pitch
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1s5x2hi hidden-1or7vws"></div>
         </div>
         <div className="framer-1s014jx" data-border="true" data-framer-name="Details">
           <div className="framer-7ljah9">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-722pgs"
                 data-framer-component-type="RichTextContainer"
@@ -4246,52 +2126,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   17h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-722pgs"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  17h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-722pgs"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  17h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1wryx2v">
             <div
@@ -4312,7 +2151,6 @@ export default function Agenda() {
                 Cérémonie des pitchs
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1gfrbuk"
                 data-framer-component-type="RichTextContainer"
@@ -4326,52 +2164,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les participants présentent leur projet devant un jury prestigieux
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1gfrbuk"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les participants présentent leur projet devant un jury prestigieux
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1gfrbuk"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les participants présentent leur projet devant un jury prestigieux
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1abs7bb">
             <div className="framer-om3jec">
@@ -4446,7 +2243,6 @@ export default function Agenda() {
         </div>
         <div className="framer-zp1vgg" data-border="true" data-framer-name="Details">
           <div className="framer-10nrgg9">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1olncpw"
                 data-framer-component-type="RichTextContainer"
@@ -4460,52 +2256,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   19h30
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1olncpw"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h30
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1olncpw"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  19h30
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-19vkov2">
             <div
@@ -4526,7 +2281,6 @@ export default function Agenda() {
                 Délibération du jury
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1cgsvfc"
                 data-framer-component-type="RichTextContainer"
@@ -4540,58 +2294,16 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Le jury se retire pour délibérer et annoncer les gagnants
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1cgsvfc"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Le jury se retire pour délibérer et annoncer les gagnants
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1cgsvfc"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Le jury se retire pour délibérer et annoncer les gagnants
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1fg2rwq"></div>
         </div>
         <div className="framer-138unfq" data-border="true" data-framer-name="Details">
           <div className="framer-b9a1sk">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-cyklfh"
                 data-framer-component-type="RichTextContainer"
@@ -4605,52 +2317,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   20h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-cyklfh"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-cyklfh"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-bd2e4h">
             <div
@@ -4671,7 +2342,6 @@ export default function Agenda() {
                 Annonce des gagnants
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-prsndn"
                 data-framer-component-type="RichTextContainer"
@@ -4685,52 +2355,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Le jury annonce les gagnants de cette 16ème édition du Startup Weekend Nantes !
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-prsndn"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Le jury annonce les gagnants de cette 16ème édition du Startup Weekend Nantes !
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-prsndn"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Le jury annonce les gagnants de cette 16ème édition du Startup Weekend Nantes !
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-13lwm6n hidden-1or7vws">
             <div className="framer-vazf6j"></div>
@@ -4738,7 +2367,6 @@ export default function Agenda() {
         </div>
         <div className="framer-1yeev67" data-border="true" data-framer-name="Details">
           <div className="framer-nbs14m">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1vjv2e4"
                 data-framer-component-type="RichTextContainer"
@@ -4752,52 +2380,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   20h45
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1vjv2e4"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h45
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1vjv2e4"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  20h45
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-iy52bc">
             <div
@@ -4818,7 +2405,6 @@ export default function Agenda() {
                 Cocktail
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1k9vlb6"
                 data-framer-component-type="RichTextContainer"
@@ -4832,52 +2418,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Les participants et le public sont invités à prendre un petit cocktail final
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1k9vlb6"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les participants et le public sont invités à prendre un petit cocktail final
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1k9vlb6"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Les participants et le public sont invités à prendre un petit cocktail final
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-11qc7a hidden-1or7vws">
             <div className="framer-gi6l2v"></div>
@@ -4885,7 +2430,6 @@ export default function Agenda() {
         </div>
         <div className="framer-jze0hy" data-border="true" data-framer-name="Details">
           <div className="framer-1d8tv81">
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-3iy8kv"
                 data-framer-component-type="RichTextContainer"
@@ -4899,52 +2443,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   22h
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-3iy8kv"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  22h
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-3iy8kv"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  22h
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-1lthcj3">
             <div
@@ -4965,7 +2468,6 @@ export default function Agenda() {
                 Fin de Startup Weekend
               </h6>
             </div>
-            <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
               <div
                 className="framer-1cup3dp"
                 data-framer-component-type="RichTextContainer"
@@ -4979,52 +2481,11 @@ export default function Agenda() {
                     '--framer-line-height': '1.5em',
                     '--framer-text-color': 'rgb(255, 255, 255)',
                   }}
-                  className="framer-text"
+                  className="framer-text font-sm-nondesktop"
                 >
                   Fin de cette édition du Startup Weekend
                 </p>
               </div>
-            </div>
-            <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-              <div
-                className="framer-1cup3dp"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Fin de cette édition du Startup Weekend
-                </p>
-              </div>
-            </div>
-            <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-              <div
-                className="framer-1cup3dp"
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <p
-                  style={{
-                    '--font-selector': 'R0Y7T3hhbml1bS1yZWd1bGFy',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '15px',
-                    '--framer-line-height': '1.5em',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  Fin de cette édition du Startup Weekend
-                </p>
-              </div>
-            </div>
           </div>
           <div className="framer-3r3x7l hidden-1or7vws">
             <div className="framer-1wbrtja"></div>
