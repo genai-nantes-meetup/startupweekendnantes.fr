@@ -81,10 +81,7 @@ const row2: GlimpseImage[] = [
 function GlimpseImg({ figureClass, src, srcSet, sizes, alt, objectPosition }: GlimpseImage) {
   return (
     <figure as="figure" className={figureClass}>
-      <div
-        style={{ position: 'absolute', borderRadius: 'inherit', top: '0', right: '0', bottom: '0', left: '0' }}
-        data-framer-background-image-wrapper="true"
-      >
+      <div data-framer-background-image-wrapper="true">
         <img
           decoding="async"
           loading="lazy"
@@ -92,14 +89,7 @@ function GlimpseImg({ figureClass, src, srcSet, sizes, alt, objectPosition }: Gl
           srcSet={srcSet}
           src={src}
           alt={alt}
-          style={{
-            display: 'block',
-            width: '100%',
-            height: '100%',
-            borderRadius: 'inherit',
-            objectPosition: objectPosition ?? 'center',
-            objectFit: 'cover',
-          }}
+          {...(objectPosition && { style: { objectPosition } })}
         />
       </div>
     </figure>
@@ -128,7 +118,6 @@ export default function PastGlimpse() {
         <div
           className="framer-14wdi02"
           data-framer-component-type="RichTextContainer"
-          style={{ transform: 'none' }}
         >
           {/* Mobile shows shorter title without "Nantes" */}
           <h2

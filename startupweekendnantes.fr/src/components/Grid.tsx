@@ -205,15 +205,7 @@ export default function Grid() {
               <div className="ssr-variant hidden-1or7vws">
                 <div className={imgDivClass} data-framer-name="Image">
                   <div
-                    style={{
-                      position: 'absolute',
-                      borderRadius: 'inherit',
-                      top: '0',
-                      right: '0',
-                      bottom: '0',
-                      left: '0',
-                    }}
-                    data-framer-background-image-wrapper="true"
+          data-framer-background-image-wrapper="true"
                   >
                     <img
                       decoding="async"
@@ -242,15 +234,7 @@ export default function Grid() {
               <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
                 <div className={imgDivClass} data-framer-name="Image">
                   <div
-                    style={{
-                      position: 'absolute',
-                      borderRadius: 'inherit',
-                      top: '0',
-                      right: '0',
-                      bottom: '0',
-                      left: '0',
-                    }}
-                    data-framer-background-image-wrapper="true"
+          data-framer-background-image-wrapper="true"
                   >
                     <img
                       decoding="async"
@@ -280,7 +264,6 @@ export default function Grid() {
                 <div
                   className={nameClass}
                   data-framer-component-type="RichTextContainer"
-                  style={{ transform: 'none' }}
                 >
                   <h3
                     className="framer-text framer-styles-preset-1xb2uvs"
@@ -292,7 +275,6 @@ export default function Grid() {
                 <div
                   className={roleClass}
                   data-framer-component-type="RichTextContainer"
-                  style={{ transform: 'none' }}
                 >
                   <p
                     className="framer-text framer-styles-preset-1pwt84p"

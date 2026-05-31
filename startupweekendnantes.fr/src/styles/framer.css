@@ -5772,3 +5772,71 @@ NavigationContainer [data-framer-component-type='NavigationContainer'] > *,
 .framer-formspark-input::placeholder {
   color: var(--framer-formspark-placeholder-color) !important;
 }
+
+/* === Component utilities (React rewrite) === */
+
+/* Image wrapper: replaces inline position/inset styles */
+[data-framer-background-image-wrapper='true'] {
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+}
+[data-framer-background-image-wrapper='true'] img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* RichTextContainer: replaces inline transform:none */
+[data-framer-component-type='RichTextContainer'] {
+  transform: none;
+}
+
+/* Typography tokens */
+.text-body {
+  --font-selector: R0Y7T3hhbml1bS1yZWd1bGFy;
+  --framer-font-family: '&quot';
+  --framer-font-size: 18px;
+  --framer-line-height: 1.5em;
+  --framer-text-color: rgb(255, 255, 255);
+}
+.text-agenda-title {
+  --font-selector: Q1VTVE9NO0FncmFuZGlyIEdyYW5kIEhlYXZ5;
+  --framer-font-family: '&quot';
+  --framer-font-size: 20px;
+  --framer-line-height: 1em;
+  --framer-text-color: rgb(255, 255, 255);
+}
+.text-agenda-day {
+  --font-selector: Q1VTVE9NO0FncmFuZGlyIEdyYW5kIEhlYXZ5;
+  --framer-font-family: '&quot';
+  --framer-font-size: 24px;
+  --framer-text-color: rgb(255, 255, 255);
+  --framer-text-transform: uppercase;
+}
+.text-agenda-label {
+  --font-selector: Q1VTVE9NO0FncmFuZGlyIEdyYW5kIEhlYXZ5;
+  --framer-font-family: '&quot';
+  --framer-font-size: 18px;
+  --framer-text-color: var(--token-47e60ac2-bf54-46d5-b335-1a25fa14d0c2, rgb(14, 2, 24));
+}
+.text-member-name {
+  --font-selector: R0Y7RGVsYSBHb3RoaWMgT25lLXJlZ3VsYXI=;
+  --framer-font-family: '&quot';
+  --framer-font-size: 24px;
+  --framer-text-color: rgb(255, 255, 255);
+}
+.text-faq-question {
+  --font-selector: Q1VTVE9NO0hlbHZldGljYSBCb2xk;
+  --framer-font-family: '&quot';
+  --framer-font-size: 20px;
+  --framer-line-height: 1.5em;
+  --framer-text-color: rgb(255, 255, 255);
+}
+.text-center {
+  --framer-text-alignment: center;
+  text-align: center;
+}

@@ -26,7 +26,6 @@ export default function FAQ() {
       <div
         className="framer-11biefp"
         data-framer-component-type="RichTextContainer"
-        style={{ transform: 'none' }}
       >
         <h2
           className="framer-text framer-styles-preset-s1qxc7"
@@ -61,21 +60,9 @@ export default function FAQ() {
                     '--extracted-1w1cjl5': 'rgb(255, 255, 255)',
                     '--framer-link-text-color': 'rgb(0, 153, 255)',
                     '--framer-link-text-decoration': 'underline',
-                    transform: 'none',
                   }}
                 >
-                  <h6
-                    className="framer-text"
-                    style={{
-                      '--font-selector': 'Q1VTVE9NO0hlbHZldGljYSBCb2xk',
-                      '--framer-font-family': '&quot',
-                      '--framer-font-size': '20px',
-                      '--framer-line-height': '1.5em',
-                      '--framer-text-color': 'var(--extracted-1w1cjl5, rgb(255, 255, 255))',
-                    }}
-                  >
-                    {q}
-                  </h6>
+                  <h6 className="framer-text text-faq-question">{q}</h6>
                 </div>
                 <div
                   className="framer-123uex6"

@@ -283,7 +283,6 @@ export default function Team() {
             <div
               className="framer-ee21g2"
               data-framer-component-type="RichTextContainer"
-              style={{ transform: 'none' }}
             >
               <h2
                 className="framer-text framer-styles-preset-s1qxc7 center-mobile"
@@ -297,7 +296,6 @@ export default function Team() {
             <div
               className="framer-vc5uhs"
               data-framer-component-type="RichTextContainer"
-              style={{ transform: 'none' }}
             >
               <p
                 className="framer-text framer-styles-preset-1pwt84p center-mobile"
@@ -320,17 +318,7 @@ export default function Team() {
           {members.map(({ containerClass, figureClass, figureStyle, img, nameClass, name, roleClass, role }) => (
             <div key={containerClass} className={containerClass}>
               <figure as="figure" className={figureClass} style={figureStyle}>
-                <div
-                  style={{
-                    position: 'absolute',
-                    borderRadius: 'inherit',
-                    top: '0',
-                    right: '0',
-                    bottom: '0',
-                    left: '0',
-                  }}
-                  data-framer-background-image-wrapper="true"
-                >
+                <div data-framer-background-image-wrapper="true">
                   <img
                     decoding="async"
                     loading="lazy"
@@ -340,39 +328,14 @@ export default function Team() {
                     {...(img.srcSet && { srcSet: img.srcSet })}
                     src={img.src}
                     alt={img.alt}
-                    style={{
-                      display: 'block',
-                      width: '100%',
-                      height: '100%',
-                      borderRadius: 'inherit',
-                      objectPosition: img.objectPosition ?? 'center',
-                      objectFit: 'cover',
-                    }}
+                    {...(img.objectPosition && { style: { objectPosition: img.objectPosition } })}
                   />
                 </div>
               </figure>
-              <div
-                className={nameClass}
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
-                <h6
-                  style={{
-                    '--font-selector': 'R0Y7RGVsYSBHb3RoaWMgT25lLXJlZ3VsYXI=',
-                    '--framer-font-family': '&quot',
-                    '--framer-font-size': '24px',
-                    '--framer-text-color': 'rgb(255, 255, 255)',
-                  }}
-                  className="framer-text"
-                >
-                  {name}
-                </h6>
+              <div className={nameClass} data-framer-component-type="RichTextContainer">
+                <h6 className="framer-text text-member-name">{name}</h6>
               </div>
-              <div
-                className={roleClass}
-                data-framer-component-type="RichTextContainer"
-                style={{ transform: 'none' }}
-              >
+              <div className={roleClass} data-framer-component-type="RichTextContainer">
                 <p
                   className="framer-text framer-styles-preset-1pwt84p"
                   data-styles-preset="A8o4HivZV"

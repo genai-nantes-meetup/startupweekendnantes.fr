@@ -7,7 +7,6 @@ export default function SponsorsFooter() {
             <div
               className="framer-xsmasb"
               data-framer-component-type="RichTextContainer"
-              style={{ transform: 'none' }}
             >
               <h2
                 className="framer-text framer-styles-preset-s1qxc7 center-mobile"
