@@ -1,1 +1,15 @@
-@media(min-width: 1240px){.hidden-72rtr7{display:none!important}}@media(min-width: 768px) and (max-width: 1239.98px){.hidden-1eym36j{display:none!important}}@media(max-width: 767.98px){.hidden-1or7vws{display:none!important}}
+@media (min-width: 1240px) {
+  .hidden-72rtr7 {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1239.98px) {
+  .hidden-1eym36j {
+    display: none !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .hidden-1or7vws {
+    display: none !important;
+  }
+}
