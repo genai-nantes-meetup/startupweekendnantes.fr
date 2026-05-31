@@ -17,7 +17,7 @@ export default function Aftermovie() {
             style={{ transform: 'none' }}
           >
             <h2 className="framer-text framer-styles-preset-s1qxc7" data-styles-preset="GP3w7rUvI">
-              Revivez les moments forts de l'édition 2024 !
+              Revivez les moments forts de l&apos;édition 2024 !
             </h2>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Aftermovie() {
                 className="framer-text framer-styles-preset-1b91yk6"
                 data-styles-preset="BPnPFkHPb"
               >
-                L'aftermovie
+                L&apos;aftermovie
               </h6>
             </div>
             <div className="framer-1fqb07z-container">
@@ -153,7 +153,7 @@ export default function Aftermovie() {
                     <path
                       d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
                       fill="#212121"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                       style={{
                         transition:
                           'fill .1s cubic-bezier(0.4, 0, 1, 1), fill-opacity .1s cubic-bezier(0.4, 0, 1, 1)',

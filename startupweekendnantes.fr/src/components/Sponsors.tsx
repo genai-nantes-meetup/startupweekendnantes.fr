@@ -52,7 +52,6 @@ export default function Sponsors() {
             <div className="framer-19396m2">
               <div className="ssr-variant hidden-1eym36j">
                 <figure
-                  as="figure"
                   className="framer-1ac13pc hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(2.7)' }}
@@ -74,7 +73,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(232px, 100vw), (max-width: 767.98px) max(232px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(125px, 100vw)"
-                      srcset="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
                       src="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -92,7 +91,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-1ac13pc hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(2.7)' }}
@@ -114,7 +112,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(232px, 100vw), (max-width: 767.98px) max(232px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(125px, 100vw)"
-                      srcset="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
                       src="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -132,7 +130,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j">
                 <figure
-                  as="figure"
                   className="framer-1az8dn8 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.3)' }}
@@ -154,7 +151,7 @@ export default function Sponsors() {
                       width="1200"
                       height="208"
                       sizes="(min-width: 1240px) 287px, (max-width: 767.98px) 287px, (min-width: 768px) and (max-width: 1239.98px) 114px"
-                      srcset="/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=512&width=1200&height=208 512w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=1024&width=1200&height=208 1024w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?width=1200&height=208 1200w"
+                      srcSet="/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=512&width=1200&height=208 512w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=1024&width=1200&height=208 1024w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?width=1200&height=208 1200w"
                       src="/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=512&width=1200&height=208"
                       alt="Connect logo"
                       style={{
@@ -172,7 +169,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-1az8dn8 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.3)' }}
@@ -194,7 +190,7 @@ export default function Sponsors() {
                       width="1200"
                       height="208"
                       sizes="(min-width: 1240px) 287px, (max-width: 767.98px) 287px, (min-width: 768px) and (max-width: 1239.98px) 114px"
-                      srcset="/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=512&width=1200&height=208 512w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=1024&width=1200&height=208 1024w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?width=1200&height=208 1200w"
+                      srcSet="/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=512&width=1200&height=208 512w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=1024&width=1200&height=208 1024w,/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?width=1200&height=208 1200w"
                       src="/assets/images/iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg?scale-down-to=512&width=1200&height=208"
                       alt="Connect logo"
                       style={{
@@ -212,7 +208,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j">
                 <figure
-                  as="figure"
                   className="framer-q13q6p hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -232,7 +227,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -251,7 +246,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-q13q6p hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -273,7 +267,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(100vw, 279px), (max-width: 767.98px) max(100vw, 279px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(190px, 279px, 100vw)"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -291,7 +285,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j">
                 <figure
-                  as="figure"
                   className="framer-117qq14 hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -311,7 +304,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
                       src="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -330,7 +323,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-117qq14 hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -352,7 +344,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) 100vw, (max-width: 767.98px) 100vw, (min-width: 768px) and (max-width: 1239.98px) 132px"
-                      srcset="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
                       src="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -369,7 +361,6 @@ export default function Sponsors() {
                 </figure>
               </div>
               <figure
-                as="figure"
                 className="framer-faypol hidden-1eym36j hidden-1or7vws"
                 data-framer-name="connect"
               >
@@ -390,7 +381,7 @@ export default function Sponsors() {
                     width="1080"
                     height="1080"
                     sizes="(min-width: 1240px) max(100vw, 279px), (max-width: 767.98px) max(100vw, 279px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(190px, 279px, 100vw)"
-                    srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                    srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                     src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080"
                     alt="Connect logo"
                     style={{
@@ -407,7 +398,6 @@ export default function Sponsors() {
               </figure>
               <div className="ssr-variant hidden-1or7vws">
                 <figure
-                  as="figure"
                   className="framer-q5a6oi hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -426,7 +416,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
                       src="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -445,7 +435,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-q5a6oi hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -466,7 +455,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(232px, 100vw), (max-width: 767.98px) max(232px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(125px, 100vw)"
-                      srcset="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
                       src="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -484,7 +473,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws">
                 <figure
-                  as="figure"
                   className="framer-1jaloqx hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -503,7 +491,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -522,7 +510,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-1jaloqx hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -543,7 +530,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(100vw, 279px), (max-width: 767.98px) max(100vw, 279px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(190px, 279px, 100vw)"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -567,7 +554,6 @@ export default function Sponsors() {
             <div className="framer-1sh3ayk">
               <div className="ssr-variant hidden-1eym36j">
                 <figure
-                  as="figure"
                   className="framer-1hodwm2 hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -587,7 +573,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -606,7 +592,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-1hodwm2 hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -628,7 +613,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(100vw, 279px), (max-width: 767.98px) max(100vw, 279px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(190px, 279px, 100vw)"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -646,7 +631,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j">
                 <figure
-                  as="figure"
                   className="framer-c8b9wb hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -666,7 +650,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
                       src="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -685,7 +669,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-c8b9wb hidden-72rtr7 hidden-1or7vws"
                   data-framer-name="connect"
                   style={{ transform: 'scale(1.7)' }}
@@ -707,7 +690,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) 100vw, (max-width: 767.98px) 100vw, (min-width: 768px) and (max-width: 1239.98px) 132px"
-                      srcset="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?width=1080&height=1080 1080w"
                       src="/assets/images/EDMg14FPF2fbf3pwxS7zxWh9Ho.png?scale-down-to=512&width=1080&height=1080"
                       alt="Connect logo"
                       style={{
@@ -724,7 +707,6 @@ export default function Sponsors() {
                 </figure>
               </div>
               <figure
-                as="figure"
                 className="framer-ea1yzs hidden-1eym36j hidden-1or7vws"
                 data-framer-name="connect"
                 style={{ transform: 'scale(2.6)' }}
@@ -746,7 +728,7 @@ export default function Sponsors() {
                     width="1080"
                     height="855"
                     sizes="(min-width: 1240px) 194px, (min-width: 768px) and (max-width: 1239.98px) 194px, (max-width: 767.98px) 194px"
-                    srcset="/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?scale-down-to=512&width=1080&height=855 512w,/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?scale-down-to=1024&width=1080&height=855 1024w,/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?width=1080&height=855 1080w"
+                    srcSet="/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?scale-down-to=512&width=1080&height=855 512w,/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?scale-down-to=1024&width=1080&height=855 1024w,/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?width=1080&height=855 1080w"
                     src="/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png?width=1080&height=855"
                     alt="Connect logo"
                     style={{
@@ -762,7 +744,6 @@ export default function Sponsors() {
                 </div>
               </figure>
               <figure
-                as="figure"
                 className="framer-1c9qgrm hidden-1eym36j hidden-1or7vws"
                 data-framer-name="connect"
               >
@@ -783,7 +764,7 @@ export default function Sponsors() {
                     width="6198"
                     height="1545"
                     sizes="(min-width: 1240px) 302px, (min-width: 768px) and (max-width: 1239.98px) 302px, (max-width: 767.98px) 302px"
-                    srcset="/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=512&width=6198&height=1545 512w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=1024&width=6198&height=1545 1024w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=2048&width=6198&height=1545 2048w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=4096&width=6198&height=1545 4096w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?width=6198&height=1545 6198w"
+                    srcSet="/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=512&width=6198&height=1545 512w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=1024&width=6198&height=1545 1024w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=2048&width=6198&height=1545 2048w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=4096&width=6198&height=1545 4096w,/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?width=6198&height=1545 6198w"
                     src="/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png?scale-down-to=2048&width=6198&height=1545"
                     alt="Connect logo"
                     style={{
@@ -799,7 +780,6 @@ export default function Sponsors() {
                 </div>
               </figure>
               <figure
-                as="figure"
                 className="framer-5j31cs hidden-1eym36j hidden-1or7vws"
                 data-framer-name="connect"
               >
@@ -820,7 +800,7 @@ export default function Sponsors() {
                     width="1310"
                     height="1390"
                     sizes="(min-width: 1240px) 228px, (min-width: 768px) and (max-width: 1239.98px) 228px, (max-width: 767.98px) 228px"
-                    srcset="/assets/images/C7lvJXp3dybbCUCltGehqzDyw4.png?scale-down-to=1024&width=1310&height=1390 965w,/assets/images/C7lvJXp3dybbCUCltGehqzDyw4.png?width=1310&height=1390 1310w"
+                    srcSet="/assets/images/C7lvJXp3dybbCUCltGehqzDyw4.png?scale-down-to=1024&width=1310&height=1390 965w,/assets/images/C7lvJXp3dybbCUCltGehqzDyw4.png?width=1310&height=1390 1310w"
                     src="/assets/images/C7lvJXp3dybbCUCltGehqzDyw4.png?width=1310&height=1390"
                     alt="Connect logo"
                     style={{
@@ -837,7 +817,6 @@ export default function Sponsors() {
               </figure>
               <div className="ssr-variant hidden-1or7vws">
                 <figure
-                  as="figure"
                   className="framer-pkbwi9 hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -856,7 +835,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
                       src="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -875,7 +854,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-pkbwi9 hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -896,7 +874,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(232px, 100vw), (max-width: 767.98px) max(232px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(125px, 100vw)"
-                      srcset="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080 1080w"
                       src="/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -914,7 +892,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1or7vws">
                 <figure
-                  as="figure"
                   className="framer-mbews8 hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -933,7 +910,7 @@ export default function Sponsors() {
                       decoding="async"
                       width="1080"
                       height="1080"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -952,7 +929,6 @@ export default function Sponsors() {
               </div>
               <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
                 <figure
-                  as="figure"
                   className="framer-mbews8 hidden-72rtr7 hidden-1eym36j"
                   data-framer-name="terraz"
                 >
@@ -973,7 +949,7 @@ export default function Sponsors() {
                       width="1080"
                       height="1080"
                       sizes="(min-width: 1240px) max(100vw, 279px), (max-width: 767.98px) max(100vw, 279px, calc((100vw - 40px) * 1.06), 1272px), (min-width: 768px) and (max-width: 1239.98px) max(190px, 279px, 100vw)"
-                      srcset="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
+                      srcSet="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=512&width=1080&height=1080 512w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?scale-down-to=1024&width=1080&height=1080 1024w,/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080 1080w"
                       src="/assets/images/mowMp6Vf0kSPXZHQB9N5E.png?width=1080&height=1080"
                       alt="Sponsor logo"
                       style={{
@@ -996,7 +972,6 @@ export default function Sponsors() {
           <div className="framer-a5ueqj" data-framer-name="Logos">
             <div className="framer-19ftfvc">
               <figure
-                as="figure"
                 className="framer-1a675nw"
                 data-framer-name="connect"
                 style={{ transform: 'scale(2.7)' }}
@@ -1018,7 +993,7 @@ export default function Sponsors() {
                     width="3001"
                     height="2401"
                     sizes="(min-width: 1240px) 132px, (min-width: 768px) and (max-width: 1239.98px) 132px, (max-width: 767.98px) 132px"
-                    srcset="/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=512&width=3001&height=2401 512w,/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=1024&width=3001&height=2401 1024w,/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=2048&width=3001&height=2401 2048w,/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?width=3001&height=2401 3001w"
+                    srcSet="/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=512&width=3001&height=2401 512w,/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=1024&width=3001&height=2401 1024w,/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=2048&width=3001&height=2401 2048w,/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?width=3001&height=2401 3001w"
                     src="/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png?scale-down-to=512&width=3001&height=2401"
                     alt="Connect logo"
                     style={{
@@ -1034,7 +1009,6 @@ export default function Sponsors() {
                 </div>
               </figure>
               <figure
-                as="figure"
                 className="framer-rg8tyb"
                 data-framer-name="connect"
                 style={{ transform: 'scale(1.3)' }}
@@ -1056,7 +1030,7 @@ export default function Sponsors() {
                     width="1040"
                     height="838"
                     sizes="(min-width: 1240px) 182px, (min-width: 768px) and (max-width: 1239.98px) 182px, (max-width: 767.98px) 182px"
-                    srcset="/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?scale-down-to=512&width=1040&height=838 512w,/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?scale-down-to=1024&width=1040&height=838 1024w,/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?width=1040&height=838 1040w"
+                    srcSet="/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?scale-down-to=512&width=1040&height=838 512w,/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?scale-down-to=1024&width=1040&height=838 1024w,/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?width=1040&height=838 1040w"
                     src="/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png?scale-down-to=512&width=1040&height=838"
                     alt="Connect logo"
                     style={{
@@ -1071,7 +1045,7 @@ export default function Sponsors() {
                   />
                 </div>
               </figure>
-              <figure as="figure" className="framer-qejfjm" data-framer-name="connect">
+              <figure className="framer-qejfjm" data-framer-name="connect">
                 <div
                   style={{
                     position: 'absolute',
@@ -1089,7 +1063,7 @@ export default function Sponsors() {
                     width="1570"
                     height="391"
                     sizes="(min-width: 1240px) 204px, (min-width: 768px) and (max-width: 1239.98px) 204px, (max-width: 767.98px) 204px"
-                    srcset="/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?scale-down-to=512&width=1570&height=391 512w,/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?scale-down-to=1024&width=1570&height=391 1024w,/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?width=1570&height=391 1570w"
+                    srcSet="/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?scale-down-to=512&width=1570&height=391 512w,/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?scale-down-to=1024&width=1570&height=391 1024w,/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?width=1570&height=391 1570w"
                     src="/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png?width=1570&height=391"
                     alt="Connect logo"
                     style={{
@@ -1109,7 +1083,6 @@ export default function Sponsors() {
               <div className="framer-u4ftjs" data-framer-name="Logos">
                 <div className="framer-1y5lfl3">
                   <figure
-                    as="figure"
                     className="framer-vqw9f6"
                     data-framer-name="connect"
                     style={{ transform: 'scale(2.6)' }}
@@ -1143,7 +1116,7 @@ export default function Sponsors() {
                       />
                     </div>
                   </figure>
-                  <figure as="figure" className="framer-jy7lz9" data-framer-name="connect">
+                  <figure className="framer-jy7lz9" data-framer-name="connect">
                     <div
                       style={{
                         position: 'absolute',
@@ -1173,7 +1146,7 @@ export default function Sponsors() {
                       />
                     </div>
                   </figure>
-                  <figure as="figure" className="framer-5dunrv" data-framer-name="connect">
+                  <figure className="framer-5dunrv" data-framer-name="connect">
                     <div
                       style={{
                         position: 'absolute',
@@ -1191,7 +1164,7 @@ export default function Sponsors() {
                         width="768"
                         height="458"
                         sizes="(min-width: 1240px) 235px, (min-width: 768px) and (max-width: 1239.98px) 235px, (max-width: 767.98px) 235px"
-                        srcset="/assets/images/0WtTlUnGSMQLo0YDGvoTdjyhMEc.png?scale-down-to=512&width=768&height=458 512w,/assets/images/0WtTlUnGSMQLo0YDGvoTdjyhMEc.png?width=768&height=458 768w"
+                        srcSet="/assets/images/0WtTlUnGSMQLo0YDGvoTdjyhMEc.png?scale-down-to=512&width=768&height=458 512w,/assets/images/0WtTlUnGSMQLo0YDGvoTdjyhMEc.png?width=768&height=458 768w"
                         src="/assets/images/0WtTlUnGSMQLo0YDGvoTdjyhMEc.png?width=768&height=458"
                         alt="Connect logo"
                         style={{

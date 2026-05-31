@@ -80,7 +80,7 @@ const row2: GlimpseImage[] = [
 
 function GlimpseImg({ figureClass, src, srcSet, sizes, alt, objectPosition }: GlimpseImage) {
   return (
-    <figure as="figure" className={figureClass}>
+    <figure className={figureClass}>
       <div data-framer-background-image-wrapper="true">
         <img
           decoding="async"
@@ -115,10 +115,7 @@ export default function PastGlimpse() {
           transform: 'perspective(1200px) scale(0.5)',
         }}
       >
-        <div
-          className="framer-14wdi02"
-          data-framer-component-type="RichTextContainer"
-        >
+        <div className="framer-14wdi02" data-framer-component-type="RichTextContainer">
           {/* Mobile shows shorter title without "Nantes" */}
           <h2
             className="framer-text framer-styles-preset-s1qxc7 hidden-1or7vws"

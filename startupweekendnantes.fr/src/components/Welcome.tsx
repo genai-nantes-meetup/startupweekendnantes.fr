@@ -1,6 +1,6 @@
 export default function Welcome() {
   return (
-    <figure as="figure" className="framer-1gbyf97" data-framer-name="Banner">
+    <figure className="framer-1gbyf97" data-framer-name="Banner">
       <div
         style={{
           position: 'absolute',
@@ -18,7 +18,7 @@ export default function Welcome() {
           width="2048"
           height="1361"
           sizes="(min-width: 1240px) 100vw, (min-width: 768px) and (max-width: 1239.98px) 100vw, (max-width: 767.98px) 100vw"
-          srcset="/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?scale-down-to=512&width=2048&height=1361 512w,/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?scale-down-to=1024&width=2048&height=1361 1024w,/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?width=2048&height=1361 2048w"
+          srcSet="/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?scale-down-to=512&width=2048&height=1361 512w,/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?scale-down-to=1024&width=2048&height=1361 1024w,/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?width=2048&height=1361 2048w"
           src="/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png?width=2048&height=1361"
           alt="Seminiar"
           style={{
@@ -88,7 +88,7 @@ export default function Welcome() {
               </li>
             </ul>
             <p className="framer-text framer-styles-preset-1pwt84p" data-styles-preset="A8o4HivZV">
-              Un seul objectif : créer, innover et s'éclater ensemble. 💥
+              Un seul objectif : créer, innover et s&apos;éclater ensemble. 💥
             </p>
           </div>
         </div>

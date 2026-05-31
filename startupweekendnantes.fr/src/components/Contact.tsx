@@ -4,9 +4,7 @@ export default function Contact() {
       <div className="framer-layjq2">
         <div className="framer-g9zdhz">
           <div className="framer-1tuhjfm" data-framer-name="SHIFT">
-            <div
-          data-framer-background-image-wrapper="true"
-            >
+            <div data-framer-background-image-wrapper="true">
               <img
                 decoding="async"
                 loading="lazy"
@@ -16,14 +14,11 @@ export default function Contact() {
                 srcSet="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348 512w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=1024&width=1080&height=348 1024w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?width=1080&height=348 1080w"
                 src="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348"
                 alt=""
-          style={{ objectPosition: 'left center', objectFit: 'contain' }}
+                style={{ objectPosition: 'left center', objectFit: 'contain' }}
               />
             </div>
           </div>
-          <div
-            className="framer-1edes3m"
-            data-framer-component-type="RichTextContainer"
-          >
+          <div className="framer-1edes3m" data-framer-component-type="RichTextContainer">
             <p style={{ '--framer-text-color': 'rgb(255, 255, 255)' }} className="framer-text">
               © 2025 Startup Weekend Nantes
               <br className="framer-text" />
@@ -32,20 +27,14 @@ export default function Contact() {
           </div>
         </div>
         <div className="framer-198hxyo">
-          <div
-            className="framer-16t7wce"
-            data-framer-component-type="RichTextContainer"
-          >
+          <div className="framer-16t7wce" data-framer-component-type="RichTextContainer">
             <h6 className="framer-text framer-styles-preset-yn2put" data-styles-preset="RhgdL2JJh">
               Nous Contacter
             </h6>
           </div>
-          <div
-            className="framer-16l19yk"
-            data-framer-component-type="RichTextContainer"
-          >
+          <div className="framer-16l19yk" data-framer-component-type="RichTextContainer">
             <p className="framer-text framer-styles-preset-1pwt84p" data-styles-preset="A8o4HivZV">
-              Une question ? N'hésite pas à nous contacter
+              Une question ? N&apos;hésite pas à nous contacter
             </p>
           </div>
           <div className="framer-15j60xu-container">

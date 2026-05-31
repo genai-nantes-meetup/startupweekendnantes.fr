@@ -17,7 +17,7 @@ export default function Hero() {
           width="1659"
           height="1361"
           sizes="(min-width: 1240px) 100vw, (min-width: 768px) and (max-width: 1239.98px) 100vw, (max-width: 767.98px) 100vw"
-          srcset="/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?scale-down-to=512&width=1659&height=1361 512w,/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?scale-down-to=1024&width=1659&height=1361 1024w,/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?width=1659&height=1361 1659w"
+          srcSet="/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?scale-down-to=512&width=1659&height=1361 512w,/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?scale-down-to=1024&width=1659&height=1361 1024w,/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?width=1659&height=1361 1659w"
           src="/assets/images/wMWsWm7njm6vmBfMVwkVaW4.png?width=1659&height=1361"
           alt
           style={{
@@ -109,7 +109,7 @@ export default function Hero() {
                 data-framer-name="Large Button"
                 href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: 'rgb(39, 168, 224)',
                   borderBottomLeftRadius: '4px',
@@ -154,7 +154,7 @@ export default function Hero() {
                 data-framer-name="Large Button Smaller"
                 href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: 'rgb(39, 168, 224)',
                   borderBottomLeftRadius: '4px',
@@ -200,7 +200,7 @@ export default function Hero() {
                 data-framer-name="Large Button Smaller"
                 href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: 'rgb(39, 168, 224)',
                   borderBottomLeftRadius: '4px',
@@ -243,7 +243,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1eym36j">
           <figure
-            as="figure"
             className="framer-114nj1y hidden-1or7vws"
             data-framer-appear-id="114nj1y"
             data-framer-name="Dots Image"
@@ -280,7 +279,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
           <figure
-            as="figure"
             className="framer-114nj1y hidden-1or7vws"
             data-framer-appear-id="114nj1y"
             data-framer-name="Dots Image"
@@ -317,7 +315,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1or7vws hidden-1eym36j">
           <figure
-            as="figure"
             className="framer-1woiq8n"
             data-framer-appear-id="1woiq8n"
             data-framer-name="Hero Image"
@@ -339,7 +336,7 @@ export default function Hero() {
                 width="1440"
                 height="1179"
                 sizes="(min-width: 1240px) 538px, (max-width: 767.98px) calc(min(100vw, 1240px) - 40px), (min-width: 768px) and (max-width: 1239.98px) 338px"
-                srcset="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=512&width=1440&height=1179 512w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=1024&width=1440&height=1179 1024w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179 1440w"
+                srcSet="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=512&width=1440&height=1179 512w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=1024&width=1440&height=1179 1024w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179 1440w"
                 src="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179"
                 alt="Hero image"
                 style={{
@@ -357,7 +354,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
           <figure
-            as="figure"
             className="framer-1woiq8n"
             data-framer-appear-id="1woiq8n"
             data-framer-name="Hero Image"
@@ -379,7 +375,7 @@ export default function Hero() {
                 width="1440"
                 height="1179"
                 sizes="(min-width: 1240px) 538px, (max-width: 767.98px) calc(min(100vw, 1240px) - 40px), (min-width: 768px) and (max-width: 1239.98px) 338px"
-                srcset="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=512&width=1440&height=1179 512w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=1024&width=1440&height=1179 1024w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179 1440w"
+                srcSet="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=512&width=1440&height=1179 512w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=1024&width=1440&height=1179 1024w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179 1440w"
                 src="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179"
                 alt="Hero image"
                 style={{
@@ -397,7 +393,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
           <figure
-            as="figure"
             className="framer-1woiq8n"
             data-framer-appear-id="1woiq8n"
             data-framer-name="Hero Image"
@@ -419,7 +414,7 @@ export default function Hero() {
                 width="1440"
                 height="1179"
                 sizes="(min-width: 1240px) 538px, (max-width: 767.98px) calc(min(100vw, 1240px) - 40px), (min-width: 768px) and (max-width: 1239.98px) 338px"
-                srcset="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=512&width=1440&height=1179 512w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=1024&width=1440&height=1179 1024w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179 1440w"
+                srcSet="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=512&width=1440&height=1179 512w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?scale-down-to=1024&width=1440&height=1179 1024w,/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179 1440w"
                 src="/assets/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png?width=1440&height=1179"
                 alt="Hero image"
                 style={{
@@ -437,7 +432,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1eym36j">
           <figure
-            as="figure"
             className="framer-ajl8ej hidden-1or7vws"
             data-framer-appear-id="ajl8ej"
             data-framer-name="Circle Image"
@@ -474,7 +468,6 @@ export default function Hero() {
         </div>
         <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
           <figure
-            as="figure"
             className="framer-ajl8ej hidden-1or7vws"
             data-framer-appear-id="ajl8ej"
             data-framer-name="Circle Image"

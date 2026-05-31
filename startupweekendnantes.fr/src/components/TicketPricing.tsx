@@ -10,7 +10,7 @@ export default function TicketPricing() {
       }}
     >
       <div className="ssr-variant hidden-1eym36j">
-        <figure as="figure" className="framer-8waiss hidden-1or7vws" data-framer-name="Star">
+        <figure className="framer-8waiss hidden-1or7vws" data-framer-name="Star">
           <div
             style={{
               position: 'absolute',
@@ -42,7 +42,7 @@ export default function TicketPricing() {
         </figure>
       </div>
       <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-        <figure as="figure" className="framer-8waiss hidden-1or7vws" data-framer-name="Star">
+        <figure className="framer-8waiss hidden-1or7vws" data-framer-name="Star">
           <div
             style={{
               position: 'absolute',
@@ -381,7 +381,7 @@ export default function TicketPricing() {
                     data-framer-name="Normal Button"
                     href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',
@@ -427,7 +427,7 @@ export default function TicketPricing() {
                     data-framer-name="Normal Button Small"
                     href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',
@@ -473,7 +473,7 @@ export default function TicketPricing() {
                     data-framer-name="Normal Button Small"
                     href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',
@@ -772,7 +772,7 @@ export default function TicketPricing() {
                   >
                     <br className="framer-text" />
                   </span>
-                  intégralité de l'expérience
+                  intégralité de l&apos;expérience
                 </p>
               </div>
             </div>
@@ -801,7 +801,7 @@ export default function TicketPricing() {
                   >
                     <br className="framer-text" />
                   </span>
-                  intégralité de l'expérience
+                  intégralité de l&apos;expérience
                 </p>
               </div>
             </div>
@@ -830,7 +830,7 @@ export default function TicketPricing() {
                   >
                     <br className="framer-text" />
                   </span>
-                  intégralité de l'expérience
+                  intégralité de l&apos;expérience
                 </p>
               </div>
             </div>
@@ -848,7 +848,7 @@ export default function TicketPricing() {
                   className="framer-text framer-styles-preset-13wnbzq"
                   data-styles-preset="LB8_AjbM6"
                 >
-                  Accès à l'expérience complète
+                  Accès à l&apos;expérience complète
                 </p>
               </div>
             </div>
@@ -950,7 +950,7 @@ export default function TicketPricing() {
                   data-framer-name="Normal Button"
                   href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   style={{
                     backgroundColor: 'rgb(255, 255, 255)',
                     borderBottomLeftRadius: '4px',
@@ -996,7 +996,7 @@ export default function TicketPricing() {
                   data-framer-name="Normal Button Small"
                   href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   style={{
                     backgroundColor: 'rgb(255, 255, 255)',
                     borderBottomLeftRadius: '4px',
@@ -1042,7 +1042,7 @@ export default function TicketPricing() {
                   data-framer-name="Normal Button Small"
                   href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   style={{
                     backgroundColor: 'rgb(255, 255, 255)',
                     borderBottomLeftRadius: '4px',
@@ -1266,7 +1266,7 @@ export default function TicketPricing() {
                     className="framer-text framer-styles-preset-13wnbzq"
                     data-styles-preset="LB8_AjbM6"
                   >
-                    Une visibilité auprès des entrepreneurs d'aujourd'hui et de demain
+                    Une visibilité auprès des entrepreneurs d&apos;aujourd&apos;hui et de demain
                   </p>
                 </div>
               </div>
@@ -1284,7 +1284,7 @@ export default function TicketPricing() {
                     className="framer-text framer-styles-preset-13wnbzq"
                     data-styles-preset="LB8_AjbM6"
                   >
-                    L'occasion parfaite de sourcer de futurs talents
+                    L&apos;occasion parfaite de sourcer de futurs talents
                   </p>
                 </div>
               </div>
@@ -1302,7 +1302,7 @@ export default function TicketPricing() {
                     className="framer-text framer-styles-preset-13wnbzq"
                     data-styles-preset="LB8_AjbM6"
                   >
-                    Un coup de pouce très apprécié à l'écosystème startup nantais
+                    Un coup de pouce très apprécié à l&apos;écosystème startup nantais
                   </p>
                 </div>
               </div>
@@ -1314,7 +1314,7 @@ export default function TicketPricing() {
                     data-framer-name="Normal Button"
                     href="mailto:maxime.pitussi@gmail.com"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',
@@ -1360,7 +1360,7 @@ export default function TicketPricing() {
                     data-framer-name="Normal Button Small"
                     href="mailto:maxime.pitussi@gmail.com"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',
@@ -1406,7 +1406,7 @@ export default function TicketPricing() {
                     data-framer-name="Normal Button Small"
                     href="mailto:maxime.pitussi@gmail.com"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',

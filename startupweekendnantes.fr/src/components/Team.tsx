@@ -280,10 +280,7 @@ export default function Team() {
           }}
         >
           <div className="framer-lm9w4t">
-            <div
-              className="framer-ee21g2"
-              data-framer-component-type="RichTextContainer"
-            >
+            <div className="framer-ee21g2" data-framer-component-type="RichTextContainer">
               <h2
                 className="framer-text framer-styles-preset-s1qxc7 center-mobile"
                 data-styles-preset="GP3w7rUvI"
@@ -293,15 +290,12 @@ export default function Team() {
             </div>
           </div>
           <div className="framer-1w5s1td">
-            <div
-              className="framer-vc5uhs"
-              data-framer-component-type="RichTextContainer"
-            >
+            <div className="framer-vc5uhs" data-framer-component-type="RichTextContainer">
               <p
                 className="framer-text framer-styles-preset-1pwt84p center-mobile"
                 data-styles-preset="A8o4HivZV"
               >
-                Coachs, speakers ou jury, ils seront présents lors de l'événement
+                Coachs, speakers ou jury, ils seront présents lors de l&apos;événement
               </p>
             </div>
           </div>
@@ -315,37 +309,48 @@ export default function Team() {
             transform: 'perspective(1200px) translateY(300px)',
           }}
         >
-          {members.map(({ containerClass, figureClass, figureStyle, img, nameClass, name, roleClass, role }) => (
-            <div key={containerClass} className={containerClass}>
-              <figure as="figure" className={figureClass} style={figureStyle}>
-                <div data-framer-background-image-wrapper="true">
-                  <img
-                    decoding="async"
-                    loading="lazy"
-                    width={img.width}
-                    height={img.height}
-                    {...(img.sizes && { sizes: img.sizes })}
-                    {...(img.srcSet && { srcSet: img.srcSet })}
-                    src={img.src}
-                    alt={img.alt}
-                    {...(img.objectPosition && { style: { objectPosition: img.objectPosition } })}
-                  />
+          {members.map(
+            ({
+              containerClass,
+              figureClass,
+              figureStyle,
+              img,
+              nameClass,
+              name,
+              roleClass,
+              role,
+            }) => (
+              <div key={containerClass} className={containerClass}>
+                <figure className={figureClass} style={figureStyle}>
+                  <div data-framer-background-image-wrapper="true">
+                    <img
+                      decoding="async"
+                      loading="lazy"
+                      width={img.width}
+                      height={img.height}
+                      {...(img.sizes && { sizes: img.sizes })}
+                      {...(img.srcSet && { srcSet: img.srcSet })}
+                      src={img.src}
+                      alt={img.alt}
+                      {...(img.objectPosition && { style: { objectPosition: img.objectPosition } })}
+                    />
+                  </div>
+                </figure>
+                <div className={nameClass} data-framer-component-type="RichTextContainer">
+                  <h6 className="framer-text text-member-name">{name}</h6>
                 </div>
-              </figure>
-              <div className={nameClass} data-framer-component-type="RichTextContainer">
-                <h6 className="framer-text text-member-name">{name}</h6>
+                <div className={roleClass} data-framer-component-type="RichTextContainer">
+                  <p
+                    className="framer-text framer-styles-preset-1pwt84p"
+                    data-styles-preset="A8o4HivZV"
+                    style={{ '--framer-text-color': 'rgb(255, 255, 255)' }}
+                  >
+                    {role}
+                  </p>
+                </div>
               </div>
-              <div className={roleClass} data-framer-component-type="RichTextContainer">
-                <p
-                  className="framer-text framer-styles-preset-1pwt84p"
-                  data-styles-preset="A8o4HivZV"
-                  style={{ '--framer-text-color': 'rgb(255, 255, 255)' }}
-                >
-                  {role}
-                </p>
-              </div>
-            </div>
-          ))}
+            ),
+          )}
         </div>
         <a className="framer-15fn3n5 framer-lux5qc" data-framer-name="Button" href="./"></a>
         {/* /$ */}

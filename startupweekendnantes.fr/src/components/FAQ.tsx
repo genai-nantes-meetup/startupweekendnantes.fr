@@ -23,10 +23,7 @@ export default function FAQ() {
         transform: 'perspective(1200px) translateY(300px)',
       }}
     >
-      <div
-        className="framer-11biefp"
-        data-framer-component-type="RichTextContainer"
-      >
+      <div className="framer-11biefp" data-framer-component-type="RichTextContainer">
         <h2
           className="framer-text framer-styles-preset-s1qxc7"
           data-styles-preset="GP3w7rUvI"

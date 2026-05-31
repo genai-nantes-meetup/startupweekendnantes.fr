@@ -15,7 +15,6 @@ export default function Header() {
           >
             <div className="framer-1lokaf7" data-framer-name="Logo and button">
               <a
-                as="a"
                 className="framer-mvo214 framer-1tejs40"
                 data-framer-name="Logo"
                 href="./"
@@ -37,7 +36,7 @@ export default function Header() {
                     width="1024"
                     height="330"
                     sizes="(min-width: 1240px) 257px, (max-width: 767.98px) 123px, (min-width: 768px) and (max-width: 1239.98px) 147px"
-                    srcset="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?scale-down-to=512&width=1024&height=330 512w,/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330 1024w"
+                    srcSet="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?scale-down-to=512&width=1024&height=330 512w,/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330 1024w"
                     src="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330"
                     alt
                     style={{
@@ -61,7 +60,7 @@ export default function Header() {
                     data-framer-name="Normal Button"
                     href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',
@@ -113,7 +112,6 @@ export default function Header() {
           >
             <div className="framer-1lokaf7" data-framer-name="Logo and button">
               <a
-                as="a"
                 className="framer-mvo214 framer-1tejs40"
                 data-framer-name="Logo"
                 href="./"
@@ -135,7 +133,7 @@ export default function Header() {
                     width="1024"
                     height="330"
                     sizes="(min-width: 1240px) 257px, (max-width: 767.98px) 123px, (min-width: 768px) and (max-width: 1239.98px) 147px"
-                    srcset="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?scale-down-to=512&width=1024&height=330 512w,/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330 1024w"
+                    srcSet="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?scale-down-to=512&width=1024&height=330 512w,/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330 1024w"
                     src="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330"
                     alt
                     style={{
@@ -170,7 +168,6 @@ export default function Header() {
           >
             <div className="framer-1lokaf7" data-framer-name="Logo and button">
               <a
-                as="a"
                 className="framer-mvo214 framer-1tejs40"
                 data-framer-name="Logo"
                 href="./"
@@ -192,7 +189,7 @@ export default function Header() {
                     width="1024"
                     height="330"
                     sizes="(min-width: 1240px) 257px, (max-width: 767.98px) 123px, (min-width: 768px) and (max-width: 1239.98px) 147px"
-                    srcset="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?scale-down-to=512&width=1024&height=330 512w,/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330 1024w"
+                    srcSet="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?scale-down-to=512&width=1024&height=330 512w,/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330 1024w"
                     src="/assets/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png?width=1024&height=330"
                     alt
                     style={{
@@ -216,7 +213,7 @@ export default function Header() {
                     data-framer-name="Normal Button Small"
                     href="https://www.billetweb.fr/startup-weekend-nantes-2025"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: 'rgb(255, 255, 255)',
                       borderBottomLeftRadius: '4px',

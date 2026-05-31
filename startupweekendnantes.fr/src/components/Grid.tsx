@@ -200,13 +200,21 @@ export default function Grid() {
     >
       <div className="framer-17806vr">
         {members.map(
-          ({ containerClass, imgDivClass, img, contentClass, nameClass, name, nameBold, roleClass, role }) => (
+          ({
+            containerClass,
+            imgDivClass,
+            img,
+            contentClass,
+            nameClass,
+            name,
+            nameBold,
+            roleClass,
+            role,
+          }) => (
             <div key={containerClass} className={containerClass}>
               <div className="ssr-variant hidden-1or7vws">
                 <div className={imgDivClass} data-framer-name="Image">
-                  <div
-          data-framer-background-image-wrapper="true"
-                  >
+                  <div data-framer-background-image-wrapper="true">
                     <img
                       decoding="async"
                       loading="lazy"
@@ -233,9 +241,7 @@ export default function Grid() {
               </div>
               <div className="ssr-variant hidden-1eym36j hidden-72rtr7">
                 <div className={imgDivClass} data-framer-name="Image">
-                  <div
-          data-framer-background-image-wrapper="true"
-                  >
+                  <div data-framer-background-image-wrapper="true">
                     <img
                       decoding="async"
                       loading="lazy"
@@ -261,10 +267,7 @@ export default function Grid() {
                 </div>
               </div>
               <div className={contentClass} data-framer-name="Content">
-                <div
-                  className={nameClass}
-                  data-framer-component-type="RichTextContainer"
-                >
+                <div className={nameClass} data-framer-component-type="RichTextContainer">
                   <h3
                     className="framer-text framer-styles-preset-1xb2uvs"
                     data-styles-preset="FE5b7pE4K"
@@ -272,10 +275,7 @@ export default function Grid() {
                     {nameBold ? <strong className="framer-text">{name}</strong> : name}
                   </h3>
                 </div>
-                <div
-                  className={roleClass}
-                  data-framer-component-type="RichTextContainer"
-                >
+                <div className={roleClass} data-framer-component-type="RichTextContainer">
                   <p
                     className="framer-text framer-styles-preset-1pwt84p"
                     data-styles-preset="A8o4HivZV"

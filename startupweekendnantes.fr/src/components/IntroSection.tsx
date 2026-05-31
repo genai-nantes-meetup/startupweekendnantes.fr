@@ -21,9 +21,19 @@ const APPEAR_STYLE = {
   transform: 'perspective(1200px) scale(0)',
 } as React.CSSProperties;
 
-function IntroPhoto({ className, sizes, id, alt }: { className: string; sizes: string; id: string; alt: string }) {
+function IntroPhoto({
+  className,
+  sizes,
+  id,
+  alt,
+}: {
+  className: string;
+  sizes: string;
+  id: string;
+  alt: string;
+}) {
   return (
-    <figure as="figure" className={className} style={APPEAR_STYLE}>
+    <figure className={className} style={APPEAR_STYLE}>
       <div data-framer-background-image-wrapper="true">
         <img
           decoding="async"
@@ -43,11 +53,35 @@ function IntroPhoto({ className, sizes, id, alt }: { className: string; sizes: s
 export default function IntroSection() {
   return (
     <div className="framer-11nvrxr" data-framer-name="Intro Section">
-      <IntroPhoto className="framer-120bzka" sizes={SIZES_PORTRAIT} id="3icxBJ1CcHn6M34eovnFgccTZR0" alt="Speaker session" />
-      <IntroPhoto className="framer-1mhhz3n" sizes={SIZES_LANDSCAPE} id="FS3ISXEUHf4xNgOzHz1v79bPNPo" alt="Group discussion" />
-      <IntroPhoto className="framer-w6nuro" sizes={SIZES_PORTRAIT} id="cCa01Jr6KZUDGU8OkU8loM1z0" alt="Speaker" />
-      <IntroPhoto className="framer-1mka6qx" sizes={SIZES_PORTRAIT} id="24WMO9KZT30jBPFpwrgWt8rkSs" alt="Meeting" />
-      <div className="framer-1k7tuj text-center" data-framer-name="Inspiring experience" style={APPEAR_STYLE}>
+      <IntroPhoto
+        className="framer-120bzka"
+        sizes={SIZES_PORTRAIT}
+        id="3icxBJ1CcHn6M34eovnFgccTZR0"
+        alt="Speaker session"
+      />
+      <IntroPhoto
+        className="framer-1mhhz3n"
+        sizes={SIZES_LANDSCAPE}
+        id="FS3ISXEUHf4xNgOzHz1v79bPNPo"
+        alt="Group discussion"
+      />
+      <IntroPhoto
+        className="framer-w6nuro"
+        sizes={SIZES_PORTRAIT}
+        id="cCa01Jr6KZUDGU8OkU8loM1z0"
+        alt="Speaker"
+      />
+      <IntroPhoto
+        className="framer-1mka6qx"
+        sizes={SIZES_PORTRAIT}
+        id="24WMO9KZT30jBPFpwrgWt8rkSs"
+        alt="Meeting"
+      />
+      <div
+        className="framer-1k7tuj text-center"
+        data-framer-name="Inspiring experience"
+        style={APPEAR_STYLE}
+      >
         <div className="framer-y5s9sh" data-framer-component-type="RichTextContainer">
           <h2 className="framer-text framer-styles-preset-s1qxc7" data-styles-preset="GP3w7rUvI">
             54 heures pour transformer ton idée en réalité ! 🚀
@@ -59,20 +93,20 @@ export default function IntroSection() {
             startups en un week-end.
           </p>
           <p className="framer-text framer-styles-preset-1pwt84p" data-styles-preset="A8o4HivZV">
-            Pendant 54 heures non-stop, tu vas vivre à 100 à l'heure, entouré de talents créatifs,
-            d'experts et de passionnés, prêts à révolutionner le monde avec toi. Développeurs,
-            designers, marketeurs, entrepreneurs : c'est l'endroit où tout peut arriver.
+            Pendant 54 heures non-stop, tu vas vivre à 100 à l&apos;heure, entouré de talents
+            créatifs, d&apos;experts et de passionnés, prêts à révolutionner le monde avec toi.
+            Développeurs, designers, marketeurs, entrepreneurs : c&apos;est l&apos;endroit où tout
+            peut arriver.
           </p>
           <p className="framer-text framer-styles-preset-1pwt84p" data-styles-preset="A8o4HivZV">
             <strong className="framer-text">Tu as une idée ?</strong> Viens la tester.
           </p>
           <p className="framer-text framer-styles-preset-1pwt84p" data-styles-preset="A8o4HivZV">
-            <strong className="framer-text">Pas d'idée, mais envie de créer ?</strong> Rejoins une
-            équipe et participe à une aventure inoubliable.
+            <strong className="framer-text">Pas d&apos;idée, mais envie de créer ?</strong> Rejoins
+            une équipe et participe à une aventure inoubliable.
           </p>
           <p className="framer-text framer-styles-preset-1pwt84p" data-styles-preset="A8o4HivZV">
-            Pas de demi-mesure : ça va être <strong className="framer-text">légendaire</strong> !
-            😎
+            Pas de demi-mesure : ça va être <strong className="framer-text">légendaire</strong> ! 😎
           </p>
         </div>
       </div>
