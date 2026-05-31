@@ -13,3 +13,22 @@
     display: none !important;
   }
 }
+
+/* Responsive text utilities — use instead of ssr-variant duplication */
+@media (max-width: 767.98px) {
+  .center-mobile {
+    --framer-text-alignment: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1239.98px) {
+  .center-nondesktop {
+    --framer-text-alignment: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1239.98px) {
+  .font-sm-nondesktop {
+    --framer-font-size: 15px !important;
+  }
+}
