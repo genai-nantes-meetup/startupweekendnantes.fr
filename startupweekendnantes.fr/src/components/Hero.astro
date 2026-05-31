@@ -1,0 +1,209 @@
+---
+---
+<section id="hero" class="hero-section">
+  <div class="hero-bg">
+    <img
+      src="https://framerusercontent.com/images/wMWsWm7njm6vmBfMVwkVaW4.png"
+      alt=""
+      aria-hidden="true"
+      class="hero-bg-img"
+    />
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Startup Weekend<br />2025 🎊</h1>
+      <p>
+        <strong>Du 21/11 au 23/11</strong> : L'événement pour monter un projet et vivre en accéléré
+        la création d'une startup, à Nantes.
+      </p>
+      <a
+        href="https://www.billetweb.fr/startup-weekend-nantes-2025"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary"
+      >
+        Je m'inscris maintenant
+      </a>
+    </div>
+
+    <figure class="hero-image" aria-hidden="true">
+      <img
+        src="https://framerusercontent.com/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png"
+        alt="Participants au Startup Weekend"
+        width="538"
+        height="441"
+      />
+    </figure>
+
+    <img
+      src="https://framerusercontent.com/images/Zs0OyquSGNwZhNIZqYL3KdgW8Rs.svg"
+      alt=""
+      aria-hidden="true"
+      class="hero-dots"
+    />
+    <img
+      src="https://framerusercontent.com/images/QRQRAXnHu5ilXCmjG8WsfC9XA.svg"
+      alt=""
+      aria-hidden="true"
+      class="hero-circle"
+    />
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(14, 2, 24);
+    padding-top: 80px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.15;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .hero-text {
+    grid-column: 1;
+  }
+
+  .hero-text h1 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: white;
+    line-height: 1.1;
+    margin: 0 0 1.5rem;
+  }
+
+  .hero-text p {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 480px;
+    margin: 0 0 2rem;
+    line-height: 1.6;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.875rem 1.75rem;
+    background: rgb(39, 168, 224);
+    color: rgb(25, 5, 50);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 rgb(23, 116, 156);
+    transition: box-shadow 0.15s, transform 0.15s;
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 3px 0 rgb(23, 116, 156);
+    transform: translateY(2px);
+  }
+
+  .hero-image {
+    grid-column: 2;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero-dots {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 120px;
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero-circle {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 60px;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  @media (max-width: 767px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .hero-text p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-image {
+      grid-column: 1;
+      justify-content: center;
+      order: -1;
+    }
+
+    .hero-image img {
+      max-width: 280px;
+    }
+
+    .hero-dots,
+    .hero-circle {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1239px) {
+    .hero-container {
+      text-align: center;
+    }
+
+    .hero-text p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-image img {
+      max-width: 338px;
+    }
+  }
+</style>

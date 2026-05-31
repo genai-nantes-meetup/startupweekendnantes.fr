@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oxanium:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --sw-bg: rgb(14, 2, 24);
+  --sw-purple: rgb(25, 5, 50);
+  --sw-cyan: #2aebf5;
+  --sw-yellow: #fae01b;
+  --sw-blue: rgb(39, 168, 224);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--sw-bg);
+  color: #ffffff;
+  font-family: 'Oxanium', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dela Gothic One', sans-serif;
+}

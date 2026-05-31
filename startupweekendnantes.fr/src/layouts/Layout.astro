@@ -1,0 +1,88 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Startup Weekend Nantes — 2025 Edition',
+  description = 'Startup Weekend Nantes 2025 — Du 21 au 23 novembre. L\'événement pour monter un projet et vivre en accéléré la création d\'une startup, à Nantes.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- GTM -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NQ2DKKPD');
+    </script>
+  </head>
+  <body>
+    <!-- GTM noscript -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NQ2DKKPD"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+
+    <slot />
+
+    <script>
+      import { animate, inView, stagger } from 'motion';
+
+      // Section headings fade in from below
+      inView(
+        'h1, h2',
+        (el) => {
+          animate(el, { opacity: [0, 1], y: [30, 0] }, { duration: 0.7, easing: [0.25, 0.1, 0.25, 1] });
+        },
+        { margin: '-60px 0px' }
+      );
+
+      // Cards stagger in
+      inView(
+        '.member-card, .sponsor-item, .pricing-card, .org-card',
+        (el) => {
+          const siblings = [...el.parentElement!.children];
+          const idx = siblings.indexOf(el);
+          animate(
+            el,
+            { opacity: [0, 1], y: [40, 0] },
+            { duration: 0.5, delay: idx * 0.08, easing: [0.25, 0.1, 0.25, 1] }
+          );
+        },
+        { margin: '-40px 0px' }
+      );
+
+      // Table rows
+      inView(
+        'tbody tr',
+        (el) => {
+          animate(el, { opacity: [0, 1], x: [-20, 0] }, { duration: 0.4, easing: 'ease-out' });
+        },
+        { margin: '-20px 0px' }
+      );
+    </script>
+  </body>
+</html>

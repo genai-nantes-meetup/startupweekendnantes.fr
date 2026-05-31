@@ -1,0 +1,233 @@
+---
+const days = [
+  {
+    date: '21 Novembre 2025',
+    label: 'JOUR 1',
+    day: 'VENDREDI',
+    color: '#fae01b',
+    rows: [
+      { time: '18h', title: 'Accueil', desc: 'Enregistrement des participants et networking.' },
+      { time: '19h', title: 'Pitchs des idées', desc: 'Chaque porteur d\'idée présente son projet en 60 secondes.' },
+      { time: '20h', title: 'Vote', desc: 'Les participants votent pour les idées qu\'ils souhaitent développer.' },
+      { time: '20h30', title: 'Repas', desc: 'Dîner ensemble.' },
+      { time: '21h15', title: 'KEA sur le pitch et les startups', desc: 'Par Claire Bretton de Underdog', speaker: { name: 'Claire Bretton', img: 'https://framerusercontent.com/images/QsZVf7HgM2bFcnXMjnoZj9lfudY.jpeg' } },
+      { time: '21h45', title: 'Formation des équipes', desc: 'Après l\'annonce des projets retenus, les participants rejoignent une équipe.' },
+      { time: '22h30', title: 'Début du travail', desc: 'Les équipes découvrent leur espace de travail et démarrent le projet.' },
+      { time: '1h', title: 'Fermeture des portes', desc: 'Les participants sont invités à rentrer chez eux pour ne pas se cramer.' },
+    ],
+  },
+  {
+    date: '22 Novembre 2025',
+    label: 'JOUR 2',
+    day: 'SAMEDI',
+    color: '#2aebf5',
+    rows: [
+      { time: '8h30', title: 'Petit déjeuner', desc: '' },
+      { time: '9h', title: 'Lancement de la journée', desc: 'Agenda et grandes étapes de la journée.', speakers: ['https://framerusercontent.com/images/hXxw44XRfD7QExm9wAo9ESWFyI.jpeg', 'https://framerusercontent.com/images/cCa01Jr6KZUDGU8OkU8loM1z0.jpg'] },
+      { time: '9h15', title: 'Conférences : Marché + IA Générative', desc: 'Par Pauline Corriou et Simon Timssale', speakers: ['https://framerusercontent.com/images/sfniMLAtv98tHDMYDkETbcpvfak.jpeg', 'https://framerusercontent.com/images/lyIwOv1puBWIqCuDn2zoYOXI9BY.jpeg'] },
+      { time: '9h45', title: 'Équipes au travail', desc: '' },
+      { time: '12h30', title: 'Repas', desc: '' },
+      { time: '14h', title: 'Coaching sessions', desc: 'Les coachs commencent à passer dans les équipes.' },
+      { time: '20h', title: 'Repas du soir', desc: '' },
+      { time: '22h', title: 'Fermeture des portes', desc: '' },
+    ],
+  },
+  {
+    date: '23 Novembre 2025',
+    label: 'JOUR 3',
+    day: 'DIMANCHE',
+    color: '#fc233d',
+    rows: [
+      { time: '8h30', title: 'Petit déjeuner', desc: '' },
+      { time: '9h', title: 'Help sessions', desc: 'Les coachs passent dans les équipes.' },
+      { time: '12h', title: 'Repas', desc: '' },
+      { time: '14h', title: 'Finalisation des pitchs', desc: 'Les équipes préparent leur présentation finale.' },
+      { time: '16h', title: 'Pitch fire', desc: 'Chaque équipe présente son projet devant le jury.' },
+      { time: '18h', title: 'Délibération du jury', desc: '' },
+      { time: '18h30', title: 'Cérémonie de remise des prix', desc: 'Le jury annonce les gagnants de cette 16ème édition.' },
+      { time: '19h30', title: 'Fin de Startup Weekend', desc: '' },
+    ],
+  },
+];
+---
+
+<section id="agenda" class="agenda-section">
+  <div class="agenda-container">
+    <h2>Agenda</h2>
+    {days.map((day) => (
+      <div class="agenda-day">
+        <div class="day-header">
+          <div class="day-meta">
+            <span class="day-date">{day.date}</span>
+            <strong class="day-label" style={`color: ${day.color}`}>{day.label}</strong>
+          </div>
+          <span class="day-name">{day.day}</span>
+        </div>
+        <table class="agenda-table">
+          <thead>
+            <tr style={`background: ${day.color}`}>
+              <th>Heure</th>
+              <th>Programme</th>
+              <th>Speakers</th>
+            </tr>
+          </thead>
+          <tbody>
+            {day.rows.map((row) => (
+              <tr>
+                <td class="time-cell">{row.time}</td>
+                <td class="prog-cell">
+                  {row.title && <strong>{row.title}</strong>}
+                  {row.desc && <span>{row.desc}</span>}
+                </td>
+                <td class="speaker-cell">
+                  {row.speaker && (
+                    <img src={row.speaker.img} alt={row.speaker.name} class="speaker-avatar" loading="lazy" />
+                  )}
+                  {row.speakers && row.speakers.map((s) => (
+                    <img src={s} alt="Speaker" class="speaker-avatar" loading="lazy" />
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .agenda-section {
+    background: rgb(14, 2, 24);
+    padding: 5rem 2rem;
+  }
+
+  .agenda-container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  .agenda-container > h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: white;
+    margin: 0 0 3rem;
+  }
+
+  .agenda-day {
+    margin-bottom: 4rem;
+  }
+
+  .day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .day-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-date {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .day-label {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .day-name {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .agenda-table thead tr {
+    color: rgb(25, 5, 50);
+  }
+
+  .agenda-table th {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 0.875rem;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+
+  .agenda-table th:first-child { width: 120px; }
+  .agenda-table th:last-child { width: 140px; }
+
+  .agenda-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .agenda-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .time-cell {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1.25rem 1rem;
+    vertical-align: top;
+    width: 120px;
+    white-space: nowrap;
+  }
+
+  .prog-cell {
+    padding: 1.25rem 1rem;
+    vertical-align: top;
+  }
+
+  .prog-cell strong {
+    display: block;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.25rem;
+  }
+
+  .prog-cell span {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+  }
+
+  .speaker-cell {
+    padding: 1.25rem 1rem;
+    vertical-align: top;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .speaker-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    .agenda-table th:last-child,
+    .speaker-cell {
+      display: none;
+    }
+
+    .time-cell {
+      width: 80px;
+    }
+  }
+</style>

@@ -1,0 +1,134 @@
+---
+const CDN = 'https://framerusercontent.com/images/';
+const members = [
+  { name: 'Thomas Matthieu',   role: 'CEO @ Guest Suite',                              img: `${CDN}hXxw44XRfD7QExm9wAo9ESWFyI.jpeg` },
+  { name: 'Claire Bretton',    role: 'CEO @ Underdog',                                 img: `${CDN}8JSXibl4A4aZTwJgXOWiMm5Yio.jpeg` },
+  { name: 'Nicolas Laurent',   role: 'Co-Directeur @ TiCO',                            img: `${CDN}sfniMLAtv98tHDMYDkETbcpvfak.jpeg` },
+  { name: 'Johan Ricaut',      role: 'CEO @ Shopopop',                                 img: `${CDN}QsZVf7HgM2bFcnXMjnoZj9lfudY.jpeg` },
+  { name: 'Eric Lebrette',     role: 'Co-founder @ Direxter',                          img: `${CDN}vidXeHjc3C1LSKcrMy2PAH2oxCQ.jpeg` },
+  { name: 'Benjamin Communier',role: 'Program Manager @ Centrale-Audencia-Ensa',       img: `${CDN}Kb9qe3sHcAJx3Q5JAgWzIINlkI.jpeg` },
+  { name: 'Vincent Roux',      role: 'CEO @ GOUD Santé',                               img: `${CDN}O46nYIHhimV9ETWDlqrcx971ZiM.jpeg` },
+  { name: 'Pauline Corriou',   role: 'Lead User Researcher @ Imagination Machine',     img: `${CDN}lyIwOv1puBWIqCuDn2zoYOXI9BY.jpeg` },
+  { name: 'Florian Hervéou',   role: 'Co-fondateur @ Startup Palace',                  img: `${CDN}vDdpuf0bvfUg1jOKqSriwoI8As.jpeg` },
+  { name: 'Simon Timssale',    role: 'Consultant en IA générative',                    img: `${CDN}VQm4I4LuWNHC0UemB1sslF3p8.jpeg` },
+  { name: 'Benjamin Guillet',  role: 'CSM @ TGS France',                               img: `${CDN}U5a4MBIv6ReTsrawoDNaPwK7cbc.png` },
+  { name: 'Samuel Berthe',     role: 'CTO',                                            img: `${CDN}2o7PKySlJfnTfrnUJMjqKSpqHA.jpeg` },
+  { name: 'Mathilde Bermond',  role: 'Partenariats Entreprises @ Ecole de design',     img: `${CDN}X4BtJgPPmF3pmQX6HxtFctIg.jpeg` },
+  { name: 'Lucie Valette',     role: 'Coach en prise de parole en public',             img: `${CDN}QbK87ttZH4QcYXv2gmEfA19gJM.jpeg` },
+];
+---
+
+<section id="team" class="team-section">
+  <div class="team-container">
+    <div class="team-header">
+      <h2>Ils seront de la partie</h2>
+      <p>Coachs, speakers ou jury, ils seront présents lors de l'événement</p>
+    </div>
+    <div class="team-grid">
+      {members.map((m) => (
+        <div class="member-card">
+          <img src={m.img} alt={m.name} class="member-photo" loading="lazy" />
+          <div class="member-info">
+            <h3>{m.name}</h3>
+            <p>{m.role}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .team-section {
+    background: rgb(14, 2, 24);
+    padding: 5rem 2rem;
+  }
+
+  .team-container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  .team-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .team-header h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: white;
+    margin: 0;
+  }
+
+  .team-header p {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 260px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: right;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    filter: grayscale(20%);
+    transition: filter 0.3s;
+  }
+
+  .member-card:hover .member-photo {
+    filter: grayscale(0%);
+  }
+
+  .member-info h3 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0 0 0.25rem;
+  }
+
+  .member-info p {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    .team-header {
+      flex-direction: column;
+    }
+    .team-header p {
+      text-align: left;
+    }
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1239px) {
+    .team-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
