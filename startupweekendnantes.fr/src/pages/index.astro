@@ -1,7 +1,7 @@
 ---
-import head from '../html/head.html?raw';
 import preamble from '../html/preamble.html?raw';
 import postamble from '../html/postamble.html?raw';
+import Head from '../components/Head.tsx';
 import Header from '../components/Header.tsx';
 import Hero from '../components/Hero.tsx';
 import IntroSection from '../components/IntroSection.tsx';
@@ -18,7 +18,7 @@ import Grid from '../components/Grid.tsx';
 import Contact from '../components/Contact.tsx';
 ---
 <html lang="fr">
-<head set:html={head}></head>
+<head><Head /></head>
 <body>
   <Fragment set:html={preamble} />
   <Header />
