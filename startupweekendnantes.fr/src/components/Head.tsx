@@ -28,19 +28,48 @@ export default function Head() {
       <meta name="viewport" content="width=device-width" />
       <meta name="generator" content="Framer 569b461" />
       <title>Startup Weekend Nantes - 2025 Edition</title>
-      <meta name="description" content="Venez vivre les montagnes russes de la création d'entreprises lors de la 15ème édition du Startup Weekend Nantes du 15 au 17 Novembre 2024" />
-      <meta name="framer-search-index" content="https://framerusercontent.com/sites/4j5IUmqlG0NJYI5bf6diVa/searchIndex-j1Oqmu6mftsc.json" />
-      <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/4j5IUmqlG0NJYI5bf6diVa/searchIndex-rkYIAs6anlUh.json" />
-      <link href="/assets/images/Wc6sLIVANgNEjBXRMEJoqt2bXWg.jpg" rel="icon" media="(prefers-color-scheme: light)" />
-      <link href="/assets/images/Wc6sLIVANgNEjBXRMEJoqt2bXWg.jpg" rel="icon" media="(prefers-color-scheme: dark)" />
+      <meta
+        name="description"
+        content="Venez vivre les montagnes russes de la création d'entreprises lors de la 15ème édition du Startup Weekend Nantes du 15 au 17 Novembre 2024"
+      />
+      <meta
+        name="framer-search-index"
+        content="https://framerusercontent.com/sites/4j5IUmqlG0NJYI5bf6diVa/searchIndex-j1Oqmu6mftsc.json"
+      />
+      <meta
+        name="framer-search-index-fallback"
+        content="https://framerusercontent.com/sites/4j5IUmqlG0NJYI5bf6diVa/searchIndex-rkYIAs6anlUh.json"
+      />
+      <link
+        href="/assets/images/Wc6sLIVANgNEjBXRMEJoqt2bXWg.jpg"
+        rel="icon"
+        media="(prefers-color-scheme: light)"
+      />
+      <link
+        href="/assets/images/Wc6sLIVANgNEjBXRMEJoqt2bXWg.jpg"
+        rel="icon"
+        media="(prefers-color-scheme: dark)"
+      />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Startup Weekend Nantes - 2025 Edition" />
-      <meta property="og:description" content="Venez vivre les montagnes russes de la création d'entreprises lors de la 15ème édition du Startup Weekend Nantes du 15 au 17 Novembre 2024" />
-      <meta property="og:image" content="https://framerusercontent.com/assets/c1me6IM5lirqPCFF4alL6dKEnf0.jpg" />
+      <meta
+        property="og:description"
+        content="Venez vivre les montagnes russes de la création d'entreprises lors de la 15ème édition du Startup Weekend Nantes du 15 au 17 Novembre 2024"
+      />
+      <meta
+        property="og:image"
+        content="https://framerusercontent.com/assets/c1me6IM5lirqPCFF4alL6dKEnf0.jpg"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Startup Weekend Nantes - 2025 Edition" />
-      <meta name="twitter:description" content="Venez vivre les montagnes russes de la création d'entreprises lors de la 15ème édition du Startup Weekend Nantes du 15 au 17 Novembre 2024" />
-      <meta name="twitter:image" content="https://framerusercontent.com/assets/c1me6IM5lirqPCFF4alL6dKEnf0.jpg" />
+      <meta
+        name="twitter:description"
+        content="Venez vivre les montagnes russes de la création d'entreprises lors de la 15ème édition du Startup Weekend Nantes du 15 au 17 Novembre 2024"
+      />
+      <meta
+        name="twitter:image"
+        content="https://framerusercontent.com/assets/c1me6IM5lirqPCFF4alL6dKEnf0.jpg"
+      />
       <style data-framer-font-css="" dangerouslySetInnerHTML={{ __html: fontsCss }} />
       <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="" />
       <meta name="robots" content="max-image-preview:large" />
