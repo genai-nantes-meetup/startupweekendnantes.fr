@@ -1,5 +1,12 @@
+.pricing-outer {
+  background: #000000;
+  width: 100%;
+}
+
 .pricing-section {
   background: #ffffff;
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 5rem 2rem 6rem;
   position: relative;
 }
@@ -37,7 +44,7 @@
 .pricing-grid {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 10px;
   align-items: start;
 }
 
@@ -149,14 +156,14 @@
 }
 
 .card-cta {
-  display: block;
+  display: inline-flex;
   text-align: center;
-  padding: 0.875rem 1rem;
-  background: rgb(25, 5, 50);
-  color: white;
-  font-family: 'Dela Gothic One', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
+  padding: 13px 25px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 238);
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: normal;
   text-decoration: none;
   transition: opacity 0.2s;
   margin: 0 1.75rem 1.75rem;

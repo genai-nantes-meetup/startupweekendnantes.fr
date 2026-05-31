@@ -1,16 +1,25 @@
 /* PastGlimpse — video dimensions: framer-120bzka/framer-1mka6qx: width:480px; height:270px (16:9) */
 .past-section {
   background: rgb(0, 0, 0);
-  padding: 50px 20px 0;
+  padding: 100px 20px 0;
 }
 
 .past-container { max-width: 1240px; margin: 0 auto; }
 
 .past-container h2 {
-  font-family: 'Dela Gothic One', sans-serif;
+  font-family: 'Helvetica Neue Black', sans-serif;
+  font-weight: 400;
   font-size: 50px;
   color: white;
   margin: 0 0 3rem;
+}
+
+@media (max-width: 1239px) {
+  .past-container h2 { font-size: 38px; }
+}
+
+@media (max-width: 809px) {
+  .past-container h2 { font-size: 30px; }
 }
 
 .videos-grid {
@@ -21,18 +30,19 @@
   padding-bottom: 50px;
 }
 
-.video-card { display: flex; flex-direction: column; gap: 0.75rem; }
+.video-card { display: flex; flex-direction: column; gap: 30px; flex: 1 0 0; }
 
 .video-label {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-style: italic;
+  font-family: 'Helvetica Neue Bold Italic', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
 }
 
-/* framer-120bzka: width:480px; height:270px — 16:9 ratio matching live */
+/* framer-120bzka: 480x270px desktop — flex:1 on card so width fills equally */
 .video-wrapper {
-  width: 480px;
+  width: 100%;
   height: 270px;
   position: relative;
   overflow: hidden;

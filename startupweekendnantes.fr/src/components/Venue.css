@@ -34,13 +34,21 @@
   z-index: 2;
   background: black;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 30px 80px;
   border-radius: 0;
+}
+
+.venue-label::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 6px solid rgb(39, 168, 224);
+  pointer-events: none;
 }
 
 .venue-label h2 {
   font-family: 'Helvetica Neue Black', 'Arial Black', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 50px;
   margin: 0;
   line-height: 1;

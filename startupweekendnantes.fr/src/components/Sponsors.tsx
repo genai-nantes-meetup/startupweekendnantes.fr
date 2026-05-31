@@ -16,10 +16,13 @@ const sponsorRows = [
     { name: 'kiliogene', img: `${BASE}2OyxeqKFVJBlpaZYbucB087OteU.png` },
     { name: 'Réseau Entreprendre Atlantique', img: `${BASE}44iQIZPqRkD7728oDk6fVdVgQ.png` },
     { name: 'Finalli', img: `${BASE}Q7FknPV2hRB0NaQJVTxDxhqy1ok.png` },
-    { name: 'pépite Pays de la Loire', img: `${BASE}zql7stHN2Rthx6uOdsagCNhv2M.png` },
-    { name: 'Arzel', img: `${BASE}0WtTlUnGSMQLo0YDGvoTdjyhMEc.png` },
-    { name: 'icilundi', img: `${BASE}xbrzvOd572A3buGabxbYYWHMDTA.png` },
   ],
+];
+
+const bannerRow = [
+  { name: 'icilundi', img: `${BASE}xbrzvOd572A3buGabxbYYWHMDTA.png` },
+  { name: 'pépite Pays de la Loire', img: `${BASE}zql7stHN2Rthx6uOdsagCNhv2M.png` },
+  { name: 'Arzel', img: `${BASE}0WtTlUnGSMQLo0YDGvoTdjyhMEc.png` },
 ];
 
 export default function Sponsors() {
@@ -35,6 +38,11 @@ export default function Sponsors() {
               ))}
             </div>
           ))}
+          <div className="sponsors-row sponsors-row-banner">
+            {bannerRow.map((s) => (
+              <img key={s.name} src={s.img} alt={s.name} loading="lazy" className="sponsor-logo sponsor-logo-banner" />
+            ))}
+          </div>
         </div>
       </div>
     </section>

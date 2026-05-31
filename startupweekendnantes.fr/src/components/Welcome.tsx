@@ -23,7 +23,7 @@ export default function Welcome() {
           <li>Designers, développeurs, marketeurs, chefs de projet 💡</li>
           <li>Experts en finance, communication, droit ou comptabilité 💼</li>
         </ul>
-        <p className="tagline">Un seul objectif : créer, innover et s'éclater ensemble. 🚀</p>
+        <p className="tagline">Un seul objectif : créer, innover et s'éclater ensemble. 💥</p>
       </div>
     </section>
   );

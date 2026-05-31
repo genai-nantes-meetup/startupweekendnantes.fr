@@ -24,7 +24,7 @@ const tiers: Tier[] = [
     href: 'https://www.billetweb.fr/startup-weekend-nantes-2025',
     badge: null,
     borderColor: '#e8d44d',
-    bgColor: '#fefde8',
+    bgColor: '#fff9c4',
   },
   {
     label: 'Weekend',
@@ -43,7 +43,7 @@ const tiers: Tier[] = [
     href: 'https://www.billetweb.fr/startup-weekend-nantes-2025',
     badge: 'MAKERS',
     borderColor: '#4caf50',
-    bgColor: '#f0fdf4',
+    bgColor: '#b2f2bb',
   },
   {
     label: 'Partenaire',
@@ -59,12 +59,13 @@ const tiers: Tier[] = [
     href: 'mailto:maxime.pitussi@gmail.com',
     badge: null,
     borderColor: '#7dd3fc',
-    bgColor: '#f0f4ff',
+    bgColor: '#ede9fe',
   },
 ];
 
 export default function Pricing() {
   return (
+    <div className="pricing-outer">
     <section id="pricing" className="pricing-section">
       <div className="pricing-container">
         <img
@@ -112,5 +113,6 @@ export default function Pricing() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
