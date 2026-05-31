@@ -1,8 +1,40 @@
 ---
 import head from '../html/head.html?raw';
-import body from '../html/body.html?raw';
+import preamble from '../html/preamble.html?raw';
+import postamble from '../html/postamble.html?raw';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import IntroSection from '../components/IntroSection.astro';
+import Welcome from '../components/Welcome.astro';
+import Aftermovie from '../components/Aftermovie.astro';
+import Team from '../components/Team.astro';
+import Sponsors from '../components/Sponsors.astro';
+import TicketPricing from '../components/TicketPricing.astro';
+import PastGlimpse from '../components/PastGlimpse.astro';
+import Agenda from '../components/Agenda.astro';
+import FAQ from '../components/FAQ.astro';
+import SponsorsFooter from '../components/SponsorsFooter.astro';
+import Grid from '../components/Grid.astro';
+import Contact from '../components/Contact.astro';
 ---
 <html lang="fr">
 <head set:html={head}></head>
-<body set:html={body}></body>
+<body>
+  <Fragment set:html={preamble} />
+  <Header />
+  <Hero />
+  <IntroSection />
+  <Welcome />
+  <Aftermovie />
+  <Team />
+  <Sponsors />
+  <TicketPricing />
+  <PastGlimpse />
+  <Agenda />
+  <FAQ />
+  <SponsorsFooter />
+  <Grid />
+  <Contact />
+  <Fragment set:html={postamble} />
+</body>
 </html>
