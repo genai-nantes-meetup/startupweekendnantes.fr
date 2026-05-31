@@ -1,7 +1,6 @@
 ---
-import preamble from '../html/preamble.html?raw';
-import postamble from '../html/postamble.html?raw';
 import Head from '../components/Head.tsx';
+import Main from '../components/Main.tsx';
 import Header from '../components/Header.tsx';
 import Hero from '../components/Hero.tsx';
 import IntroSection from '../components/IntroSection.tsx';
@@ -20,21 +19,21 @@ import Contact from '../components/Contact.tsx';
 <html lang="fr">
 <head><Head /></head>
 <body>
-  <Fragment set:html={preamble} />
-  <Header />
-  <Hero />
-  <IntroSection />
-  <Welcome />
-  <Aftermovie />
-  <Team />
-  <Sponsors />
-  <TicketPricing />
-  <PastGlimpse />
-  <Agenda />
-  <FAQ />
-  <SponsorsFooter />
-  <Grid />
-  <Contact />
-  <Fragment set:html={postamble} />
+  <Main>
+    <Header />
+    <Hero />
+    <IntroSection />
+    <Welcome />
+    <Aftermovie />
+    <Team />
+    <Sponsors />
+    <TicketPricing />
+    <PastGlimpse />
+    <Agenda />
+    <FAQ />
+    <SponsorsFooter />
+    <Grid />
+    <Contact />
+  </Main>
 </body>
 </html>
