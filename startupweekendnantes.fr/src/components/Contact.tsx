@@ -3,74 +3,36 @@ export default function Contact() {
     <div className="framer-jqt50v" data-framer-name="Contact">
       <div className="framer-layjq2">
         <div className="framer-g9zdhz">
-          <div className="ssr-variant hidden-1eym36j">
-            <div className="framer-1tuhjfm" data-framer-name="SHIFT">
-              <div
+          <div className="framer-1tuhjfm" data-framer-name="SHIFT">
+            <div
+              style={{
+                position: 'absolute',
+                borderRadius: 'inherit',
+                top: '0',
+                right: '0',
+                bottom: '0',
+                left: '0',
+              }}
+              data-framer-background-image-wrapper="true"
+            >
+              <img
+                decoding="async"
+                loading="lazy"
+                width="1080"
+                height="348"
+                sizes="(min-width: 1240px) 405px, (max-width: 767.98px) 405px, (min-width: 768px) and (max-width: 1239.98px) 293px"
+                srcSet="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348 512w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=1024&width=1080&height=348 1024w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?width=1080&height=348 1080w"
+                src="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348"
+                alt=""
                 style={{
-                  position: 'absolute',
+                  display: 'block',
+                  width: '100%',
+                  height: '100%',
                   borderRadius: 'inherit',
-                  top: '0',
-                  right: '0',
-                  bottom: '0',
-                  left: '0',
+                  objectPosition: 'left center',
+                  objectFit: 'contain',
                 }}
-                data-framer-background-image-wrapper="true"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  width="1080"
-                  height="348"
-                  sizes="(min-width: 1240px) 405px, (max-width: 767.98px) 405px, (min-width: 768px) and (max-width: 1239.98px) 293px"
-                  srcset="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348 512w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=1024&width=1080&height=348 1024w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?width=1080&height=348 1080w"
-                  src="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348"
-                  alt
-                  style={{
-                    display: 'block',
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: 'inherit',
-                    objectPosition: 'left center',
-                    objectFit: 'contain',
-                  }}
-                  data-framer-original-sizes="405px"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="ssr-variant hidden-1or7vws hidden-72rtr7">
-            <div className="framer-1tuhjfm" data-framer-name="SHIFT">
-              <div
-                style={{
-                  position: 'absolute',
-                  borderRadius: 'inherit',
-                  top: '0',
-                  right: '0',
-                  bottom: '0',
-                  left: '0',
-                }}
-                data-framer-background-image-wrapper="true"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  width="1080"
-                  height="348"
-                  sizes="(min-width: 1240px) 405px, (max-width: 767.98px) 405px, (min-width: 768px) and (max-width: 1239.98px) 293px"
-                  srcset="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348 512w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=1024&width=1080&height=348 1024w,/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?width=1080&height=348 1080w"
-                  src="/assets/images/Sui4DlSTZNdOVRO72bthhdem8.png?scale-down-to=512&width=1080&height=348"
-                  alt
-                  style={{
-                    display: 'block',
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: 'inherit',
-                    objectPosition: 'left center',
-                    objectFit: 'contain',
-                  }}
-                  data-framer-original-sizes="293px"
-                />
-              </div>
+              />
             </div>
           </div>
           <div
@@ -152,7 +114,7 @@ export default function Contact() {
                       color: 'rgb(0, 0, 0)',
                       boxShadow: 'inset 0 0 0 1px transparent',
                     }}
-                    value
+                    value=""
                   />
                   <input
                     className="framer-formspark-input"
@@ -175,7 +137,7 @@ export default function Contact() {
                       color: 'rgb(0, 0, 0)',
                       boxShadow: 'inset 0 0 0 1px transparent',
                     }}
-                    value
+                    value=""
                   />
                 </div>
                 <textarea
