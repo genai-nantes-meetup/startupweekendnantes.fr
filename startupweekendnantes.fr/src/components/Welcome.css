@@ -1,12 +1,20 @@
+/* Welcome — framer-15dr5iq/framer-176lfrm: height:600px; max-width:1240px */
 .welcome-section {
   position: relative;
-  min-height: 70vh;
+  width: 100%;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
+  background: rgb(0, 0, 0);
+  height: 600px;
 }
 
-.welcome-bg { position: absolute; inset: 0; z-index: 0; }
+/* framer-1nnb1k1: full section height; width:100%; position:absolute */
+.welcome-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
 
 .welcome-bg-img {
   width: 100%;
@@ -18,55 +26,77 @@
 .welcome-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 40%, transparent 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, transparent 60%);
   z-index: 1;
 }
 
+/* Content: vertically centered, 600px tall, max-width 1240px */
 .welcome-content {
   position: relative;
   z-index: 2;
-  padding: 4rem 2rem;
+  height: 600px;
   max-width: 1240px;
-  margin: 0 auto;
   width: 100%;
+  padding: 50px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  box-sizing: border-box;
 }
 
 .welcome-content h2 {
-  font-family: 'Dela Gothic One', sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'Helvetica Neue Black', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
   color: white;
-  margin: 0 0 1.5rem;
+  margin: 0;
+  line-height: 1;
 }
 
-.welcome-content p {
+.welcome-content > p {
   font-family: 'Oxanium', sans-serif;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
-  max-width: 600px;
-  line-height: 1.7;
-  margin: 0 0 1.5rem;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  max-width: 560px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.welcome-content > p strong {
+  font-weight: 700;
 }
 
 .welcome-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
 }
 
 .welcome-content ul li {
   font-family: 'Oxanium', sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: white;
-  padding: 0.375rem 0;
+  padding: 0.2rem 0;
   font-weight: 600;
 }
 
 .tagline {
-  font-size: 1.125rem !important;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1rem;
   font-weight: 600;
-  color: white !important;
+  color: white;
+  margin: 0;
 }
 
 @media (max-width: 767px) {
-  .welcome-content { padding: 3rem 1.5rem; }
+  .welcome-section { height: auto; }
+  .welcome-content { height: auto; padding: 2rem 1.5rem; }
+  .welcome-bg { height: 100%; }
+  .welcome-overlay { height: 100%; }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  .welcome-section { height: 420px; }
+  .welcome-content { height: 420px; }
 }

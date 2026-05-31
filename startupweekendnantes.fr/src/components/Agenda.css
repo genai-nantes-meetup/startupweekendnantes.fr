@@ -15,36 +15,36 @@
 
 .day-meta { display: flex; flex-direction: column; gap: 0.25rem; }
 
-.day-date { font-family: 'Oxanium', sans-serif; font-size: 0.875rem; color: rgba(255,255,255,0.5); }
+.day-date { font-family: 'Oxanium', sans-serif; font-size: 18px; color: rgb(255, 255, 255); }
 
-.day-label { font-family: 'Dela Gothic One', sans-serif; font-size: 1.5rem; }
+.day-label { font-family: 'Agrandir Grand Heavy', sans-serif; font-size: 24px; text-transform: uppercase; }
 
-.day-name { font-family: 'Dela Gothic One', sans-serif; font-size: 1.5rem; color: white; }
+.day-name { font-family: 'Agrandir Grand Heavy', sans-serif; font-size: 24px; color: white; text-transform: uppercase; }
 
 .agenda-table { width: 100%; border-collapse: collapse; }
 
-.agenda-table thead tr { color: rgb(25, 5, 50); }
+.agenda-table thead tr { color: rgb(14, 2, 24); }
 
 .agenda-table th {
-  font-family: 'Dela Gothic One', sans-serif;
-  font-size: 0.875rem;
+  font-family: 'Agrandir Grand Heavy', sans-serif;
+  font-size: 18px;
   text-align: left;
   padding: 0.75rem 1rem;
 }
 
-.agenda-table th:first-child { width: 120px; }
-.agenda-table th:last-child { width: 140px; }
+.agenda-table th:first-child { width: 18%; }
+.agenda-table th:last-child { width: 30%; }
 
 .agenda-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.1); }
 .agenda-table tbody tr:last-child { border-bottom: none; }
 
 .time-cell {
   font-family: 'Oxanium', sans-serif;
-  font-size: 0.875rem;
-  color: rgba(255,255,255,0.5);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
   padding: 1.25rem 1rem;
   vertical-align: top;
-  width: 120px;
+  width: 18%;
   white-space: nowrap;
 }
 
@@ -52,16 +52,16 @@
 
 .prog-cell strong {
   display: block;
-  font-family: 'Dela Gothic One', sans-serif;
-  font-size: 0.9rem;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 18px;
   color: white;
   margin-bottom: 0.25rem;
 }
 
 .prog-cell span {
   font-family: 'Oxanium', sans-serif;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.6);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
 }
 
@@ -73,7 +73,7 @@
   flex-wrap: wrap;
 }
 
-.speaker-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.speaker-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
 
 @media (max-width: 767px) {
   .agenda-table th:last-child, .speaker-cell { display: none; }

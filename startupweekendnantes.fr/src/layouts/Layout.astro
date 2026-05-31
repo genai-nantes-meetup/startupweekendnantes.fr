@@ -6,7 +6,7 @@ interface Props {
 
 const {
   title = 'Startup Weekend Nantes — 2025 Edition',
-  description = 'Startup Weekend Nantes 2025 — Du 21 au 23 novembre. L\'événement pour monter un projet et vivre en accéléré la création d\'une startup, à Nantes.',
+  description = "Startup Weekend Nantes 2025 — Du 21 au 23 novembre. L'événement pour monter un projet et vivre en accéléré la création d'une startup, à Nantes.",
 } = Astro.props;
 ---
 
@@ -34,6 +34,46 @@ const {
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-NQ2DKKPD');
     </script>
+
+    <style>
+      /*
+       * Framer appear animation — initial hidden states.
+       * Matches Framer's data-framer-appear-id pattern:
+       *   opacity: 0.001 (not 0, avoids CLS)
+       *   transform: perspective(1200px) translateY(±Npx)
+       *
+       * Elements slide UP (+150px → 0) — main content
+       * Elements slide DOWN (-50px → 0) — decorative/from above
+       */
+      @media (prefers-reduced-motion: no-preference) {
+        /* Slide UP — section text blocks, cards, headers */
+        .hero-text,
+        .hero-image,
+        .intro-content,
+        .welcome-content,
+        .past-container,
+        .team-header,
+        .member-card,
+        .sponsor-item,
+        .pricing-card,
+        .agenda-day,
+        .faq-item,
+        .org-card,
+        .contact-container,
+        .footer-container,
+        section h2 {
+          opacity: 0.001;
+          transform: perspective(1200px) translateY(150px);
+        }
+
+        /* Slide DOWN — decorative elements from above */
+        .hero-dots,
+        .hero-circle {
+          opacity: 0.001;
+          transform: perspective(1200px) translateY(-50px);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- GTM noscript -->
@@ -49,40 +89,90 @@ const {
     <slot />
 
     <script>
-      import { animate, inView, stagger } from 'motion';
+      import { animate, inView } from 'motion';
 
-      // Section headings fade in from below
-      inView(
-        'h1, h2',
-        (el) => {
-          animate(el, { opacity: [0, 1], y: [30, 0] }, { duration: 0.7, easing: [0.25, 0.1, 0.25, 1] });
-        },
-        { margin: '-60px 0px' }
-      );
+      /* Framer-matching easing: fast start, slow settle — cubic-bezier(0.25, 0.1, 0.25, 1) */
+      const EASE = [0.25, 0.1, 0.25, 1] as const;
+      const DURATION = 0.7;
 
-      // Cards stagger in
-      inView(
-        '.member-card, .sponsor-item, .pricing-card, .org-card',
-        (el) => {
-          const siblings = [...el.parentElement!.children];
-          const idx = siblings.indexOf(el);
-          animate(
-            el,
-            { opacity: [0, 1], y: [40, 0] },
-            { duration: 0.5, delay: idx * 0.08, easing: [0.25, 0.1, 0.25, 1] }
+      /* Transform targets */
+      const TO_ZERO = 'perspective(1200px) translateY(0px)';
+
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+        /* ── Slide UP: main content ───────────────────────────── */
+        const slideUp = (selector: string, delay = 0, margin = '-80px 0px') => {
+          inView(
+            selector,
+            (el) => {
+              animate(
+                el,
+                { opacity: 1, transform: TO_ZERO },
+                { duration: DURATION, delay, easing: EASE }
+              );
+            },
+            { margin }
           );
-        },
-        { margin: '-40px 0px' }
-      );
+        };
 
-      // Table rows
-      inView(
-        'tbody tr',
-        (el) => {
-          animate(el, { opacity: [0, 1], x: [-20, 0] }, { duration: 0.4, easing: 'ease-out' });
-        },
-        { margin: '-20px 0px' }
-      );
+        // Hero elements — staggered
+        slideUp('.hero-text', 0);
+        slideUp('.hero-image', 0.1);
+
+        // Section h2 headings
+        slideUp('section h2');
+
+        // Content blocks
+        slideUp('.intro-content');
+        slideUp('.past-container');
+        slideUp('.team-header');
+        slideUp('.contact-container');
+        slideUp('.footer-container');
+
+        // Cards — stagger by sibling index (Framer-style)
+        inView(
+          '.member-card, .org-card',
+          (el) => {
+            const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
+            animate(
+              el,
+              { opacity: 1, transform: TO_ZERO },
+              { duration: 0.6, delay: idx * 0.07, easing: EASE }
+            );
+          },
+          { margin: '-40px 0px' }
+        );
+
+        inView(
+          '.pricing-card',
+          (el) => {
+            const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
+            animate(
+              el,
+              { opacity: 1, transform: TO_ZERO },
+              { duration: 0.6, delay: idx * 0.1, easing: EASE }
+            );
+          },
+          { margin: '-40px 0px' }
+        );
+
+        // Agenda rows and FAQ items
+        slideUp('.agenda-day', 0, '-20px 0px');
+        slideUp('.faq-item', 0, '-20px 0px');
+
+        /* ── Slide DOWN: decorative elements ─────────────────── */
+        inView(
+          '.hero-dots, .hero-circle',
+          (el) => {
+            animate(
+              el,
+              { opacity: 1, transform: TO_ZERO },
+              { duration: 0.6, easing: EASE }
+            );
+          }
+        );
+
+      }
     </script>
   </body>
 </html>

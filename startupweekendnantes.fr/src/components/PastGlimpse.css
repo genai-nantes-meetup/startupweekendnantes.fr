@@ -1,21 +1,24 @@
+/* PastGlimpse — video dimensions: framer-120bzka/framer-1mka6qx: width:480px; height:270px (16:9) */
 .past-section {
-  background: rgb(14, 2, 24);
-  padding: 5rem 2rem;
+  background: rgb(0, 0, 0);
+  padding: 50px 20px 0;
 }
 
 .past-container { max-width: 1240px; margin: 0 auto; }
 
 .past-container h2 {
   font-family: 'Dela Gothic One', sans-serif;
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: 50px;
   color: white;
   margin: 0 0 3rem;
 }
 
 .videos-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-flow: row;
+  gap: 100px;
+  align-items: flex-start;
+  padding-bottom: 50px;
 }
 
 .video-card { display: flex; flex-direction: column; gap: 0.75rem; }
@@ -24,14 +27,15 @@
   font-family: 'Oxanium', sans-serif;
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
 }
 
+/* framer-120bzka: width:480px; height:270px — 16:9 ratio matching live */
 .video-wrapper {
+  width: 480px;
+  height: 270px;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
   overflow: hidden;
-  border-radius: 8px;
   background: #111;
 }
 
@@ -44,5 +48,11 @@
 }
 
 @media (max-width: 767px) {
-  .videos-grid { grid-template-columns: 1fr; }
+  .videos-grid { flex-direction: column; gap: 2rem; }
+  .video-wrapper { width: 100%; height: 0; padding-bottom: 56.25%; }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  /* tablet: 550px container per video column */
+  .video-wrapper { width: 350px; height: 197px; }
 }

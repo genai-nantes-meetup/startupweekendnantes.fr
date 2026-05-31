@@ -1,14 +1,16 @@
-.team-section { background: rgb(14, 2, 24); padding: 5rem 2rem; }
+.team-section { background: rgb(0, 0, 0); padding: 0; }
 
-.team-container { max-width: 1240px; margin: 0 auto; }
+.team-container { max-width: 1240px; margin: 0 auto; padding: 73px 20px 0px; }
 
 .team-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 100px;
+  padding: 0 0 50px;
 }
+
+.team-header-title { width: 60%; }
 
 .team-header h2 {
   font-family: 'Dela Gothic One', sans-serif;
@@ -17,43 +19,38 @@
   margin: 0;
 }
 
+.team-header-desc { width: 32%; }
+
 .team-header p {
   font-family: 'Oxanium', sans-serif;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6);
-  max-width: 260px;
   line-height: 1.5;
   margin: 0;
   text-align: right;
 }
 
-.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 375px); gap: 20px; justify-content: center; }
 
-.member-card { display: flex; flex-direction: column; }
+.member-card { display: flex; flex-direction: column; align-items: flex-start; gap: 15px; }
 
 .member-photo {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 440px;
   object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  filter: grayscale(20%);
-  transition: filter 0.3s;
 }
 
-.member-card:hover .member-photo { filter: grayscale(0%); }
-
-.member-info h3 {
+.member-info h6 {
   font-family: 'Dela Gothic One', sans-serif;
-  font-size: 1rem;
+  font-size: 24px;
   color: white;
   margin: 0 0 0.25rem;
 }
 
 .member-info p {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
   margin: 0;
 }
 

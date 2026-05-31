@@ -15,8 +15,8 @@ export default function Welcome() {
       <div className="welcome-content">
         <h2>Tout le monde est le bienvenu 🎉</h2>
         <p>
-          Que tu sois étudiant, professionnel aguerri ou simplement passionné, Startup Weekend est
-          un événement ouvert à tous.
+          Que tu sois étudiant, professionnel aguerri ou simplement passionné,{' '}
+          Startup Weekend est un événement <strong>ouvert à tous</strong>.
         </p>
         <ul>
           <li>Entrepreneurs en herbe 🌱</li>
