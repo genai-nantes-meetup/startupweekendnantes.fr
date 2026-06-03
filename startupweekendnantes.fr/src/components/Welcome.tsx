@@ -5,7 +5,7 @@ export default function Welcome() {
     <section id="welcome" className="welcome-section">
       <div className="welcome-bg">
         <img
-          src="https://framerusercontent.com/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png"
+          src="/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png"
           alt=""
           aria-hidden="true"
           className="welcome-bg-img"
@@ -15,8 +15,8 @@ export default function Welcome() {
       <div className="welcome-content">
         <h2>Tout le monde est le bienvenu 🎉</h2>
         <p>
-          Que tu sois étudiant, professionnel aguerri ou simplement passionné,{' '}
-          Startup Weekend est un événement <strong>ouvert à tous</strong>.
+          Que tu sois étudiant, professionnel aguerri ou simplement passionné, Startup Weekend est
+          un événement <strong>ouvert à tous</strong>.
         </p>
         <ul>
           <li>Entrepreneurs en herbe 🌱</li>

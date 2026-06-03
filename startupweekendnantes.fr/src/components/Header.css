@@ -1,17 +1,38 @@
-header {
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: transparent;
+}
+
+.site-header-logo {
+  height: 3.5rem;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .site-header { padding: 1rem 1.25rem; }
+  .site-header-logo { height: 2.75rem; }
+}
+
+.site-header-cta {
+  font-size: 0.875rem;
 }
 
 .btn-secondary {
   display: inline-block;
-  padding: 0.5rem 1.25rem;
-  background: white;
-  color: rgb(25, 5, 50);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  padding: 13px 25px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 238);
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 12px;
   text-decoration: none;
   border-radius: 4px;
   box-shadow: 0 5px 0 rgb(179, 179, 179);

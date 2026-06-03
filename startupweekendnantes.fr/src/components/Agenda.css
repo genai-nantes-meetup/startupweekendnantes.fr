@@ -1,9 +1,9 @@
-.agenda-section { background: rgb(14, 2, 24); padding: 5rem 2rem; }
+.agenda-section { background: rgb(0, 0, 0); padding: 5rem 2rem; }
 
 .agenda-container { max-width: 1240px; margin: 0 auto; }
 
 .agenda-container > h2 {
-  font-family: 'Dela Gothic One', sans-serif;
+  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: white;
   margin: 0 0 3rem;
@@ -17,7 +17,12 @@
 
 .day-date { font-family: 'Oxanium', sans-serif; font-size: 18px; color: rgb(255, 255, 255); }
 
-.day-label { font-family: 'Agrandir Grand Heavy', sans-serif; font-size: 24px; text-transform: uppercase; }
+.day-label {
+  font-family: 'Agrandir Grand Heavy', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+}
 
 .day-name { font-family: 'Agrandir Grand Heavy', sans-serif; font-size: 24px; color: white; text-transform: uppercase; }
 

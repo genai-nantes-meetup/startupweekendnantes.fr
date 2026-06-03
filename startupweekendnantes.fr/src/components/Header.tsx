@@ -1,22 +1,23 @@
 import './Header.css';
+import { EDITION } from '../data/edition';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between">
+    <header className="site-header">
       <a href="/" aria-label="Startup Weekend Nantes">
         <img
-          src="https://framerusercontent.com/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png"
+          src="/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png"
           alt="Techstars Startup Weekend Nantes"
           width="147"
           height="47"
-          className="h-10 w-auto"
+          className="site-header-logo"
         />
       </a>
       <a
-        href="https://www.billetweb.fr/startup-weekend-nantes-2025"
+        href={EDITION.ticketUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-secondary text-sm"
+        className="btn-secondary site-header-cta"
       >
         Billetterie
       </a>
