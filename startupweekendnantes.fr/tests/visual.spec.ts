@@ -7,12 +7,17 @@ const SECTIONS = [
   { name: 'header', selector: 'header' },
   { name: 'hero', selector: '#hero' },
   { name: 'intro', selector: '#intro' },
+  { name: 'welcome', selector: '#welcome' },
+  { name: 'past', selector: '#past' },
   { name: 'team', selector: '#team' },
   { name: 'sponsors', selector: '#sponsors' },
   { name: 'pricing', selector: '#pricing' },
+  { name: 'venue', selector: '#venue' },
   { name: 'agenda', selector: '#agenda' },
   { name: 'faq', selector: '#faq' },
+  { name: 'org-team', selector: '#org-team' },
   { name: 'contact', selector: '#contact' },
+  { name: 'footer', selector: 'footer' },
 ];
 
 test.describe('Visual comparison — legacy vs Astro', () => {

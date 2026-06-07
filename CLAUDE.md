@@ -4,96 +4,90 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Static site for Startup Weekend Nantes, exported from Framer and deployed on Vercel. No build step — the site is pure HTML/CSS/JS with all assets inlined or bundled at export time.
+Static site for Startup Weekend Nantes. Two versions live side-by-side:
 
-## Local development
+- `legacy/` — current production site (Framer export, deployed on Vercel).
+- `startupweekendnantes.fr/` — Astro + React rewrite (not yet deployed). All assets self-hosted, no Framer runtime dependency.
 
+## Structure
+
+### `legacy/` (deployed)
+
+Pure HTML/CSS/JS exported from Framer. No build step.
+
+- `index.html` — monolithic HTML (~600 KB), inlined styles + JS.
+- `assets/` — fonts, images, bundled JS chunks.
+- `sw.js` — service worker that fixes SVG MIME types via URL rewriting.
+- `vercel.json` — `cleanUrls` + no `trailingSlash`.
+
+Local preview:
 ```bash
 docker run -it --rm -p 80:80 --name nginx -v $(pwd)/legacy:/usr/share/nginx/html nginx
 ```
 
-The site is then available at `http://localhost`.
+### `startupweekendnantes.fr/` (rewrite)
 
-## Structure
+Astro 5 + React 19 + TypeScript. Static output (no SSR). All assets local — `framerusercontent.com` URLs are forbidden.
 
-- `legacy/` — the deployable static site (Framer export). This is the root served by Vercel and nginx.
-  - `index.html` — monolithic HTML file (~600 KB), contains all markup, styles, and JS inlined by Framer.
-  - `assets/` — fonts, images, and bundled JS chunks referenced by index.html.
-  - `sw.js` — service worker that rewrites SVG URLs with encoded `?` to clean paths to fix MIME type issues.
-  - `vercel.json` — enables `cleanUrls` and disables `trailingSlash`.
-- `startupweekendnantes.fr/` — React rewrite of the site (not yet deployed). Mirrors the Framer export structure with clean, maintainable components.
-  - `src/components/` — one TSX file per section (Hero, Team, FAQ, Agenda, …).
-  - `src/styles/` — `framer.css` (Framer global styles), `breakpoints.css` (responsive utilities), `fonts.css`.
-  - `src/App.tsx` / `src/Main.tsx` — root component and layout wrapper.
+- `src/pages/index.astro` — single page, imports and assembles all section components.
+- `src/layouts/Layout.astro` — head/meta/GTM/fonts + motion animations (via `motion` package).
+- `src/components/*.tsx` — one component per section, paired with `<Component>.css`.
+- `src/styles/global.css` — base styles, CSS custom properties, font imports.
+- `public/images/` — all images (downloaded from Framer, served at `/images/<hash>.<ext>`).
+- `public/*.woff2` — font files.
+- `tests/visual.spec.ts` — Playwright visual regression (legacy vs astro, all sections).
+- `vercel.json` — build config for Vercel.
+
+Local dev:
+```bash
+cd startupweekendnantes.fr
+npm install
+npm run dev   # port 4323
+```
 
 ## Deployment
 
-Vercel deploys from the `legacy/` directory. The `vercel.json` config is co-located there. No CI pipeline; pushes to `main` trigger automatic deploys.
-
-## Editing the site
-
-The canonical editing path is via Framer (the HTML is generated). Direct edits to `legacy/index.html` are possible but will be overwritten on the next Framer export. Prefer editing in Framer and re-exporting, unless the change is a targeted hotfix (e.g. GTM ID, meta tags, sw.js).
+`legacy/` is currently deployed via Vercel (auto-deploys on push to `main`). The Astro rewrite is not yet wired to deployment.
 
 ## Analytics
 
-GTM container `GTM-NQ2DKKPD` and GA4 property `G-377KFTGYHV` are injected in the `<head>` of `index.html`.
+GTM container `GTM-NQ2DKKPD` and GA4 `G-377KFTGYHV` injected in `<head>` (both legacy and Astro).
 
-## React components (`startupweekendnantes.fr/`)
-
-The `startupweekendnantes.fr/` directory contains a React rewrite of the site (not yet deployed). Components mirror the Framer export structure.
+## Coding conventions (Astro rewrite)
 
 ### Data over repetition
 
 When a component renders the same HTML block multiple times with different data (team members, FAQ items, sponsors, agenda rows…), extract the data into an array and render with a loop. Never repeat JSX blocks — put the data at the top, loop once.
 
 ```tsx
-// ❌ repeated blocks
-<div className="framer-kupskb">
-  <figure ...><img src="thomas.jpg" /></figure>
-  <h6>Thomas Matthieu</h6>
-  <p>CEO @ Guest Suite</p>
-</div>
-<div className="framer-jvcfrj">
-  <figure ...><img src="claire.jpg" /></figure>
-  <h6>Claire Bretton</h6>
-  <p>CEO @ Underdog</p>
-</div>
-
-// ✅ data + loop
 const members = [
-  { containerClass: 'framer-kupskb', name: 'Thomas Matthieu', role: 'CEO @ Guest Suite', img: '...' },
-  { containerClass: 'framer-jvcfrj', name: 'Claire Bretton',  role: 'CEO @ Underdog',   img: '...' },
+  { name: 'Thomas Matthieu', role: 'CEO @ Guest Suite', img: '/images/...' },
+  { name: 'Claire Bretton',  role: 'CEO @ Underdog',   img: '/images/...' },
 ];
-members.map(m => <MemberCard key={m.containerClass} {...m} />)
+
+members.map(m => (
+  <div key={m.name} className="member-card">
+    <img src={m.img} alt={m.name} />
+    <h6>{m.name}</h6>
+    <p>{m.role}</p>
+  </div>
+));
 ```
 
-### Responsive approach: CSS over SSR variants
+### Styling: CSS per component
 
-**Never use Framer's `ssr-variant hidden-*` pattern.** Framer generates duplicate HTML for each breakpoint and hides 2 of 3 with CSS classes. Use native CSS instead.
+No Tailwind, no CSS-in-JS. Each component has its own `<Component>.css` file (e.g. `Hero.tsx` ↔ `Hero.css`). Shared variables and base styles live in `src/styles/global.css`.
 
-Breakpoints (defined in `src/styles/breakpoints.css`):
-- Mobile: `max-width: 767.98px`
-- Tablet: `min-width: 768px and max-width: 1239.98px`
-- Desktop: `min-width: 1240px`
+Inline `style={...}` only for values that come from runtime data (e.g. dynamic colors from a data array). Static styles always go in `.css`.
 
-**Images**: use a single `<img>` with `sizes` + `srcset`. The browser picks the right source natively. Drop `data-framer-original-sizes` (Framer metadata, not used by browsers).
+### Assets
 
-**Text alignment / font size**: Framer controls these via CSS custom properties (`--framer-text-alignment`, `--framer-font-size`) consumed by `framer.css`. Override them with media queries using utility classes from `src/styles/breakpoints.css`:
+All images served from `/images/`. To add a new image:
+1. Drop the file in `public/images/`.
+2. Reference as `/images/<filename>`.
 
-```tsx
-// ❌ Framer pattern — duplicate HTML
-<div className="ssr-variant hidden-1or7vws">
-  <h2>Title</h2>
-</div>
-<div className="ssr-variant hidden-1eym36j hidden-72rtr7">
-  <h2 style={{ '--framer-text-alignment': 'center' }}>Title</h2>
-</div>
+Never link to `framerusercontent.com` or any external CDN.
 
-// ✅ CSS approach — single element
-<h2 className="center-mobile">Title</h2>
-```
+### Hydration
 
-Available utility classes (add to `src/styles/breakpoints.css` as needed):
-- `.center-mobile` — `--framer-text-alignment: center` on mobile only
-- `.center-nondesktop` — `--framer-text-alignment: center` on tablet + mobile
-- `.font-sm-nondesktop` — `--framer-font-size: 15px` on tablet + mobile (vs 18px desktop)
+Components are static by default. Use `client:load` / `client:visible` on Astro side only for components with state or interactivity (currently only `<FAQ client:load />`).

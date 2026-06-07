@@ -4,16 +4,24 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
-        <h2>Une question ? N'hésite pas à nous contacter</h2>
-        <form className="contact-form" action="mailto:maxime.pitussi@gmail.com" method="GET">
+        <h6 className="contact-heading">Nous Contacter</h6>
+        <p className="contact-subtitle">Une question ? N'hésite pas à nous contacter</p>
+        <form
+          className="contact-form"
+          action="mailto:contact@startupweekendnantes.fr"
+          method="POST"
+        >
           <div className="form-row">
-            <input type="text" name="subject" placeholder="Prénom" required className="form-input" />
+            <input type="text" name="name" placeholder="Prénom" required className="form-input" />
             <input type="email" name="email" placeholder="Email" required className="form-input" />
           </div>
-          <textarea name="body" placeholder="Message" rows={5} required className="form-textarea" />
-          <button type="submit" className="form-submit">
-            Send
-          </button>
+          <textarea
+            name="message"
+            placeholder="Message"
+            required
+            className="form-input form-textarea"
+          />
+          <input type="submit" value="Send" className="form-submit" />
         </form>
       </div>
     </section>

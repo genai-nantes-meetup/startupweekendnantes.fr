@@ -1,11 +1,12 @@
 import './Hero.css';
+import { EDITION } from '../data/edition';
 
 export default function Hero() {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-bg">
         <img
-          src="https://framerusercontent.com/images/wMWsWm7njm6vmBfMVwkVaW4.png?width=1659&height=1361"
+          src="/images/wMWsWm7njm6vmBfMVwkVaW4.png"
           alt=""
           aria-hidden="true"
           className="hero-bg-img"
@@ -17,14 +18,14 @@ export default function Hero() {
           <h1>
             Startup Weekend
             <br />
-            2025 🎊
+            {EDITION.year} 🎊
           </h1>
           <p>
-            <strong>Du 21/11 au 23/11</strong> : L'événement pour monter un projet et vivre en
-            accéléré la création d'une startup, à Nantes.
+            <strong>{EDITION.dateRangeShort}</strong> : L'événement pour monter un projet et vivre
+            en accéléré la création d'une startup, à Nantes.
           </p>
           <a
-            href="https://www.billetweb.fr/startup-weekend-nantes-2025"
+            href={EDITION.ticketUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -34,7 +35,7 @@ export default function Hero() {
         </div>
 
         <img
-          src="https://framerusercontent.com/images/Zs0OyquSGNwZhNIZqYL3KdgW8Rs.svg?width=238&height=258"
+          src="/images/Zs0OyquSGNwZhNIZqYL3KdgW8Rs.svg"
           alt=""
           aria-hidden="true"
           className="hero-dots"
@@ -42,13 +43,13 @@ export default function Hero() {
 
         <figure className="hero-image" aria-hidden="true">
           <img
-            src="https://framerusercontent.com/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png"
+            src="/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png"
             alt="Participants au Startup Weekend"
             width="538"
             height="629"
           />
           <img
-            src="https://framerusercontent.com/images/QRQRAXnHu5ilXCmjG8WsfC9XA.svg?width=90&height=90"
+            src="/images/QRQRAXnHu5ilXCmjG8WsfC9XA.svg"
             alt=""
             aria-hidden="true"
             className="hero-circle"

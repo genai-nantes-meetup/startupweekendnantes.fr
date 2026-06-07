@@ -1,14 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oxanium:wght@400;500;600;700;800&display=swap');
 
 @font-face {
+  font-family: 'Helvetica Neue Black';
+  src: url('/fonts/HelveticaNeue-Black.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy';
+  src: url('/fonts/HelveticaNeue-Heavy.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url('/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Black Italic';
+  src: url('/fonts/HelveticaNeue-BlackItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Bold Italic';
+  src: url('/fonts/HelveticaNeue-BoldItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy Italic';
+  src: url('/fonts/HelveticaNeue-HeavyItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
   font-family: 'Agrandir Grand Heavy';
-  src: url('/TjZO3F2bzr85ciuOBFc9nmB4o.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
+  src: url('/fonts/Agrandir-GrandHeavy.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -31,11 +55,12 @@ html {
 body {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dela Gothic One', sans-serif;
+  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }

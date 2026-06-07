@@ -1,12 +1,14 @@
 ---
+import { EDITION } from '../data/edition';
+
 interface Props {
   title?: string;
   description?: string;
 }
 
 const {
-  title = 'Startup Weekend Nantes — 2025 Edition',
-  description = "Startup Weekend Nantes 2025 — Du 21 au 23 novembre. L'événement pour monter un projet et vivre en accéléré la création d'une startup, à Nantes.",
+  title = `Startup Weekend Nantes — ${EDITION.year} Edition`,
+  description = `Startup Weekend Nantes ${EDITION.year} — ${EDITION.dateRangeLong}. L'événement pour monter un projet et vivre en accéléré la création d'une startup, à Nantes.`,
 } = Astro.props;
 ---
 
@@ -35,16 +37,7 @@ const {
       })(window, document, 'script', 'dataLayer', 'GTM-NQ2DKKPD');
     </script>
 
-    <style>
-      /*
-       * Framer appear animation — initial hidden states.
-       * Matches Framer's data-framer-appear-id pattern:
-       *   opacity: 0.001 (not 0, avoids CLS)
-       *   transform: perspective(1200px) translateY(±Npx)
-       *
-       * Elements slide UP (+150px → 0) — main content
-       * Elements slide DOWN (-50px → 0) — decorative/from above
-       */
+    <style is:global>
       @media (prefers-reduced-motion: no-preference) {
         /* Slide UP — section text blocks, cards, headers */
         .hero-text,
@@ -89,26 +82,32 @@ const {
     <slot />
 
     <script>
-      import { animate, inView } from 'motion';
+      import { animateMini, inView } from 'motion';
+
+      // motion's MarginType is not exported; mirror the template-literal shape here.
+      type MarginValue = `${number}${'px' | '%'}`;
+      type Margin = MarginValue | `${MarginValue} ${MarginValue}`;
 
       /* Framer-matching easing: fast start, slow settle — cubic-bezier(0.25, 0.1, 0.25, 1) */
       const EASE = [0.25, 0.1, 0.25, 1] as const;
       const DURATION = 0.7;
-
-      /* Transform targets */
       const TO_ZERO = 'perspective(1200px) translateY(0px)';
+
+      const DEFAULT_MARGIN: Margin = '-80px 0px';
+      const CARD_MARGIN: Margin = '-40px 0px';
+      const ROW_MARGIN: Margin = '-20px 0px';
 
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 
         /* ── Slide UP: main content ───────────────────────────── */
-        const slideUp = (selector: string, delay = 0, margin = '-80px 0px') => {
+        const slideUp = (selector: string, delay = 0, margin: Margin = DEFAULT_MARGIN) => {
           inView(
             selector,
             (el) => {
-              animate(
+              animateMini(
                 el,
                 { opacity: 1, transform: TO_ZERO },
-                { duration: DURATION, delay, easing: EASE }
+                { duration: DURATION, delay, ease: EASE }
               );
             },
             { margin }
@@ -130,47 +129,30 @@ const {
         slideUp('.footer-container');
 
         // Cards — stagger by sibling index (Framer-style)
-        inView(
-          '.member-card, .org-card',
-          (el) => {
-            const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
-            animate(
-              el,
-              { opacity: 1, transform: TO_ZERO },
-              { duration: 0.6, delay: idx * 0.07, easing: EASE }
-            );
-          },
-          { margin: '-40px 0px' }
-        );
+        const animateCard = (el: Element, stagger: number) => {
+          const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
+          animateMini(
+            el,
+            { opacity: 1, transform: TO_ZERO },
+            { duration: 0.6, delay: idx * stagger, ease: EASE }
+          );
+        };
 
-        inView(
-          '.pricing-card',
-          (el) => {
-            const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
-            animate(
-              el,
-              { opacity: 1, transform: TO_ZERO },
-              { duration: 0.6, delay: idx * 0.1, easing: EASE }
-            );
-          },
-          { margin: '-40px 0px' }
-        );
+        inView('.member-card, .org-card', (el) => animateCard(el, 0.07), { margin: CARD_MARGIN });
+        inView('.pricing-card', (el) => animateCard(el, 0.1), { margin: CARD_MARGIN });
 
         // Agenda rows and FAQ items
-        slideUp('.agenda-day', 0, '-20px 0px');
-        slideUp('.faq-item', 0, '-20px 0px');
+        slideUp('.agenda-day', 0, ROW_MARGIN);
+        slideUp('.faq-item', 0, ROW_MARGIN);
 
         /* ── Slide DOWN: decorative elements ─────────────────── */
-        inView(
-          '.hero-dots, .hero-circle',
-          (el) => {
-            animate(
-              el,
-              { opacity: 1, transform: TO_ZERO },
-              { duration: 0.6, easing: EASE }
-            );
-          }
-        );
+        inView('.hero-dots, .hero-circle', (el) => {
+          animateMini(
+            el,
+            { opacity: 1, transform: TO_ZERO },
+            { duration: 0.6, ease: EASE }
+          );
+        });
 
       }
     </script>

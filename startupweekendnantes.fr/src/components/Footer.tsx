@@ -1,4 +1,5 @@
 import './Footer.css';
+import { EDITION } from '../data/edition';
 
 export default function Footer() {
   return (
@@ -6,14 +7,16 @@ export default function Footer() {
       <div className="footer-container">
         <a href="/" className="footer-logo">
           <img
-            src="https://framerusercontent.com/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png"
+            src="/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png"
             alt="Techstars Startup Weekend Nantes"
             width="180"
             height="58"
             className="footer-logo-img"
           />
         </a>
-        <p className="footer-copy">© 2025 Startup Weekend Nantes — Tous droits réservés</p>
+        <p className="footer-copy">
+          © {EDITION.year} Startup Weekend Nantes — Tous droits réservés
+        </p>
       </div>
     </footer>
   );
