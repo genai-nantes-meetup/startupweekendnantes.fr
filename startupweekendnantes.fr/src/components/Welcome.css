@@ -55,7 +55,7 @@
 }
 
 .welcome-content > p {
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: rgb(255, 255, 255);
 
@@ -74,17 +74,16 @@
 }
 
 .welcome-content ul li {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 0.95rem;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
   color: white;
   padding: 0.2rem 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .tagline {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
   color: white;
   margin: 0;
 }

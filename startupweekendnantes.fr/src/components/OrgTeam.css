@@ -23,16 +23,15 @@
 }
 
 .org-card h3 {
-  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.125rem;
+  font-family: 'Helvetica Neue Heavy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 26px;
   color: white;
   margin: 0 0 0.375rem;
-  letter-spacing: 0.05em;
 }
 
 .org-card p {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 0.875rem;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
   color: rgba(255,255,255,0.6);
   margin: 0;
 }

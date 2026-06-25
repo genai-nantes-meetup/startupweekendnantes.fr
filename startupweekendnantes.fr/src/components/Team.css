@@ -22,8 +22,8 @@
 .team-header-desc { width: 32%; }
 
 .team-header p {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 0.9rem;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
   margin: 0;
@@ -41,7 +41,7 @@
 }
 
 .member-info h6 {
-  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Dela Gothic One', 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
   color: white;
   margin: 0 0 0.25rem;
