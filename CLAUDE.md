@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Static site for Startup Weekend Nantes. Two versions live side-by-side:
 
 - `legacy/` — current production site (Framer export, deployed on Vercel).
+- `beta/` — previous attempt - please ignore.
 - `startupweekendnantes.fr/` — Astro + React rewrite (not yet deployed). All assets self-hosted, no Framer runtime dependency.
 
 ## Structure
