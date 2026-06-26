@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="hero" className="hero-section">
       <div className="hero-bg">
         <img
-          src="/images/wMWsWm7njm6vmBfMVwkVaW4.png"
+          src="/assets/images/hero/hero-background.png"
           alt=""
           aria-hidden="true"
           className="hero-bg-img"
@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
 
         <img
-          src="/images/Zs0OyquSGNwZhNIZqYL3KdgW8Rs.svg"
+          src="/assets/images/hero/hero-dots.svg"
           alt=""
           aria-hidden="true"
           className="hero-dots"
@@ -43,13 +43,13 @@ export default function Hero() {
 
         <figure className="hero-image" aria-hidden="true">
           <img
-            src="/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png"
+            src="/assets/images/hero/hero-participants.png"
             alt="Participants au Startup Weekend"
             width="538"
             height="629"
           />
           <img
-            src="/images/QRQRAXnHu5ilXCmjG8WsfC9XA.svg"
+            src="/assets/images/hero/hero-circle.svg"
             alt=""
             aria-hidden="true"
             className="hero-circle"

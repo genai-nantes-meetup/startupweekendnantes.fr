@@ -44,7 +44,7 @@ const dayRows: Row[][] = [
       time: '21h15',
       title: 'KEA sur le pitch et les startups',
       desc: 'Par Claire Bretton de Underdog',
-      speaker: { name: 'Claire Bretton', img: '/images/8JSXibl4A4aZTwJgXOWiMm5Yio.jpeg' },
+      speaker: { name: 'Claire Bretton', img: '/assets/images/speakers/claire-bretton.jpeg' },
     },
     {
       time: '21h45',
@@ -70,8 +70,8 @@ const dayRows: Row[][] = [
       title: 'Lancement de la journée',
       desc: 'Agenda et grandes étapes de la journée.',
       speakers: [
-        '/images/hnQXqgk32dqlRBwcUizHzN1Q.jpeg',
-        '/images/ZxVXYgfcXSA9Icu75YPXMpFKm2Y.png',
+        '/assets/images/orga/florence-poyvre.png',
+        '/assets/images/orga/robin-goutard.png',
       ],
     },
     {
@@ -79,8 +79,8 @@ const dayRows: Row[][] = [
       title: 'Conférences : Marché + IA Générative',
       desc: 'Par Pauline Corriou et Simon Timssale',
       speakers: [
-        '/images/VQm4I4LuWNHC0UemB1sslF3p8.jpeg',
-        '/images/lyIwOv1puBWIqCuDn2zoYOXI9BY.jpeg',
+        '/assets/images/speakers/simon-timssale.jpeg',
+        '/assets/images/speakers/pauline-corriou.jpeg',
       ],
     },
     { time: '9h45', title: 'Équipes au travail', desc: '' },

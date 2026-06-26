@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-container">
         <a href="/" className="footer-logo">
           <img
-            src="/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png"
+            src="/assets/images/brand/logo-startup-weekend-nantes.png"
             alt="Techstars Startup Weekend Nantes"
             width="180"
             height="58"

@@ -3,11 +3,11 @@
 export type IntroImage = { src: string; alt: string };
 
 export const topImages: IntroImage[] = [
-  { src: '/images/3icxBJ1CcHn6M34eovnFgccTZR0.jpg', alt: 'Bad Ideas Good Stories t-shirt' },
-  { src: '/images/FS3ISXEUHf4xNgOzHz1v79bPNPo.jpg', alt: 'Speaker au pitch' },
+  { src: '/assets/images/intro/intro-tshirt-bad-ideas-good-stories.jpg', alt: 'Bad Ideas Good Stories t-shirt' },
+  { src: '/assets/images/intro/event-pitch-speaker.jpg', alt: 'Speaker au pitch' },
 ];
 
 export const bottomImages: IntroImage[] = [
-  { src: '/images/cCa01Jr6KZUDGU8OkU8loM1z0.jpg', alt: 'Brainstorming en équipe' },
-  { src: '/images/24WMO9KZT30jBPFpwrgWt8rkSs.jpg', alt: 'Photo de groupe' },
+  { src: '/assets/images/intro/intro-team-brainstorming.jpg', alt: 'Brainstorming en équipe' },
+  { src: '/assets/images/intro/intro-group-photo.jpg', alt: 'Photo de groupe' },
 ];

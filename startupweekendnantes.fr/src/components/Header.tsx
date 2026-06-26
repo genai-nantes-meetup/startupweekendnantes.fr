@@ -6,7 +6,7 @@ export default function Header() {
     <header className="site-header">
       <a href="/" aria-label="Startup Weekend Nantes">
         <img
-          src="/images/itdvMnDtbQRtWeHHjc1JZFdBDhM.png"
+          src="/assets/images/brand/logo-startup-weekend-nantes.png"
           alt="Techstars Startup Weekend Nantes"
           width="147"
           height="47"

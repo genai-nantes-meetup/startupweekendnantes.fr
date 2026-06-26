@@ -33,7 +33,7 @@ Astro 5 + React 19 + TypeScript. Static output (no SSR). All assets local — `f
 - `src/layouts/Layout.astro` — head/meta/GTM/fonts + motion animations (via `motion` package).
 - `src/components/*.tsx` — one component per section, paired with `<Component>.css`.
 - `src/styles/global.css` — base styles, CSS custom properties, font imports.
-- `public/images/` — all images (downloaded from Framer, served at `/images/<hash>.<ext>`).
+- `public/assets/images/` — all images, sorted into per-section folders (`speakers/`, `orga/`, `sponsors/`, `venue/`, `intro/`, `hero/`, `welcome/`, `pricing/`, `brand/`). Profile pictures are named after the person (e.g. `speakers/thomas-matthieu.jpeg`). Served at `/assets/images/<folder>/<name>`.
 - `public/*.woff2` — font files.
 - `tests/visual.spec.ts` — Playwright visual regression (legacy vs astro, all sections).
 - `vercel.json` — build config for Vercel.
@@ -61,8 +61,8 @@ When a component renders the same HTML block multiple times with different data 
 
 ```tsx
 const members = [
-  { name: 'Thomas Matthieu', role: 'CEO @ Guest Suite', img: '/images/...' },
-  { name: 'Claire Bretton',  role: 'CEO @ Underdog',   img: '/images/...' },
+  { name: 'Thomas Matthieu', role: 'CEO @ Guest Suite', img: '/assets/images/speakers/thomas-matthieu.jpeg' },
+  { name: 'Claire Bretton',  role: 'CEO @ Underdog',   img: '/assets/images/speakers/claire-bretton.jpeg' },
 ];
 
 members.map(m => (
@@ -82,9 +82,11 @@ Inline `style={...}` only for values that come from runtime data (e.g. dynamic c
 
 ### Assets
 
-All images served from `/images/`. To add a new image:
-1. Drop the file in `public/images/`.
-2. Reference as `/images/<filename>`.
+All images served from `/assets/images/`, organised into per-section folders
+(`speakers/`, `orga/`, `sponsors/`, `venue/`, `intro/`, `hero/`, `welcome/`,
+`pricing/`, `brand/`). Profile pictures are named after the person. To add a new image:
+1. Drop the file in the relevant `public/assets/images/<section>/` folder.
+2. Reference as `/assets/images/<section>/<filename>`.
 
 Never link to `framerusercontent.com` or any external CDN.
 

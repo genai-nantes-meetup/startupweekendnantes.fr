@@ -6,28 +6,28 @@
 
 export type Sponsor = { name: string; img: string };
 
-const BASE = '/images/';
+const BASE = '/assets/images/sponsors/';
 
 export const sponsorRows: Sponsor[][] = [
   [
-    { name: 'Nantes Métropole', img: `${BASE}hEoUoeabKge2WBaQJP62xwnrEEQ.png` },
-    { name: 'allovoisins', img: `${BASE}mowMp6Vf0kSPXZHQB9N5E.png` },
-    { name: 'Ordre des Experts-Comptables', img: `${BASE}iTUR9jaNQ4EbeYEHbPH5vUWxRQ.svg` },
+    { name: 'Nantes Métropole', img: `${BASE}sponsor-nantes-metropole.png` },
+    { name: 'allovoisins', img: `${BASE}sponsor-allovoisins.png` },
+    { name: 'Ordre des Experts-Comptables', img: `${BASE}sponsor-ordre-experts-comptables.svg` },
   ],
   [
-    { name: 'crisp', img: `${BASE}xgqZP9NFB8rOgqvLhHUkyDYRJYU.png` },
-    { name: 'clever cloud', img: `${BASE}C7lvJXp3dybbCUCltGehqzDyw4.png` },
-    { name: 'Guest Suite', img: `${BASE}f4AyPqq1hjMZxQxCR0mkLhZ7Q.png` },
+    { name: 'crisp', img: `${BASE}sponsor-crisp.png` },
+    { name: 'clever cloud', img: `${BASE}sponsor-clever-cloud.png` },
+    { name: 'Guest Suite', img: `${BASE}sponsor-guest-suite.png` },
   ],
   [
-    { name: 'kiliogene', img: `${BASE}2OyxeqKFVJBlpaZYbucB087OteU.png` },
-    { name: 'Réseau Entreprendre Atlantique', img: `${BASE}44iQIZPqRkD7728oDk6fVdVgQ.png` },
-    { name: 'Finalli', img: `${BASE}Q7FknPV2hRB0NaQJVTxDxhqy1ok.png` },
+    { name: 'kiliogene', img: `${BASE}sponsor-kiliogene.png` },
+    { name: 'Réseau Entreprendre Atlantique', img: `${BASE}sponsor-reseau-entreprendre-atlantique.png` },
+    { name: 'Finalli', img: `${BASE}sponsor-finalli.png` },
   ],
 ];
 
 export const bannerRow: Sponsor[] = [
-  { name: 'icilundi', img: `${BASE}xbrzvOd572A3buGabxbYYWHMDTA.png` },
-  { name: 'pépite Pays de la Loire', img: `${BASE}zql7stHN2Rthx6uOdsagCNhv2M.png` },
-  { name: 'Arzel', img: `${BASE}0WtTlUnGSMQLo0YDGvoTdjyhMEc.png` },
+  { name: 'icilundi', img: `${BASE}sponsor-icilundi.png` },
+  { name: 'pépite Pays de la Loire', img: `${BASE}sponsor-pepite-pays-de-la-loire.png` },
+  { name: 'Arzel', img: `${BASE}sponsor-arzel.png` },
 ];

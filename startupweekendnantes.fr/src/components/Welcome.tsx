@@ -5,7 +5,7 @@ export default function Welcome() {
     <section id="welcome" className="welcome-section">
       <div className="welcome-bg">
         <img
-          src="/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png"
+          src="/assets/images/welcome/welcome-background.png"
           alt=""
           aria-hidden="true"
           className="welcome-bg-img"

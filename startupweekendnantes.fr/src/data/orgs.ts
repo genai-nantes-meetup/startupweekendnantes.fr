@@ -9,42 +9,42 @@ export const orgs: Organiser[] = [
   {
     name: 'Florence POYVRE',
     role: 'Co-Founder @Fly The Nest',
-    img: '/images/CPPiPrmwNlBDD16ZjEsEp7jSOYQ.png',
+    img: '/assets/images/orga/florence-poyvre.png',
   },
   {
     name: 'Robin GOUTARD',
     role: 'Consultant innovation @In Extenso',
-    img: '/images/29nftr9xwtYw2wzRwUXbsYBA8Lw.png',
+    img: '/assets/images/orga/robin-goutard.png',
   },
   {
     name: 'Florian HERVÉOU',
     role: 'Head of Startup Programs @Startup Palace',
-    img: '/images/vDdpuf0bvfUg1jOKqSriwoI8As.jpeg',
+    img: '/assets/images/speakers/florian-herveou.jpeg',
   },
   {
     name: 'Guillaume PARTHENAY',
     role: 'Responsable commercial & marketing @Jujotte',
-    img: '/images/9yaN44IumqxW2zGrUItm4iU18.png',
+    img: '/assets/images/orga/guillaume-parthenay.png',
   },
   {
     name: 'Louis AMMONIQUE',
     role: 'Growth Manager @kelvin',
-    img: '/images/cjfdmDrvGd9wKFVkjxVAYft8Yg.png',
+    img: '/assets/images/orga/louis-ammonique.png',
   },
   {
     name: 'Clara GARNIER',
     role: 'Fondatrice @Kidefeel',
-    img: '/images/kprcfjkwgOzbgcID4jUNV5YNis.png',
+    img: '/assets/images/orga/clara-garnier.png',
   },
   {
     name: 'Romain PERRAUT',
     role: 'Head of Sales @_icilundi',
-    img: '/images/eRSRmPp4xOQQD6xgxPzGxkwZ4.png',
+    img: '/assets/images/orga/romain-perraut.png',
   },
-  { name: 'Ana PASCAUD', role: 'Fondatrice @SAWA', img: '/images/zrnozkkMGZmZ62YKvXWpLSdBMfE.png' },
+  { name: 'Ana PASCAUD', role: 'Fondatrice @SAWA', img: '/assets/images/orga/ana-pascaud.png' },
   {
     name: 'Grégory THIBORD',
     role: 'CEO @_icilundi',
-    img: '/images/afjyIBAmXZ8DGW3gvaIVbNIIoU.jpeg',
+    img: '/assets/images/orga/gregory-thibord.jpeg',
   },
 ];

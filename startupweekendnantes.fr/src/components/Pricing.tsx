@@ -7,7 +7,7 @@ export default function Pricing() {
       <section id="pricing" className="pricing-section">
         <div className="pricing-container">
           <img
-            src="/images/qG7RWN4HUTjhIeg3Ut5ZCldlv4.svg"
+            src="/assets/images/pricing/pricing-star.svg"
             alt=""
             aria-hidden="true"
             className="pricing-star"
