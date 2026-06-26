@@ -1,5 +1,5 @@
 {
-  "name": "startupweekendnantes-fr",
+  "name": "startup-weekend-nantes",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,22 +7,24 @@
     "build": "astro build",
     "preview": "astro preview",
     "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
     "typecheck": "astro check",
     "check": "npm run lint && npm run typecheck && npm run build",
-    "format": "prettier --write src",
     "test:visual": "playwright test"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.6",
     "@astrojs/sitemap": "^3.4.1",
-    "@types/react": "^19.2.15",
-    "@types/react-dom": "^19.2.3",
     "astro": "^5.8.0",
     "motion": "^12.15.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
     "@astrojs/check": "^0.9.9",
     "@playwright/test": "^1.52.0",
     "@typescript-eslint/eslint-plugin": "^8.60.0",

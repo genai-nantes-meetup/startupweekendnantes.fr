@@ -28,6 +28,8 @@ docker run -it --rm -p 80:80 --name nginx -v $(pwd)/legacy:/usr/share/nginx/html
 
 ### `startupweekendnantes.fr/` (rewrite)
 
+Don't use worktrees.
+
 Astro 5 + React 19 + TypeScript. Static output (no SSR). All assets local — `framerusercontent.com` URLs are forbidden.
 
 - `src/pages/index.astro` — single page, imports and assembles all section components.
