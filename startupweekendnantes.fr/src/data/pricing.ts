@@ -43,7 +43,7 @@ export const tiers: Tier[] = [
     ],
     cta: 'Je prends ma place',
     href: EDITION.ticketUrl,
-    badge: 'MAKERS',
+    badge: '★ Recommandé',
     borderColor: '#4caf50',
     bgColor: '#b2f2bb',
   },

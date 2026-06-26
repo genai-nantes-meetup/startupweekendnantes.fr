@@ -20,10 +20,18 @@ export type Day = {
   label: string;
   day: string;
   color: string;
+  narrative: string;
   rows: Row[];
 };
 
 const dayColors = ['rgb(249, 211, 211)', 'rgb(211, 249, 216)', 'rgb(255, 249, 196)'];
+
+// Narration de chaque jour (cadrage orga).
+const dayNarratives = [
+  'On se jette dans le bain',
+  'On abat le boulot (et petite fiesta)',
+  'On affine et on pitche',
+];
 
 const dayRows: Row[][] = [
   // JOUR 1 — Vendredi
@@ -31,13 +39,13 @@ const dayRows: Row[][] = [
     { time: '18h', title: 'Accueil', desc: 'Enregistrement des participants et networking.' },
     {
       time: '19h',
-      title: 'Pitchs des idées',
-      desc: "Chaque porteur d'idée présente son projet en 60 secondes.",
+      title: 'Pitchs des problèmes',
+      desc: 'Chaque porteur de problème présente son problème en 60 secondes — pas de solution.',
     },
     {
       time: '20h',
       title: 'Vote',
-      desc: "Les participants votent pour les idées qu'ils souhaitent développer.",
+      desc: "Les participants votent pour les problèmes qu'ils souhaitent attaquer.",
     },
     { time: '20h30', title: 'Repas', desc: 'Dîner ensemble.' },
     {
@@ -112,7 +120,7 @@ const dayRows: Row[][] = [
     {
       time: '18h30',
       title: 'Cérémonie de remise des prix',
-      desc: `Le jury annonce les gagnants de cette ${EDITION.editionNumber}ème édition.`,
+      desc: `Le jury annonce les gagnants de l'édition ${EDITION.year}.`,
     },
     { time: '19h30', title: 'Fin de Startup Weekend', desc: '' },
   ],
@@ -121,5 +129,6 @@ const dayRows: Row[][] = [
 export const days: Day[] = EDITION.agendaDays.map((d, i) => ({
   ...d,
   color: dayColors[i],
+  narrative: dayNarratives[i],
   rows: dayRows[i],
 }));

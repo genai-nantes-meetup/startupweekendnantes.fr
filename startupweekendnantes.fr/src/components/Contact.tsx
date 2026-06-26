@@ -1,27 +1,46 @@
 import './Contact.css';
+import { EDITION } from '../data/edition';
+import RisoIllu from './ui/RisoIllu';
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="section contact-section surface-dark">
+      <div className="hud-grid" aria-hidden="true"></div>
       <div className="contact-container">
-        <h6 className="contact-heading">Nous Contacter</h6>
-        <p className="contact-subtitle">Une question ? N'hésite pas à nous contacter</p>
-        <form
-          className="contact-form"
-          action="mailto:contact@startupweekendnantes.fr"
-          method="POST"
-        >
+        <RisoIllu
+          subject="console"
+          surface="dark"
+          glow="none"
+          round
+          alt="Un opérateur de mission à sa console, casque sur les oreilles"
+          className="contact-console"
+        />
+        <p className="kicker kicker--on-dark">✳ Transmission</p>
+        <h2 className="t-title contact-heading">Une question ? Contacte la base.</h2>
+        <form className="contact-form" action={`mailto:${EDITION.contactEmail}`} method="POST">
           <div className="form-row">
-            <input type="text" name="name" placeholder="Prénom" required className="form-input" />
-            <input type="email" name="email" placeholder="Email" required className="form-input" />
+            <div className="form-field">
+              <label htmlFor="contact-name">Prénom</label>
+              <input id="contact-name" type="text" name="name" required className="form-input" />
+            </div>
+            <div className="form-field">
+              <label htmlFor="contact-email">Email</label>
+              <input id="contact-email" type="email" name="email" required className="form-input" />
+            </div>
           </div>
-          <textarea
-            name="message"
-            placeholder="Message"
-            required
-            className="form-input form-textarea"
-          />
-          <input type="submit" value="Send" className="form-submit" />
+          <div className="form-field">
+            <label htmlFor="contact-message">Ton message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows={4}
+              required
+              className="form-input form-textarea"
+            ></textarea>
+          </div>
+          <button type="submit" className="btn btn--primary contact-submit">
+            Transmettre →
+          </button>
         </form>
       </div>
     </section>

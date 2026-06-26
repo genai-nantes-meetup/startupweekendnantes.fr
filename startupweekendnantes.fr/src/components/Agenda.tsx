@@ -1,61 +1,65 @@
 import './Agenda.css';
 import { days } from '../data/agenda';
+import { EDITION } from '../data/edition';
+
+const KEY_RE = /pitch|vote|cérémonie|remise|formation des équipes|fin de startup/i;
+const shortDate = (date: string) => date.replace(` ${EDITION.year}`, '');
 
 export default function Agenda() {
   return (
-    <section id="agenda" className="agenda-section">
-      <div className="agenda-container">
-        <h2>Agenda</h2>
-        {days.map((day) => (
-          <div key={day.label} className="agenda-day">
-            <div className="day-header">
-              <div className="day-meta">
-                <span className="day-date">{day.date}</span>
-                <strong className="day-label">{day.label}</strong>
-              </div>
-              <span className="day-name">{day.day}</span>
-            </div>
-            <table className="agenda-table">
-              <thead>
-                <tr style={{ background: day.color }}>
-                  <th>Heure</th>
-                  <th>Programme</th>
-                  <th>Speakers</th>
-                </tr>
-              </thead>
-              <tbody>
-                {day.rows.map((row, j) => (
-                  <tr key={j}>
-                    <td className="time-cell">{row.time}</td>
-                    <td className="prog-cell">
-                      {row.title && <strong>{row.title}</strong>}
-                      {row.desc && <span>{row.desc}</span>}
-                    </td>
-                    <td className="speaker-cell">
-                      {row.speaker && (
-                        <img
-                          src={row.speaker.img}
-                          alt={row.speaker.name}
-                          className="speaker-avatar"
-                          loading="lazy"
-                        />
-                      )}
-                      {row.speakers?.map((s) => (
-                        <img
-                          key={s}
-                          src={s}
-                          alt="Speaker"
-                          className="speaker-avatar"
-                          loading="lazy"
-                        />
-                      ))}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ))}
+    <section id="agenda" className="section agenda-section surface-dark">
+      <div className="container">
+        <p className="kicker kicker--on-dark">✳ Mission log · briefing du week-end</p>
+        <h2 className="t-title agenda-title">{EDITION.durationHours} heures, minute par minute</h2>
+
+        <div className="agenda-files">
+          {days.map((d, i) => (
+            <article className="dossier" key={d.label}>
+              <header className="dossier-head">
+                <span className="t-mono dossier-code">
+                  Jour {String(i + 1).padStart(2, '0')} · SWNA-{EDITION.year}
+                </span>
+                <span className="t-mono dossier-date">
+                  {d.day} {shortDate(d.date)}
+                </span>
+              </header>
+
+              <h3 className="t-heading dossier-title">« {d.narrative} »</h3>
+
+              <ol className="dossier-rows">
+                {d.rows.map((r, j) => {
+                  const key = KEY_RE.test(r.title);
+                  return (
+                    <li className={`dossier-row${key ? ' is-key' : ''}`} key={j}>
+                      <span className="t-mono dossier-time">{r.time}</span>
+                      <div className="dossier-event">
+                        <span className="dossier-event-title">
+                          {key && <span className="dossier-star" aria-hidden="true">★ </span>}
+                          {r.title}
+                        </span>
+                        {r.desc && <span className="dossier-event-desc">{r.desc}</span>}
+                        {(r.speaker || r.speakers) && (
+                          <span className="dossier-speakers">
+                            {r.speaker && (
+                              <img src={r.speaker.img} alt={r.speaker.name} className="dossier-avatar" loading="lazy" />
+                            )}
+                            {r.speakers?.map((s) => (
+                              <img key={s} src={s} alt="" aria-hidden="true" className="dossier-avatar" loading="lazy" />
+                            ))}
+                          </span>
+                        )}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ol>
+
+              <footer className="t-mono dossier-foot">
+                {d.rows.length} créneaux · {shortDate(d.date)}
+              </footer>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

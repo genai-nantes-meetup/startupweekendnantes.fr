@@ -4,13 +4,13 @@ import { pastVideos } from '../data/past';
 
 export default function PastGlimpse() {
   return (
-    <section id="past" className="past-section">
-      <div className="past-container">
-        <h2>Revivez les moments forts de l'édition {EDITION.pastYear} !</h2>
+    <section id="past" className="section past-section surface-dark tex">
+      <div className="container past-container">
+        <p className="kicker kicker--on-dark">✳ Archives · édition {EDITION.pastYear}</p>
+        <h2 className="t-title past-title">Revivez les moments forts</h2>
         <div className="videos-grid">
           {pastVideos.map((video) => (
-            <div key={video.embedUrl} className="video-card">
-              <span className="video-label">{video.label}</span>
+            <figure key={video.embedUrl} className="video-card">
               <div className="video-wrapper">
                 <iframe
                   src={video.embedUrl}
@@ -21,7 +21,8 @@ export default function PastGlimpse() {
                   loading="lazy"
                 />
               </div>
-            </div>
+              <figcaption className="t-mono video-label">▶ {video.label}</figcaption>
+            </figure>
           ))}
         </div>
       </div>

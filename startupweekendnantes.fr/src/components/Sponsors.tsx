@@ -3,34 +3,23 @@ import { sponsorRows, bannerRow } from '../data/sponsors';
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="sponsors-section">
-      <div className="sponsors-container">
-        <h2>Nos fervents partenaires</h2>
+    <section id="sponsors" className="section sponsors-section surface-prune tex">
+      <div className="container sponsors-inner">
+        <p className="kicker kicker--on-dark">✳ Nos fervents partenaires</p>
+        <h2 className="t-title sponsors-title">Ils soutiennent la mission</h2>
         <div className="sponsors-grid">
-          {sponsorRows.map((row, i) => (
-            <div key={i} className="sponsors-row">
-              {row.map((s) => (
-                <img
-                  key={s.name}
-                  src={s.img}
-                  alt={s.name}
-                  loading="lazy"
-                  className="sponsor-logo"
-                />
-              ))}
+          {sponsorRows.flat().map((s) => (
+            <div className="sponsor-cell" key={s.name}>
+              <img src={s.img} alt={s.name} loading="lazy" className="sponsor-logo" />
             </div>
           ))}
-          <div className="sponsors-row sponsors-row-banner">
-            {bannerRow.map((s) => (
-              <img
-                key={s.name}
-                src={s.img}
-                alt={s.name}
-                loading="lazy"
-                className="sponsor-logo sponsor-logo-banner"
-              />
-            ))}
-          </div>
+        </div>
+        <div className="sponsors-grid sponsors-grid--banner">
+          {bannerRow.map((s) => (
+            <div className="sponsor-cell" key={s.name}>
+              <img src={s.img} alt={s.name} loading="lazy" className="sponsor-logo" />
+            </div>
+          ))}
         </div>
       </div>
     </section>

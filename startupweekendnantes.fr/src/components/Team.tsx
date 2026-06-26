@@ -3,25 +3,28 @@ import { members } from '../data/team';
 
 export default function Team() {
   return (
-    <section id="team" className="team-section">
-      <div className="team-container">
+    <section id="team" className="section team-section">
+      <div className="container">
         <div className="team-header">
-          <div className="team-header-title">
-            <h2>Ils seront de la partie</h2>
+          <div>
+            <p className="kicker">✳ Mission control</p>
+            <h2 className="t-title team-title">Coachs, speakers &amp; jury</h2>
           </div>
-          <div className="team-header-desc">
-            <p>Coachs, speakers ou jury, ils seront présents lors de l'événement</p>
-          </div>
+          <p className="t-body team-desc">
+            Ils seront présents tout le week-end pour débloquer les équipes.
+          </p>
         </div>
         <div className="team-grid">
           {members.map((m) => (
-            <div key={m.name} className="member-card">
-              <img src={m.img} alt={m.name} className="member-photo" loading="lazy" />
-              <div className="member-info">
-                <h6>{m.name}</h6>
-                <p>{m.role}</p>
+            <article key={m.name} className="member-card">
+              <div className="member-photo-wrap">
+                <img src={m.img} alt={m.name} className="member-photo" loading="lazy" />
               </div>
-            </div>
+              <div className="member-info">
+                <h3 className="t-heading member-name">{m.name}</h3>
+                <p className="t-mono member-role">{m.role}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

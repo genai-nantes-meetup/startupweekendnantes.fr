@@ -1,13 +1,13 @@
-/** Intro section image rows (above and below the welcome paragraph). */
+/** Intro section image rows — vraies photos d'ambiance 2025. */
 
 export type IntroImage = { src: string; alt: string };
 
 export const topImages: IntroImage[] = [
-  { src: '/images/3icxBJ1CcHn6M34eovnFgccTZR0.jpg', alt: 'Bad Ideas Good Stories t-shirt' },
-  { src: '/images/FS3ISXEUHf4xNgOzHz1v79bPNPo.jpg', alt: 'Speaker au pitch' },
+  { src: '/images/amb-equipe.jpg', alt: 'Une équipe en plein brainstorm autour des post-it' },
+  { src: '/images/amb-pitch.jpg', alt: 'Un participant pitche sur scène' },
 ];
 
 export const bottomImages: IntroImage[] = [
-  { src: '/images/cCa01Jr6KZUDGU8OkU8loM1z0.jpg', alt: 'Brainstorming en équipe' },
-  { src: '/images/24WMO9KZT30jBPFpwrgWt8rkSs.jpg', alt: 'Photo de groupe' },
+  { src: '/images/amb-foule.jpg', alt: 'La salle pendant les pitchs' },
+  { src: '/images/amb-oratrice.jpg', alt: 'Prise de parole au micro' },
 ];

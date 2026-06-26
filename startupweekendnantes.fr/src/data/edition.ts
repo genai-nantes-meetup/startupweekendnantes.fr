@@ -9,11 +9,11 @@
  * different day, update DAY_NAMES accordingly.
  */
 
-const YEAR = 2025;
-const START_DAY = 21;
+const YEAR = 2026;
+const START_DAY = 27;
 const MONTH_TITLE = 'Novembre';
 const MONTH_LOWER = 'novembre';
-const EDITION_NUMBER = 16;
+const EDITION_NUMBER = 17;
 const DAY_NAMES = ['VENDREDI', 'SAMEDI', 'DIMANCHE'] as const;
 
 const END_DAY = START_DAY + 2;
@@ -31,9 +31,17 @@ export const EDITION = {
   dateRangeShort: `Du ${START_DAY}/11 au ${END_DAY}/11`,
   /** "Du 21 au 23 novembre" */
   dateRangeLong: `Du ${START_DAY} au ${END_DAY} ${MONTH_LOWER}`,
+  /** "21 → 23 NOV 2026" — compact mono format for HUD / pills */
+  dateRangeMono: `${START_DAY} → ${END_DAY} ${MONTH_TITLE.slice(0, 3).toUpperCase()} ${YEAR}`,
+
+  /** Édition 2026 — thème "Houston, we have a problem!" (focus problème). */
+  theme: 'Houston, we have a problem!',
+  durationHours: 54,
+  teamsCount: 12,
+  participantsCount: 100,
 
   ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-${YEAR}`,
-  contactEmail: 'maxime.pitussi@gmail.com',
+  contactEmail: 'contact@startupweekendnantes.fr',
 
   /** Used by Agenda.tsx — pre-built day headers, one per day. */
   agendaDays: DAY_NAMES.map((day, i) => ({

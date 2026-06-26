@@ -1,68 +1,59 @@
 import './Pricing.css';
 import { tiers } from '../data/pricing';
 
+const variants = ['bleu', 'prune', 'lav'];
+
 export default function Pricing() {
   return (
-    <div className="pricing-outer">
-      <section id="pricing" className="pricing-section">
-        <div className="pricing-container">
-          <img
-            src="/images/qG7RWN4HUTjhIeg3Ut5ZCldlv4.svg"
-            alt=""
-            aria-hidden="true"
-            className="pricing-star"
-          />
-          <h2>Participer</h2>
-          <p className="pricing-subtitle">
-            <em>On est impatients de voir si vous aurez le cran de nous rejoindre</em>
+    <section id="pricing" className="section pricing-section">
+      <div className="container">
+        <div className="pricing-head">
+          <p className="kicker">✳ Participer</p>
+          <h2 className="t-title pricing-title">Choisis ta mission</h2>
+          <p className="t-body pricing-subtitle">
+            On est impatients de voir si tu auras le cran de nous rejoindre.
           </p>
-          <div className="pricing-grid">
-            {tiers.map((t) => (
+        </div>
+        <div className="pricing-grid">
+          {tiers.map((t, i) => {
+            const featured = Boolean(t.badge);
+            return (
               <div
                 key={t.label}
-                className={`pricing-card ${t.badge ? 'pricing-card--featured' : ''}`}
-                style={{ '--border': t.borderColor, '--bg': t.bgColor } as React.CSSProperties}
+                className={`pricing-card pricing-card--${variants[i]} ${featured ? 'pricing-card--featured tex' : ''}`}
               >
-                {t.badge && <span className="badge">{t.badge}</span>}
-                <div className="card-body">
-                  <p className="card-label">{t.label}</p>
-                  <div className="card-price-row">
-                    {t.pricePrefix && <span className="price-prefix">{t.pricePrefix}</span>}
-                    <span className="card-price">{t.price}</span>
-                  </div>
-                  <div className="card-divider" />
-                  <p className="card-desc">{t.description}</p>
-                  <ul className="card-features">
-                    {t.features.map((f) => (
-                      <li key={f}>
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M4 9L7.5 12.5L14 6"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="pricing-card-head">
+                  <span className="t-mono card-label">{t.label}</span>
+                  {t.badge && <span className="pill pill--jaune card-badge">{t.badge}</span>}
                 </div>
-                <a href={t.href} target="_blank" rel="noopener noreferrer" className="card-cta">
-                  {t.cta}
+                <div className="card-price-row">
+                  {t.pricePrefix && <span className="t-mono price-prefix">{t.pricePrefix}</span>}
+                  <span className="t-title card-price">{t.price}</span>
+                </div>
+                <p className="t-body card-desc">{t.description}</p>
+                <ul className="card-features">
+                  {t.features.map((f) => (
+                    <li key={f}>
+                      <span className="t-mono card-tick" aria-hidden="true">
+                        ✓
+                      </span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={t.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn card-cta"
+                >
+                  {t.cta} →
                 </a>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

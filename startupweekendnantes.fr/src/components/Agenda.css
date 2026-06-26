@@ -1,86 +1,143 @@
-.agenda-section { background: rgb(0, 0, 0); padding: 5rem 2rem; }
-
-.agenda-container { max-width: 1240px; margin: 0 auto; }
-
-.agenda-container > h2 {
-  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: white;
-  margin: 0 0 3rem;
+.agenda-section {
+  position: relative;
+}
+.agenda-title {
+  font-size: clamp(30px, 4.5vw, 46px);
+  margin-bottom: 36px;
 }
 
-.agenda-day { margin-bottom: 4rem; }
-
-.day-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1rem; }
-
-.day-meta { display: flex; flex-direction: column; gap: 0.25rem; }
-
-.day-date { font-family: 'Oxanium', sans-serif; font-size: 18px; color: rgb(255, 255, 255); }
-
-.day-label {
-  font-family: 'Agrandir Grand Heavy', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: white;
+.agenda-files {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  align-items: start;
 }
 
-.day-name { font-family: 'Agrandir Grand Heavy', sans-serif; font-size: 24px; color: white; text-transform: uppercase; }
-
-.agenda-table { width: 100%; border-collapse: collapse; }
-
-.agenda-table thead tr { color: rgb(14, 2, 24); }
-
-.agenda-table th {
-  font-family: 'Agrandir Grand Heavy', sans-serif;
-  font-size: 18px;
-  text-align: left;
-  padding: 0.75rem 1rem;
+/* ---- mission file (paper dossier) ---- */
+.dossier {
+  position: relative;
+  background: var(--cream);
+  color: var(--prune);
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dossier::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--grain);
+  background-size: 180px 180px;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+}
+.dossier:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 44px -24px rgba(0, 0, 0, 0.5);
+}
+.dossier > * {
+  position: relative;
+  z-index: 1;
 }
 
-.agenda-table th:first-child { width: 18%; }
-.agenda-table th:last-child { width: 30%; }
-
-.agenda-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.1); }
-.agenda-table tbody tr:last-child { border-bottom: none; }
-
-.time-cell {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  padding: 1.25rem 1rem;
-  vertical-align: top;
-  width: 18%;
-  white-space: nowrap;
-}
-
-.prog-cell { padding: 1.25rem 1rem; vertical-align: top; }
-
-.prog-cell strong {
-  display: block;
-  font-family: 'Oxanium', sans-serif;
-  font-size: 18px;
-  color: white;
-  margin-bottom: 0.25rem;
-}
-
-.prog-cell span {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.5;
-}
-
-.speaker-cell {
-  padding: 1.25rem 1rem;
-  vertical-align: top;
+.dossier-head {
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--blue-ink);
+  padding-bottom: 12px;
+  border-bottom: 1.5px dashed rgba(81, 33, 51, 0.3);
+}
+.dossier-date {
+  color: rgba(81, 33, 51, 0.6);
+}
+.dossier-title {
+  font-size: 24px;
+  margin: 16px 0 14px;
 }
 
-.speaker-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+.dossier-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dossier-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 14px;
+  padding: 11px 0;
+  border-bottom: 1px dotted rgba(81, 33, 51, 0.2);
+}
+.dossier-row:last-child {
+  border-bottom: 0;
+}
+.dossier-time {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--prune);
+  padding-top: 1px;
+}
+.dossier-event {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.dossier-event-title {
+  font-family: var(--f-title);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.dossier-star {
+  color: #c79a00;
+}
+.dossier-event-desc {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: rgba(42, 22, 32, 0.65);
+}
+.dossier-speakers {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+.dossier-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--prune);
+}
 
-@media (max-width: 767px) {
-  .agenda-table th:last-child, .speaker-cell { display: none; }
-  .time-cell { width: 80px; }
+/* key moment — left tick + amber accent, no box */
+.dossier-row.is-key {
+  margin: 0 -22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-left: 3px solid var(--jaune);
+  background: rgba(248, 244, 137, 0.18);
+}
+.dossier-row.is-key .dossier-time {
+  color: #9a7700;
+}
+
+.dossier-foot {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1.5px dashed rgba(81, 33, 51, 0.3);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(81, 33, 51, 0.55);
+}
+
+@media (max-width: 860px) {
+  .agenda-files {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
 }

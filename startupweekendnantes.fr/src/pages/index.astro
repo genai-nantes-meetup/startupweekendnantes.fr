@@ -2,17 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Ticker from '../components/Ticker';
 import Intro from '../components/Intro';
 import Welcome from '../components/Welcome';
+import StatsBand from '../components/StatsBand';
+import Missions from '../components/Missions';
 import PastGlimpse from '../components/PastGlimpse';
-import Team from '../components/Team';
-import Sponsors from '../components/Sponsors';
 import Pricing from '../components/Pricing';
 import Venue from '../components/Venue';
+import Team from '../components/Team';
 import Agenda from '../components/Agenda';
-import FAQ from '../components/FAQ';
 import OrgTeam from '../components/OrgTeam';
+import Sponsors from '../components/Sponsors';
+import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
+import CtaBand from '../components/CtaBand';
 import Footer from '../components/Footer';
 import '../styles/global.css';
 ---
@@ -21,17 +25,21 @@ import '../styles/global.css';
   <Header />
   <main>
     <Hero />
+    <Ticker />
     <Intro />
     <Welcome />
+    <StatsBand />
+    <Missions />
     <PastGlimpse />
-    <Team />
-    <Sponsors />
     <Pricing />
     <Venue />
+    <Team />
     <Agenda />
-    <FAQ client:load />
     <OrgTeam />
+    <Sponsors />
+    <FAQ client:load />
     <Contact />
+    <CtaBand />
   </main>
   <Footer />
 </Layout>

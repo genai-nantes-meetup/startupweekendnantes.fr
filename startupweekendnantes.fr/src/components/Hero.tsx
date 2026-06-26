@@ -1,60 +1,68 @@
 import './Hero.css';
 import { EDITION } from '../data/edition';
+import Asterisk from './ui/Asterisk';
 
 export default function Hero() {
   return (
-    <section id="hero" className="hero-section">
-      <div className="hero-bg">
-        <img
-          src="/images/wMWsWm7njm6vmBfMVwkVaW4.png"
-          alt=""
-          aria-hidden="true"
-          className="hero-bg-img"
-        />
-      </div>
+    <section id="hero" className="hero-section tex">
+      <div className="hud-grid" aria-hidden="true"></div>
+      <div className="hero-scan" aria-hidden="true"></div>
 
-      <div className="hero-container">
+      <div className="hero-container container">
         <div className="hero-text">
-          <h1>
-            Startup Weekend
+          <div className="hero-flags">
+            <span className="pill pill--ghost hero-alert">⚠ Problem detected</span>
+            <span className="t-mono hero-edition">
+              Édition {EDITION.year} // {EDITION.dateRangeMono}
+            </span>
+          </div>
+
+          <h1 className="t-display hero-title">
+            Houston,
             <br />
-            {EDITION.year} 🎊
+            we have a <span className="hl">problem</span>
           </h1>
-          <p>
-            <strong>{EDITION.dateRangeShort}</strong> : L'événement pour monter un projet et vivre
-            en accéléré la création d'une startup, à Nantes.
+
+          <p className="t-body hero-sub">
+            On ne pitche pas des idées. On pitche des <strong>problèmes</strong>. {EDITION.durationHours}h
+            pour trouver le bon, et le résoudre à douze.
           </p>
-          <a
-            href={EDITION.ticketUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            Je m'inscris maintenant
-          </a>
+
+          <div className="hero-cta">
+            <a href={EDITION.ticketUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary">
+              Je prends ma place →
+            </a>
+            <a href="#intro" className="btn btn--ghost">
+              Découvrir le concept
+            </a>
+          </div>
         </div>
 
-        <img
-          src="/images/Zs0OyquSGNwZhNIZqYL3KdgW8Rs.svg"
-          alt=""
-          aria-hidden="true"
-          className="hero-dots"
-        />
-
-        <figure className="hero-image" aria-hidden="true">
+        <aside className="hero-visual" aria-label="Briefing de mission">
+          <div className="hero-visual-glow" aria-hidden="true"></div>
+          <Asterisk size={34} className="hero-visual-aster" />
           <img
-            src="/images/oRq8HnnCP8CkxrvFeQvMp4tBA.png"
-            alt="Participants au Startup Weekend"
-            width="538"
-            height="629"
+            src="/images/illus-riso/riso-briefing-on-dark.webp"
+            alt="Trois porteurs de problèmes en briefing autour d'une table de mission, une lune en mire"
+            className="hero-riso"
+            width={1000}
+            height={965}
+            loading="eager"
           />
-          <img
-            src="/images/QRQRAXnHu5ilXCmjG8WsfC9XA.svg"
-            alt=""
-            aria-hidden="true"
-            className="hero-circle"
-          />
-        </figure>
+          <div className="hero-telemetry t-mono">
+            <div className="hero-tel-clock-row">
+              <span className="hero-tel-label">T-minus</span>
+              <span className="hero-tel-clock">
+                00:{EDITION.durationHours}:00<span className="hero-cursor">_</span>
+              </span>
+            </div>
+            <div className="hero-tel-stats">
+              <span>{EDITION.teamsCount} missions</span>
+              <span>{EDITION.participantsCount} équipiers</span>
+              <span className="hero-ok">● nominal</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   );
