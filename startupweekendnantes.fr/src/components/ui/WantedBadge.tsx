@@ -52,8 +52,9 @@ export default function WantedBadge({ size = 210, className, color = '#512133' }
       aria-label="Avis de recherche : porteurs de problèmes recherchés"
     >
       <defs>
-        <path id="wb-top" d="M 52,130 A 78,78 0 0 1 208,130" fill="none" />
-        <path id="wb-bot" d="M 56,130 A 74,74 0 0 0 204,130" fill="none" />
+        {/* arc haut (texte sur le dessus) et arc bas (texte sous la ligne, sens lisible) */}
+        <path id="wb-top" d="M 54,130 A 76,76 0 0 1 206,130" fill="none" />
+        <path id="wb-bot" d="M 58,130 A 72,72 0 0 0 202,130" fill="none" />
       </defs>
 
       {/* sceau festonné + anneau intérieur */}
@@ -63,10 +64,10 @@ export default function WantedBadge({ size = 210, className, color = '#512133' }
       {/* texte courbé haut / bas */}
       <text
         fontFamily="'Space Mono',monospace"
-        fontSize="12"
+        fontSize="11.5"
         fontWeight="700"
         fill={color}
-        letterSpacing="1.5"
+        letterSpacing="1.4"
       >
         <textPath href="#wb-top" startOffset="50%" textAnchor="middle">
           PORTEURS DE PROBLÈMES
@@ -74,45 +75,29 @@ export default function WantedBadge({ size = 210, className, color = '#512133' }
       </text>
       <text
         fontFamily="'Space Mono',monospace"
-        fontSize="11"
+        fontSize="11.5"
         fontWeight="700"
         fill={color}
         letterSpacing="3"
       >
         <textPath href="#wb-bot" startOffset="50%" textAnchor="middle">
-          SWNA · 2026 · NANTES
+          RECHERCHÉS · 2026
         </textPath>
       </text>
 
-      {/* séparateurs latéraux */}
-      <Aster x={42} y={130} s={0.12} color={color} />
-      <Aster x={218} y={130} s={0.12} color={color} />
-
-      {/* cœur du tampon */}
-      <Aster x={130} y={101} s={0.16} color={color} />
+      {/* cœur du tampon : astérisque + WANTED, centré, rien d'autre */}
+      <Aster x={130} y={104} s={0.13} color={color} />
       <text
         x="130"
-        y="158"
+        y="148"
         textAnchor="middle"
         fontFamily="'Cal Sans','Funnel Display',sans-serif"
-        fontSize="50"
+        fontSize="41"
         fontWeight="800"
         fill={color}
-        letterSpacing="1"
+        letterSpacing="0.5"
       >
         WANTED
-      </text>
-      <text
-        x="130"
-        y="180"
-        textAnchor="middle"
-        fontFamily="'Space Mono',monospace"
-        fontSize="12"
-        fontWeight="700"
-        fill={color}
-        letterSpacing="5"
-      >
-        RECHERCHÉS
       </text>
     </svg>
   );
