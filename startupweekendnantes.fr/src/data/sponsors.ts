@@ -21,7 +21,10 @@ export const sponsorRows: Sponsor[][] = [
   ],
   [
     { name: 'kiliogene', img: `${BASE}sponsor-kiliogene.png` },
-    { name: 'Réseau Entreprendre Atlantique', img: `${BASE}sponsor-reseau-entreprendre-atlantique.png` },
+    {
+      name: 'Réseau Entreprendre Atlantique',
+      img: `${BASE}sponsor-reseau-entreprendre-atlantique.png`,
+    },
     { name: 'Finalli', img: `${BASE}sponsor-finalli.png` },
   ],
 ];

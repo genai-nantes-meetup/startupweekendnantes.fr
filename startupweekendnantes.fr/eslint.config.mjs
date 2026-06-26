@@ -4,13 +4,16 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import prettierPlugin from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
+import astroPlugin from 'eslint-plugin-astro';
 
 export default [
   {
     ignores: ['dist/**', '.astro/**', 'node_modules/**'],
   },
+  ...astroPlugin.configs.recommended,
   {
     files: ['src/**/*.{ts,tsx}'],
+    ignores: ['**/*.astro/**'],
     languageOptions: {
       parser: tsParser,
       parserOptions: {

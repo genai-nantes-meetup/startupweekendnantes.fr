@@ -21,7 +21,11 @@ export const members: Member[] = [
     role: 'Co-Directeur @ TiCO',
     img: '/assets/images/speakers/nicolas-laurent.jpeg',
   },
-  { name: 'Johan Ricaut', role: 'CEO @ Shopopop', img: '/assets/images/speakers/johan-ricaut.jpeg' },
+  {
+    name: 'Johan Ricaut',
+    role: 'CEO @ Shopopop',
+    img: '/assets/images/speakers/johan-ricaut.jpeg',
+  },
   {
     name: 'Eric Lebrette',
     role: 'Co-founder @ Direxter',
