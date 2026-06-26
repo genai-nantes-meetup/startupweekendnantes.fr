@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { EDITION } from '../data/edition';
+import '../styles/global.css';
+---
+
+<Layout
+  title="Page introuvable — Startup Weekend Nantes"
+  description="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil du Startup Weekend Nantes."
+>
+  <main class="notfound">
+    <a href="/" class="notfound-logo" aria-label="Startup Weekend Nantes">
+      <img
+        src="/assets/images/brand/logo-startup-weekend-nantes.png"
+        alt="Techstars Startup Weekend Nantes"
+        width="147"
+        height="47"
+      />
+    </a>
+
+    <div class="notfound-content">
+      <p class="notfound-code">404</p>
+      <h1>Cette page s'est volatilisée&nbsp;🚀</h1>
+      <p class="notfound-text">
+        Le lien est cassé ou la page a été déplacée. Pas de panique&nbsp;: tout le reste du Startup
+        Weekend Nantes {EDITION.year} vous attend.
+      </p>
+
+      <div class="notfound-actions">
+        <a href="/" class="btn-primary">Retour à l'accueil</a>
+        <a href={EDITION.ticketUrl} target="_blank" rel="noopener noreferrer" class="notfound-link">
+          Voir la billetterie →
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .notfound {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 80px 24px;
+    text-align: center;
+    background:
+      radial-gradient(circle at 50% 0%, var(--sw-purple) 0%, transparent 60%), var(--sw-bg);
+  }
+
+  .notfound-logo img {
+    display: block;
+    height: 47px;
+    width: auto;
+  }
+
+  .notfound-content {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .notfound-code {
+    font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: clamp(96px, 22vw, 200px);
+    line-height: 1;
+    margin: 0;
+    color: var(--sw-cyan);
+    text-shadow: 0 0 40px rgba(42, 235, 245, 0.35);
+    letter-spacing: -2px;
+  }
+
+  .notfound-content h1 {
+    font-size: clamp(26px, 6vw, 38px);
+    margin: 0;
+  }
+
+  .notfound-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+
+  .notfound-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 12px;
+  }
+
+  /* Mirror Hero.css .btn-primary so the page is self-contained */
+  .btn-primary {
+    display: inline-block;
+    padding: 18px 30px;
+    background: var(--sw-blue);
+    color: var(--sw-purple);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 rgb(23, 116, 156);
+    transition:
+      box-shadow 0.15s,
+      transform 0.15s;
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 3px 0 rgb(23, 116, 156);
+    transform: translateY(2px);
+  }
+
+  .notfound-link {
+    color: var(--sw-cyan);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+
+  .notfound-link:hover {
+    border-bottom-color: var(--sw-cyan);
+  }
+</style>
