@@ -12,7 +12,7 @@ import '../styles/global.css';
     <a href="/" class="notfound-logo" aria-label="Startup Weekend Nantes">
       <img
         src="/assets/images/brand/logo-startup-weekend-nantes.png"
-        alt="Techstars Startup Weekend Nantes"
+        alt="Startup Weekend Nantes"
         width="147"
         height="47"
       />
@@ -20,17 +20,14 @@ import '../styles/global.css';
 
     <div class="notfound-content">
       <p class="notfound-code">404</p>
-      <h1>Cette page s'est volatilisée&nbsp;🚀</h1>
+      <h1>Product-market fit introuvable</h1>
       <p class="notfound-text">
-        Le lien est cassé ou la page a été déplacée. Pas de panique&nbsp;: tout le reste du Startup
-        Weekend Nantes {EDITION.year} vous attend.
+        Cette page n'a jamais trouvé son audience. L'équipe a pitché, itéré, puis fermé boutique. Le
+        reste du Startup Weekend Nantes {EDITION.year}, lui, tient parfaitement debout.
       </p>
 
       <div class="notfound-actions">
         <a href="/" class="btn-primary">Retour à l'accueil</a>
-        <a href={EDITION.ticketUrl} target="_blank" rel="noopener noreferrer" class="notfound-link">
-          Voir la billetterie →
-        </a>
       </div>
     </div>
   </main>
@@ -52,7 +49,7 @@ import '../styles/global.css';
 
   .notfound-logo img {
     display: block;
-    height: 47px;
+    height: clamp(56px, 9vw, 84px);
     width: auto;
   }
 
@@ -66,7 +63,7 @@ import '../styles/global.css';
 
   .notfound-code {
     font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: clamp(96px, 22vw, 200px);
+    font-size: clamp(64px, 13vw, 120px);
     line-height: 1;
     margin: 0;
     color: var(--sw-cyan);
