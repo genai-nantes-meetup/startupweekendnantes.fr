@@ -42,6 +42,8 @@ function place() {
     name: venue.name,
     address: {
       '@type': 'PostalAddress',
+      streetAddress: venue.streetAddress,
+      postalCode: venue.postalCode,
       addressLocality: venue.addressLocality,
       addressRegion: venue.addressRegion,
       addressCountry: venue.addressCountry,

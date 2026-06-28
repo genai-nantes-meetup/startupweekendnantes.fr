@@ -6,10 +6,11 @@
 
 /**
  * Venue metadata — feeds the schema.org `Place` (JSON-LD) and the venue alt text.
- * `street`/`postalCode` à confirmer ; on ne déclare que ce qui est vérifié.
  */
 export const venue = {
   name: 'Le Palace',
+  streetAddress: '4 rue Voltaire',
+  postalCode: '44000',
   addressLocality: 'Nantes',
   addressRegion: 'Pays de la Loire',
   addressCountry: 'FR',
