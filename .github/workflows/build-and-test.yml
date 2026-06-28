@@ -1,0 +1,49 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'startupweekendnantes.fr/**'
+      - '.github/workflows/build-and-test.yml'
+  pull_request:
+    paths:
+      - 'startupweekendnantes.fr/**'
+      - '.github/workflows/build-and-test.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: startupweekendnantes.fr
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: startupweekendnantes.fr/package-lock.json
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Build
+        run: npm run build
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Check links in website content
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --root-dir ${{ github.workspace }}/startupweekendnantes.fr/dist/ startupweekendnantes.fr/
+          fail: true
