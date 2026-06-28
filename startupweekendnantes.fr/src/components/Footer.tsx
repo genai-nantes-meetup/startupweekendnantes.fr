@@ -18,6 +18,14 @@ export default function Footer() {
           <a href="/editions" className="footer-link">
             Éditions passées
           </a>
+          <a
+            href="https://2025.startupweekendnantes.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            Édition 2025
+          </a>
         </nav>
         <p className="footer-copy">
           © {EDITION.year} Startup Weekend Nantes — Tous droits réservés
