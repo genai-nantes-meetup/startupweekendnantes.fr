@@ -32,6 +32,7 @@ function organization() {
     alternateName: SITE.name,
     url: SITE.url,
     logo: abs(SITE.logo),
+    sameAs: [SITE.linkedin],
   };
 }
 

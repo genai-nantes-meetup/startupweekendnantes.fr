@@ -1,5 +1,6 @@
 import './Footer.css';
 import { EDITION } from '../data/edition';
+import { SITE } from '../data/site';
 
 export default function Footer() {
   return (
@@ -15,6 +16,9 @@ export default function Footer() {
           />
         </a>
         <nav className="footer-nav" aria-label="Liens de pied de page">
+          <a href={SITE.linkedin} target="_blank" rel="noopener noreferrer" className="footer-link">
+            LinkedIn
+          </a>
           <a
             href="https://2025.startupweekendnantes.fr"
             target="_blank"

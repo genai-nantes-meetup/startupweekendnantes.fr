@@ -36,6 +36,8 @@ export const SITE = {
   organizerName: 'Startup Weekend Nantes',
   /** Brand logo path (schema.org Organization.logo, served from public/). */
   logo: '/assets/images/brand/logo-startup-weekend-nantes.png',
+  /** LinkedIn company page (footer link + schema.org Organization.sameAs). */
+  linkedin: 'https://www.linkedin.com/company/startup-weekend-nantes',
 
   /** Default <title> — falls back here when a page passes none. */
   defaultTitle: `Startup Weekend Nantes — ${EDITION.year} Edition`,
