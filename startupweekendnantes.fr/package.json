@@ -17,7 +17,7 @@
   "dependencies": {
     "@astrojs/react": "^5.0.6",
     "@astrojs/sitemap": "^3.4.1",
-    "astro": "^5.8.0",
+    "astro": "^6.4.6",
     "motion": "^12.15.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
