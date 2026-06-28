@@ -16,19 +16,13 @@ export const EDITION = {
   year: 2025,
   pastYear: 2024,
   editionNumber: 16,
-
   startDay: 21,
   endDay: 23,
   month: 'Novembre',
-
   /** "Du 21/11 au 23/11" */
   dateRangeShort: `Du 21/11 au 23/11`,
   /** "Du 21 au 23 novembre" */
   dateRangeLong: `Du 21 au 23 novembre`,
-
-  ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-2025`,
-  contactEmail: 'maxime.pitussi@gmail.com',
-
   /** Used by Agenda.tsx — pre-built day headers, one per day. */
   agendaDays: [
     {
@@ -45,4 +39,8 @@ export const EDITION = {
       day: 'DIMANCHE',
     }
   ],
+
+  ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-2025`,
+
+  contactEmail: 'maxime.pitussi@gmail.com',
 } as const;
