@@ -1,5 +1,5 @@
 ---
-import { EDITION } from '../data/edition';
+import { SITE } from '../data/site';
 
 interface Props {
   title?: string;
@@ -7,27 +7,27 @@ interface Props {
 }
 
 const {
-  title = `Startup Weekend Nantes — ${EDITION.year} Edition`,
-  description = `Startup Weekend Nantes ${EDITION.year} — ${EDITION.dateRangeLong}. L'événement pour monter un projet et vivre en accéléré la création d'une startup, à Nantes.`,
+  title = SITE.defaultTitle,
+  description = SITE.defaultDescription,
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={SITE.lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
-    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#0e0218" />
+    <link rel="icon" href={SITE.favicon} type="image/jpeg" />
+    <link rel="apple-touch-icon" href={SITE.appleTouchIcon} />
+    <link rel="manifest" href={SITE.manifest} />
+    <meta name="theme-color" content={SITE.themeColor} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- GTM -->
-    <script is:inline>
+    <script is:inline define:vars={{ gtmId: SITE.gtmId }}>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -37,7 +37,7 @@ const {
         j.async = true;
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-NQ2DKKPD');
+      })(window, document, 'script', 'dataLayer', gtmId);
     </script>
 
     <style is:global>
@@ -75,7 +75,7 @@ const {
     <!-- GTM noscript -->
     <noscript>
       <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NQ2DKKPD"
+        src={`https://www.googletagmanager.com/ns.html?id=${SITE.gtmId}`}
         height="0"
         width="0"
         style="display:none;visibility:hidden"

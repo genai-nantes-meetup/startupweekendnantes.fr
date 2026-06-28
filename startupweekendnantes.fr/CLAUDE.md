@@ -55,11 +55,15 @@ speakers.map(s => (
 ));
 ```
 
-Modules whose content changes every year carry the `edition_` prefix (`edition.ts`, `edition_speakers.ts`, `edition_partners.ts`, `edition_pricing.ts`, `edition_schedule.ts`); stable data does not (`faq.ts`, `team.ts`, `venue.ts`, `videos.ts`).
+Modules whose content changes every year carry the `edition_` prefix (`edition.ts`, `edition_speakers.ts`, `edition_partners.ts`, `edition_pricing.ts`, `edition_schedule.ts`); stable data does not (`faq.ts`, `team.ts`, `venue.ts`, `videos.ts`, `site.ts`).
 
 ### `edition.ts` is the single source of truth
 
 `src/data/edition.ts` exports `EDITION` — year, dates, ticket URL, contact email, derived date strings and pre-built agenda day headers. Hero `<h1>`, Footer ©, Agenda labels, SEO meta and the ticket link are all derived from it. **To roll the site over to a new year, edit `edition.ts` (and the other `edition_*` data files) only** — never hardcode a date or year in a component.
+
+### `site.ts` holds stable site/SEO metadata
+
+`src/data/site.ts` exports `SITE` — site name, canonical URL, `lang`, theme color, GTM container id, favicon/icon/manifest paths, and the default `<title>`/description templates (themselves derived from `EDITION`). It feeds the `Layout.astro` `<head>` (meta tags + GTM snippet) and `astro.config.mjs` (`site: SITE.url`). Both `site.ts` and `edition.ts` are sources of truth consumed by `astro.config.mjs`. Never hardcode a meta tag, GTM id or the site URL in a component or in the config.
 
 ### Styling: CSS per component
 
