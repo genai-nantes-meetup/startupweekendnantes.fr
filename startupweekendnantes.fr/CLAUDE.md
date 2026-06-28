@@ -8,12 +8,11 @@ Don't use worktrees for this directory.
 
 - `src/pages/index.astro` — single page, imports and assembles all section components.
 - `src/pages/404.astro` — not-found page.
-- `src/pages/editions/index.astro` + `src/pages/editions/[year].astro` — past-editions archive (index + one static page per year, from `editions-archive.ts`).
 - `src/layouts/Layout.astro` — head/meta/GTM/fonts + SEO (canonical, Open Graph, Twitter Card, JSON-LD) + motion animations (via `motion` package). Accepts `title`/`description`/`image`/`jsonLd`/`preloadImage` props.
 - `src/components/*.tsx` — one component per section, paired with `<Component>.css`.
 - `src/data/*.ts` — all content data (see "Data lives in `src/data/`" below).
-- `src/data/structured-data.ts` — schema.org JSON-LD builders (Event/FAQPage/Organization/Place/BreadcrumbList) assembled from the other data modules. `buildHomeJsonLd()` (home) and `buildPastEditionJsonLd()` (archive).
-- `src/data/editions-archive.ts` — frozen registry of past editions (drives `/editions/` pages). Never derives from `EDITION`.
+- `src/data/meta.ts` — schema.org JSON-LD builder (`buildHomeJsonLd()` → Event/FAQPage/Organization/Place/BreadcrumbList) assembled from the other data modules.
+- `src/data/videos.ts` — past editions' recap videos (keyed by year), shown on the homepage by `PastGlimpse`. Frozen history; never derives from `EDITION`.
 - `src/styles/global.css` — base styles, CSS custom properties, font imports (Google Fonts loaded via `<link>` in `Layout.astro`, not `@import`).
 - `public/assets/images/` — all images, sorted into per-section folders (`speakers/`, `orga/`, `sponsors/`, `venue/`, `intro/`, `hero/`, `welcome/`, `pricing/`, `brand/`, `og/`). Profile pictures are named after the person (e.g. `speakers/thomas-matthieu.jpeg`). Served at `/assets/images/<folder>/<name>`.
 - `public/assets/images/og/og-cover.jpg` — Open Graph share image (1200×630), regenerable via `node scripts/generate-og-image.mjs`.
@@ -73,7 +72,7 @@ Modules whose content changes every year carry the `edition_` prefix (`edition.t
 
 ### SEO / structured data
 
-`Layout.astro` emits the canonical link, `robots`, Open Graph + Twitter Card tags, and an optional JSON-LD `<script>` (passed via the `jsonLd` prop). Structured data is built in `src/data/structured-data.ts` from the existing content modules (no duplication): the homepage passes `buildHomeJsonLd()`, archive pages pass `buildPastEditionJsonLd(ed)`. The OG image lives at `public/assets/images/og/og-cover.jpg` (1200×630), regenerable with `node scripts/generate-og-image.mjs`. Past editions are archived under `/editions/` from the frozen `editions-archive.ts` registry — add a year there (newest first, only with real content) and a static page is generated automatically.
+`Layout.astro` emits the canonical link, `robots`, Open Graph + Twitter Card tags, and an optional JSON-LD `<script>` (passed via the `jsonLd` prop). Structured data is built in `src/data/meta.ts` from the existing content modules (no duplication): the homepage passes `buildHomeJsonLd()` (Event + FAQPage + Organization + BreadcrumbList). The OG image lives at `public/assets/images/og/og-cover.jpg` (1200×630), regenerable with `node scripts/generate-og-image.mjs`. Canonical/sitemap URLs are normalised without trailing slashes (except root) to match Vercel's `trailingSlash: false`.
 
 ### Styling: CSS per component
 

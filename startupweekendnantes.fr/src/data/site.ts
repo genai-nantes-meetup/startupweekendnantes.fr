@@ -33,7 +33,7 @@ export const SITE = {
   ogImageHeight: 630,
   ogImageAlt: 'Startup Weekend Nantes — 54h pour créer une startup',
   /** Organising entity (schema.org Organization / Event.organizer). */
-  organizerName: 'Techstars Startup Weekend Nantes',
+  organizerName: 'Startup Weekend Nantes',
   /** Brand logo path (schema.org Organization.logo, served from public/). */
   logo: '/assets/images/brand/logo-startup-weekend-nantes.png',
 

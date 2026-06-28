@@ -1,7 +1,7 @@
 /**
  * schema.org JSON-LD builders — assemble structured data from the existing
- * `src/data/` content (no duplication). Consumed by Layout.astro (homepage) and
- * the editions archive pages. All URLs are absolute, derived from SITE.url.
+ * `src/data/` content (no duplication). Consumed by Layout.astro (homepage).
+ * All URLs are absolute, derived from SITE.url.
  *
  * Why this matters: it exposes the event as a machine-readable entity (dates,
  * place, price, programme, speakers, FAQ) — the basis for Google rich results
@@ -106,7 +106,7 @@ function faqPage() {
 
 type Crumb = { name: string; path: string };
 
-export function breadcrumb(items: Crumb[]) {
+function breadcrumb(items: Crumb[]) {
   return {
     '@type': 'BreadcrumbList',
     itemListElement: items.map((it, i) => ({
@@ -127,33 +127,6 @@ export function buildHomeJsonLd() {
       faqPage(),
       organization(),
       breadcrumb([{ name: 'Accueil', path: '/' }]),
-    ],
-  };
-}
-
-/** Past-edition Event (archive page), built from the archive registry. */
-export function buildPastEditionJsonLd(ed: { year: number; recap: string; slug: string }) {
-  return {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Event',
-        name: `${SITE.name} ${ed.year}`,
-        description: ed.recap,
-        startDate: `${ed.year}-11`,
-        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-        eventStatus: 'https://schema.org/EventScheduled',
-        location: place(),
-        organizer: { '@id': abs('/#organization') },
-        image: [abs(SITE.ogImage)],
-        url: abs(`/editions/${ed.slug}`),
-      },
-      organization(),
-      breadcrumb([
-        { name: 'Accueil', path: '/' },
-        { name: 'Éditions', path: '/editions' },
-        { name: String(ed.year), path: `/editions/${ed.slug}` },
-      ]),
     ],
   };
 }

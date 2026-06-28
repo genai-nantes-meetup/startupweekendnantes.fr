@@ -15,9 +15,6 @@ export default function Footer() {
           />
         </a>
         <nav className="footer-nav" aria-label="Liens de pied de page">
-          <a href="/editions" className="footer-link">
-            Éditions passées
-          </a>
           <a
             href="https://2025.startupweekendnantes.fr"
             target="_blank"
