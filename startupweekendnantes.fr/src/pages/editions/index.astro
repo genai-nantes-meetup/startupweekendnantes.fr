@@ -1,0 +1,174 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { pastEditions } from '../../data/editions-archive';
+import { breadcrumb } from '../../data/structured-data';
+import { SITE } from '../../data/site';
+import '../../styles/global.css';
+
+const title = 'Éditions passées — Startup Weekend Nantes';
+const description =
+  'Revivez les éditions passées du Startup Weekend Nantes : aftermovies, réactions et moments forts de chaque année à Nantes.';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: title,
+      description,
+      url: new URL('/editions', SITE.url).toString(),
+    },
+    breadcrumb([
+      { name: 'Accueil', path: '/' },
+      { name: 'Éditions', path: '/editions' },
+    ]),
+  ],
+};
+---
+
+<Layout title={title} description={description} jsonLd={jsonLd}>
+  <main class="archive">
+    <a href="/" class="archive-logo" aria-label="Startup Weekend Nantes">
+      <img
+        src="/assets/images/brand/logo-startup-weekend-nantes.png"
+        alt="Startup Weekend Nantes"
+        width="147"
+        height="47"
+      />
+    </a>
+
+    <div class="archive-content">
+      <h1>Les éditions passées du Startup Weekend Nantes</h1>
+      <p class="archive-intro">
+        Chaque année, Nantes vit 54 heures de création intense. Retrouvez ci-dessous les éditions
+        précédentes et leurs moments forts.
+      </p>
+
+      <ul class="archive-list">
+        {
+          pastEditions.map((ed) => (
+            <li>
+              <a href={`/editions/${ed.slug}`} class="archive-card">
+                <span class="archive-year">{ed.year}</span>
+                <span class="archive-meta">
+                  {ed.editionNumber}ᵉ édition · {ed.dateLabel}
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="archive-actions">
+        <a href="/" class="btn-primary">Voir l'édition à venir</a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .archive {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 80px 24px;
+    text-align: center;
+    background:
+      radial-gradient(circle at 50% 0%, var(--sw-purple) 0%, transparent 60%), var(--sw-bg);
+  }
+
+  .archive-logo img {
+    display: block;
+    height: clamp(48px, 7vw, 64px);
+    width: auto;
+  }
+
+  .archive-content {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .archive-content h1 {
+    font-size: clamp(28px, 6vw, 44px);
+    margin: 0;
+  }
+
+  .archive-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+
+  .archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: grid;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .archive-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 28px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    text-decoration: none;
+    transition:
+      border-color 0.15s,
+      transform 0.15s;
+  }
+
+  .archive-card:hover {
+    border-color: var(--sw-cyan);
+    transform: translateY(-2px);
+  }
+
+  .archive-year {
+    font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: clamp(32px, 7vw, 48px);
+    line-height: 1;
+    color: var(--sw-cyan);
+  }
+
+  .archive-meta {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .archive-actions {
+    margin-top: 16px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 18px 30px;
+    background: var(--sw-blue);
+    color: var(--sw-purple);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 rgb(23, 116, 156);
+    transition:
+      box-shadow 0.15s,
+      transform 0.15s;
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 3px 0 rgb(23, 116, 156);
+    transform: translateY(2px);
+  }
+</style>

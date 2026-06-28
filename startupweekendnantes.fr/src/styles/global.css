@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oxanium:wght@400;500;600;700;800&display=swap');
+/* Google Fonts (Dela Gothic One + Oxanium) are loaded via <link> in Layout.astro
+   <head> with preconnect — not @import here, which would be render-blocking. */
 
 @font-face {
   font-family: 'Helvetica Neue Black';

@@ -18,7 +18,7 @@ export default function Hero() {
           <h1>
             Startup Weekend
             <br />
-            {EDITION.year} 🎊
+            Nantes {EDITION.year} 🎊
           </h1>
           <p>
             <strong>{EDITION.dateRangeShort}</strong> : L'événement pour monter un projet et vivre
@@ -47,6 +47,7 @@ export default function Hero() {
             alt="Participants au Startup Weekend"
             width="538"
             height="629"
+            fetchPriority="high"
           />
           <img
             src="/assets/images/hero/hero-circle.svg"

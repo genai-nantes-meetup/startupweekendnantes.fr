@@ -14,10 +14,14 @@ import FAQ from '../components/FAQ';
 import OrgTeam from '../components/OrgTeam';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { buildHomeJsonLd } from '../data/structured-data';
 import '../styles/global.css';
 ---
 
-<Layout>
+<Layout
+  jsonLd={buildHomeJsonLd()}
+  preloadImage="/assets/images/hero/hero-participants.png"
+>
   <Header />
   <main>
     <Hero />

@@ -25,6 +25,18 @@ export const SITE = {
   /** PWA manifest path. */
   manifest: '/manifest.json',
 
+  /** Open Graph locale (<meta property="og:locale">). */
+  locale: 'fr_FR',
+  /** Social share image (Open Graph / Twitter) — 1200×630, served from public/. */
+  ogImage: '/assets/images/og/og-cover.jpg',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Startup Weekend Nantes — 54h pour créer une startup',
+  /** Organising entity (schema.org Organization / Event.organizer). */
+  organizerName: 'Techstars Startup Weekend Nantes',
+  /** Brand logo path (schema.org Organization.logo, served from public/). */
+  logo: '/assets/images/brand/logo-startup-weekend-nantes.png',
+
   /** Default <title> — falls back here when a page passes none. */
   defaultTitle: `Startup Weekend Nantes — ${EDITION.year} Edition`,
   /** Default meta description — falls back here when a page passes none. */

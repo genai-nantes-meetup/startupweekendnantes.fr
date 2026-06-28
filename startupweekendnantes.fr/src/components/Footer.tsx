@@ -14,6 +14,11 @@ export default function Footer() {
             className="footer-logo-img"
           />
         </a>
+        <nav className="footer-nav" aria-label="Liens de pied de page">
+          <a href="/editions" className="footer-link">
+            Éditions passées
+          </a>
+        </nav>
         <p className="footer-copy">
           © {EDITION.year} Startup Weekend Nantes — Tous droits réservés
         </p>

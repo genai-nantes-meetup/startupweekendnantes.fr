@@ -13,6 +13,12 @@ export default function Header() {
           className="site-header-logo"
         />
       </a>
+      <nav className="site-header-nav" aria-label="Navigation principale">
+        <a href="#agenda">Programme</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#venue">Lieu</a>
+        <a href="#faq">FAQ</a>
+      </nav>
       <a
         href={EDITION.ticketUrl}
         target="_blank"

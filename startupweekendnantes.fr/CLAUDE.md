@@ -8,11 +8,17 @@ Don't use worktrees for this directory.
 
 - `src/pages/index.astro` — single page, imports and assembles all section components.
 - `src/pages/404.astro` — not-found page.
-- `src/layouts/Layout.astro` — head/meta/GTM/fonts + motion animations (via `motion` package).
+- `src/pages/editions/index.astro` + `src/pages/editions/[year].astro` — past-editions archive (index + one static page per year, from `editions-archive.ts`).
+- `src/layouts/Layout.astro` — head/meta/GTM/fonts + SEO (canonical, Open Graph, Twitter Card, JSON-LD) + motion animations (via `motion` package). Accepts `title`/`description`/`image`/`jsonLd`/`preloadImage` props.
 - `src/components/*.tsx` — one component per section, paired with `<Component>.css`.
 - `src/data/*.ts` — all content data (see "Data lives in `src/data/`" below).
-- `src/styles/global.css` — base styles, CSS custom properties, font imports.
-- `public/assets/images/` — all images, sorted into per-section folders (`speakers/`, `orga/`, `sponsors/`, `venue/`, `intro/`, `hero/`, `welcome/`, `pricing/`, `brand/`). Profile pictures are named after the person (e.g. `speakers/thomas-matthieu.jpeg`). Served at `/assets/images/<folder>/<name>`.
+- `src/data/structured-data.ts` — schema.org JSON-LD builders (Event/FAQPage/Organization/Place/BreadcrumbList) assembled from the other data modules. `buildHomeJsonLd()` (home) and `buildPastEditionJsonLd()` (archive).
+- `src/data/editions-archive.ts` — frozen registry of past editions (drives `/editions/` pages). Never derives from `EDITION`.
+- `src/styles/global.css` — base styles, CSS custom properties, font imports (Google Fonts loaded via `<link>` in `Layout.astro`, not `@import`).
+- `public/assets/images/` — all images, sorted into per-section folders (`speakers/`, `orga/`, `sponsors/`, `venue/`, `intro/`, `hero/`, `welcome/`, `pricing/`, `brand/`, `og/`). Profile pictures are named after the person (e.g. `speakers/thomas-matthieu.jpeg`). Served at `/assets/images/<folder>/<name>`.
+- `public/assets/images/og/og-cover.jpg` — Open Graph share image (1200×630), regenerable via `node scripts/generate-og-image.mjs`.
+- `public/robots.txt` — allows all, references `sitemap-index.xml`.
+- `scripts/generate-og-image.mjs` — one-off `sharp` script that builds the OG image from the hero cut-out (not part of the build).
 - `public/*.woff2` — font files.
 - `tests/visual.spec.ts`, `tests/compare.spec.ts` — Playwright visual regression (legacy vs astro, all sections).
 - `astro.config.mjs` — `site`, dev port `4323`, React + sitemap integrations, React dedupe (forces a single React copy so `motion` doesn't bundle its own).
@@ -59,11 +65,15 @@ Modules whose content changes every year carry the `edition_` prefix (`edition.t
 
 ### `edition.ts` is the single source of truth
 
-`src/data/edition.ts` exports `EDITION` — year, dates, ticket URL, contact email, derived date strings and pre-built agenda day headers. Hero `<h1>`, Footer ©, Agenda labels, SEO meta and the ticket link are all derived from it. **To roll the site over to a new year, edit `edition.ts` (and the other `edition_*` data files) only** — never hardcode a date or year in a component.
+`src/data/edition.ts` exports `EDITION` — year, dates (incl. `startISO`/`endISO` for the Event schema), ticket URL, contact email, derived date strings and pre-built agenda day headers. Hero `<h1>`, Footer ©, Agenda labels, SEO meta, JSON-LD and the ticket link are all derived from it. **To roll the site over to a new year, edit `edition.ts` (and the other `edition_*` data files) only** — never hardcode a date or year in a component.
 
 ### `site.ts` holds stable site/SEO metadata
 
-`src/data/site.ts` exports `SITE` — site name, canonical URL, `lang`, theme color, GTM container id, favicon/icon/manifest paths, and the default `<title>`/description templates (themselves derived from `EDITION`). It feeds the `Layout.astro` `<head>` (meta tags + GTM snippet) and `astro.config.mjs` (`site: SITE.url`). Both `site.ts` and `edition.ts` are sources of truth consumed by `astro.config.mjs`. Never hardcode a meta tag, GTM id or the site URL in a component or in the config.
+`src/data/site.ts` exports `SITE` — site name, canonical URL, `lang`, theme color, GTM container id, favicon/icon/manifest paths, OG/social fields (`locale`, `ogImage`/`ogImageWidth`/`ogImageHeight`/`ogImageAlt`, `organizerName`, `logo`), and the default `<title>`/description templates (themselves derived from `EDITION`). It feeds the `Layout.astro` `<head>` (meta tags, OG/Twitter, GTM snippet) and `astro.config.mjs` (`site: SITE.url`). Both `site.ts` and `edition.ts` are sources of truth consumed by `astro.config.mjs`. Never hardcode a meta tag, GTM id or the site URL in a component or in the config.
+
+### SEO / structured data
+
+`Layout.astro` emits the canonical link, `robots`, Open Graph + Twitter Card tags, and an optional JSON-LD `<script>` (passed via the `jsonLd` prop). Structured data is built in `src/data/structured-data.ts` from the existing content modules (no duplication): the homepage passes `buildHomeJsonLd()`, archive pages pass `buildPastEditionJsonLd(ed)`. The OG image lives at `public/assets/images/og/og-cover.jpg` (1200×630), regenerable with `node scripts/generate-og-image.mjs`. Past editions are archived under `/editions/` from the frozen `editions-archive.ts` registry — add a year there (newest first, only with real content) and a static page is generated automatically.
 
 ### Styling: CSS per component
 

@@ -21,6 +21,32 @@
   .site-header-logo { height: 2.75rem; }
 }
 
+.site-header-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-header-nav a {
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.15s;
+}
+
+.site-header-nav a:hover {
+  color: #fff;
+}
+
+/* Hide the anchor nav on smaller viewports to preserve the logo + CTA layout. */
+@media (max-width: 959px) {
+  .site-header-nav {
+    display: none;
+  }
+}
+
 .site-header-cta {
   font-size: 0.875rem;
 }

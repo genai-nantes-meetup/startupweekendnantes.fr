@@ -4,6 +4,17 @@
  * to fill remaining space in its row.
  */
 
+/**
+ * Venue metadata — feeds the schema.org `Place` (JSON-LD) and the venue alt text.
+ * `street`/`postalCode` à confirmer ; on ne déclare que ce qui est vérifié.
+ */
+export const venue = {
+  name: 'Le Palace',
+  addressLocality: 'Nantes',
+  addressRegion: 'Pays de la Loire',
+  addressCountry: 'FR',
+} as const;
+
 export type VenuePhoto = { src: string; basis: number; panoramic?: boolean };
 
 export const row1Photos: VenuePhoto[] = [

@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
-        <h6 className="contact-heading">Nous Contacter</h6>
+        <h2 className="contact-heading">Nous Contacter</h2>
         <p className="contact-subtitle">Une question ? N'hésite pas à nous contacter</p>
         <form
           className="contact-form"

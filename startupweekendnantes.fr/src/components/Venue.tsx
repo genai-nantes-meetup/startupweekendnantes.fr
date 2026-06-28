@@ -16,7 +16,11 @@ export default function Venue() {
                 flexGrow: photo.basis === 538 ? 1 : 0,
               }}
             >
-              <img src={photo.src} alt={`Le Palace Nantes ${i + 1}`} loading="lazy" />
+              <img
+                src={photo.src}
+                alt={`Le Palace, lieu du Startup Weekend Nantes — photo ${i + 1}`}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
@@ -29,7 +33,7 @@ export default function Venue() {
             >
               <img
                 src={photo.src}
-                alt={`Le Palace Nantes ${row1Photos.length + i + 1}`}
+                alt={`Le Palace, lieu du Startup Weekend Nantes — photo ${row1Photos.length + i + 1}`}
                 loading="lazy"
               />
             </div>

@@ -24,6 +24,9 @@ export default function PastGlimpse() {
             </div>
           ))}
         </div>
+        <a href="/editions" className="past-archive-link">
+          Voir toutes les éditions passées →
+        </a>
       </div>
     </section>
   );
