@@ -91,7 +91,7 @@ const {
       type MarginValue = `${number}${'px' | '%'}`;
       type Margin = MarginValue | `${MarginValue} ${MarginValue}`;
 
-      /* Framer-matching easing: fast start, slow settle — cubic-bezier(0.25, 0.1, 0.25, 1) */
+      /* Easing: fast start, slow settle — cubic-bezier(0.25, 0.1, 0.25, 1) */
       const EASE = [0.25, 0.1, 0.25, 1] as const;
       const DURATION = 0.7;
       const TO_ZERO = 'perspective(1200px) translateY(0px)';
@@ -132,7 +132,7 @@ const {
         slideUp('.contact-container');
         slideUp('.footer-container');
 
-        // Cards — stagger by sibling index (Framer-style)
+        // Cards — stagger by sibling index
         const animateCard = (el: Element, stagger: number) => {
           const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
           animateMini(

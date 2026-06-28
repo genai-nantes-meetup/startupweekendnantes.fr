@@ -1,4 +1,4 @@
-/* Welcome — framer-15dr5iq/framer-176lfrm: height:600px; max-width:1240px */
+/* Welcome section — 600px tall, max 1240px wide */
 .welcome-section {
   position: relative;
   width: 100%;
@@ -9,7 +9,7 @@
   height: 600px;
 }
 
-/* framer-1nnb1k1: full section height; width:100%; position:absolute */
+/* Full-bleed background layer */
 .welcome-bg {
   position: absolute;
   inset: 0;

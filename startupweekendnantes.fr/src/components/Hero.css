@@ -1,4 +1,4 @@
-/* Hero section — dimensions extracted from live Framer CSS */
+/* Hero section */
 .hero-section {
   position: relative;
   background-color: rgb(0, 0, 0);
@@ -20,7 +20,7 @@
   opacity: 1;
 }
 
-/* framer-d40yrs: height:850px; padding:200px 20px 100px; max-width:1240px; flex row; justify-content:space-between */
+/* Content row — 850px tall, max 1240px wide */
 .hero-container {
   position: relative;
   z-index: 1;
@@ -37,7 +37,7 @@
   box-sizing: border-box;
 }
 
-/* framer-jy60yz: flex column, gap:36px, flex:1 0 0, padding:0 40px 10px 0 */
+/* Text column */
 .hero-text {
   flex: 1 0 0;
   display: flex;
@@ -86,7 +86,7 @@
   transform: translateY(2px);
 }
 
-/* framer-1woiq8n: width:538px; height:629px; flex:none; position:relative */
+/* Image — fixed 538×629 frame for absolute children */
 .hero-image {
   flex: none;
   width: 538px;
@@ -101,7 +101,7 @@
   object-fit: contain;
 }
 
-/* framer-ajl8ej: position:absolute; top:109px; right:-35px; width:90px; height:90px — relative to hero-image */
+/* Decorative circle, absolutely positioned within the image */
 .hero-circle {
   position: absolute;
   top: 109px;
@@ -113,7 +113,7 @@
   overflow: hidden;
 }
 
-/* framer-114nj1y: position:absolute; bottom:534px; right:449px; width:250px; height:250px — relative to hero-container */
+/* Decorative dots, absolutely positioned within the hero */
 .hero-dots {
   position: absolute;
   bottom: 534px;
