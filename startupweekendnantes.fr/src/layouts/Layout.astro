@@ -1,5 +1,6 @@
 ---
 import { SITE } from '../data/site';
+import { venue } from '../data/venue';
 
 interface Props {
   title?: string;
@@ -42,6 +43,11 @@ const ogImageUrl = new URL(image, origin).toString();
     <title>{title}</title>
     <link rel="canonical" href={canonical} />
     <meta name="robots" content="index, follow" />
+    <meta name="author" content={SITE.name} />
+    <!-- Local SEO geo-targeting (single source: src/data/venue.ts). -->
+    <meta name="geo.region" content={venue.addressRegionCode} />
+    <meta name="geo.placename" content={venue.addressLocality} />
+    <meta name="ICBM" content={`${venue.latitude}, ${venue.longitude}`} />
     <link rel="icon" href={SITE.favicon} type="image/jpeg" />
     <link rel="apple-touch-icon" href={SITE.appleTouchIcon} />
     <link rel="manifest" href={SITE.manifest} />

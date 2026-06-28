@@ -29,7 +29,7 @@ function organization() {
     '@type': 'Organization',
     '@id': abs('/#organization'),
     name: SITE.organizerName,
-    alternateName: SITE.name,
+    alternateName: 'Techstars Startup Weekend Nantes',
     url: SITE.url,
     logo: abs(SITE.logo),
     sameAs: [SITE.linkedin],
@@ -39,6 +39,7 @@ function organization() {
 function place() {
   return {
     '@type': 'Place',
+    '@id': abs('/#venue'),
     name: venue.name,
     address: {
       '@type': 'PostalAddress',
@@ -47,6 +48,11 @@ function place() {
       addressLocality: venue.addressLocality,
       addressRegion: venue.addressRegion,
       addressCountry: venue.addressCountry,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: venue.latitude,
+      longitude: venue.longitude,
     },
   };
 }
@@ -63,6 +69,7 @@ function offers() {
       url: EDITION.ticketUrl,
       availability: 'https://schema.org/InStock',
       validFrom: '2025-01-01T00:00:00+01:00',
+      priceValidUntil: EDITION.startISO,
     }));
 }
 
@@ -82,11 +89,23 @@ function currentEvent() {
     '@id': abs('/#event'),
     name: `${SITE.name} ${EDITION.year}`,
     description: SITE.defaultDescription,
+    inLanguage: 'fr',
     startDate: EDITION.startISO,
     endDate: EDITION.endISO,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
-    image: [abs(SITE.ogImage)],
+    image: [
+      {
+        '@type': 'ImageObject',
+        url: abs(SITE.ogImage),
+        width: SITE.ogImageWidth,
+        height: SITE.ogImageHeight,
+      },
+    ],
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['#intro'],
+    },
     url: SITE.url,
     location: place(),
     organizer: { '@id': abs('/#organization') },
@@ -99,6 +118,10 @@ function faqPage() {
   return {
     '@type': 'FAQPage',
     '@id': abs('/#faq'),
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.faq-question', '.faq-answer'],
+    },
     mainEntity: questions.map((item) => ({
       '@type': 'Question',
       name: item.q,

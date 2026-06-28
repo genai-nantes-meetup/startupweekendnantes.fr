@@ -25,11 +25,11 @@ export default function FAQ() {
                   +
                 </span>
               </button>
-              {open === i && (
-                <div className="faq-answer">
-                  <p>{item.a}</p>
-                </div>
-              )}
+              {/* Always rendered (hidden when closed) so the answer text ships in the
+                  static HTML — crawlable & citable by search/AI engines, not just JSON-LD. */}
+              <div className="faq-answer" hidden={open !== i}>
+                <p>{item.a}</p>
+              </div>
             </div>
           ))}
         </div>

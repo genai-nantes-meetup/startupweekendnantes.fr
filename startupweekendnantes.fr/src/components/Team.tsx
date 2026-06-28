@@ -18,7 +18,7 @@ export default function Team() {
             <div key={m.name} className="member-card">
               <img src={m.img} alt={m.name} className="member-photo" loading="lazy" />
               <div className="member-info">
-                <h6>{m.name}</h6>
+                <h3>{m.name}</h3>
                 <p>{m.role}</p>
               </div>
             </div>

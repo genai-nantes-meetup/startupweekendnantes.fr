@@ -41,10 +41,10 @@ export default function Hero() {
           className="hero-dots"
         />
 
-        <figure className="hero-image" aria-hidden="true">
+        <figure className="hero-image">
           <img
             src="/assets/images/hero/hero-participants.png"
-            alt="Participants au Startup Weekend"
+            alt="Participants au Startup Weekend Nantes"
             width="538"
             height="629"
             fetchPriority="high"

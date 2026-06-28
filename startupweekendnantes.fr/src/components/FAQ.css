@@ -47,6 +47,9 @@
 
 .faq-answer { padding: 0 0 1.5rem; }
 
+/* Closed answers stay in the DOM (for crawlers/AI) but are visually removed. */
+.faq-answer[hidden] { display: none; }
+
 .faq-answer p {
   font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;

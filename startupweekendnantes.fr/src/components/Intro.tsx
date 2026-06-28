@@ -6,14 +6,23 @@ type IntroImage = { src: string; alt: string };
 const topImages: IntroImage[] = [
   {
     src: '/assets/images/intro/intro-tshirt-bad-ideas-good-stories.jpg',
-    alt: 'Bad Ideas Good Stories t-shirt',
+    alt: 'T-shirt « Bad Ideas, Good Stories » du Startup Weekend Nantes',
   },
-  { src: '/assets/images/intro/event-pitch-speaker.jpg', alt: 'Speaker au pitch' },
+  {
+    src: '/assets/images/intro/event-pitch-speaker.jpg',
+    alt: 'Participant présentant son idée lors des pitchs du Startup Weekend Nantes',
+  },
 ];
 
 const bottomImages: IntroImage[] = [
-  { src: '/assets/images/intro/intro-team-brainstorming.jpg', alt: 'Brainstorming en équipe' },
-  { src: '/assets/images/intro/intro-group-photo.jpg', alt: 'Photo de groupe' },
+  {
+    src: '/assets/images/intro/intro-team-brainstorming.jpg',
+    alt: 'Équipe en brainstorming pendant le Startup Weekend Nantes',
+  },
+  {
+    src: '/assets/images/intro/intro-group-photo.jpg',
+    alt: 'Photo de groupe des participants au Startup Weekend Nantes',
+  },
 ];
 
 export default function Intro() {
@@ -37,6 +46,13 @@ export default function Intro() {
           <p>
             Bienvenue au Startup Weekend Nantes, où les idées les plus folles deviennent des
             startups en un week-end.
+          </p>
+          <p>
+            Le <strong>Startup Weekend</strong> est un format d'événement entrepreneurial reconnu
+            mondialement&nbsp;: <strong>54 heures</strong>, du vendredi soir au dimanche, pour
+            passer d'une simple idée à un prototype de startup. En équipe et accompagné de coachs et
+            de mentors, tu valides un concept, construis un MVP, puis le présentes devant un jury de
+            professionnels.
           </p>
           <p>
             Pendant 54 heures non-stop, tu vas vivre à 100 à l'heure, entouré de talents créatifs,

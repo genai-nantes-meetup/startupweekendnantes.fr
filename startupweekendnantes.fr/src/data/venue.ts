@@ -13,7 +13,16 @@ export const venue = {
   postalCode: '44000',
   addressLocality: 'Nantes',
   addressRegion: 'Pays de la Loire',
+  /** ISO 3166-2 region code — feeds the `geo.region` meta tag. */
+  addressRegionCode: 'FR-PDL',
   addressCountry: 'FR',
+  /**
+   * Approx. coordinates (near Place Graslin). Single source for the schema.org
+   * Place `geo` and the `ICBM` meta tag. VERIFY the exact lat/long for Le Palace
+   * against Google Maps before relying on map-based rich results.
+   */
+  latitude: 47.2129216,
+  longitude: -1.5644127,
 } as const;
 
 export type VenuePhoto = { src: string; basis: number; panoramic?: boolean };
