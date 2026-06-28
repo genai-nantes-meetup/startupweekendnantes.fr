@@ -1,5 +1,5 @@
 import './Pricing.css';
-import { tiers } from '../data/pricing';
+import { tiers } from '../data/edition_pricing';
 
 export default function Pricing() {
   return (

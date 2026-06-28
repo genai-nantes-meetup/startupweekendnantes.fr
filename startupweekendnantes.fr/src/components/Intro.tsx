@@ -1,5 +1,20 @@
 import './Intro.css';
-import { topImages, bottomImages } from '../data/intro';
+
+/** Intro section image rows (above and below the welcome paragraph). */
+type IntroImage = { src: string; alt: string };
+
+const topImages: IntroImage[] = [
+  {
+    src: '/assets/images/intro/intro-tshirt-bad-ideas-good-stories.jpg',
+    alt: 'Bad Ideas Good Stories t-shirt',
+  },
+  { src: '/assets/images/intro/event-pitch-speaker.jpg', alt: 'Speaker au pitch' },
+];
+
+const bottomImages: IntroImage[] = [
+  { src: '/assets/images/intro/intro-team-brainstorming.jpg', alt: 'Brainstorming en équipe' },
+  { src: '/assets/images/intro/intro-group-photo.jpg', alt: 'Photo de groupe' },
+];
 
 export default function Intro() {
   return (

@@ -1,5 +1,5 @@
 import './Agenda.css';
-import { days } from '../data/agenda';
+import { days } from '../data/edition_schedule';
 
 export default function Agenda() {
   return (

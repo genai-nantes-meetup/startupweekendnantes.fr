@@ -1,5 +1,5 @@
 import './Team.css';
-import { members } from '../data/team';
+import { speakers } from '../data/edition_speakers';
 
 export default function Team() {
   return (
@@ -14,7 +14,7 @@ export default function Team() {
           </div>
         </div>
         <div className="team-grid">
-          {members.map((m) => (
+          {speakers.map((m) => (
             <div key={m.name} className="member-card">
               <img src={m.img} alt={m.name} className="member-photo" loading="lazy" />
               <div className="member-info">

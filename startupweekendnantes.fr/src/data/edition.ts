@@ -9,36 +9,40 @@
  * different day, update DAY_NAMES accordingly.
  */
 
-const YEAR = 2025;
-const START_DAY = 21;
-const MONTH_TITLE = 'Novembre';
-const MONTH_LOWER = 'novembre';
-const EDITION_NUMBER = 16;
+const DAYS = [21, 22, 23];
 const DAY_NAMES = ['VENDREDI', 'SAMEDI', 'DIMANCHE'] as const;
 
-const END_DAY = START_DAY + 2;
-
 export const EDITION = {
-  year: YEAR,
-  pastYear: YEAR - 1,
-  editionNumber: EDITION_NUMBER,
+  year: 2025,
+  pastYear: 2024,
+  editionNumber: 16,
 
-  startDay: START_DAY,
-  endDay: END_DAY,
-  month: MONTH_TITLE,
+  startDay: 21,
+  endDay: 23,
+  month: 'Novembre',
 
   /** "Du 21/11 au 23/11" */
-  dateRangeShort: `Du ${START_DAY}/11 au ${END_DAY}/11`,
+  dateRangeShort: `Du 21/11 au 23/11`,
   /** "Du 21 au 23 novembre" */
-  dateRangeLong: `Du ${START_DAY} au ${END_DAY} ${MONTH_LOWER}`,
+  dateRangeLong: `Du 21 au 23 novembre`,
 
-  ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-${YEAR}`,
+  ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-2025`,
   contactEmail: 'maxime.pitussi@gmail.com',
 
   /** Used by Agenda.tsx — pre-built day headers, one per day. */
-  agendaDays: DAY_NAMES.map((day, i) => ({
-    date: `${START_DAY + i} ${MONTH_TITLE} ${YEAR}`,
-    label: `JOUR ${i + 1}`,
-    day,
-  })),
+  agendaDays: [
+    {
+      date: `21 novembre 2025`,
+      label: `JOUR 1`,
+      day: 'VENDREDI',
+    }, {
+      date: `22 novembre 2025`,
+      label: `JOUR 2`,
+      day: 'SAMEDI',
+    }, {
+      date: `23 novembre 2025`,
+      label: `JOUR 3`,
+      day: 'DIMANCHE',
+    }
+  ],
 } as const;

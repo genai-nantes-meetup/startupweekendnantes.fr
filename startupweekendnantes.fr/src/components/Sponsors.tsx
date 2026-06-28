@@ -1,5 +1,5 @@
 import './Sponsors.css';
-import { sponsorRows, bannerRow } from '../data/sponsors';
+import { sponsorRows, bannerRow } from '../data/edition_partners';
 
 export default function Sponsors() {
   return (

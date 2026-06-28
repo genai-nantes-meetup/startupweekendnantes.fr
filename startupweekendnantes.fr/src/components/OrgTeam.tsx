@@ -1,5 +1,5 @@
 import './OrgTeam.css';
-import { orgs } from '../data/orgs';
+import { orgs } from '../data/team';
 
 export default function OrgTeam() {
   return (

@@ -1,6 +1,6 @@
 import './PastGlimpse.css';
 import { EDITION } from '../data/edition';
-import { pastVideos } from '../data/past';
+import { pastVideos } from '../data/videos';
 
 export default function PastGlimpse() {
   return (
