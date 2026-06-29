@@ -20,9 +20,27 @@
 
 .contact-form {
   display: grid;
-  grid-template-rows: max-content 1fr max-content;
   gap: 15px;
   width: 100%;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+}
+
+/* Accessible labels kept visually hidden — the visual design relies on
+   placeholders, but the label stays exposed to assistive tech (WCAG 1.3.1). */
+.form-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .form-row {
@@ -79,6 +97,16 @@
 }
 
 .form-submit:hover { background: rgb(50, 50, 50); }
+
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-status {
+  margin: 0;
+  min-height: 1.2em;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
 
 @media (max-width: 767px) {
   .form-row { grid-auto-flow: row; grid-template-columns: 1fr; }

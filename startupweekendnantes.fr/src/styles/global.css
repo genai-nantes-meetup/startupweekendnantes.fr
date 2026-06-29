@@ -43,6 +43,10 @@
   --sw-cyan: #2aebf5;
   --sw-yellow: #fae01b;
   --sw-blue: rgb(39, 168, 224);
+  /* Agenda day-header backgrounds (consumed by edition_schedule.ts). */
+  --agenda-day-1: rgb(249, 211, 211);
+  --agenda-day-2: rgb(211, 249, 216);
+  --agenda-day-3: rgb(255, 249, 196);
 }
 
 * {
@@ -64,4 +68,28 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+
+/* Skip-to-content link (WCAG 2.4.1) — hidden until focused via keyboard. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: var(--sw-cyan);
+  color: #000;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* <Picture> wrapper adds no box, so the inner <img> is laid out by the parent
+   exactly as a bare <img> would be (keeps existing component CSS intact). */
+.picture-contents {
+  display: contents;
 }
