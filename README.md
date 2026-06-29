@@ -2,8 +2,6 @@
 
 The source code of the [startupweekendnantes.fr](https://startupweekendnantes.fr) website — the official site of **Startup Weekend Nantes**, a 54-hour event where developers, designers, marketers and entrepreneurs team up to build a startup in a single weekend.
 
-> Édition 2025 — Du 21 au 23 novembre, à Nantes.
-
 ## Repository layout
 
 The repo holds the current site alongside archived editions, side by side:
