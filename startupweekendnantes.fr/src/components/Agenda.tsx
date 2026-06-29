@@ -1,4 +1,5 @@
 import './Agenda.css';
+import Picture from './Picture';
 import { days } from '../data/edition_schedule';
 
 export default function Agenda() {
@@ -18,9 +19,9 @@ export default function Agenda() {
             <table className="agenda-table">
               <thead>
                 <tr style={{ background: day.color }}>
-                  <th>Heure</th>
-                  <th>Programme</th>
-                  <th>Speakers</th>
+                  <th scope="col">Heure</th>
+                  <th scope="col">Programme</th>
+                  <th scope="col">Speakers</th>
                 </tr>
               </thead>
               <tbody>
@@ -33,21 +34,14 @@ export default function Agenda() {
                     </td>
                     <td className="speaker-cell">
                       {row.speaker && (
-                        <img
+                        <Picture
                           src={row.speaker.img}
                           alt={row.speaker.name}
                           className="speaker-avatar"
-                          loading="lazy"
                         />
                       )}
                       {row.speakers?.map((s) => (
-                        <img
-                          key={s}
-                          src={s}
-                          alt="Speaker"
-                          className="speaker-avatar"
-                          loading="lazy"
-                        />
+                        <Picture key={s} src={s} alt="Speaker" className="speaker-avatar" />
                       ))}
                     </td>
                   </tr>

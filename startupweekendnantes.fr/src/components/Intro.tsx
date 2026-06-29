@@ -1,4 +1,5 @@
 import './Intro.css';
+import Picture from './Picture';
 
 /** Intro section image rows (above and below the welcome paragraph). */
 type IntroImage = { src: string; alt: string };
@@ -31,12 +32,11 @@ export default function Intro() {
       <div className="intro-container">
         <div className="intro-row intro-row-top">
           {topImages.map((img, i) => (
-            <img
+            <Picture
               key={img.src}
               src={img.src}
               alt={img.alt}
               className={`intro-img intro-img-${i + 1}`}
-              loading="lazy"
             />
           ))}
         </div>
@@ -71,12 +71,11 @@ export default function Intro() {
 
         <div className="intro-row intro-row-bottom">
           {bottomImages.map((img, i) => (
-            <img
+            <Picture
               key={img.src}
               src={img.src}
               alt={img.alt}
               className={`intro-img intro-img-${i + 3}`}
-              loading="lazy"
             />
           ))}
         </div>

@@ -1,4 +1,5 @@
 import './OrgTeam.css';
+import Picture from './Picture';
 import { orgs } from '../data/team';
 
 export default function OrgTeam() {
@@ -9,7 +10,7 @@ export default function OrgTeam() {
         <div className="org-grid">
           {orgs.map((m) => (
             <div key={m.name} className="org-card">
-              <img src={m.img} alt={m.name} className="org-photo" loading="lazy" />
+              <Picture src={m.img} alt={m.name} className="org-photo" />
               <h3>{m.name}</h3>
               <p>{m.role}</p>
             </div>
