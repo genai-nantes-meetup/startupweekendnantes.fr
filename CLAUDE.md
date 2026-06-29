@@ -37,6 +37,6 @@ GTM container `GTM-NQ2DKKPD` and GA4 `G-377KFTGYHV` injected in `<head>` (both l
 
 ## Convention
 
-Except if asked by the user, only update `shift-hackathon.com/`. Other directories are archives of previous years.
+Except if asked by the user, only update `startupweekendnantes.fr/`. Other directories are archives of previous years.
 
 Use the `motion` library to create cool animations.
