@@ -39,6 +39,14 @@ export const SITE = {
   /** LinkedIn company page (footer link + schema.org Organization.sameAs). */
   linkedin: 'https://www.linkedin.com/company/startup-weekend-nantes',
 
+  /**
+   * Archived sites of past editions (frozen history, year-agnostic).
+   * Listed in the footer; prepend new entries as editions roll over.
+   */
+  pastEditions: [
+    { year: 2025, url: 'https://2025.startupweekendnantes.fr' },
+  ] as const,
+
   /** Default <title> — falls back here when a page passes none. */
   defaultTitle: `Startup Weekend Nantes — ${EDITION.year} Edition`,
   /** Default meta description — falls back here when a page passes none. */

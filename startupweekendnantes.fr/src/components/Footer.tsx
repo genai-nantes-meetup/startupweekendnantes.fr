@@ -19,14 +19,17 @@ export default function Footer() {
           <a href={SITE.linkedin} target="_blank" rel="noopener noreferrer" className="footer-link">
             LinkedIn
           </a>
-          <a
-            href="https://2025.startupweekendnantes.fr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-link"
-          >
-            Édition 2025
-          </a>
+          {SITE.pastEditions.map((edition) => (
+            <a
+              key={edition.year}
+              href={edition.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              Édition {edition.year}
+            </a>
+          ))}
         </nav>
         <p className="footer-copy">
           © {EDITION.year} Startup Weekend Nantes — Tous droits réservés
