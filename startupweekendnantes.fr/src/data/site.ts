@@ -43,9 +43,7 @@ export const SITE = {
    * Archived sites of past editions (frozen history, year-agnostic).
    * Listed in the footer; prepend new entries as editions roll over.
    */
-  pastEditions: [
-    { year: 2025, url: 'https://2025.startupweekendnantes.fr' },
-  ] as const,
+  pastEditions: [{ year: 2025, url: 'https://2025.startupweekendnantes.fr' }] as const,
 
   /** Default <title> — falls back here when a page passes none. */
   defaultTitle: `Startup Weekend Nantes — ${EDITION.year} Edition`,

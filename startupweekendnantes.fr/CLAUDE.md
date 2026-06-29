@@ -99,4 +99,4 @@ Never link to `framerusercontent.com` or any external CDN.
 
 ### Hydration
 
-Components are static by default. Use `client:load` / `client:visible` on Astro side only for components with state or interactivity (currently `<FAQ client:load />` and `<Contact client:load />`).
+Components are static by default. Use `client:load` / `client:visible` on Astro side only for components with state or interactivity (currently `<FAQ client:load />`).
