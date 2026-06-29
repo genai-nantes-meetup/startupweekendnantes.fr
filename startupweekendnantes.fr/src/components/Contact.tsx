@@ -1,4 +1,5 @@
 import './Contact.css';
+import { EDITION } from '../data/edition';
 
 export default function Contact() {
   return (
@@ -8,7 +9,7 @@ export default function Contact() {
         <p className="contact-subtitle">Une question ? N'hésite pas à nous contacter</p>
         <form
           className="contact-form"
-          action="mailto:contact@startupweekendnantes.fr"
+          action={`mailto:${EDITION.contactEmail}`}
           method="POST"
         >
           <div className="form-row">
