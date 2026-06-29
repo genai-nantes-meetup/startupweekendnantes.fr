@@ -1,4 +1,5 @@
 import './Team.css';
+import Picture from './Picture';
 import { speakers } from '../data/edition_speakers';
 
 export default function Team() {
@@ -16,7 +17,7 @@ export default function Team() {
         <div className="team-grid">
           {speakers.map((m) => (
             <div key={m.name} className="member-card">
-              <img src={m.img} alt={m.name} className="member-photo" loading="lazy" />
+              <Picture src={m.img} alt={m.name} className="member-photo" />
               <div className="member-info">
                 <h3>{m.name}</h3>
                 <p>{m.role}</p>

@@ -1,4 +1,5 @@
 import './Venue.css';
+import Picture from './Picture';
 import { row1Photos, row2Photos } from '../data/venue';
 
 export default function Venue() {
@@ -16,10 +17,9 @@ export default function Venue() {
                 flexGrow: photo.basis === 538 ? 1 : 0,
               }}
             >
-              <img
+              <Picture
                 src={photo.src}
                 alt={`Le Palace, lieu du Startup Weekend Nantes — photo ${i + 1}`}
-                loading="lazy"
               />
             </div>
           ))}
@@ -31,10 +31,9 @@ export default function Venue() {
               className="venue-photo"
               style={{ flexBasis: photo.basis, flexShrink: 0, flexGrow: photo.panoramic ? 1 : 0 }}
             >
-              <img
+              <Picture
                 src={photo.src}
                 alt={`Le Palace, lieu du Startup Weekend Nantes — photo ${row1Photos.length + i + 1}`}
-                loading="lazy"
               />
             </div>
           ))}

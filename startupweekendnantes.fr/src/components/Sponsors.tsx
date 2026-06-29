@@ -1,4 +1,5 @@
 import './Sponsors.css';
+import Picture from './Picture';
 import { sponsorRows, bannerRow } from '../data/edition_partners';
 
 export default function Sponsors() {
@@ -10,23 +11,16 @@ export default function Sponsors() {
           {sponsorRows.map((row, i) => (
             <div key={i} className="sponsors-row">
               {row.map((s) => (
-                <img
-                  key={s.name}
-                  src={s.img}
-                  alt={s.name}
-                  loading="lazy"
-                  className="sponsor-logo"
-                />
+                <Picture key={s.name} src={s.img} alt={s.name} className="sponsor-logo" />
               ))}
             </div>
           ))}
           <div className="sponsors-row sponsors-row-banner">
             {bannerRow.map((s) => (
-              <img
+              <Picture
                 key={s.name}
                 src={s.img}
                 alt={s.name}
-                loading="lazy"
                 className="sponsor-logo sponsor-logo-banner"
               />
             ))}

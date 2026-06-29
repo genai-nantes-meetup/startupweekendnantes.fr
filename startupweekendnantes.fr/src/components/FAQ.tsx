@@ -14,8 +14,10 @@ export default function FAQ() {
             <div key={i} className="faq-item">
               <button
                 className="faq-question"
+                id={`faq-question-${i}`}
                 onClick={() => setOpen(open === i ? null : i)}
                 aria-expanded={open === i}
+                aria-controls={`faq-answer-${i}`}
               >
                 <span>{item.q}</span>
                 <span
@@ -27,7 +29,13 @@ export default function FAQ() {
               </button>
               {/* Always rendered (hidden when closed) so the answer text ships in the
                   static HTML — crawlable & citable by search/AI engines, not just JSON-LD. */}
-              <div className="faq-answer" hidden={open !== i}>
+              <div
+                className="faq-answer"
+                id={`faq-answer-${i}`}
+                role="region"
+                aria-labelledby={`faq-question-${i}`}
+                hidden={open !== i}
+              >
                 <p>{item.a}</p>
               </div>
             </div>

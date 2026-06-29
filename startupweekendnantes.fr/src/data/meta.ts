@@ -89,7 +89,7 @@ function currentEvent() {
     '@id': abs('/#event'),
     name: `${SITE.name} ${EDITION.year}`,
     description: SITE.defaultDescription,
-    inLanguage: 'fr',
+    inLanguage: 'fr-FR',
     startDate: EDITION.startISO,
     endDate: EDITION.endISO,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',

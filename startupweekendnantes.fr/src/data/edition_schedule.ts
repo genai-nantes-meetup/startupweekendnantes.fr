@@ -23,7 +23,8 @@ export type Day = {
   rows: Row[];
 };
 
-const dayColors = ['rgb(249, 211, 211)', 'rgb(211, 249, 216)', 'rgb(255, 249, 196)'];
+// Pastel day-header colours — actual values live in :root (global.css).
+const dayColors = ['var(--agenda-day-1)', 'var(--agenda-day-2)', 'var(--agenda-day-3)'];
 
 const dayRows: Row[][] = [
   // JOUR 1 — Vendredi
