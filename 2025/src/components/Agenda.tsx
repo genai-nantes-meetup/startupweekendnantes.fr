@@ -1,0 +1,56 @@
+import './Agenda.css';
+import Picture from './Picture';
+import { days } from '../data/edition_schedule';
+
+export default function Agenda() {
+  return (
+    <section id="agenda" className="agenda-section">
+      <div className="agenda-container">
+        <h2>Agenda</h2>
+        {days.map((day) => (
+          <div key={day.label} className="agenda-day">
+            <div className="day-header">
+              <div className="day-meta">
+                <span className="day-date">{day.date}</span>
+                <strong className="day-label">{day.label}</strong>
+              </div>
+              <span className="day-name">{day.day}</span>
+            </div>
+            <table className="agenda-table">
+              <thead>
+                <tr style={{ background: day.color }}>
+                  <th scope="col">Heure</th>
+                  <th scope="col">Programme</th>
+                  <th scope="col">Speakers</th>
+                </tr>
+              </thead>
+              <tbody>
+                {day.rows.map((row, j) => (
+                  <tr key={j}>
+                    <td className="time-cell">{row.time}</td>
+                    <td className="prog-cell">
+                      {row.title && <strong>{row.title}</strong>}
+                      {row.desc && <span>{row.desc}</span>}
+                    </td>
+                    <td className="speaker-cell">
+                      {row.speaker && (
+                        <Picture
+                          src={row.speaker.img}
+                          alt={row.speaker.name}
+                          className="speaker-avatar"
+                        />
+                      )}
+                      {row.speakers?.map((s) => (
+                        <Picture key={s} src={s} alt="Speaker" className="speaker-avatar" />
+                      ))}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

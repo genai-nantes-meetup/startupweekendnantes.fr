@@ -1,0 +1,101 @@
+/* Welcome section — 600px tall, max 1240px wide */
+.welcome-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  background: rgb(0, 0, 0);
+  height: 600px;
+}
+
+/* Full-bleed background layer */
+.welcome-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.welcome-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.welcome-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, transparent 60%);
+  z-index: 1;
+}
+
+/* Content: vertically centered, 600px tall, max-width 1240px */
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  height: 600px;
+  max-width: 1240px;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.welcome-content h2 {
+  font-family: 'Helvetica Neue Black', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  line-height: 1;
+}
+
+.welcome-content > p {
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+
+  line-height: 1.6;
+  margin: 0;
+}
+
+.welcome-content > p strong {
+  font-weight: 700;
+}
+
+.welcome-content ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.welcome-content ul li {
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 0.2rem 0;
+  font-weight: 700;
+}
+
+.tagline {
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .welcome-section { height: auto; }
+  .welcome-content { height: auto; padding: 2rem 1.5rem; }
+  .welcome-bg { height: 100%; }
+  .welcome-overlay { height: 100%; }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+  .welcome-section { height: 420px; }
+  .welcome-content { height: 420px; }
+}

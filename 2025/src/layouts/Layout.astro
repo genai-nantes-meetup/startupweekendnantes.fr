@@ -1,0 +1,229 @@
+---
+import { SITE } from '../data/site';
+import { venue } from '../data/venue';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Page-level OG image override (site-root-relative). Defaults to SITE.ogImage. */
+  image?: string;
+  /** Optional JSON-LD graph object; serialised into a <script type="application/ld+json">. */
+  jsonLd?: unknown;
+  /** Preload this above-the-fold image as the LCP candidate (site-root-relative). */
+  preloadImage?: string;
+}
+
+const {
+  title = SITE.defaultTitle,
+  description = SITE.defaultDescription,
+  image = SITE.ogImage,
+  jsonLd,
+  preloadImage,
+} = Astro.props;
+
+const origin = Astro.site ?? SITE.url;
+/**
+ * Self-referencing canonical for the current path. Trailing slash stripped (except
+ * root) to match Vercel's `trailingSlash: false`, so the canonical never points to
+ * a URL that would 308-redirect.
+ */
+const path = Astro.url.pathname;
+const normalizedPath = path !== '/' && path.endsWith('/') ? path.slice(0, -1) : path;
+const canonical = new URL(normalizedPath, origin).toString();
+/** Absolute social image URL (OG/Twitter require absolute URLs). */
+const ogImageUrl = new URL(image, origin).toString();
+---
+
+<!doctype html>
+<html lang={SITE.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content={SITE.name} />
+    <!-- Local SEO geo-targeting (single source: src/data/venue.ts). -->
+    <meta name="geo.region" content={venue.addressRegionCode} />
+    <meta name="geo.placename" content={venue.addressLocality} />
+    <meta name="ICBM" content={`${venue.latitude}, ${venue.longitude}`} />
+    <link rel="icon" href={SITE.favicon} type="image/jpeg" />
+    <link rel="apple-touch-icon" href={SITE.appleTouchIcon} />
+    <link rel="manifest" href={SITE.manifest} />
+    <meta name="theme-color" content={SITE.themeColor} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload the body-text font (used above the fold) to cut its render delay. -->
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/HelveticaNeue-Medium.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oxanium:wght@400;500;600;700;800&display=swap"
+    />
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content={String(SITE.ogImageWidth)} />
+    <meta property="og:image:height" content={String(SITE.ogImageHeight)} />
+    <meta property="og:image:alt" content={SITE.ogImageAlt} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {
+      jsonLd && (
+        <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+      )
+    }
+
+    <!-- GTM -->
+    <script is:inline define:vars={{ gtmId: SITE.gtmId }}>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', gtmId);
+    </script>
+
+    <style is:global>
+      @media (prefers-reduced-motion: no-preference) {
+        /* Slide UP — section text blocks, cards, headers */
+        .hero-text,
+        .hero-image,
+        .intro-content,
+        .welcome-content,
+        .past-container,
+        .team-header,
+        .member-card,
+        .sponsor-item,
+        .pricing-card,
+        .agenda-day,
+        .faq-item,
+        .org-card,
+        .footer-container,
+        section h2 {
+          opacity: 0.001;
+          transform: perspective(1200px) translateY(150px);
+        }
+
+        /* Slide DOWN — decorative elements from above */
+        .hero-dots,
+        .hero-circle {
+          opacity: 0.001;
+          transform: perspective(1200px) translateY(-50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Aller au contenu</a>
+    <!-- GTM noscript -->
+    <noscript>
+      <iframe
+        src={`https://www.googletagmanager.com/ns.html?id=${SITE.gtmId}`}
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+
+    <slot />
+
+    <script>
+      import { animateMini, inView } from 'motion';
+
+      // motion's MarginType is not exported; mirror the template-literal shape here.
+      type MarginValue = `${number}${'px' | '%'}`;
+      type Margin = MarginValue | `${MarginValue} ${MarginValue}`;
+
+      /* Easing: fast start, slow settle — cubic-bezier(0.25, 0.1, 0.25, 1) */
+      const EASE = [0.25, 0.1, 0.25, 1] as const;
+      const DURATION = 0.7;
+      const TO_ZERO = 'perspective(1200px) translateY(0px)';
+
+      const DEFAULT_MARGIN: Margin = '-80px 0px';
+      const CARD_MARGIN: Margin = '-40px 0px';
+      const ROW_MARGIN: Margin = '-20px 0px';
+
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+        /* ── Slide UP: main content ───────────────────────────── */
+        const slideUp = (selector: string, delay = 0, margin: Margin = DEFAULT_MARGIN) => {
+          inView(
+            selector,
+            (el) => {
+              animateMini(
+                el,
+                { opacity: 1, transform: TO_ZERO },
+                { duration: DURATION, delay, ease: EASE }
+              );
+            },
+            { margin }
+          );
+        };
+
+        // Hero elements — staggered
+        slideUp('.hero-text', 0);
+        slideUp('.hero-image', 0.1);
+
+        // Section h2 headings
+        slideUp('section h2');
+
+        // Content blocks
+        slideUp('.intro-content');
+        slideUp('.welcome-content');
+        slideUp('.past-container');
+        slideUp('.team-header');
+        slideUp('.footer-container');
+
+        // Cards — stagger by sibling index
+        const animateCard = (el: Element, stagger: number) => {
+          const idx = [...(el.parentElement?.children ?? [])].indexOf(el);
+          animateMini(
+            el,
+            { opacity: 1, transform: TO_ZERO },
+            { duration: 0.6, delay: idx * stagger, ease: EASE }
+          );
+        };
+
+        inView('.member-card, .org-card', (el) => animateCard(el, 0.07), { margin: CARD_MARGIN });
+        inView('.pricing-card', (el) => animateCard(el, 0.1), { margin: CARD_MARGIN });
+
+        // Agenda rows and FAQ items
+        slideUp('.agenda-day', 0, ROW_MARGIN);
+        slideUp('.faq-item', 0, ROW_MARGIN);
+
+        /* ── Slide DOWN: decorative elements ─────────────────── */
+        inView('.hero-dots, .hero-circle', (el) => {
+          animateMini(
+            el,
+            { opacity: 1, transform: TO_ZERO },
+            { duration: 0.6, ease: EASE }
+          );
+        });
+
+      }
+    </script>
+  </body>
+</html>

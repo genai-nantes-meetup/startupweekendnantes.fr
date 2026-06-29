@@ -1,0 +1,99 @@
+.site-header {
+  position: relative;
+  z-index: 50;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.site-header-logo {
+  height: 4.5rem;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .site-header { padding: 1rem 1.25rem; }
+  .site-header-logo { height: 3.25rem; }
+}
+
+.site-header-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-header-nav a {
+  position: relative;
+  font-family: 'Oxanium', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0.35rem 0.1rem;
+  transition: color 0.2s ease;
+}
+
+/* Sliding underline grown from the centre on hover/focus. */
+.site-header-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--sw-cyan);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.site-header-nav a:hover,
+.site-header-nav a:focus-visible {
+  color: #fff;
+}
+
+.site-header-nav a:hover::after,
+.site-header-nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.site-header-nav a:focus-visible {
+  outline: none;
+}
+
+/* Hide the anchor nav on smaller viewports to preserve the logo + CTA layout. */
+@media (max-width: 959px) {
+  .site-header-nav {
+    display: none;
+  }
+}
+
+.site-header-cta {
+  font-size: 0.875rem;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 13px 25px;
+  background: rgb(255, 255, 255);
+  color: rgb(25, 5, 50);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 rgb(179, 179, 179);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 3px 0 rgb(179, 179, 179);
+  transform: translateY(2px);
+}

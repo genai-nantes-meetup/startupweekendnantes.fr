@@ -1,0 +1,95 @@
+/* Google Fonts (Dela Gothic One + Oxanium) are loaded via <link> in Layout.astro
+   <head> with preconnect — not @import here, which would be render-blocking. */
+
+@font-face {
+  font-family: 'Helvetica Neue Black';
+  src: url('/fonts/HelveticaNeue-Black.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy';
+  src: url('/fonts/HelveticaNeue-Heavy.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url('/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Black Italic';
+  src: url('/fonts/HelveticaNeue-BlackItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Bold Italic';
+  src: url('/fonts/HelveticaNeue-BoldItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy Italic';
+  src: url('/fonts/HelveticaNeue-HeavyItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Agrandir Grand Heavy';
+  src: url('/fonts/Agrandir-GrandHeavy.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --sw-bg: rgb(14, 2, 24);
+  --sw-purple: rgb(25, 5, 50);
+  --sw-cyan: #2aebf5;
+  --sw-yellow: #fae01b;
+  --sw-blue: rgb(39, 168, 224);
+  /* Agenda day-header backgrounds (consumed by edition_schedule.ts). */
+  --agenda-day-1: rgb(249, 211, 211);
+  --agenda-day-2: rgb(211, 249, 216);
+  --agenda-day-3: rgb(255, 249, 196);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Skip-to-content link (WCAG 2.4.1) — hidden until focused via keyboard. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: var(--sw-cyan);
+  color: #000;
+  font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* <Picture> wrapper adds no box, so the inner <img> is laid out by the parent
+   exactly as a bare <img> would be (keeps existing component CSS intact). */
+.picture-contents {
+  display: contents;
+}
