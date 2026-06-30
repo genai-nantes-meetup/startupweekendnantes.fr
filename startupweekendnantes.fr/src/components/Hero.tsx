@@ -11,9 +11,9 @@ export default function Hero() {
       <div className="hero-container container">
         <div className="hero-text">
           <div className="hero-flags">
-            <span className="pill pill--ghost hero-alert">⚠ Problem detected</span>
+            <span className="pill pill--jaune hero-brand">★ Startup Weekend {EDITION.year}</span>
             <span className="t-mono hero-edition">
-              Édition {EDITION.year} // {EDITION.dateRangeMono}
+              {EDITION.dateRangeMono}
             </span>
           </div>
 

@@ -19,7 +19,7 @@ export default function OrgTeam() {
               <span className="t-mono org-id">CREW-{String(i + 1).padStart(2, '0')}</span>
               <div className="org-info">
                 <h3 className="t-heading org-name">{m.name}</h3>
-                <p className="t-mono org-role">{m.role}</p>
+                <p className="org-role">{m.role}</p>
               </div>
             </article>
           ))}

@@ -20,7 +20,8 @@ const END_DAY = START_DAY + 2;
 
 export const EDITION = {
   year: YEAR,
-  pastYear: YEAR - 1,
+  // Pas d'archives 2025 : on renvoie vers les moments forts de l'édition 2024.
+  pastYear: 2024,
   editionNumber: EDITION_NUMBER,
 
   startDay: START_DAY,
@@ -41,7 +42,7 @@ export const EDITION = {
   participantsCount: 100,
 
   ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-${YEAR}`,
-  contactEmail: 'contact@startupweekendnantes.fr',
+  contactEmail: 'florence@flythenest.io',
 
   /** Used by Agenda.tsx — pre-built day headers, one per day. */
   agendaDays: DAY_NAMES.map((day, i) => ({

@@ -13,7 +13,7 @@ export const orgs: Organiser[] = [
   },
   {
     name: 'Robin GOUTARD',
-    role: 'Consultant innovation @In Extenso',
+    role: 'Ingénieur partenariat @Université Gustave Eiffel',
     img: '/images/29nftr9xwtYw2wzRwUXbsYBA8Lw.png',
   },
   {
@@ -28,18 +28,13 @@ export const orgs: Organiser[] = [
   },
   {
     name: 'Louis AMMONIQUE',
-    role: 'Growth Manager @kelvin',
+    role: 'Growth @Clever Cloud',
     img: '/images/cjfdmDrvGd9wKFVkjxVAYft8Yg.png',
   },
   {
     name: 'Clara GARNIER',
     role: 'Fondatrice @Kidefeel',
     img: '/images/kprcfjkwgOzbgcID4jUNV5YNis.png',
-  },
-  {
-    name: 'Romain PERRAUT',
-    role: 'Head of Sales @_icilundi',
-    img: '/images/eRSRmPp4xOQQD6xgxPzGxkwZ4.png',
   },
   { name: 'Ana PASCAUD', role: 'Fondatrice @SAWA', img: '/images/zrnozkkMGZmZ62YKvXWpLSdBMfE.png' },
   {

@@ -22,7 +22,7 @@ export default function Team() {
               </div>
               <div className="member-info">
                 <h3 className="t-heading member-name">{m.name}</h3>
-                <p className="t-mono member-role">{m.role}</p>
+                <p className="member-role">{m.role}</p>
               </div>
             </article>
           ))}

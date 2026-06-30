@@ -17,31 +17,14 @@ export default function Contact() {
         />
         <p className="kicker kicker--on-dark">✳ Transmission</p>
         <h2 className="t-title contact-heading">Une question ? Contacte la base.</h2>
-        <form className="contact-form" action={`mailto:${EDITION.contactEmail}`} method="POST">
-          <div className="form-row">
-            <div className="form-field">
-              <label htmlFor="contact-name">Prénom</label>
-              <input id="contact-name" type="text" name="name" required className="form-input" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="contact-email">Email</label>
-              <input id="contact-email" type="email" name="email" required className="form-input" />
-            </div>
-          </div>
-          <div className="form-field">
-            <label htmlFor="contact-message">Ton message</label>
-            <textarea
-              id="contact-message"
-              name="message"
-              rows={4}
-              required
-              className="form-input form-textarea"
-            ></textarea>
-          </div>
-          <button type="submit" className="btn btn--primary contact-submit">
-            Transmettre →
-          </button>
-        </form>
+        <p className="t-body contact-text">
+          Partenariat, presse ou simple curiosité : on lit tout, on répond vite.
+        </p>
+        <a href={`mailto:${EDITION.contactEmail}`} className="contact-mail-card">
+          <span className="t-mono contact-mail-label">Canal direct</span>
+          <span className="contact-mail-address">{EDITION.contactEmail}</span>
+          <span className="t-mono contact-mail-cta">Ouvrir la transmission →</span>
+        </a>
       </div>
     </section>
   );

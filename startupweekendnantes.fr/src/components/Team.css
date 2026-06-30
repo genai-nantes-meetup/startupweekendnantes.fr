@@ -72,9 +72,11 @@
   color: var(--prune);
 }
 .member-role {
-  font-size: 10px;
-  margin-top: 5px;
-  opacity: 0.6;
+  font-family: var(--f-body);
+  font-size: 13px;
+  line-height: 1.3;
+  margin-top: 6px;
+  opacity: 0.72;
   white-space: normal;
 }
 @media (max-width: 860px) {
