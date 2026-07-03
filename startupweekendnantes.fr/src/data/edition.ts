@@ -28,6 +28,11 @@ export const EDITION = {
   endDay: END_DAY,
   month: MONTH_TITLE,
 
+  /** Décollage : vendredi 27 nov. 2026, 18h30 (CET) — cible du compte à rebours. */
+  startISO: `${YEAR}-11-${String(START_DAY).padStart(2, '0')}T18:30:00+01:00`,
+  /** "27.11.26" — estampille compacte du lancement pour la télémétrie. */
+  launchStamp: `${String(START_DAY).padStart(2, '0')}.11.${String(YEAR).slice(2)}`,
+
   /** "Du 21/11 au 23/11" */
   dateRangeShort: `Du ${START_DAY}/11 au ${END_DAY}/11`,
   /** "Du 21 au 23 novembre" */

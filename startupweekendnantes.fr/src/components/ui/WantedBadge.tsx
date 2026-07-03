@@ -54,7 +54,7 @@ export default function WantedBadge({ size = 210, className, color = '#512133' }
       <defs>
         {/* arc haut (texte sur le dessus) et arc bas (texte sous la ligne, sens lisible) */}
         <path id="wb-top" d="M 54,130 A 76,76 0 0 1 206,130" fill="none" />
-        <path id="wb-bot" d="M 58,130 A 72,72 0 0 0 202,130" fill="none" />
+        <path id="wb-bot" d="M 42,130 A 88,88 0 0 0 218,130" fill="none" />
       </defs>
 
       {/* sceau festonné + anneau intérieur */}

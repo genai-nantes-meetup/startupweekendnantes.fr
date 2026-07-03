@@ -12,11 +12,21 @@
   color: var(--prune);
   margin-bottom: 20px;
 }
+/* mesure de lecture confortable : ~50 caractères par ligne */
+.intro-content p {
+  max-width: 30em;
+}
 .intro-lead {
-  font-size: 19px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.intro-content p:not(.intro-lead) {
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(42, 22, 32, 0.82);
 }
 .intro-content p + p {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 .intro-content strong {
   color: var(--prune);
@@ -26,7 +36,7 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 26px;
+  margin-top: 32px;
 }
 
 /* gallery collage */

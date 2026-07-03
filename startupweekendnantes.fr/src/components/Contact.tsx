@@ -4,27 +4,56 @@ import RisoIllu from './ui/RisoIllu';
 
 export default function Contact() {
   return (
-    <section id="contact" className="section contact-section surface-dark">
+    <section id="contact" className="section contact-section surface-dark tex">
       <div className="hud-grid" aria-hidden="true"></div>
-      <div className="contact-container">
-        <RisoIllu
-          subject="console"
-          surface="dark"
-          glow="none"
-          round
-          alt="Un opérateur de mission à sa console, casque sur les oreilles"
-          className="contact-console"
-        />
-        <p className="kicker kicker--on-dark">✳ Transmission</p>
-        <h2 className="t-title contact-heading">Une question ? Contacte la base.</h2>
-        <p className="t-body contact-text">
-          Partenariat, presse ou simple curiosité : on lit tout, on répond vite.
-        </p>
-        <a href={`mailto:${EDITION.contactEmail}`} className="contact-mail-card">
-          <span className="t-mono contact-mail-label">Canal direct</span>
-          <span className="contact-mail-address">{EDITION.contactEmail}</span>
-          <span className="t-mono contact-mail-cta">Ouvrir la transmission →</span>
-        </a>
+
+      <div className="contact-container container">
+        <div className="contact-panel">
+          {/* barre de titre façon terminal de comms */}
+          <header className="contact-bar t-mono">
+            <span className="contact-bar-id">✳ Transmission</span>
+            <span className="contact-bar-coord">47.21°N · 01.55°W</span>
+            <span className="contact-bar-live">
+              <span className="contact-live-dot" aria-hidden="true"></span>
+              Canal ouvert
+            </span>
+          </header>
+
+          <div className="contact-body">
+            <div className="contact-visual">
+              <RisoIllu
+                subject="console"
+                surface="dark"
+                glow="bleu"
+                round
+                alt="Un opérateur de mission à sa console, casque sur les oreilles"
+                className="contact-console"
+              />
+              <div className="contact-wave" aria-hidden="true">
+                {Array.from({ length: 9 }).map((_, i) => (
+                  <span key={i}></span>
+                ))}
+              </div>
+            </div>
+
+            <div className="contact-copy">
+              <h2 className="t-title contact-heading">
+                Une question&nbsp;?<br />Contacte la base.
+              </h2>
+              <p className="t-body contact-text">
+                Partenariat, presse ou simple curiosité : on lit tout, on répond vite.
+              </p>
+
+              <a href={`mailto:${EDITION.contactEmail}`} className="contact-mail-card">
+                <span className="contact-mail-meta">
+                  <span className="t-mono contact-mail-label">Canal direct</span>
+                  <span className="contact-mail-address">{EDITION.contactEmail}</span>
+                </span>
+                <span className="contact-mail-cta" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

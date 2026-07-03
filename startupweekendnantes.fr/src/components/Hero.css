@@ -132,13 +132,35 @@
   letter-spacing: 0.22em;
   color: var(--bleu);
 }
-.hero-tel-clock {
+.hero-countdown {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  color: var(--jaune);
+  font-variant-numeric: tabular-nums;
+}
+.hero-cd-seg {
+  display: inline-flex;
+  align-items: baseline;
+}
+.hero-cd-seg b {
   font-weight: 700;
   font-size: clamp(26px, 3.4vw, 34px);
-  letter-spacing: 0.02em;
-  color: var(--jaune);
+  letter-spacing: 0.01em;
+  line-height: 1;
 }
-.hero-cursor {
+.hero-cd-seg i {
+  font-style: normal;
+  font-size: 11px;
+  margin-left: 1px;
+  color: rgba(248, 244, 137, 0.55);
+}
+.hero-cd-seg s {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 6px 0 4px;
+  color: rgba(248, 244, 137, 0.4);
   animation: blink 1.1s steps(1) infinite;
 }
 .hero-tel-stats {
