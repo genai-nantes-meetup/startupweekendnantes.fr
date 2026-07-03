@@ -28,35 +28,63 @@
   aspect-ratio: 4 / 5;
   border-radius: var(--r-card);
   overflow: hidden;
-  background: var(--prune);
+  background: linear-gradient(165deg, var(--prune-d) 0%, var(--prune) 78%);
+  border: 1px solid rgba(244, 238, 219, 0.09);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .org-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 26px 44px -24px rgba(58, 22, 35, 0.6);
 }
+/* fond « médaillon crew » : disque spotlight + anneau HUD + trame de points riso.
+   couleur rotative bleu / jaune / cream (rappel du liseré riso des illustrations) */
+.org-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 33%, transparent 45%, var(--ring) 45.6%, transparent 47.5%),
+    radial-gradient(circle at 50% 30%, var(--disc) 0%, transparent 52%),
+    radial-gradient(rgba(244, 238, 219, 0.07) 1px, transparent 1.4px);
+  background-size: 100% 100%, 100% 100%, 15px 15px;
+  transition: opacity 0.25s ease, transform 0.4s ease;
+  opacity: 0.9;
+}
+.org-card:hover::before {
+  opacity: 1;
+  transform: scale(1.04);
+}
+.org-card:nth-child(3n + 1) { --disc: rgba(171, 220, 255, 0.5); --ring: rgba(171, 220, 255, 0.32); }
+.org-card:nth-child(3n + 2) { --disc: rgba(248, 244, 137, 0.46); --ring: rgba(248, 244, 137, 0.3); }
+.org-card:nth-child(3n)     { --disc: rgba(244, 238, 219, 0.34); --ring: rgba(244, 238, 219, 0.28); }
 .org-photo {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center bottom;
+  z-index: 1;
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.4));
   transition: transform 0.5s ease;
 }
 .org-card:hover .org-photo {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 .org-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(42, 22, 32, 0.92) 0%, rgba(42, 22, 32, 0.5) 32%, transparent 58%);
+  z-index: 2;
+  background: linear-gradient(to top, rgba(42, 22, 32, 0.96) 0%, rgba(42, 22, 32, 0.55) 24%, transparent 50%);
 }
 .org-id {
   position: absolute;
   top: 14px;
   left: 14px;
-  z-index: 2;
+  z-index: 3;
   background: var(--jaune);
   color: var(--prune);
   border-radius: 100px;
@@ -70,7 +98,7 @@
   left: 18px;
   right: 18px;
   bottom: 16px;
-  z-index: 2;
+  z-index: 3;
   color: var(--cream);
 }
 .org-name {

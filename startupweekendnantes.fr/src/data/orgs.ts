@@ -9,37 +9,37 @@ export const orgs: Organiser[] = [
   {
     name: 'Florence POYVRE',
     role: 'Co-Founder @Fly The Nest',
-    img: '/images/CPPiPrmwNlBDD16ZjEsEp7jSOYQ.png',
+    img: '/images/team/florence.webp',
   },
   {
     name: 'Robin GOUTARD',
     role: 'Ingénieur partenariat @Université Gustave Eiffel',
-    img: '/images/29nftr9xwtYw2wzRwUXbsYBA8Lw.png',
+    img: '/images/team/robin.webp',
   },
   {
     name: 'Florian HERVÉOU',
     role: 'Head of Startup Programs @Startup Palace',
-    img: '/images/vDdpuf0bvfUg1jOKqSriwoI8As.jpeg',
+    img: '/images/team/florian.webp',
   },
   {
     name: 'Guillaume PARTHENAY',
     role: 'Responsable commercial & marketing @Jujotte',
-    img: '/images/9yaN44IumqxW2zGrUItm4iU18.png',
+    img: '/images/team/guillaume.webp',
   },
   {
     name: 'Louis AMMONIQUE',
     role: 'Growth @Clever Cloud',
-    img: '/images/cjfdmDrvGd9wKFVkjxVAYft8Yg.png',
+    img: '/images/team/louis.webp',
   },
   {
     name: 'Clara GARNIER',
     role: 'Fondatrice @Kidefeel',
-    img: '/images/kprcfjkwgOzbgcID4jUNV5YNis.png',
+    img: '/images/team/clara.webp',
   },
-  { name: 'Ana PASCAUD', role: 'Fondatrice @SAWA', img: '/images/zrnozkkMGZmZ62YKvXWpLSdBMfE.png' },
+  { name: 'Ana PASCAUD', role: 'Fondatrice @SAWA', img: '/images/team/anna.webp' },
   {
     name: 'Grégory THIBORD',
     role: 'CEO @_icilundi',
-    img: '/images/afjyIBAmXZ8DGW3gvaIVbNIIoU.jpeg',
+    img: '/images/team/gregory.webp',
   },
 ];
