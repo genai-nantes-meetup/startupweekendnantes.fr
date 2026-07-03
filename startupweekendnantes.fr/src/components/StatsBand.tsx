@@ -5,7 +5,7 @@ const stats = [
   { n: `${EDITION.durationHours}h`, l: 'non-stop, vendredi → dimanche', accent: 'var(--bleu)' },
   { n: `${EDITION.teamsCount}`, l: 'missions · 12 équipes', accent: 'var(--jaune)' },
   { n: `${EDITION.participantsCount}`, l: 'équipiers attendus', accent: 'var(--bleu)' },
-  { n: '59,5€', l: 'tout compris · 7 repas', accent: 'var(--jaune)' },
+  { n: '69€', l: 'tout compris · 7 repas', accent: 'var(--jaune)' },
 ];
 
 export default function StatsBand() {

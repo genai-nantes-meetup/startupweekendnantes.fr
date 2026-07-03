@@ -9,7 +9,7 @@ export default function CtaBand() {
       <div className="container cta-inner">
         <div className="cta-text">
           <p className="t-mono cta-meta">
-            T-00:{EDITION.durationHours}:00 · Billets 59,5€ tout compris
+            T-00:{EDITION.durationHours}:00 · Billets 69€ tout compris
           </p>
           <h2 className="t-display cta-title">Porteurs de problèmes recherchés.</h2>
           <a
