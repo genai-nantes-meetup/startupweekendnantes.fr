@@ -50,8 +50,8 @@ const dayRows: Row[][] = [
     { time: '20h30', title: 'Repas', desc: 'Dîner ensemble.' },
     {
       time: '21h15',
-      title: 'KEA sur le pitch et les startups',
-      desc: 'Par Claire Bretton de Underdog',
+      title: 'Conférence',
+      desc: '',
       speaker: { name: 'Claire Bretton', img: '/images/8JSXibl4A4aZTwJgXOWiMm5Yio.jpeg' },
     },
     {
@@ -84,8 +84,8 @@ const dayRows: Row[][] = [
     },
     {
       time: '9h15',
-      title: 'Conférences : Marché + IA Générative',
-      desc: 'Par Pauline Corriou et Simon Timssale',
+      title: 'Conférences',
+      desc: '',
       speakers: [
         '/images/VQm4I4LuWNHC0UemB1sslF3p8.jpeg',
         '/images/lyIwOv1puBWIqCuDn2zoYOXI9BY.jpeg',

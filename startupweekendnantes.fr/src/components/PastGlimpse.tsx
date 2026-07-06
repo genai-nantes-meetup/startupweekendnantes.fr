@@ -1,13 +1,12 @@
 import './PastGlimpse.css';
-import { EDITION } from '../data/edition';
 import { pastVideos } from '../data/past';
 
 export default function PastGlimpse() {
   return (
     <section id="past" className="section past-section surface-dark tex">
       <div className="container past-container">
-        <p className="kicker kicker--on-dark">✳ Archives · édition {EDITION.pastYear}</p>
-        <h2 className="t-title past-title">Revivez les moments forts</h2>
+        <p className="kicker kicker--on-dark">✳ Archives</p>
+        <h2 className="t-title past-title">Revivez les moments forts des précédentes éditions</h2>
         <div className="videos-grid">
           {pastVideos.map((video) => (
             <figure key={video.embedUrl} className="video-card">

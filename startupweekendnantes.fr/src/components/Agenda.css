@@ -113,6 +113,28 @@
   object-fit: cover;
   border: 1.5px solid var(--prune);
 }
+/* badge « bientôt disponible » (visages non encore dévoilés) */
+.dossier-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border: 1px solid rgba(81, 33, 51, 0.35);
+  border-radius: var(--r-pill);
+  background: rgba(81, 33, 51, 0.05);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--prune);
+}
+.dossier-soon-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--jaune);
+  border: 1px solid var(--prune);
+}
 
 /* key moment — left tick + amber accent, no box */
 .dossier-row.is-key {

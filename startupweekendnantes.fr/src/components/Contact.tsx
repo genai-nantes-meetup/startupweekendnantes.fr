@@ -9,6 +9,12 @@ export default function Contact() {
 
       <div className="contact-container container">
         <div className="contact-panel">
+          {/* coins de visée façon cadre de ciblage HUD */}
+          <span className="contact-corner tl" aria-hidden="true"></span>
+          <span className="contact-corner tr" aria-hidden="true"></span>
+          <span className="contact-corner bl" aria-hidden="true"></span>
+          <span className="contact-corner br" aria-hidden="true"></span>
+
           {/* barre de titre façon terminal de comms */}
           <header className="contact-bar t-mono">
             <span className="contact-bar-id">✳ Transmission</span>

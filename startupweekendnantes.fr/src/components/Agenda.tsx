@@ -39,13 +39,9 @@ export default function Agenda() {
                         </span>
                         {r.desc && <span className="dossier-event-desc">{r.desc}</span>}
                         {(r.speaker || r.speakers) && (
-                          <span className="dossier-speakers">
-                            {r.speaker && (
-                              <img src={r.speaker.img} alt={r.speaker.name} className="dossier-avatar" loading="lazy" />
-                            )}
-                            {r.speakers?.map((s) => (
-                              <img key={s} src={s} alt="" aria-hidden="true" className="dossier-avatar" loading="lazy" />
-                            ))}
+                          <span className="t-mono dossier-soon">
+                            <span className="dossier-soon-dot" aria-hidden="true"></span>
+                            En attente
                           </span>
                         )}
                       </div>

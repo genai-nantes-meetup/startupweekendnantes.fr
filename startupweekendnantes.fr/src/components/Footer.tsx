@@ -2,10 +2,18 @@ import './Footer.css';
 import { EDITION } from '../data/edition';
 import Asterisk from './ui/Asterisk';
 
-const cols = [
+type Item = string | { label: string; href: string };
+
+const cols: { title: string; items: Item[] }[] = [
   { title: 'Liens', items: ['Le concept', 'Programme', 'Tarifs', 'FAQ'] },
   { title: 'Contact', items: ['Nous écrire', 'Devenir partenaire', 'Presse'] },
-  { title: 'Réseaux', items: ['LinkedIn', 'Instagram', 'Facebook'] },
+  {
+    title: 'Réseaux',
+    items: [
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/startup-weekend-nantes/?viewAsMember=true' },
+      { label: 'Instagram', href: 'https://www.instagram.com/startupweekend.nnts/' },
+    ],
+  },
 ];
 
 export default function Footer() {
@@ -27,9 +35,20 @@ export default function Footer() {
           <nav key={c.title} className="footer-col" aria-label={c.title}>
             <div className="t-mono footer-col-title">{c.title}</div>
             <ul>
-              {c.items.map((it) => (
-                <li key={it}>{it}</li>
-              ))}
+              {c.items.map((it) => {
+                const label = typeof it === 'string' ? it : it.label;
+                return (
+                  <li key={label}>
+                    {typeof it === 'string' ? (
+                      label
+                    ) : (
+                      <a href={it.href} target="_blank" rel="noopener noreferrer">
+                        {label}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         ))}

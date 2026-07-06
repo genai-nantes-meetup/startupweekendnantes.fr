@@ -8,7 +8,7 @@ const crew: Crew[] = [
   {
     code: 'R-01',
     title: 'Entrepreneurs en herbe',
-    desc: 'Une intuition, un problème qui te trotte ? Viens le confronter au réel.',
+    desc: 'Une intuition, un problème qui te trotte dans la tête ? Viens le confronter au réel.',
   },
   {
     code: 'R-02',
@@ -20,6 +20,11 @@ const crew: Crew[] = [
     title: 'Experts finance · com · droit · compta',
     desc: 'Ton expertise débloque les équipes sur le terrain.',
   },
+  {
+    code: 'R-04',
+    title: 'Le joker ultime',
+    desc: 'Tu ne te reconnais pas dans les profils ci-dessus ? Ta présence est obligatoire !',
+  },
 ];
 
 export default function Welcome() {
@@ -29,17 +34,17 @@ export default function Welcome() {
         <div className="welcome-head">
           <div>
             <p className="kicker">✳ Recrutement · tous profils</p>
-            <h2 className="t-title welcome-title">Tout le monde est le bienvenu</h2>
+            <h2 className="t-title welcome-title">Tout le monde est le bienvenu !</h2>
           </div>
-          <span className="t-mono welcome-sub">Étudiant · pro · passionné</span>
+          <span className="t-mono welcome-sub">Aucun profil type. Aucune expérience requise.</span>
         </div>
 
         <div className="welcome-manifest">
           <div className="welcome-manifest-head t-mono">
             <span className="welcome-manifest-label">
-              <Asterisk size={13} className="welcome-manifest-aster" /> Manifeste d’équipage
+              <Asterisk size={13} className="welcome-manifest-aster" /> Plan d’équipage
             </span>
-            <span>{EDITION.teamsCount} missions · postes ouverts</span>
+            <span>{EDITION.teamsCount} missions // Postes ouverts</span>
           </div>
 
           <ul className="welcome-roster">

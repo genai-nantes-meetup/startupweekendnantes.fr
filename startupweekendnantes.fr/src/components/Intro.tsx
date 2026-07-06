@@ -18,21 +18,17 @@ export default function Intro() {
           </h2>
           <p className="t-body intro-lead">
             Plus de porteurs d'idées : des <strong>porteurs de problèmes</strong>. On ne part plus
-            d'une solution toute faite, mais d'un <strong>vrai problème</strong> : pour une vraie
-            cible, vérifié sur le terrain.
+            d'une solution toute faite, mais d'un <strong>vrai problème,</strong> pour une vraie
+            cible, confronté au terrain.
           </p>
           <p className="t-body">
             54 heures non-stop, 12 équipes, 12 missions. La solution, on la trouve ensemble. Pas
-            d'idée en poche ? Tant mieux : des problèmes, tu en as sûrement plein.
+            d'idée en poche ? Tant mieux ! Des problèmes, tu en as sûrement plein (bienvenue au club).
           </p>
           <p className="t-body">
             Au programme : des conférences, des coachs et des mentors pour t'épauler. Et le samedi
             soir, DJ set et Gin To, parce qu'on n'est pas là que pour bosser.
           </p>
-          <div className="intro-tags">
-            <span className="pill pill--prune">Porteur de problème</span>
-            <span className="pill pill--bleu">User validated ✓</span>
-          </div>
         </div>
 
         <div className="intro-gallery">

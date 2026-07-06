@@ -4,32 +4,32 @@ export type Question = { q: string; a: string };
 
 export const questions: Question[] = [
   {
-    q: 'Puis-je pitcher une idée dont le projet a déjà débuté ?',
-    a: "Oui, tu peux pitcher un projet en cours, tant qu'il n'est pas encore commercialisé. L'essentiel est de venir avec envie d'apprendre et de construire avec une équipe.",
+    q: "J'ai déjà un projet en cours, je peux pitcher dessus ?",
+    a: "On te le déconseille. Cette édition marche au problème, pas à la solution. Si tu arrives avec un projet déjà lancé, le risque c'est de rester accroché à ta solution plutôt que de la co-construire avec ton équipe. Le format fonctionne mieux si tu repars d'un problème brut, sans réponse toute faite en poche.",
   },
   {
     q: 'Dois-je avoir constitué mon équipe en amont du weekend ?',
-    a: "Non ! La formation des équipes se fait lors de la soirée du vendredi, après les pitchs. Chacun rejoint l'équipe du projet qui l'attire le plus.",
+    a: "Non ! La formation des équipes se fait lors de la soirée du vendredi, après les pitchs. Chacun rejoint l'équipe du problème qui l'attire le plus.",
   },
   {
-    q: "J'ai combien de temps pour présenter mon idée ?",
+    q: "J'ai combien de temps pour présenter mon problème ?",
     a: '60 secondes chrono. Pas de slides, juste ta voix et ton énergie pour convaincre !',
   },
   {
-    q: 'Est-ce que je peux pitcher 2 idées ?',
-    a: 'Non, un participant = un pitch. Choisis celle qui te tient le plus à cœur !',
+    q: 'Est-ce que je peux pitcher 2 problèmes ?',
+    a: 'Non, un participant = un pitch. Choisis celui qui te tient le plus à cœur !',
   },
   {
     q: 'Est-ce que je peux prévoir des objets ou des slides ?',
     a: "Non, le pitch se fait à l'oral uniquement, sans support visuel. C'est le format imposé pour tout le monde.",
   },
   {
-    q: 'Combien de projets sont sélectionnés ?',
-    a: "En général entre 10 et 15 projets sont retenus par vote des participants, selon le nombre d'inscrits.",
+    q: 'Combien de problèmes sont sélectionnés ?',
+    a: "En général entre 10 et 12 problèmes sont retenus par vote des participants, selon le nombre d'inscrits.",
   },
   {
-    q: "Que faire si mon idée n'est pas choisie ?",
-    a: "Tu rejoins l'équipe d'un autre projet qui t'inspire ! C'est souvent là que naissent les meilleures collaborations.",
+    q: "Que faire si mon problème n'est pas retenu ?",
+    a: "Tu rejoins l'équipe d'un autre problème qui t'inspire ! C'est souvent là que naissent les meilleures collaborations.",
   },
   {
     q: "Qu'est-ce que je dois emmener ?",

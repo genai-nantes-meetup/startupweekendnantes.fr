@@ -56,7 +56,7 @@ export default function Hero() {
 
           <p className="t-body hero-sub">
             On ne pitche pas des idées. On pitche des <strong>problèmes</strong>. {EDITION.durationHours}h
-            pour trouver le bon, et le résoudre à douze.
+            à Nantes, douze équipes, et autant de solutions à trouver !
           </p>
 
           <div className="hero-cta">
