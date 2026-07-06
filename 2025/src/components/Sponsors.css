@@ -1,0 +1,57 @@
+.sponsors-section { background: black; padding: 3.125rem 1.25rem 4rem; }
+
+.sponsors-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.sponsors-container h2 {
+  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  margin: 0 0 3.125rem;
+  line-height: 1.1;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sponsors-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  min-height: 130px;
+}
+
+.sponsors-row-banner {
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 120px;
+  margin-top: 1rem;
+}
+
+.sponsor-logo {
+  max-height: 70px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  margin: 0 auto;
+  display: block;
+}
+
+.sponsor-logo-banner {
+  max-height: 100px;
+  max-width: 240px;
+}
+
+@media (max-width: 767px) {
+  .sponsors-row { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; min-height: auto; padding: 1rem 0; }
+  .sponsors-row-banner { grid-template-columns: repeat(2, 1fr); }
+  .sponsor-logo { max-height: 60px; max-width: 140px; }
+}
