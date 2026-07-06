@@ -30,6 +30,8 @@ export const EDITION = {
 
   /** Décollage : vendredi 27 nov. 2026, 18h30 (CET) — cible du compte à rebours. */
   startISO: `${YEAR}-11-${String(START_DAY).padStart(2, '0')}T18:30:00+01:00`,
+  /** Fin : dimanche 29 nov. 2026, 22h00 (CET) — consommé par le JSON-LD Event. */
+  endISO: `${YEAR}-11-${String(END_DAY).padStart(2, '0')}T22:00:00+01:00`,
   /** "27.11.26" — estampille compacte du lancement pour la télémétrie. */
   launchStamp: `${String(START_DAY).padStart(2, '0')}.11.${String(YEAR).slice(2)}`,
 

@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { EDITION } from '../data/edition';
+import '../styles/global.css';
+---
+
+<Layout
+  title="Page introuvable — Startup Weekend Nantes"
+  description="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil du Startup Weekend Nantes."
+>
+  <main class="notfound">
+    <a href="/" class="notfound-logo" aria-label="Startup Weekend Nantes">
+      <img src="/favicon.svg" alt="Startup Weekend Nantes" width="64" height="64" />
+    </a>
+
+    <div class="notfound-content">
+      <p class="notfound-code">404</p>
+      <h1>Product-market fit introuvable</h1>
+      <p class="notfound-text">
+        Cette page n'a jamais trouvé son audience. L'équipe a pitché, itéré, puis fermé boutique. Le
+        reste du Startup Weekend Nantes {EDITION.year}, lui, tient parfaitement debout.
+      </p>
+
+      <div class="notfound-actions">
+        <a href="/" class="notfound-btn">Retour à l'accueil</a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .notfound {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 24px;
+    text-align: center;
+    color: var(--cream);
+    background: var(--prune-d);
+    background-image: var(--grain);
+    background-blend-mode: soft-light;
+  }
+
+  .notfound-logo img {
+    display: block;
+    height: clamp(48px, 8vw, 68px);
+    width: auto;
+  }
+
+  .notfound-content {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .notfound-code {
+    font-family: var(--f-mono);
+    font-size: clamp(64px, 13vw, 120px);
+    line-height: 1;
+    margin: 0;
+    color: var(--jaune);
+    letter-spacing: -2px;
+  }
+
+  .notfound-content h1 {
+    font-family: var(--f-display);
+    font-size: clamp(26px, 6vw, 40px);
+    line-height: 1.05;
+    margin: 0;
+    color: var(--cream);
+  }
+
+  .notfound-text {
+    font-family: var(--f-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(244, 238, 219, 0.75);
+    margin: 0;
+  }
+
+  .notfound-actions {
+    margin-top: 12px;
+  }
+
+  .notfound-btn {
+    display: inline-block;
+    padding: 16px 30px;
+    background: var(--jaune);
+    color: var(--ink);
+    font-family: var(--f-mono);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: var(--r-pill);
+    transition: transform 0.15s ease;
+  }
+
+  .notfound-btn:hover {
+    transform: translateY(-2px);
+  }
+</style>

@@ -1,5 +1,8 @@
 ---
 import { EDITION } from '../data/edition';
+import { SITE } from '../data/site';
+import { venue } from '../data/venue';
+import { buildHomeJsonLd } from '../data/meta';
 
 interface Props {
   title?: string;
@@ -7,9 +10,15 @@ interface Props {
 }
 
 const {
-  title = `Startup Weekend Nantes — ${EDITION.year} Edition`,
-  description = `Startup Weekend Nantes ${EDITION.year} — ${EDITION.dateRangeLong}. L'événement pour monter un projet et vivre en accéléré la création d'une startup, à Nantes.`,
+  title = SITE.defaultTitle,
+  description = SITE.defaultDescription,
 } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, SITE.url).toString();
+const ogImage = new URL(SITE.ogImage, SITE.url).toString();
+/** Le JSON-LD Event/FAQ/Organization ne concerne que la page d'accueil. */
+const isHome = Astro.url.pathname === '/';
+const jsonLd = isHome ? JSON.stringify(buildHomeJsonLd()) : null;
 ---
 
 <!doctype html>
@@ -22,17 +31,34 @@ const {
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="canonical" href="https://startupweekendnantes.fr/" />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content={SITE.name} />
+    <meta name="theme-color" content={SITE.themeColor} />
+
+    <!-- SEO local (source unique : src/data/venue.ts) -->
+    <meta name="geo.region" content={venue.addressRegionCode} />
+    <meta name="geo.placename" content={venue.addressLocality} />
+    <meta name="ICBM" content={`${venue.latitude}, ${venue.longitude}`} />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content="https://startupweekendnantes.fr/" />
-    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content={String(SITE.ogImageWidth)} />
+    <meta property="og:image:height" content={String(SITE.ogImageHeight)} />
+    <meta property="og:image:alt" content={SITE.ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={SITE.ogImageAlt} />
+
+    {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
