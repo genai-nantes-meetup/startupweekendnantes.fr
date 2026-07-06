@@ -1,81 +1,53 @@
 import './Intro.css';
-import Picture from './Picture';
+import { topImages, bottomImages } from '../data/intro';
+import Asterisk from './ui/Asterisk';
+import RisoIllu from './ui/RisoIllu';
 
-/** Intro section image rows (above and below the welcome paragraph). */
-type IntroImage = { src: string; alt: string };
-
-const topImages: IntroImage[] = [
-  {
-    src: '/assets/images/intro/intro-tshirt-bad-ideas-good-stories.jpg',
-    alt: 'T-shirt « Bad Ideas, Good Stories » du Startup Weekend Nantes',
-  },
-  {
-    src: '/assets/images/intro/event-pitch-speaker.jpg',
-    alt: 'Participant présentant son idée lors des pitchs du Startup Weekend Nantes',
-  },
-];
-
-const bottomImages: IntroImage[] = [
-  {
-    src: '/assets/images/intro/intro-team-brainstorming.jpg',
-    alt: 'Équipe en brainstorming pendant le Startup Weekend Nantes',
-  },
-  {
-    src: '/assets/images/intro/intro-group-photo.jpg',
-    alt: 'Photo de groupe des participants au Startup Weekend Nantes',
-  },
-];
+const photos = [...topImages, ...bottomImages];
 
 export default function Intro() {
   return (
-    <section id="intro" className="intro-section">
-      <div className="intro-container">
-        <div className="intro-row intro-row-top">
-          {topImages.map((img, i) => (
-            <Picture
-              key={img.src}
-              src={img.src}
-              alt={img.alt}
-              className={`intro-img intro-img-${i + 1}`}
-            />
-          ))}
-        </div>
-
+    <section id="intro" className="section intro-section">
+      <div className="container intro-grid">
         <div className="intro-content">
-          <h2>54 heures pour transformer ton idée en réalité ! 🚀</h2>
-          <p>
-            Bienvenue au Startup Weekend Nantes, où les idées les plus folles deviennent des
-            startups en un week-end.
+          <p className="kicker">✳ Le concept · bascule 2026</p>
+          <h2 className="t-display intro-title">
+            Cette année,
+            <br />
+            on pitche un <span className="hl">problème</span>.
+          </h2>
+          <p className="t-body intro-lead">
+            Plus de porteurs d'idées : des <strong>porteurs de problèmes</strong>. On ne part plus
+            d'une solution toute faite, mais d'un <strong>vrai problème,</strong> pour une vraie
+            cible, confronté au terrain.
           </p>
-          <p>
-            Le <strong>Startup Weekend</strong> est un format d'événement entrepreneurial reconnu
-            mondialement&nbsp;: <strong>54 heures</strong>, du vendredi soir au dimanche, pour
-            passer d'une simple idée à un prototype de startup. En équipe et accompagné de coachs et
-            de mentors, tu valides un concept, construis un MVP, puis le présentes devant un jury de
-            professionnels.
+          <p className="t-body">
+            54 heures non-stop, 12 équipes, 12 missions. La solution, on la trouve ensemble. Pas
+            d'idée en poche ? Tant mieux ! Des problèmes, tu en as sûrement plein (bienvenue au
+            club).
           </p>
-          <p>
-            Pendant 54 heures non-stop, tu vas vivre à 100 à l'heure, entouré de talents créatifs,
-            d'experts et de passionnés, prêts à révolutionner le monde avec toi. Développeurs,
-            designers, marketeurs, entrepreneurs : c'est l'endroit où tout peut arriver.
-          </p>
-          <p className="highlight">Tu as une idée ? Viens la tester.</p>
-          <p>
-            <strong>Pas d'idée, mais envie de créer ?</strong> Rejoins une équipe et participe à une
-            aventure inoubliable.
-          </p>
-          <p>
-            Pas de demi-mesure : ça va être <strong>légendaire</strong> ! 😎
+          <p className="t-body">
+            Au programme : des conférences, des coachs et des mentors pour t'épauler. Et le samedi
+            soir, DJ set et Gin To, parce qu'on n'est pas là que pour bosser.
           </p>
         </div>
 
-        <div className="intro-row intro-row-bottom">
-          {bottomImages.map((img, i) => (
-            <Picture
+        <div className="intro-gallery">
+          <Asterisk size={64} className="intro-aster" aria-hidden="true" />
+          <RisoIllu
+            subject="moon"
+            surface="light"
+            glow="bleu"
+            alt="Une lune dont les cratères dessinent un point d'interrogation — le problème à résoudre"
+            className="intro-moon"
+          />
+          {photos.map((img, i) => (
+            <img
               key={img.src}
               src={img.src}
               alt={img.alt}
-              className={`intro-img intro-img-${i + 3}`}
+              className={`intro-photo intro-photo-${i + 1}`}
+              loading="lazy"
             />
           ))}
         </div>

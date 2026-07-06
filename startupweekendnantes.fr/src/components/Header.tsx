@@ -1,32 +1,38 @@
 import './Header.css';
 import { EDITION } from '../data/edition';
+import Asterisk from './ui/Asterisk';
+
+const NAV = [
+  { label: 'Le concept', href: '#intro' },
+  { label: 'Programme', href: '#agenda' },
+  { label: 'Tarifs', href: '#pricing' },
+  { label: 'FAQ', href: '#faq' },
+];
 
 export default function Header() {
   return (
     <header className="site-header">
-      <a href="/" aria-label="Startup Weekend Nantes">
-        <img
-          src="/assets/images/brand/logo-startup-weekend-nantes.png"
-          alt="Techstars Startup Weekend Nantes"
-          width="147"
-          height="47"
-          className="site-header-logo"
-        />
-      </a>
-      <nav className="site-header-nav" aria-label="Navigation principale">
-        <a href="#agenda">Programme</a>
-        <a href="#pricing">Tarifs</a>
-        <a href="#venue">Lieu</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a
-        href={EDITION.ticketUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-secondary site-header-cta"
-      >
-        Billetterie
-      </a>
+      <div className="site-header-inner container">
+        <a href="/" className="site-header-brand" aria-label="Startup Weekend Nantes — accueil">
+          <Asterisk size={24} />
+          <span>Startup Weekend Nantes</span>
+        </a>
+        <nav className="site-header-nav" aria-label="Navigation principale">
+          {NAV.map((n) => (
+            <a key={n.href} href={n.href} className="t-mono site-header-link">
+              {n.label}
+            </a>
+          ))}
+          <a
+            href={EDITION.ticketUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pill pill--jaune site-header-cta"
+          >
+            Billet →
+          </a>
+        </nav>
+      </div>
     </header>
   );
 }

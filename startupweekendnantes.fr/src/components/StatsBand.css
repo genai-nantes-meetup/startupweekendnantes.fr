@@ -1,0 +1,28 @@
+.stats-band {
+  position: relative;
+}
+.stats-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stat-cell {
+  border-left: 2px solid;
+  padding-left: 18px;
+}
+.stat-num {
+  font-size: 64px;
+}
+.stat-label {
+  font-size: 11px;
+  margin-top: 10px;
+  opacity: 0.85;
+}
+@media (max-width: 860px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 18px;
+  }
+}

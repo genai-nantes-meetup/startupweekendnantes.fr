@@ -30,7 +30,7 @@ export const tiers: Tier[] = [
   },
   {
     label: 'Weekend',
-    price: '59,5€',
+    price: '69€',
     pricePrefix: '',
     description: "Pour profiter en intégralité de l'expérience",
     features: [
@@ -43,7 +43,7 @@ export const tiers: Tier[] = [
     ],
     cta: 'Je prends ma place',
     href: EDITION.ticketUrl,
-    badge: 'MAKERS',
+    badge: '★ Recommandé',
     borderColor: '#4caf50',
     bgColor: '#b2f2bb',
   },

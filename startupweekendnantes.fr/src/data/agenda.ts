@@ -20,11 +20,18 @@ export type Day = {
   label: string;
   day: string;
   color: string;
+  narrative: string;
   rows: Row[];
 };
 
-// Pastel day-header colours — actual values live in :root (global.css).
-const dayColors = ['var(--agenda-day-1)', 'var(--agenda-day-2)', 'var(--agenda-day-3)'];
+const dayColors = ['rgb(249, 211, 211)', 'rgb(211, 249, 216)', 'rgb(255, 249, 196)'];
+
+// Narration de chaque jour (cadrage orga).
+const dayNarratives = [
+  'On se jette dans le bain',
+  'On abat le boulot (et petite fiesta)',
+  'On affine et on pitche',
+];
 
 const dayRows: Row[][] = [
   // JOUR 1 — Vendredi
@@ -32,20 +39,20 @@ const dayRows: Row[][] = [
     { time: '18h', title: 'Accueil', desc: 'Enregistrement des participants et networking.' },
     {
       time: '19h',
-      title: 'Pitchs des idées',
-      desc: "Chaque porteur d'idée présente son projet en 60 secondes.",
+      title: 'Pitchs des problèmes',
+      desc: 'Chaque porteur de problème présente son problème en 60 secondes — pas de solution.',
     },
     {
       time: '20h',
       title: 'Vote',
-      desc: "Les participants votent pour les idées qu'ils souhaitent développer.",
+      desc: "Les participants votent pour les problèmes qu'ils souhaitent attaquer.",
     },
     { time: '20h30', title: 'Repas', desc: 'Dîner ensemble.' },
     {
       time: '21h15',
-      title: 'KEA sur le pitch et les startups',
-      desc: 'Par Claire Bretton de Underdog',
-      speaker: { name: 'Claire Bretton', img: '/assets/images/speakers/claire-bretton.jpeg' },
+      title: 'Conférence',
+      desc: '',
+      speaker: { name: 'Claire Bretton', img: '/assets/images/8JSXibl4A4aZTwJgXOWiMm5Yio.jpeg' },
     },
     {
       time: '21h45',
@@ -71,17 +78,17 @@ const dayRows: Row[][] = [
       title: 'Lancement de la journée',
       desc: 'Agenda et grandes étapes de la journée.',
       speakers: [
-        '/assets/images/orga/florence-poyvre.png',
-        '/assets/images/orga/robin-goutard.png',
+        '/assets/images/hnQXqgk32dqlRBwcUizHzN1Q.jpeg',
+        '/assets/images/ZxVXYgfcXSA9Icu75YPXMpFKm2Y.png',
       ],
     },
     {
       time: '9h15',
-      title: 'Conférences : Marché + IA Générative',
-      desc: 'Par Pauline Corriou et Simon Timssale',
+      title: 'Conférences',
+      desc: '',
       speakers: [
-        '/assets/images/speakers/simon-timssale.jpeg',
-        '/assets/images/speakers/pauline-corriou.jpeg',
+        '/assets/images/VQm4I4LuWNHC0UemB1sslF3p8.jpeg',
+        '/assets/images/lyIwOv1puBWIqCuDn2zoYOXI9BY.jpeg',
       ],
     },
     { time: '9h45', title: 'Équipes au travail', desc: '' },
@@ -113,7 +120,7 @@ const dayRows: Row[][] = [
     {
       time: '18h30',
       title: 'Cérémonie de remise des prix',
-      desc: `Le jury annonce les gagnants de cette ${EDITION.editionNumber}ème édition.`,
+      desc: `Le jury annonce les gagnants de l'édition ${EDITION.year}.`,
     },
     { time: '19h30', title: 'Fin de Startup Weekend', desc: '' },
   ],
@@ -122,5 +129,6 @@ const dayRows: Row[][] = [
 export const days: Day[] = EDITION.agendaDays.map((d, i) => ({
   ...d,
   color: dayColors[i],
+  narrative: dayNarratives[i],
   rows: dayRows[i],
 }));

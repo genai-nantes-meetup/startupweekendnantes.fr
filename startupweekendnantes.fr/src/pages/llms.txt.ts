@@ -11,10 +11,10 @@ import type { APIRoute } from 'astro';
 import { SITE } from '../data/site';
 import { EDITION } from '../data/edition';
 import { venue } from '../data/venue';
-import { tiers } from '../data/edition_pricing';
-import { speakers } from '../data/edition_speakers';
-import { orgs } from '../data/team';
-import { days } from '../data/edition_schedule';
+import { tiers } from '../data/pricing';
+import { members } from '../data/team';
+import { orgs } from '../data/orgs';
+import { days } from '../data/agenda';
 import { questions } from '../data/faq';
 
 const fullAddress = `${venue.name}, ${venue.streetAddress}, ${venue.postalCode} ${venue.addressLocality}, France`;
@@ -77,8 +77,8 @@ function build(): string {
   // ── Intervenants ─────────────────────────────────────────────────
   lines.push('## Coachs, speakers et jury');
   lines.push('');
-  for (const s of speakers) {
-    lines.push(`- ${s.name} — ${s.role}`);
+  for (const m of members) {
+    lines.push(`- ${m.name} — ${m.role}`);
   }
   lines.push('');
 

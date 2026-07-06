@@ -1,57 +1,58 @@
-.sponsors-section { background: black; padding: 3.125rem 1.25rem 4rem; }
-
-.sponsors-container {
-  max-width: 1240px;
-  margin: 0 auto;
+.sponsors-section {
+  position: relative;
 }
-
-.sponsors-container h2 {
-  font-family: 'Helvetica Neue Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  color: white;
-  margin: 0 0 3.125rem;
-  line-height: 1.1;
+.sponsors-inner {
+  position: relative;
+  z-index: 1;
 }
-
+.sponsors-title {
+  font-size: clamp(30px, 4.5vw, 44px);
+  margin-bottom: 30px;
+}
 .sponsors-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.sponsors-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 14px;
+}
+.sponsors-grid--banner {
+  margin-top: 14px;
+}
+.sponsor-cell {
+  display: flex;
   align-items: center;
-  min-height: 130px;
+  justify-content: center;
+  min-height: 96px;
+  padding: 18px 24px;
+  background: rgba(244, 238, 219, 0.04);
+  border: 1px solid var(--line-on-dark);
+  border-radius: 14px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
-
-.sponsors-row-banner {
-  grid-template-columns: repeat(3, 1fr);
-  min-height: 120px;
-  margin-top: 1rem;
+.sponsor-cell:hover {
+  transform: translateY(-3px);
+  background: rgba(244, 238, 219, 0.09);
 }
-
 .sponsor-logo {
-  max-height: 70px;
-  max-width: 200px;
+  max-height: 50px;
+  max-width: 100%;
   width: auto;
-  height: auto;
   object-fit: contain;
+  /* mur de logos monochrome : set hétérogène (certains blancs, certains foncés) → uniformisés en blanc */
   filter: brightness(0) invert(1);
-  margin: 0 auto;
-  display: block;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
-
-.sponsor-logo-banner {
-  max-height: 100px;
-  max-width: 240px;
+.sponsor-cell:hover .sponsor-logo {
+  opacity: 1;
 }
-
-@media (max-width: 767px) {
-  .sponsors-row { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; min-height: auto; padding: 1rem 0; }
-  .sponsors-row-banner { grid-template-columns: repeat(2, 1fr); }
-  .sponsor-logo { max-height: 60px; max-width: 140px; }
+.sponsors-grid--banner .sponsor-cell {
+  min-height: 116px;
+}
+.sponsors-grid--banner .sponsor-logo {
+  max-height: 66px;
+}
+@media (max-width: 860px) {
+  .sponsors-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }

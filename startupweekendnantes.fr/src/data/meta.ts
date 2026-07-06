@@ -11,8 +11,8 @@
 import { EDITION } from './edition';
 import { SITE } from './site';
 import { venue } from './venue';
-import { tiers } from './edition_pricing';
-import { speakers } from './edition_speakers';
+import { tiers } from './pricing';
+import { members } from './team';
 import { questions } from './faq';
 
 /** Build an absolute URL from a site-root-relative path. */
@@ -74,11 +74,11 @@ function offers() {
 }
 
 function performers() {
-  return speakers.map((s) => ({
+  return members.map((m) => ({
     '@type': 'Person',
-    name: s.name,
-    jobTitle: s.role,
-    image: abs(s.img),
+    name: m.name,
+    jobTitle: m.role,
+    image: abs(m.img),
   }));
 }
 

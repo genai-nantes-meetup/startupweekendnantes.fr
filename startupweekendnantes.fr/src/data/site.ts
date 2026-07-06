@@ -19,23 +19,21 @@ export const SITE = {
   /** Google Tag Manager container id (injected in <head> and the noscript iframe). */
   gtmId: 'GTM-NQ2DKKPD',
   /** Favicon path (served from public/). */
-  favicon: '/favicon.jpg',
+  favicon: '/favicon.svg',
   /** iOS home-screen icon path. */
-  appleTouchIcon: '/icons/icon-192.png',
-  /** PWA manifest path. */
-  manifest: '/manifest.json',
+  appleTouchIcon: '/apple-touch-icon.png',
 
   /** Open Graph locale (<meta property="og:locale">). */
   locale: 'fr_FR',
-  /** Social share image (Open Graph / Twitter) — 1200×630, served from public/. */
-  ogImage: '/assets/images/og/og-cover.jpg',
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
+  /** Social share image (Open Graph / Twitter) — stopgap : photo d'ambiance en attendant un visuel dédié 1200×630. */
+  ogImage: '/assets/images/amb-foule.jpg',
+  ogImageWidth: 1600,
+  ogImageHeight: 1064,
   ogImageAlt: 'Startup Weekend Nantes — 54h pour créer une startup',
   /** Organising entity (schema.org Organization / Event.organizer). */
   organizerName: 'Startup Weekend Nantes',
-  /** Brand logo path (schema.org Organization.logo, served from public/). */
-  logo: '/assets/images/brand/logo-startup-weekend-nantes.png',
+  /** Logo de marque (schema.org Organization.logo) — favicon astérisque en attendant un PNG dédié. */
+  logo: '/apple-touch-icon.png',
   /** LinkedIn company page (footer link + schema.org Organization.sameAs). */
   linkedin: 'https://www.linkedin.com/company/startup-weekend-nantes',
 

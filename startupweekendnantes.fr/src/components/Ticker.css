@@ -1,0 +1,24 @@
+.ticker {
+  background: var(--jaune);
+  color: var(--prune);
+  border-top: 3px solid var(--prune);
+  border-bottom: 3px solid var(--prune);
+  overflow: hidden;
+  padding: 11px 0;
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: mq 30s linear infinite;
+}
+.ticker-group {
+  display: flex;
+  gap: 30px;
+  padding-right: 30px;
+}
+.ticker-item {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
