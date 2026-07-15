@@ -99,7 +99,6 @@ const dayRows: Row[][] = [
       desc: 'Les coachs commencent à passer dans les équipes.',
     },
     { time: '20h', title: 'Repas du soir', desc: '' },
-    { time: '22h', title: 'Fermeture des portes', desc: '' },
   ],
   // JOUR 3 — Dimanche
   [
