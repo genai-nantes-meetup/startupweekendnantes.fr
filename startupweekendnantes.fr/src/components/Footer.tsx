@@ -2,19 +2,37 @@ import './Footer.css';
 import { EDITION } from '../data/edition';
 import Asterisk from './ui/Asterisk';
 
-type Item = string | { label: string; href: string };
+type Item = string | { label: string; href: string; external?: boolean };
+
+const mailto = (subject: string) =>
+  `mailto:${EDITION.contactEmail}?subject=${encodeURIComponent(subject)}`;
 
 const cols: { title: string; items: Item[] }[] = [
   { title: 'Liens', items: ['Le concept', 'Programme', 'Tarifs', 'FAQ'] },
-  { title: 'Contact', items: ['Nous écrire', 'Devenir partenaire', 'Presse'] },
+  {
+    title: 'Contact',
+    items: [
+      { label: 'Nous écrire', href: mailto(`Startup Weekend Nantes ${EDITION.year} — Contact`) },
+      {
+        label: 'Devenir partenaire',
+        href: mailto(`Startup Weekend Nantes ${EDITION.year} — Partenariat`),
+      },
+      { label: 'Presse', href: mailto(`Startup Weekend Nantes ${EDITION.year} — Presse`) },
+    ],
+  },
   {
     title: 'Réseaux',
     items: [
       {
         label: 'LinkedIn',
         href: 'https://www.linkedin.com/company/startup-weekend-nantes/?viewAsMember=true',
+        external: true,
       },
-      { label: 'Instagram', href: 'https://www.instagram.com/startupweekend.nnts/' },
+      {
+        label: 'Instagram',
+        href: 'https://www.instagram.com/startupweekend.nnts/',
+        external: true,
+      },
     ],
   },
 ];
@@ -45,7 +63,10 @@ export default function Footer() {
                     {typeof it === 'string' ? (
                       label
                     ) : (
-                      <a href={it.href} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={it.href}
+                        {...(it.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      >
                         {label}
                       </a>
                     )}
