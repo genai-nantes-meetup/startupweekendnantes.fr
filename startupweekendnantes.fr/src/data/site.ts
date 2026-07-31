@@ -18,10 +18,16 @@ export const SITE = {
   themeColor: '#0e0218',
   /** Google Tag Manager container id (injected in <head> and the noscript iframe). */
   gtmId: 'GTM-NQ2DKKPD',
-  /** Favicon path (served from public/). */
+  /** Favicon path (served from public/). Généré par `node scripts/generate-favicons.mjs`. */
   favicon: '/favicon.svg',
+  /** Fallback PNG 32×32 pour les navigateurs sans support SVG. */
+  favicon32: '/favicon-32.png',
+  /** Fallback PNG 16×16 (onglets, barre de favoris). */
+  favicon16: '/favicon-16.png',
   /** iOS home-screen icon path. */
   appleTouchIcon: '/apple-touch-icon.png',
+  /** Web app manifest (icônes PWA + couleurs). */
+  manifest: '/manifest.json',
 
   /** Open Graph locale (<meta property="og:locale">). */
   locale: 'fr_FR',

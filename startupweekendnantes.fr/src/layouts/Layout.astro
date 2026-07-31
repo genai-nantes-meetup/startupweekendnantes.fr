@@ -28,9 +28,11 @@ const jsonLd = isHome ? JSON.stringify(buildHomeJsonLd()) : null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href={SITE.favicon} type="image/svg+xml" />
+    <link rel="icon" href={SITE.favicon32} type="image/png" sizes="32x32" />
+    <link rel="icon" href={SITE.favicon16} type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href={SITE.appleTouchIcon} />
+    <link rel="manifest" href={SITE.manifest} />
     <link rel="canonical" href={canonical} />
     <meta name="robots" content="index, follow" />
     <meta name="author" content={SITE.name} />
