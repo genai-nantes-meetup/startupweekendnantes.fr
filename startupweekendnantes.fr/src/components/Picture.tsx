@@ -18,6 +18,11 @@ const swap = (src: string, ext: string) => src.replace(/\.(jpe?g|png)$/i, ext);
  *
  * avif/webp sources are emitted only when the manifest says that variant exists
  * (the optimiser drops variants that compress worse than the fallback).
+ *
+ * width/height come from the manifest's intrinsic size (set by sharp at optimise
+ * time), not from the caller — this lets the browser reserve the correct aspect
+ * ratio before the image loads (avoids layout shift) while CSS still controls the
+ * actual display size.
  */
 export default function Picture({
   src,
@@ -31,7 +36,15 @@ export default function Picture({
     <picture className="picture-contents">
       {m?.avif && <source srcSet={swap(src, '.avif')} type="image/avif" />}
       {m?.webp && <source srcSet={swap(src, '.webp')} type="image/webp" />}
-      <img src={src} alt={alt} className={className} loading={loading} decoding={decoding} />
+      <img
+        src={src}
+        alt={alt}
+        className={className}
+        loading={loading}
+        decoding={decoding}
+        width={m?.width}
+        height={m?.height}
+      />
     </picture>
   );
 }

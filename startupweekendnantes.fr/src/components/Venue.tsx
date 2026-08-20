@@ -1,5 +1,6 @@
 import './Venue.css';
-import { row1Photos, row2Photos } from '../data/venue';
+import { venue, row1Photos, row2Photos } from '../data/venue';
+import { EDITION } from '../data/edition';
 
 const allPhotos = [...row1Photos, ...row2Photos];
 
@@ -11,17 +12,23 @@ export default function Venue() {
           <div>
             <p className="kicker kicker--on-dark">✳ Base de mission · le lieu</p>
             <h2 className="t-title venue-title">
-              Le Palace<span className="venue-dot">.</span>
+              {venue.name}
+              <span className="venue-dot">.</span>
             </h2>
             <p className="t-body venue-desc">
-              Le Palace, 4 rue Voltaire, chez _icilundi. En plein centre de Nantes, accessible en
-              tram, bus ou vélo. On démarre le vendredi à 18h30 et on plie bagage le dimanche à 22h.
+              {venue.name}, {venue.streetAddress}, chez _icilundi. En plein centre de{' '}
+              {venue.addressLocality}, accessible en tram, bus ou vélo. On démarre le vendredi à{' '}
+              {EDITION.startTimeLabel} et on plie bagage le dimanche à {EDITION.endTimeLabel}.
             </p>
           </div>
           <div className="venue-meta">
-            <span className="pill pill--ghost">📍 4 rue Voltaire, Nantes</span>
+            <span className="pill pill--ghost">
+              📍 {venue.streetAddress}, {venue.addressLocality}
+            </span>
             <span className="pill pill--ghost">Tram · Bus · Vélo</span>
-            <span className="t-mono venue-coords">Ven. 18h30 → Dim. 22h</span>
+            <span className="t-mono venue-coords">
+              Ven. {EDITION.startTimeLabel} → Dim. {EDITION.endTimeLabel}
+            </span>
           </div>
         </div>
 
@@ -31,7 +38,11 @@ export default function Venue() {
               key={photo.src}
               className={`venue-photo${photo.panoramic ? ' venue-photo--wide' : ''}`}
             >
-              <img src={photo.src} alt={`Le Palace, Nantes — photo ${i + 1}`} loading="lazy" />
+              <img
+                src={photo.src}
+                alt={`${venue.name}, ${venue.addressLocality} — photo ${i + 1}`}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>

@@ -42,6 +42,8 @@ export const SITE = {
   logo: '/apple-touch-icon.png',
   /** LinkedIn company page (footer link + schema.org Organization.sameAs). */
   linkedin: 'https://www.linkedin.com/company/startup-weekend-nantes',
+  /** Instagram profile (footer link + schema.org Organization.sameAs). */
+  instagram: 'https://www.instagram.com/startupweekend.nnts/',
 
   /**
    * Archived sites of past editions (frozen history, year-agnostic).

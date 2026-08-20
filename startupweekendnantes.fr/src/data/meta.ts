@@ -14,6 +14,7 @@ import { venue } from './venue';
 import { tiers } from './pricing';
 import { members } from './team';
 import { questions } from './faq';
+import { pastVideos } from './past';
 
 /** Build an absolute URL from a site-root-relative path. */
 const abs = (path: string): string => new URL(path, SITE.url).toString();
@@ -32,8 +33,60 @@ function organization() {
     alternateName: 'Techstars Startup Weekend Nantes',
     url: SITE.url,
     logo: abs(SITE.logo),
-    sameAs: [SITE.linkedin],
+    email: EDITION.contactEmail,
+    // L'événement est organisé par NaoMakers — adresse déclarée sur la billetterie
+    // officielle (Billetweb), reprise ici comme unique source pour rester en phase.
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '25 avenue des Préludes',
+      postalCode: '44300',
+      addressLocality: 'Nantes',
+      addressCountry: 'FR',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: EDITION.contactEmail,
+      areaServed: 'FR',
+      availableLanguage: 'French',
+    },
+    sameAs: [SITE.linkedin, SITE.instagram, EDITION.ticketUrl],
   };
+}
+
+/** schema.org WebSite node — anchors the site as a distinct entity for AI/search. */
+function website() {
+  return {
+    '@type': 'WebSite',
+    '@id': abs('/#website'),
+    name: SITE.name,
+    url: SITE.url,
+    inLanguage: 'fr-FR',
+    publisher: { '@id': abs('/#organization') },
+  };
+}
+
+/** "https://www.youtube.com/embed/ol4yYOPwQF0" → "ol4yYOPwQF0". */
+const youtubeId = (embedUrl: string): string => embedUrl.split('/').pop() ?? '';
+
+/**
+ * VideoObject per recap video (PastGlimpse section) — enables video rich results /
+ * carousels. `uploadDate` and `duration` are intentionally omitted: we don't have a
+ * verified value for either, and Google penalises fabricated video metadata more
+ * than it penalises an incomplete one.
+ */
+function pastVideoObjects() {
+  return pastVideos.map((v) => {
+    const id = youtubeId(v.embedUrl);
+    return {
+      '@type': 'VideoObject',
+      name: v.title,
+      description: `${v.label} — ${v.title}`,
+      thumbnailUrl: [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
+      embedUrl: v.embedUrl,
+      contentUrl: `https://www.youtube.com/watch?v=${id}`,
+    };
+  });
 }
 
 function place() {
@@ -68,7 +121,6 @@ function offers() {
       priceCurrency: 'EUR',
       url: EDITION.ticketUrl,
       availability: 'https://schema.org/InStock',
-      validFrom: '2025-01-01T00:00:00+01:00',
       priceValidUntil: EDITION.startISO,
     }));
 }
@@ -144,7 +196,7 @@ function breadcrumb(items: Crumb[]) {
   };
 }
 
-/** Homepage @graph: Event + FAQPage + Organization + BreadcrumbList. */
+/** Homepage @graph: Event + FAQPage + Organization + WebSite + VideoObjects + BreadcrumbList. */
 export function buildHomeJsonLd() {
   return {
     '@context': 'https://schema.org',
@@ -152,6 +204,8 @@ export function buildHomeJsonLd() {
       currentEvent(),
       faqPage(),
       organization(),
+      website(),
+      ...pastVideoObjects(),
       breadcrumb([{ name: 'Accueil', path: '/' }]),
     ],
   };

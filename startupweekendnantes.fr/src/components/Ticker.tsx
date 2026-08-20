@@ -1,14 +1,15 @@
 import './Ticker.css';
+import { EDITION } from '../data/edition';
 
 const ITEMS = [
   'PROBLEM DETECTED',
-  '12 MISSIONS // OPEN',
+  `${EDITION.teamsCount} MISSIONS // OPEN`,
   'PORTEURS DE PROBLÈMES',
   'ON NE PITCHE PAS DES IDÉES',
   'USER VALIDATED',
   'TROUVE LE BON PROBLÈME',
-  '54H · 12 ÉQUIPES · 100 ÉQUIPIERS',
-  '#SWNA2026',
+  `${EDITION.durationHours}H · ${EDITION.teamsCount} ÉQUIPES · ${EDITION.participantsCount} ÉQUIPIERS`,
+  `#SWNA${EDITION.year}`,
 ];
 
 export default function Ticker() {

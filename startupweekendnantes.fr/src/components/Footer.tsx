@@ -1,5 +1,7 @@
 import './Footer.css';
 import { EDITION } from '../data/edition';
+import { SITE } from '../data/site';
+import { venue } from '../data/venue';
 import Asterisk from './ui/Asterisk';
 
 type Item = string | { label: string; href: string; external?: boolean };
@@ -25,12 +27,12 @@ const cols: { title: string; items: Item[] }[] = [
     items: [
       {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/company/startup-weekend-nantes/?viewAsMember=true',
+        href: `${SITE.linkedin}/?viewAsMember=true`,
         external: true,
       },
       {
         label: 'Instagram',
-        href: 'https://www.instagram.com/startupweekend.nnts/',
+        href: SITE.instagram,
         external: true,
       },
     ],
@@ -48,7 +50,7 @@ export default function Footer() {
           </div>
           <p className="t-body footer-tagline">
             {EDITION.durationHours}h pour trouver le bon problème. {EDITION.dateRangeLong}{' '}
-            {EDITION.year} · Le Palace, Nantes.
+            {EDITION.year} · {venue.name}, {venue.addressLocality}.
           </p>
           <div className="t-mono footer-hashtag">#SWNA{EDITION.year}</div>
         </div>

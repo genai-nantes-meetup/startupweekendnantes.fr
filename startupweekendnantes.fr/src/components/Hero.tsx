@@ -54,7 +54,8 @@ export default function Hero() {
 
           <p className="t-body hero-sub">
             On ne pitche pas des idées. On pitche des <strong>problèmes</strong>.{' '}
-            {EDITION.durationHours}h à Nantes, douze équipes, et autant de solutions à trouver !
+            {EDITION.durationHours}h à Nantes, {EDITION.teamsCount} équipes, et autant de solutions
+            à trouver !
           </p>
 
           <div className="hero-cta">
