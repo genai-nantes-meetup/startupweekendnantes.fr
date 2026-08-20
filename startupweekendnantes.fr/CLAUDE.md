@@ -105,4 +105,4 @@ Never link to `framerusercontent.com` or any external CDN.
 
 ### Hydration
 
-Components are static by default. Use `client:load` / `client:visible` on Astro side only for components with state or interactivity (currently `<FAQ client:load />`).
+Components are static by default. Use `client:load` / `client:visible` on Astro side only for components with state or interactivity: `<Hero client:load />` (countdown timer), `<FAQ client:load />`, `<PastGlimpse client:visible />` (click-to-play YouTube facade — `client:visible` since it's a below-the-fold perf win, not needed for first paint).

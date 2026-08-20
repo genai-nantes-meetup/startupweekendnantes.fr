@@ -2,6 +2,14 @@ import './RisoIllu.css';
 
 type Subject = 'briefing' | 'console' | 'rocket' | 'moon';
 
+/** Intrinsic pixel size of each riso-*.webp source (same for both surface variants, ±1px) — see public/assets/images/illus-riso/. */
+const INTRINSIC_SIZE: Record<Subject, { width: number; height: number }> = {
+  briefing: { width: 1000, height: 965 },
+  console: { width: 1000, height: 837 },
+  rocket: { width: 1000, height: 970 },
+  moon: { width: 1000, height: 993 },
+};
+
 type Props = {
   /** Sujet de l'illustration riso. */
   subject: Subject;
@@ -39,6 +47,8 @@ export default function RisoIllu({
         className="riso-img"
         loading={eager ? 'eager' : 'lazy'}
         decoding="async"
+        width={INTRINSIC_SIZE[subject].width}
+        height={INTRINSIC_SIZE[subject].height}
       />
     </figure>
   );

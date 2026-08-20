@@ -3,6 +3,7 @@ import { topImages, bottomImages } from '../data/intro';
 import { EDITION } from '../data/edition';
 import Asterisk from './ui/Asterisk';
 import RisoIllu from './ui/RisoIllu';
+import Picture from './Picture';
 
 const photos = [...topImages, ...bottomImages];
 
@@ -43,7 +44,7 @@ export default function Intro() {
             className="intro-moon"
           />
           {photos.map((img, i) => (
-            <img
+            <Picture
               key={img.src}
               src={img.src}
               alt={img.alt}
