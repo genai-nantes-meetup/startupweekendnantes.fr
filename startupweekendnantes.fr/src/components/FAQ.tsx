@@ -17,8 +17,10 @@ export default function FAQ() {
               <div key={i} className="faq-item">
                 <button
                   className="faq-question"
+                  id={`faq-question-${i}`}
                   onClick={() => setOpen(isOpen ? null : i)}
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${i}`}
                 >
                   <span className="t-mono faq-num">PB-{String(i + 1).padStart(2, '0')}</span>
                   <span className={`t-heading faq-q${isOpen ? ' is-open' : ''}`}>{item.q}</span>
@@ -26,11 +28,18 @@ export default function FAQ() {
                     {isOpen ? '−' : '+'}
                   </span>
                 </button>
-                {isOpen && (
-                  <div className="faq-answer">
-                    <p className="t-body">{item.a}</p>
-                  </div>
-                )}
+                {/* Always rendered (hidden when closed) so the answer text ships in the
+                    static HTML — crawlable & citable by search/AI engines, not just the
+                    FAQPage JSON-LD, and matches what the `speakable` selector targets. */}
+                <div
+                  className="faq-answer"
+                  id={`faq-answer-${i}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${i}`}
+                  hidden={!isOpen}
+                >
+                  <p className="t-body">{item.a}</p>
+                </div>
               </div>
             );
           })}
