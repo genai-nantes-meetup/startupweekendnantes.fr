@@ -3,8 +3,16 @@ import { EDITION } from '../data/edition';
 import { SITE } from '../data/site';
 import { venue } from '../data/venue';
 import Asterisk from './ui/Asterisk';
+import type { AnalyticsEvent } from '../lib/analytics';
 
-type Item = string | { label: string; href: string; external?: boolean };
+type Item =
+  | string
+  | {
+      label: string;
+      href: string;
+      external?: boolean;
+      analytics?: { event: AnalyticsEvent; props: Record<string, string> };
+    };
 
 const mailto = (subject: string) =>
   `mailto:${EDITION.contactEmail}?subject=${encodeURIComponent(subject)}`;
@@ -14,12 +22,30 @@ const cols: { title: string; items: Item[] }[] = [
   {
     title: 'Contact',
     items: [
-      { label: 'Nous écrire', href: mailto(`Startup Weekend Nantes ${EDITION.year} — Contact`) },
+      {
+        label: 'Nous écrire',
+        href: mailto(`Startup Weekend Nantes ${EDITION.year} — Contact`),
+        analytics: {
+          event: 'contact_email_clicked',
+          props: { location: 'footer', topic: 'contact' },
+        },
+      },
       {
         label: 'Devenir partenaire',
         href: mailto(`Startup Weekend Nantes ${EDITION.year} — Partenariat`),
+        analytics: {
+          event: 'contact_email_clicked',
+          props: { location: 'footer', topic: 'partnership' },
+        },
       },
-      { label: 'Presse', href: mailto(`Startup Weekend Nantes ${EDITION.year} — Presse`) },
+      {
+        label: 'Presse',
+        href: mailto(`Startup Weekend Nantes ${EDITION.year} — Presse`),
+        analytics: {
+          event: 'contact_email_clicked',
+          props: { location: 'footer', topic: 'press' },
+        },
+      },
     ],
   },
   {
@@ -29,11 +55,13 @@ const cols: { title: string; items: Item[] }[] = [
         label: 'LinkedIn',
         href: `${SITE.linkedin}/?viewAsMember=true`,
         external: true,
+        analytics: { event: 'social_link_clicked', props: { network: 'linkedin' } },
       },
       {
         label: 'Instagram',
         href: SITE.instagram,
         external: true,
+        analytics: { event: 'social_link_clicked', props: { network: 'instagram' } },
       },
     ],
   },
@@ -60,6 +88,18 @@ export default function Footer() {
             <ul>
               {c.items.map((it) => {
                 const label = typeof it === 'string' ? it : it.label;
+                const analyticsAttrs =
+                  typeof it !== 'string' && it.analytics
+                    ? {
+                        'data-analytics-event': it.analytics.event,
+                        ...Object.fromEntries(
+                          Object.entries(it.analytics.props).map(([k, v]) => [
+                            `data-analytics-prop-${k}`,
+                            v,
+                          ])
+                        ),
+                      }
+                    : {};
                 return (
                   <li key={label}>
                     {typeof it === 'string' ? (
@@ -68,6 +108,7 @@ export default function Footer() {
                       <a
                         href={it.href}
                         {...(it.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                        {...analyticsAttrs}
                       >
                         {label}
                       </a>

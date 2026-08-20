@@ -52,7 +52,13 @@ export default function Contact() {
                 Partenariat, presse ou simple curiosité : on lit tout, on répond vite.
               </p>
 
-              <a href={`mailto:${EDITION.contactEmail}`} className="contact-mail-card">
+              <a
+                href={`mailto:${EDITION.contactEmail}`}
+                className="contact-mail-card"
+                data-analytics-event="contact_email_clicked"
+                data-analytics-prop-location="contact"
+                data-analytics-prop-topic="contact"
+              >
                 <span className="contact-mail-meta">
                   <span className="t-mono contact-mail-label">Canal direct</span>
                   <span className="contact-mail-address">{EDITION.contactEmail}</span>

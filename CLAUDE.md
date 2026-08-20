@@ -33,7 +33,9 @@ Astro website.
 
 ## Analytics
 
-GTM container `GTM-NQ2DKKPD` and GA4 `G-377KFTGYHV` injected in `<head>` (both legacy and Astro).
+GTM container `GTM-NQ2DKKPD` is injected in `<head>` on both the legacy (`2025-framer/`) and current (`startupweekendnantes.fr/`) sites. GA4 (`G-377KFTGYHV`) is only wired directly in `2025-framer/`; the current Astro site has no direct GA4 tag (only whatever's configured inside the GTM container).
+
+`startupweekendnantes.fr/` also runs PostHog (product analytics, prod-only, proxied same-origin via `/ingest`) — see the "Analytics" section in `startupweekendnantes.fr/CLAUDE.md` for the full setup.
 
 ## Convention
 

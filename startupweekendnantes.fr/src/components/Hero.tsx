@@ -64,10 +64,17 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--primary"
+              data-analytics-event="ticket_cta_clicked"
+              data-analytics-prop-location="hero"
             >
               Je prends ma place →
             </a>
-            <a href="#intro" className="btn btn--ghost">
+            <a
+              href="#intro"
+              className="btn btn--ghost"
+              data-analytics-event="nav_link_clicked"
+              data-analytics-prop-target="#intro"
+            >
               Découvrir le concept
             </a>
           </div>

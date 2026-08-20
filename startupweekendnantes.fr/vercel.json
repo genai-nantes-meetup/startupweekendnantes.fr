@@ -3,6 +3,12 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/ingest/:path*",
+      "destination": "https://hogpost.naomakers.com/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
