@@ -83,6 +83,7 @@ export default function Hero() {
             width={1000}
             height={965}
             loading="eager"
+            fetchPriority="high"
           />
           <div className="hero-telemetry t-mono">
             <div className="hero-tel-clock-row">

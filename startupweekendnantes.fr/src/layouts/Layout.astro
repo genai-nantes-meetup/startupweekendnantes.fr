@@ -78,14 +78,24 @@ const jsonLd = isHome ? JSON.stringify(buildHomeJsonLd()) : null;
     />
 
     <!-- Space Mono only (Cal Sans / Funnel Display / Instrument Sans are self-hosted,
-         see global.css). A <link> lets the browser discover and fetch this in
-         parallel with the stylesheet, unlike a CSS @import which blocks on it. -->
+         see global.css). Loaded as a non-render-blocking preload (swapped to
+         stylesheet on load) since Space Mono isn't used above the fold on any
+         page — a synchronous <link rel="stylesheet"> here was delaying LCP by
+         ~750ms for a font that isn't needed for first paint. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      />
+    </noscript>
 
     <!-- GTM -->
     <script is:inline>
