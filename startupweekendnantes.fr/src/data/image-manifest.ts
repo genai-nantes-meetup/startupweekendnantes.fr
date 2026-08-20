@@ -157,9 +157,21 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
+  "/assets/images/amb-equipe-thumb.jpg": {
+    "width": 500,
+    "height": 333,
+    "avif": true,
+    "webp": true
+  },
   "/assets/images/amb-foule.jpg": {
     "width": 1600,
     "height": 1064,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/amb-foule-thumb.jpg": {
+    "width": 500,
+    "height": 333,
     "avif": true,
     "webp": true
   },
@@ -169,9 +181,21 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
+  "/assets/images/amb-oratrice-thumb.jpg": {
+    "width": 500,
+    "height": 333,
+    "avif": true,
+    "webp": true
+  },
   "/assets/images/amb-pitch.jpg": {
     "width": 1600,
     "height": 1064,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/amb-pitch-thumb.jpg": {
+    "width": 500,
+    "height": 333,
     "avif": true,
     "webp": true
   },
