@@ -7,11 +7,14 @@ import { buildHomeJsonLd } from '../data/meta';
 interface Props {
   title?: string;
   description?: string;
+  /** Override the default `index, follow` — e.g. `noindex, follow` on the 404 page. */
+  robots?: string;
 }
 
 const {
   title = SITE.defaultTitle,
   description = SITE.defaultDescription,
+  robots = 'index, follow',
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, SITE.url).toString();
@@ -34,7 +37,9 @@ const jsonLd = isHome ? JSON.stringify(buildHomeJsonLd()) : null;
     <link rel="apple-touch-icon" href={SITE.appleTouchIcon} />
     <link rel="manifest" href={SITE.manifest} />
     <link rel="canonical" href={canonical} />
-    <meta name="robots" content="index, follow" />
+    <!-- AI-readable digest (llmstxt.org convention) — see src/pages/llms.txt.ts -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="Résumé pour IA (llms.txt)" />
+    <meta name="robots" content={robots} />
     <meta name="author" content={SITE.name} />
     <meta name="theme-color" content={SITE.themeColor} />
 
@@ -62,8 +67,25 @@ const jsonLd = isHome ? JSON.stringify(buildHomeJsonLd()) : null;
 
     {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
 
+    <!-- Cal Sans (H1 / t-display) is the LCP text font on most pages — preload it so
+         the browser fetches it immediately instead of discovering it via global.css. -->
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/CalSans-Regular.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Space Mono only (Cal Sans / Funnel Display / Instrument Sans are self-hosted,
+         see global.css). A <link> lets the browser discover and fetch this in
+         parallel with the stylesheet, unlike a CSS @import which blocks on it. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+    />
 
     <!-- GTM -->
     <script is:inline>
