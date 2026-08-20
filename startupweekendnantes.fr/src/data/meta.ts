@@ -50,7 +50,7 @@ function organization() {
       areaServed: 'FR',
       availableLanguage: 'French',
     },
-    sameAs: [SITE.linkedin, EDITION.ticketUrl],
+    sameAs: [SITE.linkedin, SITE.instagram, EDITION.ticketUrl],
   };
 }
 

@@ -1,5 +1,6 @@
 import './Intro.css';
 import { topImages, bottomImages } from '../data/intro';
+import { EDITION } from '../data/edition';
 import Asterisk from './ui/Asterisk';
 import RisoIllu from './ui/RisoIllu';
 
@@ -10,7 +11,7 @@ export default function Intro() {
     <section id="intro" className="section intro-section">
       <div className="container intro-grid">
         <div className="intro-content">
-          <p className="kicker">✳ Le concept · bascule 2026</p>
+          <p className="kicker">✳ Le concept · bascule {EDITION.year}</p>
           <h2 className="t-display intro-title">
             Cette année,
             <br />
@@ -22,9 +23,9 @@ export default function Intro() {
             cible, confronté au terrain.
           </p>
           <p className="t-body">
-            54 heures non-stop, 12 équipes, 12 missions. La solution, on la trouve ensemble. Pas
-            d'idée en poche ? Tant mieux ! Des problèmes, tu en as sûrement plein (bienvenue au
-            club).
+            {EDITION.durationHours} heures non-stop, {EDITION.teamsCount} équipes,{' '}
+            {EDITION.teamsCount} missions. La solution, on la trouve ensemble. Pas d'idée en poche ?
+            Tant mieux ! Des problèmes, tu en as sûrement plein (bienvenue au club).
           </p>
           <p className="t-body">
             Au programme : des conférences, des coachs et des mentors pour t'épauler. Et le samedi

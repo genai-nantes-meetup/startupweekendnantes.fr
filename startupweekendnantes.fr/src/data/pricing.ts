@@ -64,3 +64,6 @@ export const tiers: Tier[] = [
     bgColor: '#ede9fe',
   },
 ];
+
+/** The full-weekend tier — single source for the price quoted outside the Pricing section (Hero, StatsBand, CtaBand). */
+export const weekendTier = tiers.find((t) => t.label === 'Weekend')!;

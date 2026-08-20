@@ -7,6 +7,8 @@
  * les différencier au premier coup d'œil. 12 schémas, indexés par n° de mission.
  */
 
+import { EDITION } from '../../data/edition';
+
 const C = {
   P: '#512133', // prune
   PD: '#3A1623', // prune foncé
@@ -104,7 +106,7 @@ export default function MissionPatch({ n, size = 160, className }: Props) {
           href={`#${botId}`}
           startOffset="50%"
           textAnchor="middle"
-        >{`MISSION ${mm} · 2026`}</textPath>
+        >{`MISSION ${mm} · ${EDITION.year}`}</textPath>
       </text>
       <ellipse
         cx="130"

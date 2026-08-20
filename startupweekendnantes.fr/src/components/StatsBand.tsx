@@ -1,11 +1,16 @@
 import './StatsBand.css';
 import { EDITION } from '../data/edition';
+import { weekendTier } from '../data/pricing';
 
 const stats = [
   { n: `${EDITION.durationHours}h`, l: 'non-stop, vendredi → dimanche', accent: 'var(--bleu)' },
-  { n: `${EDITION.teamsCount}`, l: 'missions · 12 équipes', accent: 'var(--jaune)' },
+  {
+    n: `${EDITION.teamsCount}`,
+    l: `missions · ${EDITION.teamsCount} équipes`,
+    accent: 'var(--jaune)',
+  },
   { n: `${EDITION.participantsCount}`, l: 'équipiers attendus', accent: 'var(--bleu)' },
-  { n: '69€', l: 'tout compris · 7 repas', accent: 'var(--jaune)' },
+  { n: weekendTier.price, l: 'tout compris · 7 repas', accent: 'var(--jaune)' },
 ];
 
 export default function StatsBand() {

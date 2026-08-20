@@ -1,5 +1,6 @@
 import './CtaBand.css';
 import { EDITION } from '../data/edition';
+import { weekendTier } from '../data/pricing';
 import WantedBadge from './ui/WantedBadge';
 
 export default function CtaBand() {
@@ -9,7 +10,7 @@ export default function CtaBand() {
       <div className="container cta-inner">
         <div className="cta-text">
           <p className="t-mono cta-meta">
-            T-00:{EDITION.durationHours}:00 · Billets 69€ tout compris
+            T-00:{EDITION.durationHours}:00 · Billets {weekendTier.price} tout compris
           </p>
           <h2 className="t-display cta-title">Porteurs de problèmes recherchés.</h2>
           <a

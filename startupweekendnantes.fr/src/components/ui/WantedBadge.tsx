@@ -4,6 +4,8 @@
  * courbé), mais en tampon monochrome : « recherchés » = wanted.
  */
 
+import { EDITION } from '../../data/edition';
+
 function sealPath(cx: number, cy: number, N: number, Rout: number, Rin: number): string {
   const pts: [number, number][] = [];
   const total = N * 2;
@@ -81,7 +83,7 @@ export default function WantedBadge({ size = 210, className, color = '#512133' }
         letterSpacing="3"
       >
         <textPath href="#wb-bot" startOffset="50%" textAnchor="middle">
-          RECHERCHÉS · 2026
+          {`RECHERCHÉS · ${EDITION.year}`}
         </textPath>
       </text>
 
