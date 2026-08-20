@@ -1,4 +1,30 @@
 User-agent: *
 Allow: /
 
+# Explicit allow for AI answer-engine crawlers — the site wants to be cited (see
+# /llms.txt), so these are called out rather than relying on the blanket Allow.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://startupweekendnantes.fr/sitemap-index.xml
+
+# AI-readable digest of the event (llmstxt.org convention).
+# https://startupweekendnantes.fr/llms.txt
