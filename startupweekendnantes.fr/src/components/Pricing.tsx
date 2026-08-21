@@ -17,6 +17,8 @@ export default function Pricing() {
         <div className="pricing-grid">
           {tiers.map((t, i) => {
             const featured = Boolean(t.badge);
+            // The "Partenaire" tier links to a mailto:, the others to the ticket shop.
+            const isContact = t.href.startsWith('mailto:');
             return (
               <div
                 key={t.label}
@@ -41,7 +43,17 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <a href={t.href} target="_blank" rel="noopener noreferrer" className="btn card-cta">
+                <a
+                  href={t.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn card-cta"
+                  data-analytics-event={isContact ? 'contact_email_clicked' : 'ticket_cta_clicked'}
+                  data-analytics-prop-location="pricing"
+                  {...(isContact
+                    ? { 'data-analytics-prop-topic': 'partnership' }
+                    : { 'data-analytics-prop-tier': t.label })}
+                >
                   {t.cta} →
                 </a>
               </div>

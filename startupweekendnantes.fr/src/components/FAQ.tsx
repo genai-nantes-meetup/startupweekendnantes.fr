@@ -1,6 +1,7 @@
 import './FAQ.css';
 import { useState } from 'react';
 import { questions } from '../data/faq';
+import { capture } from '../lib/analytics';
 
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
@@ -18,7 +19,11 @@ export default function FAQ() {
                 <button
                   className="faq-question"
                   id={`faq-question-${i}`}
-                  onClick={() => setOpen(isOpen ? null : i)}
+                  onClick={() => {
+                    const next = isOpen ? null : i;
+                    setOpen(next);
+                    if (next !== null) capture('faq_item_opened', { question: item.q });
+                  }}
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${i}`}
                 >

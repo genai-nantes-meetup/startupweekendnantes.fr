@@ -18,6 +18,8 @@ export default function CtaBand() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--invert cta-btn"
+            data-analytics-event="ticket_cta_clicked"
+            data-analytics-prop-location="cta_band"
           >
             Je prends ma place →
           </a>

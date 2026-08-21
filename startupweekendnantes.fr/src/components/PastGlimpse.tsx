@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './PastGlimpse.css';
 import { pastVideos } from '../data/past';
+import { capture } from '../lib/analytics';
 
 const youtubeId = (embedUrl: string): string => embedUrl.split('/').pop() ?? '';
 
@@ -31,7 +32,10 @@ function VideoCard({ video }: { video: (typeof pastVideos)[number] }) {
           <button
             type="button"
             className="video-facade"
-            onClick={() => setPlaying(true)}
+            onClick={() => {
+              setPlaying(true);
+              capture('video_recap_played', { video: video.label });
+            }}
             aria-label={`Lire la vidéo : ${video.title}`}
           >
             <img

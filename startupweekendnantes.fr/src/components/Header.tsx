@@ -19,7 +19,13 @@ export default function Header() {
         </a>
         <nav className="site-header-nav" aria-label="Navigation principale">
           {NAV.map((n) => (
-            <a key={n.href} href={n.href} className="t-mono site-header-link">
+            <a
+              key={n.href}
+              href={n.href}
+              className="t-mono site-header-link"
+              data-analytics-event="nav_link_clicked"
+              data-analytics-prop-target={n.href}
+            >
               {n.label}
             </a>
           ))}
@@ -28,6 +34,8 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="pill pill--jaune site-header-cta"
+            data-analytics-event="ticket_cta_clicked"
+            data-analytics-prop-location="header"
           >
             Billet →
           </a>
