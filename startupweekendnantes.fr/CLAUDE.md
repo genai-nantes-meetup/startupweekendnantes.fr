@@ -33,7 +33,7 @@ Don't use worktrees for this directory.
   Regenerate only when a font file changes; commit the `.woff2`, not the source `.ttf`.
 - `tests/visual.spec.ts`, `tests/compare.spec.ts` — Playwright visual regression (legacy vs astro, all sections).
 - `astro.config.mjs` — `site`, dev port `4323`, React + sitemap integrations, React dedupe (forces a single React copy so `motion` doesn't bundle its own).
-- `vercel.json` — build config for Vercel + security response headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) + immutable `Cache-Control` for `/assets/*` and `/fonts/*` + a `rewrites` entry proxying `/ingest/*` to the PostHog instance (see "Analytics" below). Note: `Permissions-Policy`/`Strict-Transport-Security` are not currently set here despite older docs mentioning them.
+- `vercel.json` — build config for Vercel + security response headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) + immutable `Cache-Control` for `/assets/*` and `/fonts/*`. Note: `Permissions-Policy`/`Strict-Transport-Security` are not currently set here despite older docs mentioning them.
 
 ## Commands
 
@@ -118,8 +118,8 @@ Two tags run in `Layout.astro`'s `<head>`: GTM (`SITE.gtmId`, always on) and Pos
 - Loaded via the official array-loader snippet (not the `posthog-js` npm package — the site is 100% static, a snippet needs no bundling).
 - Gated on `import.meta.env.PROD && Boolean(PUBLIC_POSTHOG_KEY)` — never loads in `npm run dev`, and Vercel Preview deploys stay dark as long as `PUBLIC_POSTHOG_KEY` isn't set in that scope (Production only in Vercel's env var settings).
 - `PUBLIC_POSTHOG_KEY` (project API token) is read from the environment — never hardcoded. See `.env.example` for the local dev template; `.env*` is gitignored.
-- Ingestion is proxied same-origin through `/ingest` (rewrite in `vercel.json` → `https://hogpost.naomakers.com`). This is deliberate: it dodges ad-blockers that filter third-party analytics domains, and avoids a third-party cookie. `ui_host` in the init options still points at the real instance (`https://hogpost.naomakers.com`) — it's only used to build toolbar/"open in PostHog" links, never for actual traffic. **Caveat**: `vercel.json` has `trailingSlash: false`, applied *before* rewrites — PostHog's ingestion endpoints end in `/`, so double-check for 308 redirect loops on `/ingest/*` after any Vercel config change.
-- Init options: `autocapture: true`, `persistence: 'cookie'`, `person_profiles: 'identified_only'` (nobody authenticates on this site, so every event stays anonymous — cheaper and simpler). A super property `edition` (= `EDITION.year`) is registered right after `init()` so every event — autocaptured or named — carries the current edition, letting editions be compared/filtered in PostHog without extra config.
+- Both `api_host` and `ui_host` point directly at `https://hogpost.naomakers.com` — no Vercel rewrite/proxy in front of it. `hogpost.naomakers.com` is itself a reverse-proxied endpoint (managed outside this repo), so there's no same-origin trick to add here; a `<link rel="preconnect">` to it sits next to the font preconnects in `Layout.astro`'s `<head>` since ingestion is cross-origin.
+- Init options: `autocapture: true`, `persistence: 'cookie'`. A super property `edition` (= `EDITION.year`) is registered right after `init()` so every event — autocaptured or named — carries the current edition, letting editions be compared/filtered in PostHog without extra config.
 - No consent banner exists on this site (same as GTM, which has run cookie-based for longer) — this is a known gap, not an oversight; revisit `persistence` (→ `'memory'`) or add a consent gate if that changes.
 
 **Event naming**: `snake_case`, `object_action` (e.g. `ticket_cta_clicked`). The full union lives in `src/lib/analytics.ts` (`AnalyticsEvent`) — extend it there first when adding a new event, so the name is type-checked everywhere it's used.
