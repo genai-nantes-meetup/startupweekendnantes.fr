@@ -5,10 +5,6 @@
  * whose sibling file was actually generated.
  */
 export const imageManifest: Record<string, { width: number; height: number; avif?: boolean; webp?: boolean }> = {
-  "/assets/images/0WtTlUnGSMQLo0YDGvoTdjyhMEc.png": {
-    "width": 768,
-    "height": 458
-  },
   "/assets/images/1MilzwluR4WPySgY1Nc71NA7z10.jpg": {
     "width": 2000,
     "height": 2000,
@@ -27,10 +23,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
-  "/assets/images/2OyxeqKFVJBlpaZYbucB087OteU.png": {
-    "width": 1570,
-    "height": 391
-  },
   "/assets/images/2o7PKySlJfnTfrnUJMjqKSpqHA.jpeg": {
     "width": 800,
     "height": 800,
@@ -42,10 +34,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "height": 1331,
     "avif": true,
     "webp": true
-  },
-  "/assets/images/44iQIZPqRkD7728oDk6fVdVgQ.png": {
-    "width": 1040,
-    "height": 838
   },
   "/assets/images/8JSXibl4A4aZTwJgXOWiMm5Yio.jpeg": {
     "width": 800,
@@ -64,10 +52,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "height": 512,
     "avif": true,
     "webp": true
-  },
-  "/assets/images/C7lvJXp3dybbCUCltGehqzDyw4.png": {
-    "width": 1310,
-    "height": 1390
   },
   "/assets/images/CPPiPrmwNlBDD16ZjEsEp7jSOYQ.png": {
     "width": 512,
@@ -104,10 +88,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "height": 800,
     "avif": true,
     "webp": true
-  },
-  "/assets/images/Q7FknPV2hRB0NaQJVTxDxhqy1ok.png": {
-    "width": 2000,
-    "height": 1600
   },
   "/assets/images/QbK87ttZH4QcYXv2gmEfA19gJM.jpeg": {
     "width": 461,
@@ -233,14 +213,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
-  "/assets/images/f4AyPqq1hjMZxQxCR0mkLhZ7Q.png": {
-    "width": 1080,
-    "height": 855
-  },
-  "/assets/images/hEoUoeabKge2WBaQJP62xwnrEEQ.png": {
-    "width": 1080,
-    "height": 1080
-  },
   "/assets/images/hXxw44XRfD7QExm9wAo9ESWFyI.jpeg": {
     "width": 452,
     "height": 452,
@@ -301,10 +273,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "height": 800,
     "avif": true,
     "webp": true
-  },
-  "/assets/images/mowMp6Vf0kSPXZHQB9N5E.png": {
-    "width": 1080,
-    "height": 1080
   },
   "/assets/images/njJ5WEX0VG3pn7hDzt3SU9AGg.png": {
     "width": 2000,
@@ -496,41 +464,41 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
-  "/assets/images/sponsors/sponsor-allovoisins.png": {
-    "width": 1080,
-    "height": 1080
-  },
   "/assets/images/sponsors/sponsor-arzel.png": {
-    "width": 768,
-    "height": 458
+    "width": 767,
+    "height": 158
   },
   "/assets/images/sponsors/sponsor-clever-cloud.png": {
-    "width": 1310,
-    "height": 1390
+    "width": 1118,
+    "height": 1200
   },
   "/assets/images/sponsors/sponsor-crisp.png": {
-    "width": 2000,
-    "height": 499
+    "width": 1200,
+    "height": 299
   },
   "/assets/images/sponsors/sponsor-finalli.png": {
-    "width": 2000,
-    "height": 1600
+    "width": 1200,
+    "height": 821
   },
   "/assets/images/sponsors/sponsor-guest-suite.png": {
-    "width": 1080,
-    "height": 855
+    "width": 886,
+    "height": 246
   },
   "/assets/images/sponsors/sponsor-icilundi.png": {
-    "width": 512,
-    "height": 312
+    "width": 399,
+    "height": 165
   },
   "/assets/images/sponsors/sponsor-kiliogene.png": {
-    "width": 1570,
-    "height": 391
+    "width": 1200,
+    "height": 299
   },
   "/assets/images/sponsors/sponsor-nantes-metropole.png": {
     "width": 1080,
-    "height": 1080
+    "height": 339
+  },
+  "/assets/images/sponsors/sponsor-ordre-experts-comptables.png": {
+    "width": 1080,
+    "height": 222
   },
   "/assets/images/sponsors/sponsor-pepite-pays-de-la-loire.png": {
     "width": 402,
@@ -598,18 +566,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "height": 1329,
     "avif": true,
     "webp": true
-  },
-  "/assets/images/xbrzvOd572A3buGabxbYYWHMDTA.png": {
-    "width": 512,
-    "height": 312
-  },
-  "/assets/images/xgqZP9NFB8rOgqvLhHUkyDYRJYU.png": {
-    "width": 2000,
-    "height": 499
-  },
-  "/assets/images/zql7stHN2Rthx6uOdsagCNhv2M.png": {
-    "width": 402,
-    "height": 385
   },
   "/assets/images/zrnozkkMGZmZ62YKvXWpLSdBMfE.png": {
     "width": 1280,
