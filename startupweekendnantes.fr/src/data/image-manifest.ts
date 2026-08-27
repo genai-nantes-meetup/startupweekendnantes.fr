@@ -113,9 +113,6 @@ export const imageManifest: Record<string, { avif?: boolean; webp?: boolean }> =
     "avif": true,
     "webp": true
   },
-  "/assets/images/sponsors/sponsor-allovoisins.png": {
-    "avif": true
-  },
   "/assets/images/sponsors/sponsor-arzel.png": {},
   "/assets/images/sponsors/sponsor-clever-cloud.png": {},
   "/assets/images/sponsors/sponsor-crisp.png": {},
@@ -124,6 +121,7 @@ export const imageManifest: Record<string, { avif?: boolean; webp?: boolean }> =
   "/assets/images/sponsors/sponsor-icilundi.png": {},
   "/assets/images/sponsors/sponsor-kiliogene.png": {},
   "/assets/images/sponsors/sponsor-nantes-metropole.png": {},
+  "/assets/images/sponsors/sponsor-ordre-experts-comptables.png": {},
   "/assets/images/sponsors/sponsor-pepite-pays-de-la-loire.png": {},
   "/assets/images/sponsors/sponsor-reseau-entreprendre-atlantique.png": {},
   "/assets/images/venue/venue-palace-1.jpeg": {

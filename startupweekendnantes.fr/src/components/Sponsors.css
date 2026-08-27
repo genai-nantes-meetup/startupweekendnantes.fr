@@ -33,10 +33,11 @@
   background: rgba(244, 238, 219, 0.09);
 }
 .sponsor-logo {
-  max-height: 50px;
+  /* largeur calculée par logo (voir logoBox() dans data/sponsors.ts) : chaque logo
+     reçoit un poids optique comparable au lieu d'être calé sur sa seule hauteur */
+  width: calc(var(--logo-w, 140px) * var(--logo-scale, 1));
+  height: auto;
   max-width: 100%;
-  width: auto;
-  object-fit: contain;
   /* mur de logos monochrome : set hétérogène (certains blancs, certains foncés) → uniformisés en blanc */
   filter: brightness(0) invert(1);
   opacity: 0.9;
@@ -47,12 +48,17 @@
 }
 .sponsors-grid--banner .sponsor-cell {
   min-height: 116px;
-}
-.sponsors-grid--banner .sponsor-logo {
-  max-height: 66px;
+  --logo-scale: 1.14;
 }
 @media (max-width: 860px) {
   .sponsors-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .sponsor-cell {
+    --logo-scale: 0.82;
+    padding: 16px 18px;
+  }
+  .sponsors-grid--banner .sponsor-cell {
+    --logo-scale: 0.9;
   }
 }
