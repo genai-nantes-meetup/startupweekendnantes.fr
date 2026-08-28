@@ -2,7 +2,7 @@ import './Agenda.css';
 import { days } from '../data/agenda';
 import { EDITION } from '../data/edition';
 
-const KEY_RE = /pitch|vote|cérémonie|remise|formation des équipes|fin de startup/i;
+const KEY_RE = /pitch|vote|cérémonie|remise|formation des équipes/i;
 const shortDate = (date: string) => date.replace(` ${EDITION.year}`, '');
 
 export default function Agenda() {
@@ -42,7 +42,7 @@ export default function Agenda() {
                           {r.title}
                         </span>
                         {r.desc && <span className="dossier-event-desc">{r.desc}</span>}
-                        {(r.speaker || r.speakers) && (
+                        {r.tba && (
                           <span className="t-mono dossier-soon">
                             <span className="dossier-soon-dot" aria-hidden="true"></span>
                             En attente
