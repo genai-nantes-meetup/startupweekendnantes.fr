@@ -57,7 +57,7 @@ const dayRows: Row[][] = [
       title: 'Dîner & votes',
       desc: "On mange ensemble et on vote pour les problèmes qu'on veut attaquer.",
     },
-    { time: '21h', title: 'Conférence User Discovery', desc: '', tba: true },
+    { time: '21h', title: 'REX entrepreneur', desc: '', tba: true },
     {
       time: '21h30',
       title: 'Annonce des projets & formation des équipes',
@@ -82,7 +82,11 @@ const dayRows: Row[][] = [
       desc: 'Agenda et grandes étapes de la journée.',
     },
     { time: '9h', title: 'Atelier IA', desc: '', tba: true },
-    { time: '9h45', title: 'Travail en équipe', desc: '' },
+    {
+      time: '9h45',
+      title: 'Travail en équipe & user interviews',
+      desc: 'Les équipes sortent confronter leur problème à de vrais utilisateurs.',
+    },
     { time: '12h30', title: 'Déjeuner en deux services', desc: '' },
     { time: '13h45', title: 'Conférences Pitch & User Tests', desc: '', tba: true },
     { time: '14h30', title: 'Travail en équipe', desc: 'Les coachs passent dans les équipes.' },
@@ -94,7 +98,7 @@ const dayRows: Row[][] = [
     { time: '19h20', title: 'Jeu', desc: '' },
     { time: '19h45', title: 'Dîner', desc: '' },
     { time: '20h30', title: 'Travail en équipe', desc: '' },
-    { time: '0h', title: 'DJ set & cocktails', desc: 'La petite fiesta du samedi soir.' },
+    { time: '23h', title: 'DJ set & cocktails', desc: 'La petite fiesta du samedi soir.' },
   ],
   // JOUR 3 — Dimanche
   [
@@ -105,9 +109,9 @@ const dayRows: Row[][] = [
     },
     { time: '9h', title: 'Travail en équipe', desc: '' },
     {
-      time: '11h30',
+      time: '11h',
       title: 'User tests',
-      desc: 'Les équipes confrontent leur solution à de vrais utilisateurs.',
+      desc: 'Les équipes confrontent leur produit à de vrais utilisateurs.',
     },
     { time: '12h30', title: 'Déjeuner', desc: 'Sur place ou à emporter.' },
     {
