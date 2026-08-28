@@ -33,7 +33,7 @@
   background: rgba(244, 238, 219, 0.09);
 }
 .sponsor-logo {
-  /* largeur calculée par logo (voir logoBox() dans data/sponsors.ts) : chaque logo
+  /* largeur calculée par logo (voir logoBox() dans data/edition_partners.ts) : chaque logo
      reçoit un poids optique comparable au lieu d'être calé sur sa seule hauteur */
   width: calc(var(--logo-w, 140px) * var(--logo-scale, 1));
   height: auto;

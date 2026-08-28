@@ -5,6 +5,11 @@
  * automatically with the year. Only the row content needs to be edited here.
  *
  * Source : « Déroulé du weekend » (Notion, run of show de l'orga).
+ *
+ * Les créneaux à intervenant portent `tba: true` tant que le casting n'est pas
+ * confirmé — même parti pris que la section Team, masquée pour la même raison.
+ * Le jour où un profil est calé, remplacer par `speakers: ['Prénom Nom']` (le nom
+ * doit exister dans `edition_speakers.ts`).
  */
 
 import { EDITION } from './edition';
@@ -13,7 +18,13 @@ export type Row = {
   time: string;
   title: string;
   desc: string;
-  /** Intervenant·e pas encore annoncé·e — affiche le badge « En attente ». */
+  /**
+   * Noms des intervenant·es, joints à `edition_speakers.ts` (pas de duplication
+   * de photo ni de rôle ici). Renseigner dès qu'un profil est confirmé : les
+   * avatars s'affichent alors à la place du badge « En attente ».
+   */
+  speakers?: string[];
+  /** Créneau à intervenant, profil pas encore dévoilé — badge « En attente ». */
   tba?: boolean;
 };
 export type Day = {

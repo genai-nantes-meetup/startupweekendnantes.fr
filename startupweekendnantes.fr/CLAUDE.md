@@ -72,7 +72,7 @@ speakers.map(s => (
 ));
 ```
 
-Modules whose content changes every year carry the `edition_` prefix (`edition.ts`, `edition_speakers.ts`, `edition_partners.ts`, `edition_pricing.ts`, `edition_schedule.ts`); stable data does not (`faq.ts`, `team.ts`, `venue.ts`, `videos.ts`, `site.ts`).
+Modules whose content changes every year carry the `edition_` prefix (`edition.ts`, `edition_speakers.ts`, `edition_partners.ts`, `edition_pricing.ts`, `edition_schedule.ts`); stable data does not (`faq.ts`, `orgs.ts`, `intro.ts`, `venue.ts`, `videos.ts`, `site.ts`).
 
 ### `edition.ts` is the single source of truth
 

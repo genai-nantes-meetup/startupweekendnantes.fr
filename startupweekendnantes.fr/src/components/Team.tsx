@@ -1,7 +1,7 @@
 import './Team.css';
 
 // Section masquée temporairement : l'équipage coachs/speakers/jury n'est pas
-// encore calé. Les cartes + les données vivent dans data/team.ts et la grille
+// encore calé. Les cartes + les données vivent dans data/edition_speakers.ts et la grille
 // `.team-grid` reste stylée dans Team.css — il suffira de remettre le .map()
 // (voir historique git) quand les profils seront confirmés.
 

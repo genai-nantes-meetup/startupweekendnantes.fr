@@ -1,6 +1,6 @@
 import './CtaBand.css';
 import { EDITION } from '../data/edition';
-import { weekendTier } from '../data/pricing';
+import { weekendTier } from '../data/edition_pricing';
 import WantedBadge from './ui/WantedBadge';
 
 export default function CtaBand() {
