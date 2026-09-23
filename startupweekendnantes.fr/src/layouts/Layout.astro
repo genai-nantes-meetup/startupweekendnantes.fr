@@ -26,6 +26,8 @@ const jsonLd = isHome ? JSON.stringify(buildHomeJsonLd()) : null;
 /** PostHog n'est chargé qu'en build de prod ET si le token est fourni (absent en preview). */
 const posthogKey = import.meta.env.PUBLIC_POSTHOG_KEY;
 const posthogEnabled = import.meta.env.PROD && Boolean(posthogKey);
+/** GA4 (gtag.js) n'est chargé qu'en build de prod, pour ne pas polluer la propriété avec du trafic dev/preview. */
+const ga4Enabled = import.meta.env.PROD;
 ---
 
 <!doctype html>
@@ -115,6 +117,27 @@ const posthogEnabled = import.meta.env.PROD && Boolean(posthogKey);
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-NQ2DKKPD');
     </script>
+
+    <!-- Google tag (gtag.js) — GA4, prod only (see ga4Enabled above). -->
+    {
+      ga4Enabled && (
+        <>
+          <script
+            async
+            is:inline
+            src={`https://www.googletagmanager.com/gtag/js?id=${SITE.ga4Id}`}
+          />
+          <script define:vars={{ ga4Id: SITE.ga4Id }} is:inline>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', ga4Id);
+          </script>
+        </>
+      )
+    }
 
     <!-- PostHog — prod only, disabled when PUBLIC_POSTHOG_KEY is absent (e.g. Preview deploys). -->
     {

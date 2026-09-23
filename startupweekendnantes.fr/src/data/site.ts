@@ -18,6 +18,8 @@ export const SITE = {
   themeColor: '#0e0218',
   /** Google Tag Manager container id (injected in <head> and the noscript iframe). */
   gtmId: 'GTM-NQ2DKKPD',
+  /** GA4 measurement id (gtag.js, prod-only — see Layout.astro). */
+  ga4Id: 'G-VVRLHVZV1T',
   /** Favicon path (served from public/). Généré par `node scripts/generate-favicons.mjs`. */
   favicon: '/favicon.svg',
   /** Fallback PNG 32×32 pour les navigateurs sans support SVG. */
