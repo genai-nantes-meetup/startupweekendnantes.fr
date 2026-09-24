@@ -12,7 +12,7 @@ import { SITE } from '../data/site';
 import { EDITION } from '../data/edition';
 import { venue } from '../data/venue';
 import { tiers } from '../data/edition_pricing';
-import { speakers } from '../data/edition_speakers';
+import { speakerGroups, speakers } from '../data/edition_speakers';
 import { orgs } from '../data/orgs';
 import { days } from '../data/edition_schedule';
 import { questions } from '../data/faq';
@@ -75,12 +75,17 @@ function build(): string {
   }
 
   // ── Intervenants ─────────────────────────────────────────────────
-  lines.push('## Coachs, speakers et jury');
+  lines.push('## Coachs, mentors, speakers et jury');
   lines.push('');
-  for (const m of speakers) {
-    lines.push(`- ${m.name} — ${m.role}`);
+  for (const g of speakerGroups) {
+    const members = speakers.filter((m) => m.group === g.id);
+    if (members.length === 0) continue;
+    lines.push(`### ${g.label}`);
+    for (const m of members) {
+      lines.push(`- ${m.name} — ${m.mission} — ${m.role}`);
+    }
+    lines.push('');
   }
-  lines.push('');
 
   // ── Organisation ─────────────────────────────────────────────────
   lines.push('## Équipe organisatrice');
