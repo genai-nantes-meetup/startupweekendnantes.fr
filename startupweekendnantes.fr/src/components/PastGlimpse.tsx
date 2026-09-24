@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './PastGlimpse.css';
-import { pastVideos } from '../data/past';
+import { pastVideos } from '../data/videos';
 import { capture } from '../lib/analytics';
 
 const youtubeId = (embedUrl: string): string => embedUrl.split('/').pop() ?? '';

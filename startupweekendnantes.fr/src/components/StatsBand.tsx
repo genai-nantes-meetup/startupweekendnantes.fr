@@ -1,6 +1,6 @@
 import './StatsBand.css';
 import { EDITION } from '../data/edition';
-import { weekendTier } from '../data/pricing';
+import { weekendTier } from '../data/edition_pricing';
 
 const stats = [
   { n: `${EDITION.durationHours}h`, l: 'non-stop, vendredi → dimanche', accent: 'var(--bleu)' },

@@ -16,7 +16,7 @@
  *   4. refreshes the sponsors' image-manifest entries (same shape as
  *      optimize-images.mjs, which stays the source of truth for every other
  *      image — re-running that one here would recompress ~300 unrelated files),
- *   5. prints the cropped aspect ratio to paste into src/data/sponsors.ts
+ *   5. prints the cropped aspect ratio to paste into src/data/edition_partners.ts
  *      (consumed by logoBox() so every logo gets the same optical weight).
  *
  * Safe to re-run: cropping an already-cropped logo is a no-op.
@@ -181,7 +181,7 @@ async function run() {
   await rm(join(DIR, 'sponsor-allovoisins.avif')); // sibling of a file that no longer exists
   await updateManifest(sizes);
 
-  console.log('\nratios to paste into src/data/sponsors.ts:\n');
+  console.log('\nratios to paste into src/data/edition_partners.ts:\n');
   for (const [name, ratio, size] of ratios) {
     console.log(`  ${name.padEnd(44)} ratio: ${ratio.toFixed(2).padStart(5)}  (cropped ${size})`);
   }

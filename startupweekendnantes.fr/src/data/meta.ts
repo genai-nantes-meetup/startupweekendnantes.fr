@@ -11,10 +11,10 @@
 import { EDITION } from './edition';
 import { SITE } from './site';
 import { venue } from './venue';
-import { tiers } from './pricing';
-import { members } from './team';
+import { tiers } from './edition_pricing';
+import { speakers } from './edition_speakers';
 import { questions } from './faq';
-import { pastVideos } from './past';
+import { pastVideos } from './videos';
 
 /** Build an absolute URL from a site-root-relative path. */
 const abs = (path: string): string => new URL(path, SITE.url).toString();
@@ -126,7 +126,7 @@ function offers() {
 }
 
 function performers() {
-  return members.map((m) => ({
+  return speakers.map((m) => ({
     '@type': 'Person',
     name: m.name,
     jobTitle: m.role,

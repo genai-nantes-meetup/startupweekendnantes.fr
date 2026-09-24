@@ -1,6 +1,6 @@
 import './Sponsors.css';
 import type { CSSProperties } from 'react';
-import { sponsorRows, bannerRow, logoBox, type Sponsor } from '../data/sponsors';
+import { sponsorRows, bannerRow, logoBox, type Sponsor } from '../data/edition_partners';
 
 function SponsorCell({ sponsor }: { sponsor: Sponsor }) {
   const { width, height } = logoBox(sponsor.ratio);
