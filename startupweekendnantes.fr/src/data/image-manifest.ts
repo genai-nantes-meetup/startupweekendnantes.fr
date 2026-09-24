@@ -524,33 +524,25 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
-  "/assets/images/sponsors/sponsor-arzel.png": {
-    "width": 767,
-    "height": 158
-  },
   "/assets/images/sponsors/sponsor-clever-cloud.png": {
-    "width": 1118,
-    "height": 1200
-  },
-  "/assets/images/sponsors/sponsor-crisp.png": {
     "width": 1200,
     "height": 299
   },
-  "/assets/images/sponsors/sponsor-finalli.png": {
-    "width": 1200,
-    "height": 821
-  },
-  "/assets/images/sponsors/sponsor-guest-suite.png": {
+  "/assets/images/sponsors/sponsor-crisp.png": {
     "width": 886,
     "height": 246
   },
+  "/assets/images/sponsors/sponsor-guest-suite.png": {
+    "width": 1118,
+    "height": 1200
+  },
   "/assets/images/sponsors/sponsor-icilundi.png": {
-    "width": 399,
-    "height": 165
+    "width": 767,
+    "height": 158
   },
   "/assets/images/sponsors/sponsor-kiliogene.png": {
     "width": 1200,
-    "height": 299
+    "height": 821
   },
   "/assets/images/sponsors/sponsor-nantes-metropole.png": {
     "width": 1080,
@@ -561,12 +553,8 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "height": 222
   },
   "/assets/images/sponsors/sponsor-pepite-pays-de-la-loire.png": {
-    "width": 402,
-    "height": 385
-  },
-  "/assets/images/sponsors/sponsor-reseau-entreprendre-atlantique.png": {
-    "width": 1040,
-    "height": 838
+    "width": 399,
+    "height": 165
   },
   "/assets/images/vDdpuf0bvfUg1jOKqSriwoI8As.jpeg": {
     "width": 584,
