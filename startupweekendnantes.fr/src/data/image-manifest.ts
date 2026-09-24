@@ -380,27 +380,39 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
+  "/assets/images/speakers/aurore-viaud.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
   "/assets/images/speakers/benjamin-communier.jpeg": {
-    "width": 800,
-    "height": 800,
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/benjamin-guillet.png": {
-    "width": 422,
-    "height": 630,
+  "/assets/images/speakers/benjamin-guillet.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/claire-bretton.jpeg": {
-    "width": 800,
-    "height": 800,
+  "/assets/images/speakers/clement-spiers.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/eric-lebrette.jpeg": {
-    "width": 800,
-    "height": 800,
+  "/assets/images/speakers/clementine-guillaud.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/erwann-rozier.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
@@ -410,39 +422,93 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/johan-ricaut.jpeg": {
-    "width": 800,
-    "height": 800,
+  "/assets/images/speakers/franz-jarry.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/godefroy-de-compreignac.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/gregory-thibord.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/hugues-de-saint-vincent.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/jean-de-maupeou.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/jordan-boutin.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
   "/assets/images/speakers/lucie-valette.jpeg": {
-    "width": 461,
-    "height": 461,
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/marc-guesneau.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/marie-louppe.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/marion-guerchet.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/mathieu-le-gac.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
   "/assets/images/speakers/mathilde-bermond.jpeg": {
-    "width": 800,
-    "height": 800,
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/nicolas-laurent.jpeg": {
-    "width": 800,
-    "height": 800,
+  "/assets/images/speakers/mathilde-bour.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/pauline-corriou.jpeg": {
-    "width": 800,
-    "height": 800,
+  "/assets/images/speakers/maxime-pitussi.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
   "/assets/images/speakers/samuel-berthe.jpeg": {
-    "width": 800,
-    "height": 800,
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
@@ -452,15 +518,9 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
-  "/assets/images/speakers/thomas-matthieu.jpeg": {
-    "width": 452,
-    "height": 452,
-    "avif": true,
-    "webp": true
-  },
-  "/assets/images/speakers/vincent-roux.jpeg": {
-    "width": 800,
-    "height": 800,
+  "/assets/images/speakers/yannis-sulfourt.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },

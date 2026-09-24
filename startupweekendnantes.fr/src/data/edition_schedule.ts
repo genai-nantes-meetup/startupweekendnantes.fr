@@ -7,9 +7,8 @@
  * Source : « Déroulé du weekend » (Notion, run of show de l'orga).
  *
  * Les créneaux à intervenant portent `tba: true` tant que le casting n'est pas
- * confirmé — même parti pris que la section Team, masquée pour la même raison.
- * Le jour où un profil est calé, remplacer par `speakers: ['Prénom Nom']` (le nom
- * doit exister dans `edition_speakers.ts`).
+ * confirmé. Le jour où un profil est calé, remplacer par `speakers: ['Prénom Nom']`
+ * (le nom doit exister dans `edition_speakers.ts`).
  */
 
 import { EDITION } from './edition';
@@ -92,14 +91,19 @@ const dayRows: Row[][] = [
       title: 'Petit déjeuner & lancement de la journée',
       desc: 'Agenda et grandes étapes de la journée.',
     },
-    { time: '9h', title: 'Atelier IA', desc: '', tba: true },
+    { time: '9h', title: 'Atelier IA', desc: '', speakers: ['Yannis Sulfourt'] },
     {
       time: '9h45',
       title: 'Travail en équipe & user interviews',
       desc: 'Les équipes sortent confronter leur problème à de vrais utilisateurs.',
     },
     { time: '12h30', title: 'Déjeuner en deux services', desc: '' },
-    { time: '13h45', title: 'Conférences Pitch & User Tests', desc: '', tba: true },
+    {
+      time: '13h45',
+      title: 'Conférences Pitch & User Tests',
+      desc: '',
+      speakers: ['Marion Guerchet'],
+    },
     { time: '14h30', title: 'Travail en équipe', desc: 'Les coachs passent dans les équipes.' },
     {
       time: '19h',
@@ -140,6 +144,7 @@ const dayRows: Row[][] = [
       time: '19h45',
       title: "REX de l'équipe gagnante 2025",
       desc: 'Pendant la délibération du jury.',
+      speakers: ['Marie Louppe'],
     },
     {
       time: '20h15',
