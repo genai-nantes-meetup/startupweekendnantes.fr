@@ -16,6 +16,12 @@
 export type Sponsor = { name: string; img: string; ratio: number };
 
 const BASE = '/assets/images/sponsors/';
+/**
+ * Cache-buster appended to every logo URL. /assets/* is served `immutable` for a
+ * year, so a logo whose file changes under the same name stays stale in returning
+ * visitors' browsers. Bump it whenever a logo file is replaced in place.
+ */
+const V = '?v=2026-09';
 
 /** Reference height (px) of a logo whose cropped ratio is 1:1. */
 const BASE_HEIGHT = 64;
@@ -33,34 +39,34 @@ export function logoBox(ratio: number): { width: number; height: number } {
 
 export const sponsorRows: Sponsor[][] = [
   [
-    { name: 'Nantes Métropole', img: `${BASE}sponsor-nantes-metropole.png`, ratio: 3.19 },
-    { name: 'Kiliogene', img: `${BASE}sponsor-kiliogene.png`, ratio: 1.46 },
+    { name: 'Nantes Métropole', img: `${BASE}sponsor-nantes-metropole.png${V}`, ratio: 3.19 },
+    { name: 'Kiliogene', img: `${BASE}sponsor-kiliogene.png${V}`, ratio: 1.46 },
     {
       name: 'Ordre des Experts-Comptables Pays de la Loire',
-      img: `${BASE}sponsor-ordre-experts-comptables.png`,
+      img: `${BASE}sponsor-ordre-experts-comptables.png${V}`,
       ratio: 4.86,
     },
   ],
   [
-    { name: 'Clever Cloud', img: `${BASE}sponsor-clever-cloud.png`, ratio: 4.01 },
-    { name: 'Crisp', img: `${BASE}sponsor-crisp.png`, ratio: 3.6 },
-    { name: 'Lucca', img: `${BASE}sponsor-lucca.svg`, ratio: 3.05 },
+    { name: 'Clever Cloud', img: `${BASE}sponsor-clever-cloud.png${V}`, ratio: 4.01 },
+    { name: 'Crisp', img: `${BASE}sponsor-crisp.png${V}`, ratio: 3.6 },
+    { name: 'Lucca', img: `${BASE}sponsor-lucca.svg${V}`, ratio: 3.05 },
   ],
   [
-    { name: 'Guest Suite', img: `${BASE}sponsor-guest-suite.png`, ratio: 0.93 },
+    { name: 'Guest Suite', img: `${BASE}sponsor-guest-suite.png${V}`, ratio: 0.93 },
     {
       name: 'Kivo, incubateur Centrale Nantes, Audencia, Nantes Université',
-      img: `${BASE}sponsor-kivo.svg`,
+      img: `${BASE}sponsor-kivo.svg${V}`,
       ratio: 4.82,
     },
     {
       name: 'Pépite Pays de la Loire',
-      img: `${BASE}sponsor-pepite-pays-de-la-loire.png`,
+      img: `${BASE}sponsor-pepite-pays-de-la-loire.png${V}`,
       ratio: 2.42,
     },
   ],
 ];
 
 export const bannerRow: Sponsor[] = [
-  { name: '_icilundi', img: `${BASE}sponsor-icilundi.png`, ratio: 4.85 },
+  { name: '_icilundi', img: `${BASE}sponsor-icilundi.png${V}`, ratio: 4.85 },
 ];
