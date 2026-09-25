@@ -24,7 +24,7 @@ export default function Sponsors() {
     <section id="sponsors" className="section sponsors-section surface-prune tex">
       <div className="container sponsors-inner">
         <p className="kicker kicker--on-dark">✳ Nos fervents partenaires</p>
-        <h2 className="t-title sponsors-title">Ils nous ont soutenus</h2>
+        <h2 className="t-title sponsors-title">Ils nous soutiennent</h2>
         <div className="sponsors-grid">
           {sponsorRows.flat().map((s) => (
             <SponsorCell sponsor={s} key={s.name} />

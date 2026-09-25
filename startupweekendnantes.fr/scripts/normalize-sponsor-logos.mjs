@@ -34,17 +34,15 @@ const ALPHA_THRESHOLD = 12; // ignore near-transparent halo pixels when cropping
 /** [file as it ships today, name it should have]. Same name = crop in place. */
 const LOGOS = [
   ['sponsor-nantes-metropole.png', 'sponsor-nantes-metropole.png'],
-  ['sponsor-ordre-experts-comptables.svg', 'sponsor-allovoisins.svg'],
   ['sponsor-allovoisins.png', 'sponsor-ordre-experts-comptables.png'],
   ['sponsor-crisp.png', 'sponsor-crisp.png'],
   ['sponsor-clever-cloud.png', 'sponsor-clever-cloud.png'],
   ['sponsor-guest-suite.png', 'sponsor-guest-suite.png'],
   ['sponsor-kiliogene.png', 'sponsor-kiliogene.png'],
-  ['sponsor-reseau-entreprendre-atlantique.png', 'sponsor-reseau-entreprendre-atlantique.png'],
-  ['sponsor-finalli.png', 'sponsor-finalli.png'],
   ['sponsor-icilundi.png', 'sponsor-icilundi.png'],
   ['sponsor-pepite-pays-de-la-loire.png', 'sponsor-pepite-pays-de-la-loire.png'],
-  ['sponsor-arzel.png', 'sponsor-arzel.png'],
+  ['sponsor-lucca.svg', 'sponsor-lucca.svg'],
+  ['sponsor-kivo.svg', 'sponsor-kivo.svg'],
 ];
 
 /** Framer originals at the images root — byte-identical duplicates of the above. */

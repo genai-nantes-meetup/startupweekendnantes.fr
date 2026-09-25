@@ -1,7 +1,11 @@
 /**
  * Sponsors shown in the "Nos fervents partenaires" section.
- * `sponsorRows` is a 2D grid (rows of 3 logos each).
- * `bannerRow` is the wider banner row at the bottom.
+ * `sponsorRows` is a 2D grid (rows of 3 logos each), ordered by contribution.
+ * `bannerRow` is the wider banner row at the bottom (in-kind partners — the
+ * venue). Its cells share the row equally, whatever their number.
+ *
+ * Source : base Notion « Sponsors » (vue SWNA 2026) — only partners with an
+ * amount in the SWNA-2026 column or an in-kind contribution are listed.
  *
  * `ratio` is the width/height of the cropped file, printed by
  * scripts/normalize-sponsor-logos.mjs. `logoHeight()` uses it so a stubby
@@ -30,7 +34,7 @@ export function logoBox(ratio: number): { width: number; height: number } {
 export const sponsorRows: Sponsor[][] = [
   [
     { name: 'Nantes Métropole', img: `${BASE}sponsor-nantes-metropole.png`, ratio: 3.19 },
-    { name: 'allovoisins', img: `${BASE}sponsor-allovoisins.svg`, ratio: 5.77 },
+    { name: 'Kiliogene', img: `${BASE}sponsor-kiliogene.png`, ratio: 1.46 },
     {
       name: 'Ordre des Experts-Comptables Pays de la Loire',
       img: `${BASE}sponsor-ordre-experts-comptables.png`,
@@ -38,27 +42,25 @@ export const sponsorRows: Sponsor[][] = [
     },
   ],
   [
-    { name: 'crisp', img: `${BASE}sponsor-crisp.png`, ratio: 4.01 },
-    { name: 'clever cloud', img: `${BASE}sponsor-clever-cloud.png`, ratio: 0.93 },
-    { name: 'Guest Suite', img: `${BASE}sponsor-guest-suite.png`, ratio: 3.6 },
+    { name: 'Clever Cloud', img: `${BASE}sponsor-clever-cloud.png`, ratio: 4.01 },
+    { name: 'Crisp', img: `${BASE}sponsor-crisp.png`, ratio: 3.6 },
+    { name: 'Lucca', img: `${BASE}sponsor-lucca.svg`, ratio: 3.05 },
   ],
   [
-    { name: 'kiliogene', img: `${BASE}sponsor-kiliogene.png`, ratio: 4.02 },
+    { name: 'Guest Suite', img: `${BASE}sponsor-guest-suite.png`, ratio: 0.93 },
     {
-      name: 'Réseau Entreprendre Atlantique',
-      img: `${BASE}sponsor-reseau-entreprendre-atlantique.png`,
-      ratio: 1.24,
+      name: 'Kivo, incubateur Centrale Nantes, Audencia, Nantes Université',
+      img: `${BASE}sponsor-kivo.svg`,
+      ratio: 4.82,
     },
-    { name: 'Finalli', img: `${BASE}sponsor-finalli.png`, ratio: 1.46 },
+    {
+      name: 'Pépite Pays de la Loire',
+      img: `${BASE}sponsor-pepite-pays-de-la-loire.png`,
+      ratio: 2.42,
+    },
   ],
 ];
 
 export const bannerRow: Sponsor[] = [
-  { name: 'icilundi', img: `${BASE}sponsor-icilundi.png`, ratio: 2.42 },
-  {
-    name: 'pépite Pays de la Loire',
-    img: `${BASE}sponsor-pepite-pays-de-la-loire.png`,
-    ratio: 1.04,
-  },
-  { name: 'Arzel', img: `${BASE}sponsor-arzel.png`, ratio: 4.85 },
+  { name: '_icilundi', img: `${BASE}sponsor-icilundi.png`, ratio: 4.85 },
 ];
