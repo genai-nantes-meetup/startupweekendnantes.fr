@@ -9,25 +9,24 @@
   font-size: clamp(30px, 4.5vw, 44px);
   margin-bottom: 30px;
 }
+/* un rang par niveau de contribution : autant de colonnes égales que de logos
+   (1 logo = pleine largeur, 2 = moitié, 3 = tiers) */
 .sponsors-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-}
-.sponsors-grid.sponsors-grid--banner {
-  margin-top: 14px;
-  /* double classe : doit battre le 1fr 1fr du media query mobile.
-     autant de colonnes égales que de logos (1 partenaire en nature = pleine largeur) */
-  grid-template-columns: none;
   grid-auto-flow: column;
   grid-auto-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+.sponsors-grid + .sponsors-grid {
+  margin-top: 14px;
 }
 .sponsor-cell {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 96px;
-  padding: 18px 24px;
+  /* hauteur de case proportionnelle au niveau (--tier-size posé par rang) */
+  min-height: calc(var(--tier-size, 96px) * 0.8 + 44px);
+  padding: 22px 24px;
   background: rgba(244, 238, 219, 0.04);
   border: 1px solid var(--line-on-dark);
   border-radius: 14px;
@@ -38,8 +37,7 @@
   background: rgba(244, 238, 219, 0.09);
 }
 .sponsor-logo {
-  /* largeur calculée par logo (voir logoBox() dans data/edition_partners.ts) : chaque logo
-     reçoit un poids optique comparable au lieu d'être calé sur sa seule hauteur */
+  /* largeur calculée par logo et par niveau (voir logoBox() dans data/edition_partners.ts) */
   width: calc(var(--logo-w, 140px) * var(--logo-scale, 1));
   height: auto;
   max-width: 100%;
@@ -51,19 +49,24 @@
 .sponsor-cell:hover .sponsor-logo {
   opacity: 1;
 }
-.sponsors-grid--banner .sponsor-cell {
-  min-height: 116px;
-  --logo-scale: 1.14;
+/* le plus gros contributeur : case mise en avant */
+.sponsors-tier--platinum .sponsor-cell {
+  background: rgba(244, 238, 219, 0.08);
+  border-color: rgba(244, 238, 219, 0.24);
 }
 @media (max-width: 860px) {
+  /* rangs de 3 : 2 colonnes (le 3e logo passe dessous, pleine largeur) */
   .sponsors-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sponsors-grid > .sponsor-cell:only-child,
+  .sponsors-grid > .sponsor-cell:nth-child(3):last-child {
+    grid-column: 1 / -1;
   }
   .sponsor-cell {
-    --logo-scale: 0.82;
+    --logo-scale: 0.72;
+    min-height: calc(var(--tier-size, 96px) * 0.6 + 32px);
     padding: 16px 18px;
-  }
-  .sponsors-grid--banner .sponsor-cell {
-    --logo-scale: 0.9;
   }
 }
