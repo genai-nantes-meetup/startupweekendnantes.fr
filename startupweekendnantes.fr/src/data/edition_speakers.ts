@@ -109,7 +109,7 @@ export const speakers: Speaker[] = [
   // ── Coachs ───────────────────────────────────────────────────────
   {
     name: 'Benjamin Guillet',
-    role: 'Customer Success Manager @ TGS France',
+    role: 'Customer Success Manager @ IMT Atlantique',
     img: '/assets/images/speakers/benjamin-guillet.jpeg',
     group: 'coach',
     mission: 'Coach Finance',
