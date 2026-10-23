@@ -43,6 +43,8 @@ const LOGOS = [
   ['sponsor-pepite-pays-de-la-loire.png', 'sponsor-pepite-pays-de-la-loire.png'],
   ['sponsor-lucca.svg', 'sponsor-lucca.svg'],
   ['sponsor-kivo.svg', 'sponsor-kivo.svg'],
+  ['sponsor-imt-atlantique.png', 'sponsor-imt-atlantique.png'],
+  ['sponsor-adn-ouest.png', 'sponsor-adn-ouest.png'],
 ];
 
 /** Framer originals at the images root — byte-identical duplicates of the above. */

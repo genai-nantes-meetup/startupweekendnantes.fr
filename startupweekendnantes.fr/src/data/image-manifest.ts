@@ -524,6 +524,10 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
+  "/assets/images/sponsors/sponsor-adn-ouest.png": {
+    "width": 1200,
+    "height": 507
+  },
   "/assets/images/sponsors/sponsor-clever-cloud.png": {
     "width": 1200,
     "height": 299
@@ -539,6 +543,10 @@ export const imageManifest: Record<string, { width: number; height: number; avif
   "/assets/images/sponsors/sponsor-icilundi.png": {
     "width": 767,
     "height": 158
+  },
+  "/assets/images/sponsors/sponsor-imt-atlantique.png": {
+    "width": 1200,
+    "height": 740
   },
   "/assets/images/sponsors/sponsor-kiliogene.png": {
     "width": 1200,
