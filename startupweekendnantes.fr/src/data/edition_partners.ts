@@ -2,7 +2,7 @@
  * Sponsors shown in the "Nos fervents partenaires" section.
  * `sponsorTiers` = one row per contribution level, biggest first. Each tier has
  * its own logo size (`size`), so the bigger the contribution, the bigger the
- * logo; logos of a row share it equally. The venue (in-kind) closes the wall.
+ * logo; logos of a row share it equally. The in-kind row (venue + partners) closes the wall.
  *
  * Source : base Notion « Sponsors » (vue SWNA 2026) — only partners with an
  * amount in the SWNA-2026 column or an in-kind contribution are listed.
@@ -95,10 +95,14 @@ export const sponsorTiers: SponsorTier[] = [
       logo('Pépite Pays de la Loire', 'sponsor-pepite-pays-de-la-loire.png', 2.42),
     ],
   },
-  // En nature : le lieu
+  // En nature : le lieu + les partenaires
   {
-    id: 'venue',
+    id: 'in-kind',
     size: 96,
-    sponsors: [logo('_icilundi', 'sponsor-icilundi.png', 4.85)],
+    sponsors: [
+      logo('_icilundi', 'sponsor-icilundi.png', 4.85),
+      logo('IMT Atlantique', 'sponsor-imt-atlantique.png', 1.62),
+      logo('ADN Ouest', 'sponsor-adn-ouest.png', 2.37),
+    ],
   },
 ];
