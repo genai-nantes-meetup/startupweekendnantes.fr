@@ -21,7 +21,7 @@ const BASE = '/assets/images/sponsors/';
  * year, so a logo whose file changes under the same name stays stale in returning
  * visitors' browsers. Bump it whenever a logo file is replaced in place.
  */
-const V = '?v=2026-09';
+const V = '?v=2026-11';
 
 /** How hard wide logos get pulled back: 0 = size by height only, 1 = equal area. */
 const COMPENSATION = 0.35;
@@ -63,11 +63,11 @@ export const sponsorTiers: SponsorTier[] = [
     id: 'gold',
     size: 120,
     sponsors: [
-      logo('Kiliogene', 'sponsor-kiliogene.png', 1.46),
+      logo('MonProcessIA', 'sponsor-monprocessia.svg', 7.02),
       logo(
         'Ordre des Experts-Comptables Pays de la Loire',
         'sponsor-ordre-experts-comptables.png',
-        4.86
+        5.31
       ),
     ],
   },
