@@ -21,7 +21,7 @@ const BASE = '/assets/images/sponsors/';
  * year, so a logo whose file changes under the same name stays stale in returning
  * visitors' browsers. Bump it whenever a logo file is replaced in place.
  */
-const V = '?v=2026-11';
+const V = '?v=2026-11b';
 
 /** How hard wide logos get pulled back: 0 = size by height only, 1 = equal area. */
 const COMPENSATION = 0.35;
