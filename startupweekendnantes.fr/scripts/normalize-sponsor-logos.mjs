@@ -38,7 +38,7 @@ const LOGOS = [
   ['sponsor-crisp.png', 'sponsor-crisp.png'],
   ['sponsor-clever-cloud.png', 'sponsor-clever-cloud.png'],
   ['sponsor-guest-suite.png', 'sponsor-guest-suite.png'],
-  ['sponsor-kiliogene.png', 'sponsor-kiliogene.png'],
+  ['sponsor-monprocessia.svg', 'sponsor-monprocessia.svg'],
   ['sponsor-icilundi.png', 'sponsor-icilundi.png'],
   ['sponsor-pepite-pays-de-la-loire.png', 'sponsor-pepite-pays-de-la-loire.png'],
   ['sponsor-lucca.svg', 'sponsor-lucca.svg'],
@@ -124,6 +124,7 @@ async function updateManifest(sizes) {
     ...FRAMER_ORIGINALS.map((f) => `/assets/images/${f}`),
     '/assets/images/sponsors/sponsor-allovoisins.png',
     '/assets/images/sponsors/sponsor-allovoisins.avif',
+    '/assets/images/sponsors/sponsor-kiliogene.png', // remplacé par MonProcessIA
   ]);
   const entry = (path, { width, height }) =>
     `  "${path}": {\n    "width": ${width},\n    "height": ${height}\n  },`;

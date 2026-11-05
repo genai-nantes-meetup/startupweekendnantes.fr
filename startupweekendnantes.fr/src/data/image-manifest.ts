@@ -548,17 +548,13 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "width": 1200,
     "height": 740
   },
-  "/assets/images/sponsors/sponsor-kiliogene.png": {
-    "width": 1200,
-    "height": 821
-  },
   "/assets/images/sponsors/sponsor-nantes-metropole.png": {
     "width": 1080,
     "height": 339
   },
   "/assets/images/sponsors/sponsor-ordre-experts-comptables.png": {
-    "width": 1080,
-    "height": 222
+    "width": 1200,
+    "height": 226
   },
   "/assets/images/sponsors/sponsor-pepite-pays-de-la-loire.png": {
     "width": 399,
