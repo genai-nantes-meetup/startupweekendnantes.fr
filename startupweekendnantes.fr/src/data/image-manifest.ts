@@ -536,10 +536,6 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "width": 886,
     "height": 246
   },
-  "/assets/images/sponsors/sponsor-guest-suite.png": {
-    "width": 1118,
-    "height": 1200
-  },
   "/assets/images/sponsors/sponsor-icilundi.png": {
     "width": 767,
     "height": 158
