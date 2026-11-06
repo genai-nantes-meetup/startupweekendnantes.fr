@@ -37,7 +37,7 @@ const LOGOS = [
   ['sponsor-allovoisins.png', 'sponsor-ordre-experts-comptables.png'],
   ['sponsor-crisp.png', 'sponsor-crisp.png'],
   ['sponsor-clever-cloud.png', 'sponsor-clever-cloud.png'],
-  ['sponsor-guest-suite.png', 'sponsor-guest-suite.png'],
+  ['sponsor-guest-suite.svg', 'sponsor-guest-suite.svg'],
   ['sponsor-monprocessia.svg', 'sponsor-monprocessia.svg'],
   ['sponsor-icilundi.png', 'sponsor-icilundi.png'],
   ['sponsor-pepite-pays-de-la-loire.png', 'sponsor-pepite-pays-de-la-loire.png'],
@@ -125,6 +125,7 @@ async function updateManifest(sizes) {
     '/assets/images/sponsors/sponsor-allovoisins.png',
     '/assets/images/sponsors/sponsor-allovoisins.avif',
     '/assets/images/sponsors/sponsor-kiliogene.png', // remplacé par MonProcessIA
+    '/assets/images/sponsors/sponsor-guest-suite.png', // remplacé par le SVG
   ]);
   const entry = (path, { width, height }) =>
     `  "${path}": {\n    "width": ${width},\n    "height": ${height}\n  },`;

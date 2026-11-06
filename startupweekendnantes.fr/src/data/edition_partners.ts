@@ -86,7 +86,7 @@ export const sponsorTiers: SponsorTier[] = [
     id: 'bronze',
     size: 78,
     sponsors: [
-      logo('Guest Suite', 'sponsor-guest-suite.png', 0.93),
+      logo('Guest Suite', 'sponsor-guest-suite.svg', 4.74),
       logo(
         'Kivo, incubateur Centrale Nantes, Audencia, Nantes Université',
         'sponsor-kivo.svg',
