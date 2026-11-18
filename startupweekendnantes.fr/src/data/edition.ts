@@ -61,7 +61,7 @@ export const EDITION = {
   participantsCount: 100,
 
   ticketUrl: `https://www.billetweb.fr/startup-weekend-nantes-${YEAR}`,
-  contactEmail: 'team@naomakers.com',
+  contactEmail: 'team@startupweekendnantes.fr',
 
   /** Used by Agenda.tsx — pre-built day headers, one per day. */
   agendaDays: DAY_NAMES.map((day, i) => ({
