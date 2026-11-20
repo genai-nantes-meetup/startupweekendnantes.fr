@@ -104,6 +104,7 @@ export const sponsorTiers: SponsorTier[] = [
       logo('IMT Atlantique', 'sponsor-imt-atlantique.png', 1.62),
       logo('ADN Ouest', 'sponsor-adn-ouest.png', 2.37),
       logo('Lovable', 'sponsor-lovable.svg', 5.85),
+      logo('WeReal Production', 'sponsor-wereal.svg', 2.75),
     ],
   },
 ];
