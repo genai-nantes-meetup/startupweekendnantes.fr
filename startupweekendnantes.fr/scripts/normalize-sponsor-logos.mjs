@@ -45,6 +45,7 @@ const LOGOS = [
   ['sponsor-kivo.svg', 'sponsor-kivo.svg'],
   ['sponsor-imt-atlantique.png', 'sponsor-imt-atlantique.png'],
   ['sponsor-adn-ouest.png', 'sponsor-adn-ouest.png'],
+  ['sponsor-lovable.svg', 'sponsor-lovable.svg'],
 ];
 
 /** Framer originals at the images root — byte-identical duplicates of the above. */

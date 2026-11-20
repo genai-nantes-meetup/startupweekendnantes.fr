@@ -103,6 +103,7 @@ export const sponsorTiers: SponsorTier[] = [
       logo('_icilundi', 'sponsor-icilundi.png', 4.85),
       logo('IMT Atlantique', 'sponsor-imt-atlantique.png', 1.62),
       logo('ADN Ouest', 'sponsor-adn-ouest.png', 2.37),
+      logo('Lovable', 'sponsor-lovable.svg', 5.85),
     ],
   },
 ];
