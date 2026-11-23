@@ -105,6 +105,7 @@ export const sponsorTiers: SponsorTier[] = [
       logo('ADN Ouest', 'sponsor-adn-ouest.png', 2.37),
       logo('Lovable', 'sponsor-lovable.svg', 5.85),
       logo('WeReal Production', 'sponsor-wereal.svg', 2.75),
+      logo('Mistral AI Studio', 'sponsor-mistral.svg', 5.67),
     ],
   },
 ];
