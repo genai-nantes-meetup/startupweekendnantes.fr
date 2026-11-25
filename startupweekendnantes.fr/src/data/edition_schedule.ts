@@ -67,7 +67,12 @@ const dayRows: Row[][] = [
       title: 'Dîner & votes',
       desc: "On mange ensemble et on vote pour les problèmes qu'on veut attaquer.",
     },
-    { time: '21h', title: 'REX entrepreneur', desc: '', tba: true },
+    {
+      time: '21h',
+      title: 'REX entrepreneur',
+      desc: '',
+      speakers: ['Ségolène Desplanques Allain-Dupré'],
+    },
     {
       time: '21h30',
       title: 'Annonce des projets & formation des équipes',
@@ -102,7 +107,7 @@ const dayRows: Row[][] = [
       time: '13h45',
       title: 'Conférences Pitch & User Tests',
       desc: '',
-      speakers: ['Marion Guerchet'],
+      speakers: ['Violette Thouzeau', 'Marion Guerchet'],
     },
     { time: '14h30', title: 'Travail en équipe', desc: 'Les coachs passent dans les équipes.' },
     {

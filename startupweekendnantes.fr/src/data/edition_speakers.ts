@@ -79,6 +79,22 @@ export const speakers: Speaker[] = [
     mission: 'Jury',
     linkedin: 'https://www.linkedin.com/in/mathilde-bour-17912a3',
   },
+  {
+    name: 'Frédéric de Gombert',
+    role: 'CEO @ Akeneo',
+    img: '/assets/images/speakers/frederic-de-gombert.jpeg',
+    group: 'jury',
+    mission: 'Jury',
+    linkedin: 'https://www.linkedin.com/in/fredericdegombert',
+  },
+  {
+    name: 'Germain Stang',
+    role: 'Co-fondateur @ Allaw',
+    img: '/assets/images/speakers/germain-stang.jpeg',
+    group: 'jury',
+    mission: 'Jury',
+    linkedin: 'https://www.linkedin.com/in/germain-stang/',
+  },
 
   // ── Speakers ─────────────────────────────────────────────────────
   {
@@ -99,11 +115,27 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Yannis Sulfourt',
-    role: 'Designer spécialisé IA générative',
+    role: 'Co-fondateur @ Explore the Vault',
     img: '/assets/images/speakers/yannis-sulfourt.jpeg',
     group: 'speaker',
     mission: 'Atelier IA',
     linkedin: 'https://www.linkedin.com/in/yannissulfourt/',
+  },
+  {
+    name: 'Ségolène Desplanques Allain-Dupré',
+    role: 'Co-fondatrice @ Bon Air Club',
+    img: '/assets/images/speakers/segolene-desplanques.jpeg',
+    group: 'speaker',
+    mission: 'REX entrepreneure',
+    linkedin: 'https://www.linkedin.com/in/s-desplanques/',
+  },
+  {
+    name: 'Violette Thouzeau',
+    role: 'Fondatrice @ Oïa',
+    img: '/assets/images/speakers/violette-thouzeau.jpeg',
+    group: 'speaker',
+    mission: 'Conférence Pitch',
+    linkedin: 'https://www.linkedin.com/in/violette-thouzeau/',
   },
 
   // ── Coachs ───────────────────────────────────────────────────────
@@ -196,6 +228,22 @@ export const speakers: Speaker[] = [
     group: 'mentor',
     mission: 'Mentor',
     linkedin: 'https://www.linkedin.com/in/gregorythibord',
+  },
+  {
+    name: 'Virginie Osio',
+    role: 'Chargée marketing @ Crédit Agricole Atlantique Vendée',
+    img: '/assets/images/speakers/virginie-osio.jpeg',
+    group: 'mentor',
+    mission: 'Mentor',
+    linkedin: 'https://www.linkedin.com/in/virginie-osio-%E2%9A%A1-840b0a81',
+  },
+  {
+    name: 'Magali Olivier',
+    role: 'Coach projet & ex-COO @ La Cantine',
+    img: '/assets/images/speakers/magali-olivier.jpeg',
+    group: 'mentor',
+    mission: 'Mentor',
+    linkedin: 'https://www.linkedin.com/in/magali-olivier-84538018',
   },
 
   // ── Facilitateurs ────────────────────────────────────────────────

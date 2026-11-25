@@ -428,6 +428,18 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
+  "/assets/images/speakers/frederic-de-gombert.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/germain-stang.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
   "/assets/images/speakers/godefroy-de-compreignac.jpeg": {
     "width": 600,
     "height": 600,
@@ -459,6 +471,12 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "webp": true
   },
   "/assets/images/speakers/lucie-valette.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/magali-olivier.jpeg": {
     "width": 600,
     "height": 600,
     "avif": true,
@@ -512,9 +530,27 @@ export const imageManifest: Record<string, { width: number; height: number; avif
     "avif": true,
     "webp": true
   },
+  "/assets/images/speakers/segolene-desplanques.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
   "/assets/images/speakers/simon-timssale.jpeg": {
     "width": 800,
     "height": 800,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/violette-thouzeau.jpeg": {
+    "width": 600,
+    "height": 600,
+    "avif": true,
+    "webp": true
+  },
+  "/assets/images/speakers/virginie-osio.jpeg": {
+    "width": 600,
+    "height": 600,
     "avif": true,
     "webp": true
   },
