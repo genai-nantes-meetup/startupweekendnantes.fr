@@ -106,6 +106,7 @@ export const sponsorTiers: SponsorTier[] = [
       logo('Lovable', 'sponsor-lovable.svg', 5.85),
       logo('WeReal Production', 'sponsor-wereal.svg', 2.75),
       logo('Mistral AI Studio', 'sponsor-mistral.svg', 5.67),
+      logo('Techstars', 'sponsor-techstars.svg', 5.7),
     ],
   },
 ];
